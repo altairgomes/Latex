@@ -1,0 +1,123 @@
+ Mode:
+ -1= t0 centre sur l'immersion
+ +1= t0 centre sur l'emersion
+  0= t0 centre sur le millieu de la bande
+ Faut-il prendre en compte la reponse instrumentale ?
+ Nom du fichier contenant la reponse instrumentale ?
+           2  points lus dans la reponse instrum.
+ Faut-il comparer a des donnees?
+ Nom du fichier contenant les observations?
+ Sigma des observations?
+         393  points lus dans observations
+ Longueur d'onde? Bande passante? (microns)
+ Distance a l'anneau ? Rayon de l'etoile?(km)
+ Vitesse normale de l'etoile? (dans plan du ciel, km/s)
+ Largeur de la bande ?(km), transmission?
+ Duree generee et pas en temps ? (sec)
+ Flux hors occultation, flux stellaire zero?
+ Heure de reference? (sec TU)
+ Nombre d'heures a explorer autour 
+ de la reference et pas (sec)?
+ t0, chi2, nfit:   81448.750       115.97762              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81448.797       110.22379              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81448.852       100.05555              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81448.898       92.568825              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81448.953       85.029602              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.000       77.313484              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.047       70.533485              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.102       64.183372              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.148       58.504154              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.203       53.288185              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.250       48.644901              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.297       44.300407              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.352       40.403904              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.398       36.891914              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.453       33.780128              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.500       31.076557              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.547       28.768034              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.602       26.860954              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.648       25.367584              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.703       24.276850              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.750       23.590899              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.797       23.278690              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.852       23.216343              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.898       23.264187              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81449.953       23.261229              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.000       23.272854              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.047       23.275864              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.102       23.292091              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.148       23.311745              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.203       23.320145              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.250       23.326286              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.297       23.321535              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.352       23.323847              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.398       23.322741              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.453       23.322348              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.500       23.322426              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.547       23.322752              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.602       23.935617              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.648       23.938511              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.703       23.941278              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.750       23.953238              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.797       24.013559              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.852       24.347683              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.898       25.412649              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81450.953       26.643965              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81451.000       28.416578              15
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81451.047       29.771372              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81451.102       32.464493              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81451.148       35.593288              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+ t0, chi2, nfit:   81451.203       39.032345              14
+ temps milieu et duree de la bande:   81575.000       250.00000    
+
+t0, chi2 et nfit au minimum: 81449.850   23.216    14
+Dchi2, intervalle ou chi2 < chi2_min + dchi2:  1.00  81449.750  81450.797

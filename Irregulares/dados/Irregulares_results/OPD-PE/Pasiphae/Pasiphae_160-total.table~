@@ -1,0 +1,62 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    67.0  -291.0  19.8   4.2     2    67.0  -291.0  19.8   4.2     2   0.00 120.0  2.0   16 54 27.68769 -22 28  3.6298 02 59 03.9998 19 05 1995 2449856.6243518498 1995.378848328  16.9076910240 -22.4676749365 17.2  64.0  52.5    21 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+  -326.5  -111.3  31.9   9.4     4  -326.5  -111.3  31.9   9.4     4   0.00 120.0  2.0   19 04 29.94854 -23 15 47.2368 01 54 12.2501 21 06 1996 2450255.5793084502 1996.471127470  19.0749857050 -23.2631213330 17.2  40.3  41.5    50 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   -31.5   -35.0  23.7   6.0     4   -31.5   -35.0  23.7   6.0     4   0.00 120.0  2.0   19 04  3.78884 -23 17 21.4701 01 35 25.2500 22 06 1996 2450256.5662644673 1996.473829608  19.0677191235 -23.2892972550 17.0  46.5  39.5    42 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   -32.0   -21.5   1.4   4.9     2   -32.0   -21.5   1.4   4.9     2   0.00 120.0  2.0   19 03  9.44929 -23 20 33.1137 01 52 37.0001 24 06 1996 2450258.5782060204 1996.479338004  19.0526248030 -23.3425315785 16.7  45.5  44.5    50 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+     5.8   -13.8  66.3  16.2     4     5.8   -13.8  66.3  16.2     4   0.00 120.0  2.0   19 02 12.98594 -23 23 46.8063 03 00 38.0000 26 06 1996 2450260.6254398152 1996.484943024  19.0369405383 -23.3963350695 16.8  35.3  49.8    48 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   176.3   -62.8  17.6  48.0     4   176.3   -62.8  17.6  48.0     4   0.00 120.0  2.0   18 48 15.39871 -24 04 12.6728 03 02 29.9552 26 07 1996 2450290.6267355923 1996.567082096  18.8042774190 -24.0701868912 17.1  54.5  52.0    54 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   156.1   -53.1   8.4  10.6     8   156.1   -53.1   8.4  10.6     8   0.00 120.0  2.0   18 47 51.76447 -24 05 12.5441 02 20 35.0550 27 07 1996 2450291.5976279513 1996.569740254  18.7977123520 -24.0868177991 17.1  44.5  53.1    36 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   156.0   -73.0   9.0   6.6     3   156.0   -73.0   9.0   6.6     3   0.00 120.0  2.0   18 40 42.33108 -24 23 23.2744 01 59 17.7766 22 08 1996 2450317.5828446364 1996.640883900  18.6784253007 -24.3897984467 17.6  56.3  47.7    61 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   138.2   -58.0   4.3  22.2     5   138.2   -58.0   4.3  22.2     5   0.00 120.0  2.0   18 40 18.82641 -24 24 46.0655 01 07 28.4781 26 08 1996 2450321.5468573859 1996.651736775  18.6718962262 -24.4127959604 17.8  51.2  53.2    54 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   688.0    81.0  -1.0  -1.0     1   688.0    81.0  -1.0  -1.0     1   0.00 120.0  2.0   18 46 12.65379 -24 22 27.9489 00 17 23.5902 01 10 1996 2450357.5120785902 1996.750204185  18.7701816070 -24.3744302580 17.6  56.0  36.0    50 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+    66.5   -26.0   4.9   8.5     2    66.5   -26.0   4.9   8.5     2   0.00 120.0  2.0   18 46 34.35872 -24 22  4.5880 22 08 16.8750 01 10 1996 2450358.4224175350 1996.752696557  18.7762107560 -24.3679411110 17.9  45.0  48.0    51 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   342.0  -232.5   9.9  10.6     2   342.0  -232.5   9.9  10.6     2   0.00 120.0  2.0   21 15 24.88595 -16 50 51.2437 04 43 36.4999 13 08 1997 2450673.6969502298 1997.615871184  21.2569127635 -16.8475677060 16.9  62.0  32.5     4 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   300.0  -184.5  50.4  15.0     4   300.0  -184.5  50.4  15.0     4   0.00 120.0  2.0   21 14 53.29231 -16 52 49.7773 03 44 38.5000 14 08 1997 2450674.6560011576 1997.618496923  21.2481367535 -16.8804936845 17.0  73.0  79.5     5 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   313.3  -195.0  54.9  17.8     3   313.3  -195.0  54.9  17.8     3   0.00 120.0  2.0   21 14 20.81685 -16 54 50.9861 03 27 15.6666 15 08 1997 2450675.6439313265 1997.621201728  21.2391157907 -16.9141628013 16.5  60.3  27.0     8 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   221.0  -148.5  24.0  16.3     2   221.0  -148.5  24.0  16.3     2   0.00 120.0  2.0   21 13 46.37745 -16 56 58.4937 04 38 53.5001 16 08 1997 2450676.6936747702 1997.624075769  21.2295492905 -16.9495815850 16.6 112.5  77.0     6 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   170.0    98.0  -1.0  -1.0     1   170.0    98.0  -1.0  -1.0     1   0.00 120.0  2.0   23 46 42.12016 -02 28 16.0242 08 25 11.0001 05 06 1998 2450969.8508217600 1998.426696295  23.7783667120  -2.4711178400 17.8  89.0  73.0     5 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+    99.1  -140.4  25.8  20.2     7    57.5  -181.4 120.2 117.3     8  12.50 120.0  2.0   23 48 33.82094 -03 39 25.0521 03 38 45.5715 20 10 2010 2455489.6519163372 2010.801237279  23.8093947054  -3.6569589036 17.2  49.9  38.0     5 Pasiphae              0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

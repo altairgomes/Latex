@@ -1,0 +1,49 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    85.5   -11.3  70.3  78.9    24    73.4     2.6  74.7  84.3    27  11.11  80.0  2.0   16 37  1.79988 -21 22 11.3834 00 45 41.0816 10 09 2007 2454353.5317254816 2007.690709720  16.6171666322 -21.3698287265 17.4  28.9  29.5  1580 Elara                 0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                jup300+de421         21 Nov 2014                                                  
+  -134.3  -132.0  78.3   6.6     3   -85.5  -127.2 116.7  10.9     4  25.00  80.0  2.0   19 30  4.73474 -21 31  0.6801 05 57 02.2625 01 06 2008 2454618.7479428533 2008.416832150  19.5013152050 -21.5168555877 17.2  24.0  24.0  2213 Elara                 0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                jup300+de421         21 Nov 2014                                                  
+    14.0   -90.0   2.8   7.1     2    14.0   -90.0   2.8   7.1     2   0.00  80.0  2.0   19 28 54.50480 -21 32 37.8271 07 37 30.1743 04 06 2008 2454621.8177103503 2008.425236715  19.4818068890 -21.5438408695 17.0  10.5  10.5  1525 Elara                 0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                jup300+de421         21 Nov 2014                                                  
+   118.2    66.8  16.5  11.9    17   138.1    65.7  68.8  16.0    19  10.53  80.0  2.0   21 53 55.05712 -13 47 59.0948 09 45 00.0991 23 05 2009 2454974.9062511469 2009.391940454  21.8986269791 -13.7997485525 17.4  21.2  20.5   650 Elara                 0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                jup300+de421         21 Nov 2014                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

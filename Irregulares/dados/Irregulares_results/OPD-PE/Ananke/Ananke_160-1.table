@@ -1,0 +1,62 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   -64.0   -18.5  33.9   6.4     2   -64.0   -18.5  33.9   6.4     2   0.00 120.0  2.0   16 42 22.67635 -20 44 43.9778 04 39 08.5000 23 05 1995 2449860.6938483799 1995.389990002  16.7062989850 -20.7455493930 19.0  38.0  52.5    21 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+  -146.0    18.0   4.2  26.9     2  -146.0    18.0   4.2  26.9     2   0.00 120.0  2.0   16 31 41.65100 -20 26 37.9744 04 59 44.5000 09 06 1995 2449877.7081539351 1995.436572632  16.5282363885 -20.4438817820 18.4  43.5  58.5    11 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+  -516.0  -763.0  -1.0  -1.0     1  -516.0  -763.0  -1.0  -1.0     1   0.00 120.0  2.0   19 10  1.78685 -23 34 31.3780 03 06 59.0003 21 06 1996 2450255.6298495401 1996.471265844  19.1671630130 -23.5753827880 19.2  46.0  60.0    43 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+  -129.5  -205.8  63.3  48.2     4  -129.5  -205.8  63.3  48.2     4   0.00 120.0  2.0   19 09 32.19295 -23 35 13.2861 03 26 41.5000 22 06 1996 2450256.6435358799 1996.474041166  19.1589424875 -23.5870239265 18.1  46.5  50.8    50 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+  -249.5  -228.0  20.5   2.8     2  -249.5  -228.0  20.5   2.8     2   0.00 120.0  2.0   19 08 32.99014 -23 36 35.8030 03 15 52.4999 24 06 1996 2450258.6360243047 1996.479496302  19.1424972610 -23.6099452655 18.8  45.5  49.5    39 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   -93.4  -390.0  98.4 110.6     5   -93.4  -390.0  98.4 110.6     5   0.00 120.0  2.0   18 52 35.27605 -23 51 38.6353 01 57 38.3780 25 07 1996 2450289.5816941899 1996.564220928  18.8764655708 -23.8607320358 18.8  48.4  44.8    83 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+    52.7  -172.0  60.0   7.9     3    52.7  -172.0  60.0   7.9     3   0.00 120.0  2.0   18 46 42.24192 -23 26 37.1150 22 54 32.3332 01 10 1996 2450358.4545408934 1996.752784506  18.7784005340 -23.4436430473 20.0  58.0  52.3    53 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   596.0  -176.0  -1.0  -1.0     1   596.0  -176.0  -1.0  -1.0     1   0.00 120.0  2.0   21 18 43.91020 -17 43 23.5391 05 27 38.9998 12 08 1997 2450672.7275347202 1997.613217069  21.3121972790 -17.7232052920 18.1  66.0  53.0     8 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   470.0   -63.0  26.9  11.3     2   470.0   -63.0  26.9  11.3     2   0.00 120.0  2.0   21 18 16.02412 -17 46  4.1395 05 32 18.4999 13 08 1997 2450673.7307696752 1997.615963777  21.3044511445 -17.7678165335 17.5  73.5  56.5    10 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   609.0  -115.0  25.5  24.0     2   479.8   -96.8 153.9  32.2     4  50.00 120.0  2.0   21 17 22.84546 -17 51  8.4745 03 41 40.0000 15 08 1997 2450675.6539351847 1997.621229117  21.2896792935 -17.8523540355 18.1  24.5  31.0     6 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   353.0  -287.0  -1.0  -1.0     1   353.0  -287.0  -1.0  -1.0     1   0.00 120.0  2.0   21 16 53.34254 -17 53 55.0184 05 20 08.0005 16 08 1997 2450676.7223148202 1997.624154181  21.2814840400 -17.8986162140 17.7  23.0  38.0     4 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   139.3   227.0  30.4   5.6     3   139.3   227.0  30.4   5.6     3   0.00 120.0  2.0   23 41  3.60870 -03 14 26.0801 03 40 40.0002 03 09 1998 2451059.6532407431 1998.672561918  23.6843357503  -3.2405777970 18.0  35.7  71.3     4 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   213.0   -80.0  91.9   9.9     2   213.0   -80.0  91.9   9.9     2   0.00 120.0  2.0   23 40 32.81800 -03 17 24.0893 02 41 15.9999 04 09 1998 2451060.6119907401 1998.675186833  23.6757827785  -3.2900248110 18.0  38.5  83.5     6 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   -24.4  -188.6  26.4  10.0     5   -24.4  -188.6  26.4  10.0     5   0.00 120.0  2.0   19 21 20.78014 -22 50 36.5524 07 05 19.4401 09 07 2008 2454656.7953638900 2008.521000311  19.3557722598 -22.8434867826 18.6  43.6  50.8    40 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+  -278.0   -18.3  34.7 111.5     3  -278.0   -18.3  34.7 111.5     3   0.00 120.0  2.0   19 01 25.57950 -22 50 38.9734 01 29 09.8232 20 09 2008 2454729.5619192501 2008.720224282  19.0237720827 -22.8441592690 19.1  44.3  47.3    54 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   -77.5  -123.3  52.9  35.5     4   103.6  -370.0 407.5 552.6     5  20.00 120.0  2.0   19 02  6.92909 -22 48  0.4771 01 26 59.3326 24 09 2008 2454733.5604089424 2008.731171550  19.0352580815 -22.8001325260 19.9  46.0  49.0    45 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+    21.5   -97.0  82.8  65.2    28    23.1  -113.0  84.7 103.6    33  15.15 120.0  2.0   00 10  1.82011 +00 07  4.4545 07 49 15.6071 19 06 2010 2455366.8258750825 2010.464957905   0.1671722520   0.1179040217 18.4  92.7  64.3     4 Ananke                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

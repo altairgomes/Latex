@@ -1,0 +1,48 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -164.9  -114.1  19.9  12.6    10  -164.9  -114.1  19.9  12.6    10   0.00 120.0  2.0   17 16 55.62602 -22 47 31.8774 03 12 27.6860 18 04 2007 2454208.6336537730 2007.294000421  17.2821183395 -22.7921881540 15.9  61.1  56.9   151 Himalia               0.0000 Zeiss/LNA            Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                JUP300               23 Jan 2014                                                  
+   -66.5   -26.8  25.3  16.3    11   -70.7   -25.2  67.3  32.3    15  26.67 120.0  2.0   19 30 43.18826 -21 21 12.2421 06 51 47.2127 18 04 2008 2454574.7859631102 2008.296470809  19.5119967395 -21.3534005747 15.7  58.7  58.9    99 Himalia               0.0000 Zeiss/LNA            Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                JUP300               23 Jan 2014                                                  
+  -114.1    56.9  56.2  55.6    16  -128.2    68.7 146.5 108.7    19  15.79 120.0  2.0   19 31 40.75196 -21 25  2.7701 03 49 36.6875 15 05 2008 2454601.6594524020 2008.370046413  19.5279866567 -21.4174361333 15.5  50.7  52.9    69 Himalia               0.0000 Zeiss/LNA            Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                JUP300               23 Jan 2014                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

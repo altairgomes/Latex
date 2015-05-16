@@ -1,0 +1,358 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	5
+<table>
+Tabela1	29	5	28/01/14 16:55
+geometry	392	956	1920	979	minimized	
+header	Satelite[X]	ZEISS[Y]	IAG[Y]	160cm[Y]	Total[Y]
+ColWidth	100	100	100	100	100	
+<com>
+<col nr="4">
+col("160cm")+col("IAG")+col("ZEISS")
+</col>
+</com>
+ColType	1;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0
+HiddenColumn	0	0	0	0	0
+Comments						
+WindowLabel		2
+<data>
+0	Phoebe	27	1134	530	1691
+1	Nereida	0	751	388	1139
+2	Himalia	64	712	335	1111
+3	Elara	10	354	145	509
+4	Pasiphae	12	176	236	424
+5	Carme	0	23	93	116
+6	Lysithea	0	11	84	95
+7	Ananke	0	0	78	78
+8	Sinope	0	7	51	58
+9	Leda	0	0	17	17
+10	Callirrhoe	0	0	10	10
+</data>
+</table>
+<table>
+Tabela2	33	12	28/01/14 17:56
+geometry	196	956	1920	979	minimized	
+header	Ano[X]	Nereida[Y]	Phoebe[Y]	Sinope[Y]	Pasiphae[Y]	Lysithea[Y]	Leda[Y]	Himalia[Y]	Elara[Y]	Carme[Y]	Callirrhoe[Y]	Ananke[Y]
+ColWidth	100	100	100	100	100	100	100	100	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0	0	0	0	0	0	0	0
+HiddenColumn	0	0	0	0	0	0	0	0	0	0	0	0
+Comments													
+WindowLabel		2
+<data>
+0	1992	4										
+1	1993											
+2	1994											
+3	1995	34	7		2	8		11	10	2		4
+4	1996		12	26	37	28	2	61	41	22		15
+5	1997	1	12	10	11	10	5	18	11	8		8
+6	1998				1	1			4	1		5
+7	1999	7	6				3					
+8	2000											
+9	2001	59	126									
+10	2002	85										
+11	2003	54										
+12	2004	166	6									
+13	2005		82		18			27	7	13		
+14	2006	147	51		91			97	188			
+15	2007	174	171	2	157			133	66	28		
+16	2008	61	108	14	45	21	7	190	57	31		13
+17	2009	36	30	4	26	7		144	80	4		
+18	2010	89	533		24	20		96	35		10	33
+19	2011	96	48					104				
+20	2012	33	177					109				
+21	2013	53	267		12			74		7		
+22	2014	34	59					47	10			
+</data>
+</table>
+<multiLayer>
+Gráfico1	1	1	28/01/14 17:13
+geometry	588	125	539	471	hidden
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	521	408
+<PageGeometry>0.00980392	0.0121951	1.02157	0.995122</PageGeometry>
+PlotTitle	Título	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Ubuntu	14	75	0	0	0
+ScaleFont0	Ubuntu	11	75	0	0	0
+ScaleFont1	Ubuntu	11	75	0	0	0
+ScaleFont2	Ubuntu	11	75	0	0	0
+ScaleFont3	Ubuntu	11	75	0	0	0
+AxisFont0	Ubuntu	11	75	1	0	0
+AxisFont1	Ubuntu	11	75	1	0	0
+AxisFont2	Ubuntu	11	75	1	0	0
+AxisFont3	Ubuntu	11	75	1	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+scale	0	0	45	0	10	5	0	0
+scale	1	0	45	0	10	5	0	0
+scale	2	0	12	0	7	5	0	0
+scale	3	0	12	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	1;Tabela1_Satelite	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	-1079018088	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>-0.56992481203008</x>
+<y>773.24414715719</y>
+<right>3.32352941176471</right>
+<bottom>694.949494949495</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+
+</Text>
+<Font>Ubuntu	11	75	1	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Gráfico2	1	1	21/11/14 00:31
+geometry	0	956	1866	675	minimized	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	1848	612
+<PageGeometry>0.00980392	0.0121951	3.62353	1.49268</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Year	Number of Frames			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Ubuntu	19	75	0	0	0
+ScaleFont0	Ubuntu	16	75	0	0	0
+ScaleFont1	Ubuntu	16	75	0	0	0
+ScaleFont2	Ubuntu	16	75	0	0	0
+ScaleFont3	Ubuntu	16	75	0	0	0
+AxisFont0	Ubuntu	16	50	0	0	0
+AxisFont1	Ubuntu	16	50	0	0	0
+AxisFont2	Ubuntu	16	50	0	0	0
+AxisFont3	Ubuntu	16	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Tabela2_Ano	Tabela2_Ananke	3	1	#000000	0	1	7	0	#000000	#000000	1	#000000	0	91	-500	2	0	0	32	1
+curve	Tabela2_Ano	Tabela2_Callirrhoe	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#ff0000	0	91	-400	2	0	0	32	1
+curve	Tabela2_Ano	Tabela2_Carme	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#00ff00	0	91	-300	2	0	0	32	1
+curve	Tabela2_Ano	Tabela2_Elara	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#0000ff	0	91	-200	2	0	0	32	1
+curve	Tabela2_Ano	Tabela2_Himalia	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#00ffff	0	91	-100	2	0	0	32	1
+curve	Tabela2_Ano	Tabela2_Leda	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#ff00ff	0	91	0	2	0	0	32	1
+curve	Tabela2_Ano	Tabela2_Lysithea	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#ffff00	0	91	100	2	0	0	32	1
+curve	Tabela2_Ano	Tabela2_Pasiphae	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#808000	0	91	200	2	0	0	32	1
+curve	Tabela2_Ano	Tabela2_Sinope	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#000080	0	91	300	2	0	0	32	1
+curve	Tabela2_Ano	Tabela2_Phoebe	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#800080	0	91	400	2	0	0	32	1
+curve	Tabela2_Ano	Tabela2_Nereida	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#ff8000	0	91	500	2	0	0	32	1
+scale	0	0	600	0	7	5	0	0
+scale	1	0	600	0	7	5	0	0
+scale	2	1991	2015	1	25	1	0	0
+scale	3	1991	2015	1	25	1	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>1992.0909090909</x>
+<y>570.2380952381</y>
+<right>1992.25131810193</right>
+<bottom>559.692898272553</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+\l(3)%(3)
+\l(4)%(4)
+\l(5)%(5)
+\l(6)%(6)
+\l(7)%(7)
+\l(8)%(8)
+\l(9)%(9)
+\l(10)%(10)
+\l(11)%(11)
+</Text>
+<Font>Ubuntu	16	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<multiLayer>
+Gráfico3	1	1	21/11/14 16:05
+geometry	588	956	1199	579	minimized	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	4	6	1181	516
+<PageGeometry>0.00335852	0.0112994	0.991604	0.971751</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles		Number of frames		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+AxesTitleDistance	2	-1	2	-1
+InvertedTitle	0	0	0	0
+TitleFont	Ubuntu	16	75	0	0	0
+ScaleFont0	Ubuntu	14	75	0	0	0
+ScaleFont1	Ubuntu	14	75	0	0	0
+ScaleFont2	Ubuntu	14	75	0	0	0
+ScaleFont3	Ubuntu	14	75	0	0	0
+AxisFont0	Ubuntu	18	63	0	0	0
+AxisFont1	Ubuntu	14	50	0	0	0
+AxisFont2	Ubuntu	16	63	0	0	0
+AxisFont3	Ubuntu	14	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Tabela1_Satelite	Tabela1_160cm	3	1	#000000	0	1	7	0	#000000	#000000	1	#000000	0	20	0	2	0	0	28	1
+<StackWhiteOut>1</StackWhiteOut>
+curve	Tabela1_Satelite	Tabela1_IAG	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#a0a0a4	0	20	0	2	0	0	28	1
+<StackWhiteOut>1</StackWhiteOut>
+curve	Tabela1_Satelite	Tabela1_ZEISS	3	1	#000000	0	1	7	0	#ff0000	#ff0000	1	#ffffff	0	20	0	2	0	0	28	1
+<StackWhiteOut>1</StackWhiteOut>
+scale	0	0	2000	0	5	5	0	0
+scale	1	0	2000	0	5	5	0	0
+scale	2	0.5	12	1	12	5	0	0
+scale	3	0.5	12	1	12	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	1;Tabela1_Satelite	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	30	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>8.5773195876289</x>
+<y>1810.4738154613</y>
+<right>10.1305841924399</right>
+<bottom>1441.39650872818</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)Perkin-Elmer
+\l(2)Boller & Chivens
+\l(3)%(3)
+</Text>
+<Font>Ubuntu	13	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>

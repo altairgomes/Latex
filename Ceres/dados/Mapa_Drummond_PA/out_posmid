@@ -1,0 +1,286 @@
+ 1= heures choisies une a une
+ 2= heures choisies par pas constant entre deux limites
+ 3= heures choisies a partir d'un fichier d'occultation
+ Corrections sur ksi et eta (km)
+ Code observation, correction sur l'heure et ecriture?
+ -
+ code, correction Dt (sec) et iprint
+         540   0.0000000000000000     
+ Masse du corps (g):   9.42871022872924873E+023
+ Heure T.U. ?
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 24 28.6460   17 22  8.8126
+pole Terre: 23 59 43.6557   89 56 26.9629
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 24 29.6487   17 22  9.8154
+pole Terre: 23 59 43.6557   89 56 26.9629
+coordonnees  de l'etoile:                 17 18 29.00800000 -27 26 38.89000000
+coordonnees geocentriques  de la planete: 17 18 29.00353888 -27 26 38.59148523
+coordonnees topocentriques de la planete: 17 18 28.99939507 -27 26 38.92898134
+ Position geocentrique:     98.795089257822838       -496.61192905681673     
+ Correction de parallaxe:   91.768087638696784        561.46165066701315     
+Correction relativiste sur ksi et eta:  0.0045   0.0015
+ Position dans l'ombre (ksi, eta, dist), sans et avec correc. relativiste:
+   190.56317689651962        64.849721610196411        201.29533224050232     
+   190.56769459538978        64.851259008548070        201.30010436757240     
+ Vitesses geocentrique dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.6017    1.6170    3.9481
+ Vitesses dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.1719    1.6135    3.5587   -2.4666
+ -3.1719    1.6135    3.5587   -2.4667
+ Vitesses: module et perpend. a l'anneau equatorial local
+  3.5587    0.9116
+P, B, B':  11.6583     3.9439     0.7142
+ distance, km/arcsec:   343144041.66042966        1663.6092598819687     
+ 1= continue
+ Elevation planetocentrique du point du plan du ciel:
+ (planete supposee spherique)
+   30.372306781304367     
+ Position dans le plan des anneaux:
+  -1483.3158441687683       -173.53148954067154     
+ Position dans le plan des anneaux, equateur 1950.?
+  -448.46437919030188       -1424.5065012213065     
+ Rayon et longitude (degre) dans le plan des anneaux
+   1493.4319775015904        252.52490997610181     
+ Vitesses dans le plan equatorial (module et radiale)
+   14.080725744472993        13.172861782534255     
+ Temps lumiere a la planete et distance:
+  0.31794592160860613        343144041.66042966     
+ 1= recommencer
+ Code observation, correction sur l'heure et ecriture?
+ -
+ code, correction Dt (sec) et iprint
+         540   0.0000000000000000     
+ Masse du corps (g):   9.42871022872924873E+023
+ Heure T.U. ?
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 24 29.6487   17 22  9.8154
+pole Terre: 23 59 43.6557   89 56 26.9629
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 24 30.6514   17 22 10.8181
+pole Terre: 23 59 43.6557   89 56 26.9629
+coordonnees  de l'etoile:                 17 18 29.00800000 -27 26 38.89000000
+coordonnees geocentriques  de la planete: 17 18 29.00370152 -27 26 38.59245724
+coordonnees topocentriques de la planete: 17 18 28.99953830 -27 26 38.92995120
+ Position geocentrique:     95.193359074590262       -494.99489500568598     
+ Correction de parallaxe:   92.197954297632236        561.45808755364214     
+Correction relativiste sur ksi et eta:  0.0046   0.0016
+ Position dans l'ombre (ksi, eta, dist), sans et avec correc. relativiste:
+   187.39131337222250        66.463192547956169        198.82872099129239     
+   187.39586678394284        66.464807533594893        198.83355231998212     
+ Vitesses geocentrique dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.6017    1.6170    3.9481
+ Vitesses dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.1719    1.6135    3.5587   -2.4331
+ -3.1719    1.6135    3.5587   -2.4332
+ Vitesses: module et perpend. a l'anneau equatorial local
+  3.5587    0.9124
+P, B, B':  11.6583     3.9439     0.7142
+ distance, km/arcsec:   343144041.66042966        1663.6092598819687     
+ 1= continue
+ Elevation planetocentrique du point du plan du ciel:
+ (planete supposee spherique)
+   31.104594399615177     
+ Position dans le plan des anneaux:
+  -1496.9726602643777       -170.09903870056061     
+ Position dans le plan des anneaux, equateur 1950.?
+  -457.18334594837643       -1435.5640761503159     
+ Rayon et longitude (degre) dans le plan des anneaux
+   1506.6057309548053        252.33491038903787     
+ Vitesses dans le plan equatorial (module et radiale)
+   14.080522424700405        13.188932081389112     
+ Temps lumiere a la planete et distance:
+  0.31794592160860613        343144041.66042966     
+ 1= recommencer
+ Code observation, correction sur l'heure et ecriture?
+ -
+ code, correction Dt (sec) et iprint
+         541   0.0000000000000000     
+ Masse du corps (g):   9.42871022872924873E+023
+ Heure T.U. ?
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 24 25.2366   17 28 25.8366
+pole Terre: 23 59 43.6557   89 56 26.9629
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 24 26.2394   17 28 26.8394
+pole Terre: 23 59 43.6557   89 56 26.9629
+coordonnees  de l'etoile:                 17 18 29.00800000 -27 26 38.89000000
+coordonnees geocentriques  de la planete: 17 18 29.00298592 -27 26 38.58818042
+coordonnees topocentriques de la planete: 17 18 28.99132318 -27 26 39.10314860
+ Position geocentrique:     111.04093510459643       -502.10984332679072     
+ Correction de parallaxe:   258.28092318906454        856.70583587524311     
+Correction relativiste sur ksi et eta:  0.0014   0.0013
+ Position dans l'ombre (ksi, eta, dist), sans et avec correc. relativiste:
+   369.32185829366097        354.59599254845239        511.99311806400783     
+   369.32321168212036        354.59729197363748        511.99499427458602     
+ Vitesses geocentrique dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.6017    1.6170    3.9481
+ Vitesses dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.1644    1.6079    3.5494   -1.1580
+ -3.1644    1.6079    3.5495   -1.1580
+ Vitesses: module et perpend. a l'anneau equatorial local
+  3.5495    0.9241
+P, B, B':  11.6583     3.9439     0.7142
+ distance, km/arcsec:   343144041.66042966        1663.6092598819687     
+ 1= continue
+ Elevation planetocentrique du point du plan du ciel:
+ (planete supposee spherique)
+   55.296094070700207     
+ Position dans le plan des anneaux:
+  -6134.2468630014500       -290.04890714545974     
+ Position dans le plan des anneaux, equateur 1950.?
+  -2244.7957662952344       -5716.1179932190353     
+ Rayon et longitude (degre) dans le plan des anneaux
+   6141.1003040806472        248.55940190810537     
+ Vitesses dans le plan equatorial (module et radiale)
+   14.022428648575415        13.422408846025974     
+ Temps lumiere a la planete et distance:
+  0.31794592160860613        343144041.66042966     
+ 1= recommencer
+ Code observation, correction sur l'heure et ecriture?
+ -
+ code, correction Dt (sec) et iprint
+         541   0.0000000000000000     
+ Masse du corps (g):   9.42871022872924873E+023
+ Heure T.U. ?
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 24 34.8629   17 28 35.4629
+pole Terre: 23 59 43.6557   89 56 26.9629
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 24 35.8657   17 28 36.4657
+pole Terre: 23 59 43.6557   89 56 26.9629
+coordonnees  de l'etoile:                 17 18 29.00800000 -27 26 38.89000000
+coordonnees geocentriques  de la planete: 17 18 29.00454724 -27 26 38.59751166
+coordonnees topocentriques de la planete: 17 18 28.99269492 -27 26 39.11242662
+ Position geocentrique:     76.464282865752466       -486.58631469900138     
+ Correction de parallaxe:   262.47928245069249        856.61730638184576     
+Correction relativiste sur ksi et eta:  0.0013   0.0014
+ Position dans l'ombre (ksi, eta, dist), sans et avec correc. relativiste:
+   338.94356531644496        370.03099168284439        501.80242653380270     
+   338.94485834341339        370.03240330442497        501.80434084679376     
+ Vitesses geocentrique dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.6018    1.6170    3.9481
+ Vitesses dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.1644    1.6077    3.5494   -0.9402
+ -3.1645    1.6077    3.5494   -0.9402
+ Vitesses: module et perpend. a l'anneau equatorial local
+  3.5494    0.9254
+P, B, B':  11.6583     3.9439     0.7142
+ distance, km/arcsec:   343144041.66042966        1663.6092598819687     
+ 1= continue
+ Elevation planetocentrique du point du plan du ciel:
+ (planete supposee spherique)
+   58.942455810615030     
+ Position dans le plan des anneaux:
+  -6264.7789562766939       -257.17820893677560     
+ Position dans le plan des anneaux, equateur 1950.?
+  -2328.1895418458816       -5821.7806090060367     
+ Rayon et longitude (degre) dans le plan des anneaux
+   6270.0555023188781        248.20302533584507     
+ Vitesses dans le plan equatorial (module et radiale)
+   14.020343499239528        13.445178481380935     
+ Temps lumiere a la planete et distance:
+  0.31794592160860613        343144041.66042966     
+ 1= recommencer
+ Code observation, correction sur l'heure et ecriture?
+ -
+ code, correction Dt (sec) et iprint
+         542   0.0000000000000000     
+ Masse du corps (g):   9.42871022872924873E+023
+ Heure T.U. ?
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 23 11.9365   17 02 48.1765
+pole Terre: 23 59 43.6557   89 56 26.9629
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 23 12.9392   17 02 49.1792
+pole Terre: 23 59 43.6557   89 56 26.9629
+coordonnees  de l'etoile:                 17 18 29.00800000 -27 26 38.89000000
+coordonnees geocentriques  de la planete: 17 18 28.99109781 -27 26 38.51712732
+coordonnees topocentriques de la planete: 17 18 29.00906648 -27 26 38.68160035
+ Position geocentrique:     374.31287357892143       -620.31443799150293     
+ Correction de parallaxe:  -397.93089958331802        273.61885056735537     
+Correction relativiste sur ksi et eta: -0.0002  -0.0028
+ Position dans l'ombre (ksi, eta, dist), sans et avec correc. relativiste:
+  -23.618026004396597       -346.69558742414756        347.49912444741369     
+  -23.618213884967311       -346.69834537541823        347.50188879079326     
+ Vitesses geocentrique dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.6014    1.6170    3.9477
+ Vitesses dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.1808    1.6299    3.5741   -1.3944
+ -3.1808    1.6299    3.5741   -1.3944
+ Vitesses: module et perpend. a l'anneau equatorial local
+  3.5741   -0.9558
+P, B, B':  11.6583     3.9439     0.7142
+ distance, km/arcsec:   343144041.66042966        1663.6092598819687     
+ 1= continue
+ Elevation planetocentrique du point du plan du ciel:
+ (planete supposee spherique)
+  -81.299722355457263     
+ Position dans le plan des anneaux:
+   5006.0935191160288       -46.928045651315031     
+ Position dans le plan des anneaux, equateur 1950.?
+   2090.7680330461435        4548.8310141833717     
+ Rayon et longitude (degre) dans le plan des anneaux
+   5006.3134703696051        65.315185404129480     
+ Vitesses dans le plan equatorial (module et radiale)
+   14.285163258388980       -13.894228133490287     
+ Temps lumiere a la planete et distance:
+  0.31794592160860613        343144041.66042966     
+ 1= recommencer
+ Code observation, correction sur l'heure et ecriture?
+ -
+ code, correction Dt (sec) et iprint
+         542   0.0000000000000000     
+ Masse du corps (g):   9.42871022872924873E+023
+ Heure T.U. ?
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 23 38.0077   17 03 14.2477
+pole Terre: 23 59 43.6557   89 56 26.9629
+ Heure siderale a Greenwich a 00h TU et a l'heure courante, heure siderale locale
+21 41  4.7859   20 23 39.0104   17 03 15.2504
+pole Terre: 23 59 43.6557   89 56 26.9629
+coordonnees  de l'etoile:                 17 18 29.00800000 -27 26 38.89000000
+coordonnees geocentriques  de la planete: 17 18 28.99532600 -27 26 38.54239921
+coordonnees topocentriques de la planete: 17 18 29.01280090 -27 26 38.70707109
+ Position geocentrique:     280.67607006570324       -578.27188720303820     
+ Correction de parallaxe:  -386.99599654085966        273.94966417254409     
+Correction relativiste sur ksi et eta: -0.0010  -0.0028
+ Position dans l'ombre (ksi, eta, dist), sans et avec correc. relativiste:
+  -106.31992647515642       -304.32222303049411        322.35995749457544     
+  -106.32090930467471       -304.32503620836007        322.36293741463601     
+ Vitesses geocentrique dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.6015    1.6170    3.9478
+ Vitesses dans le plan du ciel (km/sec):
+ en ksi, eta, module, radiale, ss et avec corr. relat.
+ -3.1809    1.6296    3.5740   -0.4698
+ -3.1809    1.6296    3.5740   -0.4698
+ Vitesses: module et perpend. a l'anneau equatorial local
+  3.5740   -0.9510
+P, B, B':  11.6583     3.9439     0.7142
+ distance, km/arcsec:   343144041.66042966        1663.6092598819687     
+ 1= continue
+ Elevation planetocentrique du point du plan du ciel:
+ (planete supposee spherique)
+  -81.443504495307977     
+ Position dans le plan des anneaux:
+   4645.7118598927791        42.631080042885017     
+ Position dans le plan des anneaux, equateur 1950.?
+   1861.6170957360907        4256.6228260203152     
+ Rayon et longitude (degre) dans le plan des anneaux
+   4645.9074564754355        66.378027223629161     
+ Vitesses dans le plan equatorial (module et radiale)
+   14.279961777074231       -13.824720087997775     
+ Temps lumiere a la planete et distance:
+  0.31794592160860613        343144041.66042966     
+ 1= recommencer

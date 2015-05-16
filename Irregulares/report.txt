@@ -1,0 +1,87 @@
+
+
+--------------
+Referee report
+
+The paper should be published to provide documentation of the important observational data being reported. My detailed comments are:
+
+1. The Introduction contains a discussion of possible origins of the satellites.
+This discussion, though interesting, is irrelevant to the paper's topic and
+can be removed.
+
+Author: Considering the note of the editor, not all the discussion over the possible origins of the satellites was removed.
+But six paragraphs over the mechanisms of capture were removed.
+The emphasis, then, is in the question of where they came from
+and in the stellar occultations that will help to answer this.
+These occultations will be better predicted using our positions
+and is the subject of a forthcoming paper.
+
+2. The figures 1-5 are informative, but not really needed. They could be
+eliminated if a reduction in the length of the paper is desired.
+
+Author: The images were removed.
+
+3. In the sample data, Table 8, and presumably the online data, the epoch
+is given in Julian date, but the time scale is not specified; I assume
+it is UTC, but it should be explicitly stated. It would also help to
+explicitly include the IAU observatory code in the data table.
+
+Author: A comment in the caption was added, informing the time scale.
+As recommended, a column with the IAU code of the observatory was added to the sample and online data.
+
+4. After the References and before the Appendix, there is "List of Objects"
+section title. This appears to be extraneous.
+
+Author: This section title seems to be an issue of the A&A macro
+and only appears in the referee version. It was solved commenting the line 1367 of the macro.
+
+
+-----------
+Editor's notes:
+
+Editor: Concerning the introduction: It is important, especially for a publication in A&A, to motivate the work by important questions that will benefit from this new knowledge.
+So, contrary to what the referee suggests, I believe that the discussion should not be scraped completely.
+However it is true that it is *much* too long and that most details appear to be completely irrelevant to this study.
+Please rewrite the introduction by keeping in mind that your message there is "irregular satellites are important objects because they inform us on the origin of the solar system.
+Precise astrometry is necessary to predict occultations by these satellites, which allows further studies."
+
+Author: As said in the reply to the referee, six paragraphs were removed for being less irrelevant to this work
+And the emphasis is that, with our positions, stellar occultations by irregular satellites will be better predict
+and these occultations, which is the subject of a forthcoming work, will help the knowledge of origin of these objects
+
+Editor: Please note that it would help if you could provide a few references of studies that were possible thanks to occultations by irregular satellites.
+
+Author: No occultation by irregular satellites is found in the literature.
+Our group is planning to observe for the first time such events. A comment in this sense is added in the Introduction and in Conclusions. 
+
+Editor: Please rewrite the conclusion as well. The conclusion should summarize what you have done in the paper and should be readable by itself. Presently, it begins with "The positions of all the objects were determined using the PRAIA package.", which cannot be understood separately from the rest of the article. You should begin by writing that you have provided precise ephemerids for the irregular satellites of the giant planets...etc. You should quantify your results a bit: what is new? How more precise are your ephemerids compared to the previous ones?
+
+Author: The first and second paraghaphs of Conclusions were switched in order to highlight our position results, in
+the scope of the Editor's recommendations. We also added a comment about the overal precision of our positions. We note that the
+paper does not provide better ephemerides, only good positions that can be used for calculating new, better ephemeris.  
+Unfortunatelly, the JPL ephemeris does not provide error bars for the irregular satellites' ephemeris.
+
+
+Editor: Since you stressed the importance of occultations in the introduction, how many more occultation predictions become possible thanks to this work?
+
+Author: No occultation by irregular satellites has been observed until now.
+We have already predicted about 30 events involving the eight major irregular satellites.
+This was possible because, using the positions presented in this work, we were able to
+evaluate and correct systematic errors in the ephemeris. this is the subject of a forthcoming paper.
+
+
+
+Editor: Finally, please increase the size of labels on all figures. They should appear of the same size as the text in the article.
+
+Author: Done
+
+-------------
+
+Minor Changes:
+
+Author: A footnote was added  to the title as requested by OHP:
+""Partially based on observations made at Observatoire de Haute Provence (OHP), F-04870 Saint-Michel l'observatoire, France""
+
+
+
+

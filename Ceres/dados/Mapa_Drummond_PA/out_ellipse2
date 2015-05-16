@@ -1,0 +1,49 @@
+ nom du fichier contenant les coordonnees des points
+ d'immersion-emersion ?
+           7 points pris en compte
+ Type de l'ajustement? (1= ellipse, 2= isopotentielle)
+ sigma associe a chaque point? (en km, ds la direction RADIALE)
+  
+ Nombre de parametres consideres:            5
+  
+ Tolerance ? (variation relative minimum de la fonction)
+ au sommet du simplex
+ rayon EQUATORIAL et variation ? (km)
+ ksi du centre du cercle et variation ? (km)
+ eta du centre du cercle et variation ? (km)
+ aplatissement et variation ?
+ angle de position et variation ? (deg)
+ ATTENTION: dans le cas d'un fit avec isopotentielle,
+ il faut affecter une barre d'erreur NULLE a l'aplatissement
+ car ce dernier est DEDUIT du rayon equatorial
+  
+ Rayon EQUATORIAL (km):   486.00000    
+ Aplatissement:  7.99999982E-02 (apparent si fit elliptique,
+ reel si fit isopotentielle)
+ Rayon polaire (km):   447.12000     Idem
+ Centre de l'ellipse (km):   138.00000      -11.000000    
+ Angle de position du pole (deg):   12.000000    
+ Residu minimum:  0.54318708    
+ [ sqrt( Som (O-C)**2/(npt*sigma**2) ]
+ Nombre de points pris en compte:           7
+ Nombre de parametres libres:           0
+ Nombre de degres de liberte:           7
+ Nbre de points, chi2           7   2.0653653     [ Som (O-C)**2/sigma**2 ]
+ chi2 par degre de liberte:  0.29505220     [ Som (O-C)**2/(nlib*sigma**2) ]
+ Nombre d'iterations:           0
+ entrer les           5  pas pour explorer les parametres 
+  
+ Niveau de confiance de 99.7% avec 3 param libres: dchi2= 14.2 ?
+ Barres d'erreur donnees a Dchi2:   1.0000000     (chi2max=   8.0000000     )
+ Parametre:           1 =   486.00000      +/-   0.0000000    
+ Parametre:           2 =   138.00000      +/-   0.0000000    
+ Parametre:           3 =  -11.000000      +/-   0.0000000    
+ Parametre:           4 =  7.99999982E-02  +/-   0.0000000    
+ Parametre:           5 =   12.000000      +/-   0.0000000    
+  
+Elevation B et P pole (deg):   0.0000  12.0000
+ Rayon equivalent apparent:   466.15482    
+ Aplatissement et rayon polaire reels
+ (cas du fit elliptique seulement)
+  7.99999833E-02   447.12000    
+ dispersion (km)=   7.2835784    

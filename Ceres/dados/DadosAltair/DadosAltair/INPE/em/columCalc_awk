@@ -1,0 +1,6 @@
+awk '{OFMT="%.011f"; print $1, ($2+($3-1)) }' poly_data_in > norm_data_in
+
+#awk '{OFMT="%.011f"; print $1, ($2+($3-1)) }' poly_data_out > norm_data_out
+#200 segundos depois do evento, coluna 2 do arquivo data_ratio_poly_out
+# somada ao polynomio 'polynome_out.data menos 1. 
+

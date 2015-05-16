@@ -1,0 +1,57 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    17.8   -87.0  39.9  15.7     6    10.3   -69.3  41.5  49.0     7  14.29  80.0  2.0   21 32 24.84679 -14 52 23.7604 06 28 45.5717 14 08 2007 2454326.7699718950 2007.617440032  21.5402352200 -14.8732667737 19.0  25.3  28.2     4 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+   214.7   -31.0  69.4  33.6     9   170.1   -26.7 265.7 118.9    18  50.00  80.0  2.0   21 31 40.48552 -14 56  3.5282 06 20 02.0534 21 08 2007 2454333.7639126554 2007.636588398  21.5279126444 -14.9343133773 18.8  84.1  42.9     3 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+   503.6  -257.8  67.2  30.9     9   485.1  -260.7  86.1  30.6    10  10.00  80.0  2.0   21 31 16.25202 -14 58  3.5679 03 11 34.9278 25 08 2007 2454337.6330431453 2007.647181500  21.5211811166 -14.9676577452 18.5   0.0   0.0     3 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+   -84.9   -16.6  71.7  56.4     8  -118.8   -59.0 101.1 106.7    10  20.00  80.0  2.0   21 44 43.65159 -13 54 55.4713 08 44 45.3774 09 07 2008 2454656.8644140898 2008.521189361  21.7454587753 -13.9154087079 18.9  68.0  71.1     8 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+   -18.5   -44.5  46.0  46.0     2    32.0    53.7  93.3 173.1     3  33.33  80.0  2.0   21 44 34.23234 -13 55 45.4692 08 32 35.4348 11 07 2008 2454658.8559656800 2008.526641932  21.7428423170 -13.9292970015 19.4  72.5  73.5    10 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+    18.0  -107.5  25.9  52.6     8    30.4  -107.4  44.5  49.2     9  11.11  80.0  2.0   21 42 51.38771 -14 04 44.8542 05 22 13.8438 30 07 2008 2454677.7237713402 2008.578299168  21.7142743634 -14.0791261681 19.4  46.9  38.6     7 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+   -87.0  -109.4  47.6  70.6     7   -37.9  -115.1  97.7  84.7    10  30.00  80.0  2.0   21 54 31.13831 -13 08  8.8237 06 46 54.3814 24 06 2009 2455006.7825738587 2009.479213070  21.9086495304 -13.1357843609 19.2   9.6  10.9     3 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+  -295.4   -86.8  32.0  26.5     5  -295.4   -86.8  32.0  26.5     5   0.00  80.0  2.0   22 29 20.82943 -10 10 41.0108 08 08 38.7845 09 06 2013 2456452.8393377839 2013.438300719  22.4891192852 -10.1780585500 19.5   0.0   0.0     3 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+  -202.6    52.5  15.4  10.5     8  -201.0    56.6  31.4  67.7    10  20.00  80.0  2.0   22 23 30.82849 -10 46 25.2251 04 38 11.6362 02 09 2013 2456537.6931902338 2013.670617906  22.3918968020 -10.7736736261 19.1  51.1 129.6     4 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+   -98.9   -20.8  29.1  37.4    36  -105.1    30.4  38.8 222.9    38   5.26  80.0  2.0   22 23 24.93907 -10 46 59.7177 03 30 13.4946 03 09 2013 2456538.6459895209 2013.673226528  22.3902608514 -10.7832549036 19.1  96.7  46.1     4 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+    16.5    32.1  24.5  18.9    15    34.3    27.1  55.3  23.5    17  11.76  80.0  2.0   22 37 18.01191 -09 28 42.4696 07 47 35.3595 03 07 2014 2456841.8247148087 2014.503284640  22.6216699754  -9.4784637663 19.2  75.1  66.2     4 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+   -32.6    19.9  26.2  29.4    14  -124.1    88.9 354.2 273.7    17  17.65  80.0  2.0   22 37 12.93309 -09 29 16.2497 04 51 21.5766 05 07 2014 2456843.7023330629 2014.508425278  22.6202591908  -9.4878471467 19.1  28.1  34.7     5 Nereida               0.0000 160/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                NEP081               01 Aug 2014          Irregular                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

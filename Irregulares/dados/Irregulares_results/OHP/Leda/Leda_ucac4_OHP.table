@@ -1,0 +1,59 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   259.5   -77.5 310.4  54.4     2   259.5   -77.5 310.4  54.4     2   0.00 120.0  2.0   01 57 30.98160 +10 40 21.4967 00 24 55.8648 10 10 1999 2451461.5173132499 1999.772805785   1.9586059995  10.6726379810 19.6  49.5  46.5    12 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+   244.0   -78.2  97.0  78.6     5   303.8   -70.7 170.3  72.7     6  16.67 120.0  2.0   01 56 54.59539 +10 37 46.7044 01 17 01.0338 11 10 1999 2451462.5534841879 1999.775642667   1.9484987186  10.6296401158 19.3  66.2  57.0    11 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+     8.0  -126.0  63.6  69.3     2     8.0  -126.0  63.6  69.3     2   0.00 120.0  2.0   01 40  8.20319 +09 21 35.2608 22 33 58.0951 09 11 1999 2451492.4402557304 1999.857468188   1.6689453315   9.3597946600 19.3  45.0  38.5     6 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+   -47.1   -81.8  89.8  83.7     8   -47.1   -81.8  89.8  83.7     8   0.00 120.0  2.0   01 39 40.29418 +09 19 21.1548 22 21 24.3626 10 11 1999 2451493.4315319750 1999.860182154   1.6611928280   9.3225430077 19.3  50.2  56.0    12 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+   -75.6   -43.1  59.3  94.7    10   -75.6   -43.1  59.3  94.7    10   0.00 120.0  2.0   01 32 56.86542 +08 46 13.7474 20 55 32.6991 29 11 1999 2451512.3719062391 1999.912038073   1.5491292832   8.7704853784 20.0  40.8  62.6    14 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+    21.1   -41.1  34.2  59.8    11    21.1   -41.1  34.2  59.8    11   0.00 120.0  2.0   01 32 43.61986 +08 45  6.3869 20 15 41.2438 30 11 1999 2451513.3442273582 1999.914700143   1.5454499617   8.7517741303 19.7  50.0  62.9    15 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+  -113.0    15.5  75.8  73.4     4  -113.0    15.5  75.8  73.4     4   0.00 120.0  2.0   01 32 30.86663 +08 44  1.5479 20 05 57.4000 01 12 1999 2451514.3374699075 1999.917419493   1.5419073960   8.7337633142 19.8  51.5  52.0    19 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+   -65.4   -22.8  44.0  54.5     5   -65.4   -22.8  44.0  54.5     5   0.00 120.0  2.0   01 32 18.65937 +08 42 59.1838 20 30 45.5260 02 12 1999 2451515.3546935879 1999.920204499   1.5385164906   8.7164399310 19.9  55.0  50.6    17 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+    92.0    -3.0  -1.0  -1.0     1    92.0    -3.0  -1.0  -1.0     1   0.00 120.0  2.0   01 31 38.79780 +08 39 33.5897 21 37 53.5201 06 12 1999 2451519.4013138898 1999.931283542   1.5274438320   8.6593304660 19.8  66.0  56.0    13 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+    -2.4   -47.8  89.0  50.3     5    -2.4   -47.8  89.0  50.3     5   0.00 120.0  2.0   01 31 31.10340 +08 38 53.3265 21 38 49.0280 07 12 1999 2451520.4019563422 1999.934023152   1.5253065000   8.6481462590 19.7  68.6  50.8    12 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+  -719.0   428.0  -1.0  -1.0     1  -719.0   428.0  -1.0  -1.0     1   0.00 120.0  2.0   06 37  5.18484 +23 27 11.0549 23 17 31.6596 08 01 2002 2452283.4705053200 2002.023190979   6.6181068990  23.4530708030 17.4  51.0  50.0   154 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+  -104.0   -95.0  -1.0  -1.0     1  -104.0   -95.0  -1.0  -1.0     1   0.00 120.0  2.0   09 16 32.05623 +16 55 23.8709 03 45 19.3899 15 01 2003 2452654.6564744199 2003.039442777   9.2755711740  16.9232974730 20.1  57.0  52.0    17 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+   -16.0    29.0  -1.0  -1.0     1   -16.0    29.0  -1.0  -1.0     1   0.00 120.0  2.0   09 16  7.90307 +16 58  0.8636 00 51 26.0698 16 01 2003 2452655.5357184000 2003.041850016   9.2688619650  16.9669065610 19.8  56.0  56.0    12 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+   293.0  -229.0  -1.0  -1.0     1   293.0  -229.0  -1.0  -1.0     1   0.00 120.0  2.0   13 08  9.56778 -04 59 43.0066 22 59 41.5404 10 03 2005 2453440.4581196802 2005.190850430  13.1359910490  -4.9952796080 19.8  78.0  68.0    12 Leda                  0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               29 Oct 2014                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

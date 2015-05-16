@@ -1,0 +1,48 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    50.5  -110.6   8.5  21.4    16    42.3  -103.9  35.7  33.1    23  30.43  80.0  2.0   13 27 30.44150 -06 30 16.6247 22 46 44.9375 10 07 2012 2456119.4491312206 2012.525528080  13.4584559720  -6.5046179829 10.9  57.1  58.4    14 Iapetus               0.0000 IAG/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359L              01 Aug 2014          Irregular                               
+   -45.5    29.8  10.0  19.0    12   -40.9    41.4  28.1  34.8    20  40.00  80.0  2.0   13 28 46.84794 -06 38 56.3666 21 47 22.6771 20 07 2012 2456129.4079013551 2012.552793706  13.4796799835  -6.6489907313 10.8  56.4  50.8    11 Iapetus               0.0000 IAG/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359L              01 Aug 2014          Irregular                               
+   -57.1   170.3  43.2  49.1    12   -23.9   134.4  94.5 113.0    15  20.00  80.0  2.0   13 28 57.46333 -06 40  4.5200 21 52 13.5063 21 07 2012 2456130.4112674342 2012.555540773  13.4826287039  -6.6679222358 11.1  46.2  49.5     5 Iapetus               0.0000 IAG/LNA              varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359L              01 Aug 2014          Irregular                               
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

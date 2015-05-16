@@ -1,0 +1,58 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -275.0  -239.3  27.4 106.4     3  -287.0  -169.5  32.8 164.5     4  25.00 120.0  2.0   19 08 24.65665 -23 09 20.8985 02 21 44.0001 21 06 1996 2450255.5984259266 1996.471179810  19.1401824017 -23.1558051407 17.6  56.0  40.3    52 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+    69.5  -106.5  35.0  16.6     4    69.5  -106.5  35.0  16.6     4   0.00 120.0  2.0   19 07 56.38254 -23 10 31.0761 02 05 30.7499 22 06 1996 2450256.5871614572 1996.473886821  19.1323284825 -23.1752989142 17.9  60.8  62.3    18 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   -24.0  -129.0  35.4   9.9     2   -24.0  -129.0  35.4   9.9     2   0.00 120.0  2.0   19 06 58.08928 -23 12 53.1021 02 07 35.5001 24 06 1996 2450258.5886053247 1996.479366475  19.1161359120 -23.2147505870 18.3  49.0  53.5    43 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   -86.0  -140.0  -1.0  -1.0     1   -86.0  -140.0  -1.0  -1.0     1   0.00 120.0  2.0   19 05 57.05425 -23 15 17.8993 03 23 16.9999 26 06 1996 2450260.6411689799 1996.484986088  19.0991817350 -23.2549720380 18.3  41.0  54.0    42 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   189.6   -99.3  56.1  22.2     7   211.8  -115.6  81.4  50.6     8  12.50 120.0  2.0   18 50 49.55498 -23 44 46.0981 03 17 37.0415 26 07 1996 2450290.6372342771 1996.567110839  18.8470986046 -23.7461383700 17.1  47.7  39.9    67 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   216.0  -115.5  20.5  37.4     4   216.0  -115.5  20.5  37.4     4   0.00 120.0  2.0   18 50 23.57597 -23 45 26.9451 02 32 22.9201 27 07 1996 2450291.6058208351 1996.569762685  18.8398822140 -23.7574847402 18.3  52.8  43.3    46 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   160.0  -120.5  17.2  28.7     4   160.0  -120.5  17.2  28.7     4   0.00 120.0  2.0   18 42  5.77075 -23 56  7.9395 02 02 39.3451 22 08 1996 2450317.5851776050 1996.640890287  18.7016029850 -23.9355387573 18.7  51.8  46.5    77 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   162.0  -141.0  -1.0  -1.0     1   162.0  -141.0  -1.0  -1.0     1   0.00 120.0  2.0   18 45 26.60767 -23 47 12.4783 23 03 28.9996 30 09 1996 2450357.4607523102 1996.750063661  18.7573910190 -23.7867995280 19.0  53.0  51.0    46 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   362.0   210.5  65.1  23.3     2   362.0   210.5  65.1  23.3     2   0.00 120.0  2.0   21 08 28.65575 -16 27  8.3769 04 54 26.5000 13 08 1997 2450673.7044733800 1997.615891782  21.1412932630 -16.4523269155 17.9   0.0   0.0     3 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   500.8    60.5  60.8  19.3     4   500.8    60.5  60.8  19.3     4   0.00 120.0  2.0   21 08  0.46737 -16 29 23.8305 03 53 49.5000 14 08 1997 2450674.6623784723 1997.618514383  21.1334631588 -16.4899529212 17.2  91.3  56.3     7 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   499.0    49.5  92.3  18.7     4   499.0    49.5  92.3  18.7     4   0.00 120.0  2.0   21 07 31.04064 -16 31 44.7440 03 58 15.7500 15 08 1997 2450675.6654600697 1997.621260671  21.1252890673 -16.5290955678 17.4  69.3  38.5     6 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   242.0  -128.8  88.5  40.0     5   242.0  -128.8  88.5  40.0     5   0.00 120.0  2.0   18 56 14.88430 -23 54 30.2358 00 44 58.8018 20 09 2008 2454729.5312361321 2008.720140276  18.9374678604 -23.9083988464 18.7  55.4  50.2    54 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+   268.0   -45.6  43.2  17.9     5   268.0   -45.6  43.2  17.9     5   0.00 120.0  2.0   18 57 15.96318 -23 53 13.8300 00 13 39.5921 24 09 2008 2454733.5094860201 2008.731032131  18.9544342156 -23.8871750036 19.0  62.4  44.4    60 Sinope                0.0000 160/LNA              Varios               Altair               PRAIA V.0.1.0        1rd degree           UCAC4                JUP300               23 Sep 2013                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

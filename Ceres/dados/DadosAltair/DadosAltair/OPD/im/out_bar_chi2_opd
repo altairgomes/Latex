@@ -1,0 +1,173 @@
+ Mode:
+ -1= t0 centre sur l'immersion
+ +1= t0 centre sur l'emersion
+  0= t0 centre sur le millieu de la bande
+ Faut-il prendre en compte la reponse instrumentale ?
+ Nom du fichier contenant la reponse instrumentale ?
+           2  points lus dans la reponse instrum.
+ Faut-il comparer a des donnees?
+ Nom du fichier contenant les observations?
+ Sigma des observations?
+          22  points lus dans observations
+ Longueur d'onde? Bande passante? (microns)
+ Distance a l'anneau ? Rayon de l'etoile?(km)
+ Vitesse normale de l'etoile? (dans plan du ciel, km/s)
+ Largeur de la bande ?(km), transmission?
+ Duree generee et pas en temps ? (sec)
+ Flux hors occultation, flux stellaire zero?
+ Heure de reference? (sec TU)
+ Nombre d'heures a explorer autour 
+ de la reference et pas (sec)?
+ t0, chi2, nfit:   81449.047       75.956337              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.102       69.711807              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.148       64.126381              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.203       58.996780              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.250       54.430996              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.297       50.158279              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.352       46.327110              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.398       42.873985              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.453       39.814243              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.500       37.156158              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.547       34.886208              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.602       33.010437              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.648       31.542271              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.703       30.469669              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.750       29.794901              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.797       29.488089              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.852       29.427439              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.898       29.474640              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81449.953       29.471306              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.000       29.483334              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.047       29.486839              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.102       29.502584              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.148       29.521862              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.203       29.530676              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.250       29.537306              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.297       29.532141              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.352       29.534513              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.398       29.532408              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.453       29.531046              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.500       29.530930              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.547       29.530502              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.602       29.532454              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.648       29.535738              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.703       29.538576              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.750       29.550184              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.797       29.609659              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.852       29.938032              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.898       30.985039              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81450.953       32.195663              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81451.000       33.938652              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81451.047       36.031467              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81451.102       38.679535              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81451.148       41.756332              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81451.203       45.138836              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81451.250       48.901062              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81451.297       52.939575              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81451.352       57.469257              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81451.398       62.332329              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81451.453       67.613991              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+ t0, chi2, nfit:   81451.500       73.284676              22
+ temps milieu et duree de la bande:   81575.297       250.00000    
+          22  points fittes entre:   81428.867       81471.680    
+
+t0, chi2 et nfit au minimum: 81449.850   29.427    22
+Dchi2, intervalle ou chi2 < chi2_min + dchi2:  1.00  81449.750  81450.852

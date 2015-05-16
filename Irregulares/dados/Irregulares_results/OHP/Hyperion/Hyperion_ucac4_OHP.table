@@ -1,0 +1,53 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   -24.9   -13.3  88.4  84.4     9   -24.9   -13.3  88.4  84.4     9   0.00 120.0  2.0   01 44  1.45840 +07 56  0.8347 22 34 29.5011 16 12 1998 2451164.4406192256 1998.959454125   1.7337384453   7.9335651854 14.1  63.6  53.6     5 Hyperion              0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               10 Dec 2013                                                  
+    10.3    67.7  35.0  28.9     3    10.3    67.7  35.0  28.9     3   0.00 120.0  2.0   03 56 21.09483 +18 10 28.2412 03 03 35.4502 26 08 2000 2451782.6274936367 2000.651957545   3.9391930083  18.1745114350 14.6  59.3  62.0    10 Hyperion              0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               10 Dec 2013                                                  
+   -89.0    11.7  42.8  11.0     3   -89.0    11.7  42.8  11.0     3   0.00 120.0  2.0   04 45 20.13296 +20 26 46.2711 22 07 33.9899 20 11 2001 2452234.4219211801 2001.888903275   4.7555924893  20.4461864177 13.9  46.3  53.7     8 Hyperion              0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               10 Dec 2013                                                  
+   -19.0    37.4  17.7  34.5    12   -30.3    38.9  33.1  39.1    14  14.29 120.0  2.0   04 34 58.81684 +20 08 43.0526 19 33 07.3275 19 12 2001 2452263.3146681427 2001.968007305   4.5830046784  20.1452923850 14.1  53.8  49.0     6 Hyperion              0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               10 Dec 2013                                                  
+   -36.6    53.4  78.8  34.6     8   -17.1    67.0  94.1  52.1     9  11.11 120.0  2.0   04 34 40.91937 +20 07 39.8604 19 12 48.4137 20 12 2001 2452264.3005603440 2001.970706530   4.5780331590  20.1277389929 14.3  66.9  55.6     6 Hyperion              0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               10 Dec 2013                                                  
+    13.0    -4.5  96.2  30.4     2    13.0    -4.5  96.2  30.4     2   0.00 120.0  2.0   04 29 12.11696 +20 00 41.5351 18 17 43.9201 09 01 2002 2452284.2623138903 2002.025358833   4.4866991555  20.0115375380 15.2  48.5  37.0     7 Hyperion              0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               10 Dec 2013                                                  
+    51.2    -9.8  21.6  41.7     6    51.2    -9.8  21.6  41.7     6   0.00 120.0  2.0   04 26 20.44256 +19 59 53.6954 20 06 09.4550 08 02 2002 2452314.3376094336 2002.107700505   4.4390118210  19.9982487163 14.3  29.7  55.2     4 Hyperion              0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               10 Dec 2013                                                  
+   -17.0   -35.0  23.5  15.6     3   -17.0   -35.0  23.5  15.6     3   0.00 120.0  2.0   06 55 28.25990 +22 06 35.7887 02 52 21.5769 05 10 2003 2452917.6196941766 2003.759396835   6.9245166390  22.1099413067 14.2  50.7  41.0    15 Hyperion              0.6900 OHP                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                SAT359               10 Dec 2013                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

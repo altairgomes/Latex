@@ -1,0 +1,1 @@
+sat="Albiorix"; while read a b c d e f g h i j k l m n o p q r s t u v w x y z ab; do aa=${z%.*};cat ucac4_"$sat"_eso_global_filtered | grep $aa >> ucac4_"$sat"_eso_global_filtered_final;done < "$sat"_ucac4_ESO.table_filtered

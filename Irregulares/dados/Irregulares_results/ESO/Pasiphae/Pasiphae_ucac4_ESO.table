@@ -1,0 +1,50 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    -9.3    17.1  16.5  15.2     9    -9.3    17.1  16.5  15.2     9   0.00 120.0  2.0   16 48 54.81186 -21 27 30.2017 00 13 33.8798 10 09 2007 2454353.5094199046 2007.690648651  16.8152255177 -21.4583893502 18.0  30.2  31.4  2322 Pasiphae              0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                jup300+de421         22 Nov 2014                                                  
+    30.0    12.7  24.8  29.3     3    30.0    12.7  24.8  29.3     3   0.00 120.0  2.0   19 25 35.93085 -21 35 26.8251 05 04 08.5109 03 06 2008 2454620.7112096166 2008.422207281  19.4266474597 -21.5907847443 16.9  24.0  23.3  1089 Pasiphae              0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                jup300+de421         22 Nov 2014                                                  
+   166.5  -264.6  18.1  18.0     8   166.5  -264.6  18.1  18.0     8   0.00 120.0  2.0   21 56  2.41185 -13 20 21.0113 10 06 54.9763 20 05 2009 2454971.9214696325 2009.383768568  21.9340032927 -13.3391698068 17.7  32.4  28.9   160 Pasiphae              0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                jup300+de421         22 Nov 2014                                                  
+   119.7   -98.7  15.3  12.4    26   113.2   -95.0  22.0  15.5    30  13.33 120.0  2.0   21 56 31.83994 -13 17 23.0774 08 23 59.5465 22 05 2009 2454973.8499947507 2009.389048582  21.9421777615 -13.2897437312 17.7  26.5  23.9   374 Pasiphae              0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                jup300+de421         22 Nov 2014                                                  
+    52.6   -61.6  72.9  26.4    20    57.8   -58.9  75.3  36.3    23  13.04 120.0  2.0   21 56 59.87373 -13 14 30.9255 08 48 10.7135 24 05 2009 2454975.8667906653 2009.394570268  21.9499649246 -13.2419237525 17.9  29.2  29.1   237 Pasiphae              0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                jup300+de421         22 Nov 2014                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

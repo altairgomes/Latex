@@ -1,0 +1,54 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    56.0   -84.5   8.5  17.7     2    56.0   -84.5   8.5  17.7     2   0.00 120.0  2.0   23 12  2.53310 -06 06 14.2226 03 58 18.5304 08 09 2007 2454351.6654922497 2007.685600252  23.2007036380  -6.1039507185 20.3  29.5  32.0   477 Sycorax               0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                ura095+de421         22 Nov 2014                                                  
+   -32.0    14.5  33.9   9.2     2   -32.0    14.5  33.9   9.2     2   0.00 120.0  2.0   23 11 51.83971 -06 07 18.7752 07 52 27.8888 09 09 2007 2454352.8281005649 2007.688783300  23.1977332535  -6.1218819985 20.6  33.0  32.5   357 Sycorax               0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                ura095+de421         22 Nov 2014                                                  
+    63.6   -83.6  12.3  57.5     5   209.6   -60.3 246.1 269.8    10  50.00 120.0  2.0   23 07 33.30055 -06 32 45.0203 04 43 41.3854 09 10 2007 2454382.6970067760 2007.770559909  23.1259168186  -6.5458389596 20.2  31.2  36.4   313 Sycorax               0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                ura095+de421         22 Nov 2014                                                  
+    30.5   -68.8  22.8  22.5     4    30.5   -68.8  22.8  22.5     4   0.00 120.0  2.0   23 07 25.99523 -06 33 26.5950 03 56 32.4934 10 10 2007 2454383.6642649700 2007.773208117  23.1238875625  -6.5573874937 20.5  24.8  27.0   446 Sycorax               0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                ura095+de421         22 Nov 2014                                                  
+  -193.0   155.7  93.5  32.3     3   -98.7   -82.1 117.0 262.4     7  57.14 120.0  2.0   23 07 17.71552 -06 34 13.1505 06 32 56.6946 11 10 2007 2454384.7728784103 2007.776243335  23.1215876457  -6.5703195827 20.4  31.0  28.7   252 Sycorax               0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                ura095+de421         22 Nov 2014                                                  
+   -87.4   -87.2 107.1  76.5     5  -168.3    11.4 202.7 292.1     7  28.57 120.0  2.0   23 07 11.03298 -06 34 51.2845 04 29 14.3139 12 10 2007 2454385.6869712258 2007.778745985  23.1197313820  -6.5809123518 20.4  29.2  28.6   300 Sycorax               0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                ura095+de421         22 Nov 2014                                                  
+    77.1  -101.2  18.7  24.3    10    77.1  -101.2  18.7  24.3    10   0.00 120.0  2.0   23 07  4.00003 -06 35 31.0140 03 54 45.0363 13 10 2007 2454386.6630212530 2007.781418264  23.1177777850  -6.5919483425 20.5  31.7  32.2   551 Sycorax               0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                ura095+de421         22 Nov 2014                                                  
+  -278.0   -86.0 123.0  60.8     2  -278.0   -86.0 123.0  60.8     2   0.00 120.0  2.0   23 33 20.83675 -03 37 42.1849 10 39 45.6097 04 06 2008 2454621.9442778900 2008.425583238  23.5557879860  -3.6283846880 19.4  18.5  12.5   227 Sycorax               0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                ura095+de421         22 Nov 2014                                                  
+  -307.5   -33.5  41.7  47.4     2  -307.5   -33.5  41.7  47.4     2   0.00 120.0  2.0   23 33 29.09621 -03 36 53.4051 10 22 18.0231 06 06 2008 2454623.9321530452 2008.431025744  23.5580822805  -3.6148347505 20.3  14.0  14.5   453 Sycorax               0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                ura095+de421         22 Nov 2014                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

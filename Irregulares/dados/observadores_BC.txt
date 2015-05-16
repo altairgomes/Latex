@@ -1,0 +1,98 @@
+Cassio+Alexandre IAG1996ago25tr/gr005.fits
+Marcelo IAG1998ago25/1610-771.0001.fits
+Alexandre Andrei IAG2001abr29/0823-500.0001.fits
+Martins, R.V. IAG2001ago25/ner0002.fits
+C.H.Veiga, R.V.Martins e Pierre Bouget IAG2002jul15/net0021.fits
+Carlos H. Veiga IAG2002jul16/net0031.fits
+Carlos H. Veiga IAG2002jul17/net0022.fits
+Dario Nepomuceno IAG2003ago19/net0022.fits
+Dario Nepomuceno IAG2003jul23/net0021.fits
+Dario Nepomuceno IAG2003jul24/net0022.fits
+Dario Nepomuceno IAG2003jul25/net0021.fits
+Dario Nepomuceno IAG2003jul26/net0042.fits
+D.N. Silva Neto IAG2003out18/f80010.fits
+A.H.Andrei,M.Assafin IAG2003set29/u30035.fits
+Dario Nepomuceno IAG2004ago04/n10005.fits
+Sergio Boscardin IAG2004ago19/net1908040011.fits
+Sergio Boscardin IAG2004ago20/net2008040011.fits
+Sergio Boscardin IAG2004ago21/net2108040013.fits
+Sergio Boscardin IAG2004ago22/net2208040021.fits
+Sergio Boscardin IAG2004ago23/net2308040013.fits
+Marcelo Assafin IAG2004out07/f20001.fits
+Marcelo Assafin IAG2004out08/f30001.fits
+Marcelo Assafin IAG2004out09/f40001.fits
+Sergio Boscardin IAG2004set22/net2209040027.fits
+Sergio Boscardin IAG2004set23/net2309040031.fits
+Alexandre Andrei IAG2005abr01/b10001.fits
+Alexandre Andrei IAG2005abr02/c20001.fits
+Alexandre Andrei IAG2005abr03/c30001.fits
+Alexandre Andrei IAG2005abr04/b40001.fits
+M. Assafin e J. Camargo IAG2006ago29/1050/estrela0022.fits
+M. Assafin e J. Camargo IAG2006ago30/1050/elara0001.fits
+M. Assafin e J. Camargo IAG2006ago31/1050/elara0001.fits
+da Silva neto, Camargo, deMelo IAG2006fev27/elara0001.fits
+da Silva neto, Camargo, deMelo IAG2006fev28/elara0001.fits
+Dario N. Silva Neto IAG2006jul01/him0001.fits
+Dario N. Silva Neto IAG2006jul03/ela0002.fits
+Marcelo Assafin IAG2006jun07/ela0001.fits
+da Silva neto, Camargo, deMelo IAG2006mar01/e50004.fits
+da Silva neto, Camargo, deMelo IAG2006mar02/elara0002.fits
+Assafin, Valdir IAG2006mar08/el0002.fits
+Assafin, Valdir IAG2006mar09/el0001.fits
+Assafin, Valdir IAG2006mar11/ia0001.fits
+Valdir, Alexandre IAG2006mar13/el0001.fits
+A. Andrei IAG2006mar14/ph0001.fits
+Alexandre H. Andrei IAG2006out25/ner0001.fits
+M. Assafin e J. Camargo IAG2006set03/2100/nereida0002.fits
+D.N. da Silva Neto IAG2006set06/2100/estrela0004.fits
+D.N. da Silva Neto IAG2006set07/iota0013.fits
+D.N. da Silva Neto IAG2006set10/2100/Raul0028.fits
+D.N. da Silva Neto IAG2006set11/iota0001.fits
+M. Assafin, J. Camargo IAG2006set20/estrelajulho0045.fits
+M. Assafin, J. Camargo IAG2006set21/estrelafevereiro0004.fits
+Felipe B. Ribas, R Vieira Martins IAG2007abr13/plutao0011.fits
+Felipe B. Ribas, R Vieira Martins IAG2007abr14/Plutao0059.fits
+Felipe B. Ribas, R Vieira Martins IAG2007abr15/Plutao0023.fits
+Felipe B. Ribas, R Vieira Martins IAG2007abr16/Plutao0007.fits
+Felipe B. Ribas, R Vieira Martins IAG2007abr17/Elara0001.fits
+Dario da Silva Neto IAG2007abr19/ocu0051.fits
+Roberto Viera Martins IAG2007fev15/himalia0014.fits
+Roberto Viera Martins IAG2007fev16/pasteroide0080.fits
+Roberto Viera Martins IAG2007fev17/himalia0001.fits
+Roberto V. Martins IAG2007fev28/2100/estrela_marco_0003.fits
+Felipe B. Ribas, Julio Camargo IAG2007jun16/plutao0005.fits
+Roberto,Frederic,Felipe,Assafin IAG2007mai09/hermione0054.fits
+R.V.Martins, M.Assafin IAG2007mai10/pluto0029.fits
+R. Martins, J. Camargo IAG2007mar15/2100/J160902.6-1859440002.fits
+D. da Silva Neto IAG2007mar20/plu0006.fits
+Marcelo Assafin IAG2007set16/hermione0076.fits
+Felipe Ribas, Julio Camargo IAG2008abr17/plutao0026.fits
+Felipe B Ribas, Julio Camargo IAG2008ago11/1050/carme0002.fits
+M.Assafin,L.A.Boldrin IAG2008mai23/himalia0001.fits
+M.Assafin,L.A.Boldrin IAG2008mai24/2100/phoebe0001.fits
+M.Assafin,L.A.Boldrin IAG2008mai25/2100/elara_1x1_0001.fits
+M.Assafin,L.A.Boldrin IAG2008mai26/2100/pluto0024.fits
+M.Assafin,L.A.Boldrin IAG2008mai27/2100/phoebe0001.fits
+Roberto Martins IAG2008set19/rapido/elara0012.fits
+Julio Camargo IAG2009ago22/2100/app0017.fits
+J. Camargo, Rita & Helton IAG2009jul17/elara0001.fits
+J. Camargo, A. Pinho IAG2009jul21/nereida0001.fits
+Dario daSilva Neto IAG2010jul04/Himalia_07.41.25_0001.fits
+M. Assafin IAG2010jul05/Elara_07.49.04_0001.fits
+M. Assafin IAG2010jul06/Elara_08.02.47_0001.fits
+Alex-Julio IAG2010mai04/1024/PhoebeA_22.46.01_0001.fits
+Alex-Julio IAG2010mai05/Phoebe_22.01.38_0001.fits
+Alex IAG2010mai06/Phoebe_23.02.56_0001.fits
+Alex IAG2010mai07/Phoebe_00.00.09_0001.fits
+Julio Camargo IAG2010out05/Nereida_04.09.42_0002.fits
+G. Rossi - J. Camargo IAG2011ago18/1024/nereida_0001.fits
+COPD IAG2011mai23/Phoebe_18.51.19_0002.fits
+Gustavo Rossi. Nilton Carlos IAG2011set02/himalia_0001.fits
+Gustavo Rossi. Jarbas Sampaio IAG2011set03/Himalia_0001.fits
+Gustavo Rossi.  Nilton Carlos IAG2011set04/Himalia_0001.fits
+Julio / Thierry IAG2011set26/1024/Nereida_0002.fits
+Alex IAG2012mai02/PHOEBE_23.07.31_0001.fits
+Altair Ramos. Marcelo Assafin IAG2012mai23/Phoebe_0001.fits
+Marcelo Assafin. Altair Ramos. Decio Mourao IAG2012mai24/phoebe_0001.fits
+Altair. Marcelo. Decio IAG2012mai26/PhoebeC_0001.fits
+Altair Ramos. Marcelo Assafin. Decio Mourao IAG2012mai27/PhoebeC_0001.fits

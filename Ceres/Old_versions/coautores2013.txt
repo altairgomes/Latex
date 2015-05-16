@@ -1,0 +1,89 @@
+\author[A. V. Raveendran and A. N. Other]
+{B. L. Giacchini$^{1,2,3}$\thanks{E-mail:
+breno@cbpf.br}, 
+T. Blank$^{3}$, 
+J. Brooks$^{3}$, 
+J. Broughton$^{4}$, 
+R. F. Dantowitz$^{5}$,
+D. W. Dunham$^{3}$, 
+J. B. Dunham$^{3}$, 
+C. K. Ellington$^{3}$, 
+T. George$^{3}$, 
+P. D. Maley$^{3,6}$, 
+B. Timerson$^{3}$, 
+N. S. Weber$^{5}$\\
+$^{1}$Centro Brasileiro de Pesquisas F\'isicas, Rua Dr. Xavier Sigaud 150, Rio de Janeiro  22290-180, Brazil\\
+$^{2}$Se\c{c}\~ao de Oculta\c{c}\~oes/REA-Brasil, Av. Prof. Magalh\~aes Penido 403/302, Belo Horizonte 31270-700, Brazil\\
+$^{3}$International Occultation Timing Association, P.O. Box 131034, Houston, TX 77219-1034, USA\\
+$^{4}$RASNZ Occultation Section, 18 Branch Cr. Reedy Creek, QLD 4227, Australia\\
+$^{5}$Clay Center Observatory at Dexter Southfield, 20 Newton Street, Brookline, MA 02445, USA\\
+$^{6}$NASA Johnson Space Center Astronomical Society, 4535 Cedar Ridge Trail, Houston, TX 77059 USA}
+
+
+
+================================
+================================
+LISTA DE CO-AUTORES, CERES 2013:
+================================
+================================
+
+Endereço oficial da IOTA:
+International Occultation Timing Association
+P.O. Box 131034
+Houston, Texas 77219-1034
+
+----------------------
+COORDENAÇÃO E REDUÇÃO:
+----------------------
+
+John Broughton
+RASNZ Occultation Section, 18 Branch Cr. Reedy Creek, QLD 4227, Australia
+jbroughton2@dodo.com.au
+
+Brad Timerson
+IOTA
+btimerson@rochester.rr.com
+
+Tony George
+IOTA
+triastro@oregontrail.net
+
+
+-------------
+OBSERVADORES:
+-------------
+
+Ronald F. Dantowitz
+Clay Center Observatory at Dexter Southfield
+20 Newton Street, Brookline, MA 02445
+RonDantowitz@gmail.com
+
+Nicholas S. Weber
+Clay Center Observatory at Dexter Southfield
+20 Newton Street, Brookline, MA 02445
+Kb1svb@hotmail.com
+
+David W. Dunham
+IOTA
+dunham@starpower.net
+
+Joan Bixby Dunham
+IOTA
+dunhamjoan@verizon.net
+
+Ted Blank
+IOTA
+tedblank@gmail.com
+
+Paul D. Maley
+NASA Johnson Space Center Astronomical Society, 4535 Cedar Ridge Trail, Houston Texas 77059 USA
+IOTA
+pdmaley@yahoo.com
+
+Chad K. Ellington
+IOTA
+stellarwave@yahoo.com
+
+John Brooks
+IOTA
+jbrooks@johnsweb.com

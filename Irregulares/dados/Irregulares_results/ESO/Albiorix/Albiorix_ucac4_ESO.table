@@ -1,0 +1,51 @@
+                                                     
+   Table notes:
+
+ - Offsets (Observed minus JPL ephemeris) are in mas.
+ - (E_a,E_d) are (RA,DEC) position error estimates in
+   mas, based on the dispersion (standard deviation) 
+   of the offsets.
+ - N_fr is the number of observations per night.     
+ - First block of offsets statistics regards filtered
+   results; second block regards to all offsets.
+ - (Per) is the 0-100 percentage of eliminated
+   outliers.
+ - (Sig) is the sigma theshold for elimination (mas).
+ - (Fac) is the sigma factor for offset elimination. 
+ - (RA,DEC) are given in the usual notation (h, m, s 
+   and dg, ...), but also in decimal form; they are  
+   averaged to the mean time of observations.
+ - Mean time (UTC) is given in the usual form (h, m, 
+   s, day, month, year), but also in years (decimal) 
+   and in Julian Days.
+ - Mag is the estimated magnitude of the object.     
+ - (S_a,S_d) (in mas) are the (RA,DEC) mean error of 
+   reference catalogue stars, from the astrometric   
+   solutions.
+ - Ncat is the average No. of reference stars/frame. 
+ - Target is the usual name of the object.           
+ - Pixel scale is given in arcseconds per pixel.     
+ - Obs/Inst gives information about the telescope,   
+   instrument and site of observation with IAU code. 
+ - Observer or main observer is also listed.         
+ - Data Treatment lists who has made the astrometry. 
+ - Package indicates the astrometric software used.  
+ - Tangent Plane Model indicates the polynomial form 
+   relating (x,y) and (RA,DEC) in the tangent plane. 
+ - The reference catalogue is also listed.           
+ - The reference JPL ephemeris is also indicated.    
+ - Data release informs the Table publication date.  
+ - General remarks may be also furnished.            
+ - Values marked -1 mean quantity not known.         
+                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  off_ra  off_de   E_a   E_d  N_fr  off_ra  off_de   E_a   E_d  N_fr    Per  Sig   Fac   hh mm ss        dg  '   "      h  m  s      dd mo year    Julian Date         Year           RA (ICRS)     DEC (ICRS)   Mag   S_a   S_d  Ncat Target Name          "/pixel Obs/Inst IAU code    Observer             Data treatment       Package              Tangent Plane Model  Reference catalogue  Reference ephemeris  Data release         General remarks
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   256.0  -365.7  59.9  53.9     3   256.0  -365.7  59.9  53.9     3   0.00 120.0  2.0   09 22  3.59544 +16 13 31.2619 03 23 51.9602 10 04 2007 2454200.6415736135 2007.272119298   9.3676654010  16.2253505187 20.3  23.0  27.0   209 Albiorix              0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                sat361+de421         21 Nov 2014                                                  
+   134.0  -366.5  36.8   7.8     2   134.0  -366.5  36.8   7.8     2   0.00 120.0  2.0   09 21 54.87191 +16 14  3.6155 03 19 50.7117 12 04 2007 2454202.6387813850 2007.277587354   9.3652421960  16.2343376480 20.3  19.0  19.5   253 Albiorix              0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                sat361+de421         21 Nov 2014                                                  
+    64.0  -307.5  46.7  58.7     2    64.0  -307.5  46.7  58.7     2   0.00 120.0  2.0   09 21 51.15350 +16 14 16.8513 03 19 55.4334 13 04 2007 2454203.6388360346 2007.280325355   9.3642093050  16.2380142455 19.7  20.5  20.0   207 Albiorix              0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                sat361+de421         21 Nov 2014                                                  
+   131.2  -252.1  30.8  12.3     9   128.4  -276.0  29.8  68.0    11  18.18 120.0  2.0   11 06 57.23228 +07 27 42.3531 02 29 20.5993 20 05 2009 2454971.6037106402 2009.382898591  11.1158978561   7.4617647563 20.5  25.0  26.3   455 Albiorix              0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                sat361+de421         21 Nov 2014                                                  
+   231.6  -343.8  12.6  16.4    13   241.3  -348.0  32.5  34.5    22  40.91 120.0  2.0   11 06 57.70218 +07 27 27.5919 01 58 27.1761 21 05 2009 2454972.5822589821 2009.385577711  11.1160283838   7.4576644112 20.3  31.4  31.2   494 Albiorix              0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                sat361+de421         21 Nov 2014                                                  
+    95.1  -261.1  23.0  37.8    17    95.1  -261.1  23.0  37.8    17   0.00 120.0  2.0   11 06 59.78506 +07 26 50.7647 01 31 07.6203 23 05 2009 2454974.5632826425 2009.391001458  11.1166069603   7.4474346516 20.5  30.8  31.1   363 Albiorix              0.2800 ESO                  Varios               Altair               PRAIA V.0.1.1        1rd degree           UCAC4                sat361+de421         21 Nov 2014                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
