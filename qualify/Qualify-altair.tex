@@ -1,0 +1,129 @@
+\documentclass[12pt,a4paper]{monografia}
+\usepackage[english,brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,textcomp}
+%\usepackage{latexsym}
+\usepackage[]{graphicx}
+\graphicspath{{figuras}}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{color}
+\usepackage{pdflscape}
+%\usepackage[comma,authoryear]{natbib}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage[nonumberlist]{glossaries}
+%\usepackage[alf]{abntcite}
+\bibliographystyle{apalike}
+
+\newcommand{\PE}{Perkin-Elmer}
+\newcommand{\BC}{Boller \& Chivens}
+
+\makeglossaries
+
+
+
+\input{glossario}
+
+\begin{document}
+\doutorado
+
+\titulo{Aplicações Astrométricas e Fotométricas para o Estudo do Sistema Solar Exterior}
+\autor{Altair Ramos Gomes Júnior}
+\ultimonome{Gomes Júnior}
+\nome{Altair Ramos}
+\orientador{Marcelo Assafin}
+\ttorientador{Professor Doutor}
+\curso{Astronomia}
+\instituicao{Universidade Federal do Rio de Janeiro}
+\sigla{UFRJ}
+\unidadeacademica{Centro de Ciências Matemáticas e da Natureza\\Observatório do Valongo}
+\ano{2015}
+\data{Junho de 2015}
+\cidade{Rio de Janeiro}
+\examinadorum{Primeira Pessoa}
+\examinadordois{Segunda Pessoa}
+\examinadortres{Terceira Pessoa}
+\examinadorquatro{Quarta Pessoa}
+\ttexaminadorum{Doutor}
+\ttexaminadordois{Doutor}
+\ttexaminadortres{bacharel}
+\ttexaminadorquatro{licenciado}
+\CDU{521.9}
+\areas{Astrometria}
+\npaginas{160}
+
+\maketitle
+
+%\begin{agradecimento}{Dedicatória}
+%\indent \indent Agradeço à minha mãe Adelma e meu pai Altair por todo o apoio emocional e financeiro durante a minha trajetória acadêmica. Ao meu irmão, que sempre me incentivou, aos meus amigos e colegas pela troca de experiências.\\
+%\indent À minha tia Maria do Carmo pelo auxílio dado para minha permanência no Rio de Janeiro, sem a qual não teria sido possível ficar no curso.\\
+%\indent Ao meu orientador Marcelo Assafin por ter me aceito como aluno e me dado a oportunidade de trabalhar com as empolgantes áreas de Astrometria e Sistema Solar e por sua paciência ao me ensinar e me atualizar sobre o campo de trabalho.
+%\end{agradecimento}
+
+%\newpage
+%\begin{epigrafe}
+%"Queremos ter certezas e não dúvidas, resultados e não experiências, mas nem mesmo percebemos que as certezas só podem surgir através das dúvidas e os resultados somente através das experiências."\\
+%\hfill Carl Gustav Jung
+%\end{epigrafe}
+
+\resumo{Resumo}
+\indent \indent O estudo da estrutura e evolução do Sistema Solar tem muita importância atualmente, por exemplo, na compreensão dos mecanismos de formação dos planetas de outras estrelas (exoplanetas), trazendo em seus desdobramentos valiosas informações quanto a viabilidade de formação de ambientes que comportem vida.\\
+\indent Praticamente cada satélite é um problema particular de Mecânica Celeste. Dessa forma, a observação de seus movimentos é muito útil por razões teóricas. A preparação e realização de missões espaciais para alguns planetas, e mesmo alguns satélites, como Titã de Saturno ou os Galileanos de Júpiter, requer observações frequentes e posições muito acuradas de todos os satélites do sistema planetário visitado.\\
+\indent Os satélites irregulares de planetas gigantes, principalmente de Júpiter e de Saturno, são substancialmente menores do que os satélites regulares e possuem órbitas mais distantes, excêntricas, inclinadas e, na maioria dos casos, retrógradas. Explicar a existência dos satélites irregulares dos planetas gigantes é um estudo interessante em dinâmica orbital.\\
+\indent É amplamente aceito que eles, devido à configuração orbital, foram capturados por seus planetas. Porém, ainda não são certos a origem e o método de captura desses objetos embora as teorias mais prováveis sejam a de arrasto gasoso durante a formação do Sistema Solar e a captura de três corpos.\\
+\indent A maioria dos satélites formam famílias com características orbitais semelhantes sugerindo uma evolução dada por colisões. A compreensão desses mecanismos nos fará entender melhor o nosso próprio sistema solar e, possivelmente, de sistemas extra-solares.\\
+\indent Com o pacote astrométrico PRAIA o tempo empregado na redução de grandes quantidades de imagens foi diminuído significativamente. Os objetivos científicos dos nossos programas observacionais agora tem sido atingidos em curtíssimo prazo, em consonância com a atual demanda astronômica e astrofísica de nossa área.\\
+\indent Em uma base de dados com mais de 100 mil imagens obtidas entre 1992 e 2012 no telescópios de 1.2m do Observatoire de Haute Province, França, e nos telescópios \PE, \BC{} e Zeiss no Observatório do Pico dos Dias, mais de 4 mil contem satélites irregulares de Júpiter e Saturno. Reduzir essa grande quantidade de observações com precisão só foi possível com a utilização do PRAIA. Como é possível ver nos resultados obtidos, os offsets de posição refletem o erro natural da astrometria e o erro das efemérides dos satélites mais fracos, e sugerem que podemos efetivamente contribuir para que novas integrações numéricas forneçam posições mais precisas. Essas novas efemérides irão permitir que ocultações estelares por esses objetos possam ser preditas com maior precisão. A observações dessas ocultações permitirão um maior conhecimento das propriedades físicas dos satélites.
+
+\par
+\vspace{1em}
+\noindent\textbf{Palavras-chave:} Astrometria, Satélites Irregulares de Júpiter, Satélites Irregulares de Saturno
+
+
+\tableofcontents % para gerar o sumário
+\thispagestyle{empty} % para que a pagina não seja enumerada
+%\listoffigures % cria a lista de figuras
+%\thispagestyle{empty}
+%\listoftables % cria a lista de tabela
+%\thispagestyle{empty}
+
+\pagestyle{ruledheader}
+
+\chapter{Introdução}
+\label{Cap:intro}
+
+
+\chapter{Observações}
+\label{Cap:observacoes}
+
+
+\chapter{Tratamento de Imagens. Obtenção de Posições ($\alpha$,$ \delta$)}
+\label{Cap:reducao}
+
+
+\chapter{Resultados}
+\label{Cap:resultados}
+
+
+
+\chapter{Discussão}%graf anom. verdad. e ceu(ind,media por noite)
+%discussão sobre provável contribuição para melhorar elementos orbitais
+\label{Cap:Analise}
+
+
+\chapter{Conclusões}
+\label{Cap:Conclusao}
+
+
+
+\glsaddall
+\printglossary
+
+
+\bibliography{Referencias}
+
+
+\end{document}
