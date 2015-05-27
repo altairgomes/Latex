@@ -4,7 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amsthm,amsfonts,amssymb,textcomp}
 %\usepackage{latexsym}
-\usepackage[]{graphicx}
+\usepackage{graphicx}
 \graphicspath{{figuras}}
 \usepackage{subfigure}
 \usepackage{float}
@@ -18,8 +18,19 @@
 %\usepackage[alf]{abntcite}
 \bibliographystyle{apalike}
 
+%%% newcommand %%%%%%%%%%%%%%%%%
 \newcommand{\PE}{Perkin-Elmer}
 \newcommand{\BC}{Boller \& Chivens}
+
+\newcommand{\degr}{\ensuremath{^{\circ}}}%                    % degree symbol:  °
+\newcommand{\arcmin}{\ensuremath{^{\prime}}}%                    % degree symbol:  °
+\newcommand{\fs}{\mbox{\ensuremath{.\!\!^s}}}
+\newcommand{\farcm}{\mbox{\ensuremath{.\mkern-4mu^\prime}}}%    % fractional arcminute symbol: 0.'0
+\newcommand{\farcs}{\mbox{\ensuremath{.\!\!^{\prime\prime}}}}%  % fractional arcsecond symbol: 0.''0
+\newcommand{\fdg}{\mbox{\ensuremath{.\!\!^\circ}}}%             % fractional degree symbol:     0.°0
+
+
+
 
 \makeglossaries
 
@@ -70,17 +81,17 @@
 %\end{epigrafe}
 
 \resumo{Resumo}
-\indent \indent O estudo da estrutura e evolução do Sistema Solar tem muita importância atualmente, por exemplo, na compreensão dos mecanismos de formação dos planetas de outras estrelas (exoplanetas), trazendo em seus desdobramentos valiosas informações quanto a viabilidade de formação de ambientes que comportem vida.\\
-\indent Praticamente cada satélite é um problema particular de Mecânica Celeste. Dessa forma, a observação de seus movimentos é muito útil por razões teóricas. A preparação e realização de missões espaciais para alguns planetas, e mesmo alguns satélites, como Titã de Saturno ou os Galileanos de Júpiter, requer observações frequentes e posições muito acuradas de todos os satélites do sistema planetário visitado.\\
-\indent Os satélites irregulares de planetas gigantes, principalmente de Júpiter e de Saturno, são substancialmente menores do que os satélites regulares e possuem órbitas mais distantes, excêntricas, inclinadas e, na maioria dos casos, retrógradas. Explicar a existência dos satélites irregulares dos planetas gigantes é um estudo interessante em dinâmica orbital.\\
-\indent É amplamente aceito que eles, devido à configuração orbital, foram capturados por seus planetas. Porém, ainda não são certos a origem e o método de captura desses objetos embora as teorias mais prováveis sejam a de arrasto gasoso durante a formação do Sistema Solar e a captura de três corpos.\\
-\indent A maioria dos satélites formam famílias com características orbitais semelhantes sugerindo uma evolução dada por colisões. A compreensão desses mecanismos nos fará entender melhor o nosso próprio sistema solar e, possivelmente, de sistemas extra-solares.\\
-\indent Com o pacote astrométrico PRAIA o tempo empregado na redução de grandes quantidades de imagens foi diminuído significativamente. Os objetivos científicos dos nossos programas observacionais agora tem sido atingidos em curtíssimo prazo, em consonância com a atual demanda astronômica e astrofísica de nossa área.\\
-\indent Em uma base de dados com mais de 100 mil imagens obtidas entre 1992 e 2012 no telescópios de 1.2m do Observatoire de Haute Province, França, e nos telescópios \PE, \BC{} e Zeiss no Observatório do Pico dos Dias, mais de 4 mil contem satélites irregulares de Júpiter e Saturno. Reduzir essa grande quantidade de observações com precisão só foi possível com a utilização do PRAIA. Como é possível ver nos resultados obtidos, os offsets de posição refletem o erro natural da astrometria e o erro das efemérides dos satélites mais fracos, e sugerem que podemos efetivamente contribuir para que novas integrações numéricas forneçam posições mais precisas. Essas novas efemérides irão permitir que ocultações estelares por esses objetos possam ser preditas com maior precisão. A observações dessas ocultações permitirão um maior conhecimento das propriedades físicas dos satélites. 
+%\indent \indent O estudo da estrutura e evolução do Sistema Solar tem muita importância atualmente, por exemplo, na compreensão dos mecanismos de formação dos planetas de outras estrelas (exoplanetas), trazendo em seus desdobramentos valiosas informações quanto a viabilidade de formação de ambientes que comportem vida.\\
+%\indent Praticamente cada satélite é um problema particular de Mecânica Celeste. Dessa forma, a observação de seus movimentos é muito útil por razões teóricas. A preparação e realização de missões espaciais para alguns planetas, e mesmo alguns satélites, como Titã de Saturno ou os Galileanos de Júpiter, requer observações frequentes e posições muito acuradas de todos os satélites do sistema planetário visitado.\\
+%\indent Os satélites irregulares de planetas gigantes, principalmente de Júpiter e de Saturno, são substancialmente menores do que os satélites regulares e possuem órbitas mais distantes, excêntricas, inclinadas e, na maioria dos casos, retrógradas. Explicar a existência dos satélites irregulares dos planetas gigantes é um estudo interessante em dinâmica orbital.\\
+%\indent É amplamente aceito que eles, devido à configuração orbital, foram capturados por seus planetas. Porém, ainda não são certos a origem e o método de captura desses objetos embora as teorias mais prováveis sejam a de arrasto gasoso durante a formação do Sistema Solar e a captura de três corpos.\\
+%\indent A maioria dos satélites formam famílias com características orbitais semelhantes sugerindo uma evolução dada por colisões. A compreensão desses mecanismos nos fará entender melhor o nosso próprio sistema solar e, possivelmente, de sistemas extra-solares.\\
+%\indent Com o pacote astrométrico PRAIA o tempo empregado na redução de grandes quantidades de imagens foi diminuído significativamente. Os objetivos científicos dos nossos programas observacionais agora tem sido atingidos em curtíssimo prazo, em consonância com a atual demanda astronômica e astrofísica de nossa área.\\
+%\indent Em uma base de dados com mais de 100 mil imagens obtidas entre 1992 e 2012 no telescópios de 1.2m do Observatoire de Haute Province, França, e nos telescópios \PE, \BC{} e Zeiss no Observatório do Pico dos Dias, mais de 4 mil contem satélites irregulares de Júpiter e Saturno. Reduzir essa grande quantidade de observações com precisão só foi possível com a utilização do PRAIA. Como é possível ver nos resultados obtidos, os offsets de posição refletem o erro natural da astrometria e o erro das efemérides dos satélites mais fracos, e sugerem que podemos efetivamente contribuir para que novas integrações numéricas forneçam posições mais precisas. Essas novas efemérides irão permitir que ocultações estelares por esses objetos possam ser preditas com maior precisão. A observações dessas ocultações permitirão um maior conhecimento das propriedades físicas dos satélites. 
 
 \par
 \vspace{1em}
-\noindent\textbf{Palavras-chave:} Astrometria, Satélites Irregulares de Júpiter, Satélites Irregulares de Saturno
+\noindent\textbf{Palavras-chave:} Astrometria, Ocultações
 
 
 \tableofcontents % para gerar o sumário
@@ -126,7 +137,35 @@ Os dois eventos foram preditos por Steve Preston\footnote{Predições publicadas
 \end{centering}
 \end{figure}
 
-\begin{figure}
+\subsection{Ocultação de 2010}
+\label{Subsec: 2010-occ}
+
+\indent \indent Em 17 de Agosto de 2010 Ceres ocultou a estrela TYC 6833-163-1 (UCAC4 313-111823), cuja magnitude é $V = 11.55$ e tem posição no ICRS para a data do evento baseada no catálogo UCAC4 \citep{Zacharias2013}:
+
+\begin{equation}
+\left\{ 
+  \begin{array}{l l}
+    \alpha = 17^{h}18^{m}29\fs 0085\\
+    \delta = -27\degr 26\arcmin 38\farcs 867
+  \end{array}
+\right.
+\label{Eq: 2010-coord}
+\end{equation}
+
+\indent O evento foi observado no Brasil a partir de cinco diferentes sítios (ver Fig. \ref{Fig: Ceres-map-2010}). Destes, 4 obtiveram cordas positivas enquanto UFSC teve uma corda negativa. Das positivas, a observação proveniente do INPE iniciciou-se após o início do evento devido a dificuldades técnicas e, portanto, apenas a emersão da curva de luz foi detectada.
+
+Uma das características mais importantes desse evento foi a velocidade com que ocorreu (apenas 3.9 km s$^{-1}$) acarretando que mesmo exposições de poucos segundos representariam resoluções espaciais significantes.
+
+Todas as observações foram feitas com a utilização de CCDs. As curvas de luz de cada observação foram obtidas das imagens FITS com a utilização do pacote PRAIA \citep[Plataforma de Redução Astrométrica de Imagens Astronômicas,][]{Assafin2011}. As curvas foram normalizadas para o fluxo da estrela mais Ceres, uma vez que eles estavam indistinguíveis logo antes e depois da ocultação. Por fim, elas foram normalizadas pelo ajuste de uma curva polinomial (de primeira ou segunda ordem) fora da queda de fluxo assim fixando em 1 a razão de fluxo fora da ocultação.
+
+Os instantes de ingresso e egresso foram obtidas de cada curva de luz ajustando-se um modelo de poço quadrado levando em consideração a difração de Fresnel, a banda do CCD, o diâmetro aparente da estrela e o tempo de exposição utilizado \citep[ver][]{Widemann2009, Braga-Ribas2013}.
+
+O menor tempo de integração usado nas observações positivas foi de $1.0s$, que corresponde a aproximadamente $3.9km$ no plano do céu. Portanto, o erro na determinação dos instantes de ingresso e egresso é dominado principalmente pelo tempo de integração, não pela difração de Fresnel ou diâmetro da estrela, ambos da ordem de algumas centenas de metros para esse evento
+
+O ajuste dos dados da ocultação consiste em minimizar uma função de $\chi^{2}$ clássica para cada curva de luz, como descrito em \cite{Sicardy2011} e \cite{Braga-Ribas2013}.
+
+The occultation data fit consists in minimizing a classical $\chi^{2}$ function for each light curve, as described in \cite{Sicardy2011} and BR13.\ The free parameter to adjust is the ingress or egress instant, which provides the minimum value of $\chi^{2}$, denoted as $\chi^{2}_{min}$. The best fittings to the 2010 occultation light curves are shown in Fig. \ref{Fig: Ceres-2010-curves}, and the derived occultation times are listed in Table~\ref{Tab: obs-2010}.
+\begin{figure}[h]
 \begin{centering}
 \subfigure[Ocultação de 2010]{\includegraphics[scale=0.35]{figuras/Ceres_2010_sphere.eps}\label{Fig: Ceres-limb-2010} }
 \subfigure[Ocultação de 2013]{\includegraphics[scale=0.35]{figuras/Ceres_2013_sphere.pdf}\label{Fig: Ceres-limb-2013} }
