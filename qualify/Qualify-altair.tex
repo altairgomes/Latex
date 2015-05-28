@@ -179,11 +179,41 @@ Adotamos um modelo elíptico para o perfil do limbo, resultante da projeção de
 
 As coordenadas $f_{c}$ e $g_{c}$, em quilômetros, foram calculadas usando a efeméride de Ceres JPL\#33 \citep{Giorgini1996} e a posição da estrela ocultada. Elas são positivas na direção Leste e Norte celestes, respectivamente. O ângulo de posição $P$ é contado positivamente a partir do norte celeste local em direção ao leste celeste. O achatamento aparente pode ser definido por $\epsilon^\prime = 1 - (b^\prime/a^\prime)$. O melhor ajuste é obtido minimizando uma função de $\chi^{2}_{r}$ reduzido, onde definimos o número de graus de liberdade do problema como $\mathcal{N} \equiv N - M$. Todos os procedimentos que permitem a determinação das barras de erro dos paramêtros físicos podem ser encontradas em \cite{Braga-Ribas2013}.
 
+Duas possíveis soluções foram consideradas para o ajuste do limbo. O primeiro, que chamamos de solução nominal, consiste em determinar os cinco parâmetros que caracterizam uma elipse a partir dos sete contatos observados. A segunda solução consiste em calcular o ângulo de posição $P$ a partir das coordenadas do pólo de Ceres obtidas por \cite{Drummond2014} ($\alpha_{p} = (287 \pm 3) \degr$, $\delta_{p} = (+64 \pm 3) \degr$ no ICRS) e da efeméride de Ceres no instante da ocultação. Chamamos de solução de pólo fixo.
+
+Para o evento de 2010, a solução nominal teve como melhor ajuste $\chi^2_{r,min} = 0.24$, que podem ser interpretadas como as barras de erro estarem superestimadas com respeito à boa qualidade do ajuste. Porém, como o problema tem somente dois graus de liberdade, $\chi^2_{r,min}$ relativamente pequenos são aceitáveis. Os resultados obtidos para o diâmetro equatorial, achatamento, ângulo de posição e coordenadas do centro esao apresentadas na segunda coluna da tabela \ref{Tab: resultados}.
+
+\begin{table}[h]
+ \begin{centering}
+  \caption{Resultados do ajuste de limbo de Ceres com os dados dos eventos de 2010 e 2013.\label{Tab: resultados}}
+  \begin{tabular}{@{}lcccc}
+  \hline
+     Solution & 2010/Nominal & \textbf{2010/Pólo fixo} & 2013/Nominal & 2013/Pólo fixo \\
+\hline
+Diam. equat.  (km) & 982 $\pm$ 14 & \textbf{972 $\pm$ 6}  & 971 $\pm$ 7  & 971 $\pm$ 7\\
+%Equatorial radius (km) & 491 $\pm$ 7  & \textbf{486 $\pm$ 3}  & 485.5 $\pm$ 3.5 & 485.5 $\pm$ 3.5\\
+Achatamento        & 0.08 $\pm$ 0.03 & \textbf{0.08 $\pm$ 0.03} & 0.08 $\pm$ 0.04 & 0.08 $\pm$ 0.04\\
+Âng. de pos. (deg)   & 5 $\pm$ 10    & \textbf{12 $\pm$ 3} (*)& 22 $\pm$ 5    & 25 $\pm$ 3 (*)\\
+$f_c$ (km)             & 97 $\pm$ 9   & \textbf{102 $\pm$ 5}   & 77 $\pm$ 6    & 78 $\pm$ 6\\
+$g_c$ (km)             & 16 $\pm$ 15  & \textbf{21 $\pm$ 11}  & 13 $\pm$ 16   & 13 $\pm$ 16\\
+$\chi^2_{r,min}$       & 0.24          &  \textbf{0.42}         & 1.27          & 1.27\\
+\hline
+\end{tabular}
+\textbf{Notas:} Em negrito destacamos nossa melhor solução. As barras de erro estão no nível de 1$\sigma$. O diâmetro polar ($D_{pol}$) pode ser facilmente calculado a partir de $D_{pol}=D_{equa}(1 - \epsilon)$. (*) Ângulos de posição derivados a partir das coordenadas do pólo de Ceres determinapas por \cite{Drummond2014}.
+\end{centering}
+\end{table}
+
+Como pode ser visto, o parâmetro com a maior incerteza é o ângulo de posição cobrindo um intervalo de 20$\degr$. Claramente, fixar as coordenadas do pólo pode melhorar a solução. Por fim, a correção do achatamento devido ao ângulo do aspecto polar está dentro da barra de erro 1$\sigma$ e não tem relevância estatística, dessa forma $\epsilon = 0.08 \pm 0.03$.
+
+No momento da ocultação, as coordenadas do pólo de Ceres correspondiam a um ângulo de posição $P = (12 \pm 3)\degr$. Explorar o espaço de parâmetros restringindo a elipses com ângulo de posição dentro deste intervalo resulta na solução de pólo fixo. O parâmetros físicos do melhor ajuste estão mostrados na Tab. \ref{Tab: resultados} enquanto a solução está esquematizada na Fig. \ref{Fig: Ceres-limb-2010}.
+
+Essa solução corresponde ao limite superior da barra de erro 1$\sigma$ da solução nominal para $P$. Por outro lado, ela obtem os menores valores para o diâmetro equatorial, melhorando sua determinação por um fator de 2.
+
 \begin{figure}[h]
 \begin{centering}
 \subfigure[Ocultação de 2010]{\includegraphics[scale=0.35]{figuras/Ceres_2010_sphere.eps}\label{Fig: Ceres-limb-2010} }
 \subfigure[Ocultação de 2013]{\includegraphics[scale=0.35]{figuras/Ceres_2013_sphere.pdf}\label{Fig: Ceres-limb-2013} }
-\caption{Melhores ajustes elípticos para as cordas das ocultações de 2010 e 2013. As setas indicam a direção de movimento, as linhas azuis são as cordas observadas, os segmentos vermelhos são as barras de erro dos ingressos, egressos e centro da ocultação em $1\sigma$. A linha verde em (a) é uma corda negativa. Os instantes marcados em verde em (b) não foram utilizados para o ajuste como descrito no texto.
+\caption{Melhores ajustes elípticos para as cordas das ocultações de 2010 e 2013. As setas indicam a direção de movimento, as linhas azuis são as cordas observadas, os segmentos vermelhos são as barras de erro dos ingressos, egressos e centro da ocultação em $1\sigma$. A linha verde em (a) é uma corda negativa. Os instantes marcados em verde em (b) não foram utilizados para o ajuste, como descrito no texto.
 \label{Fig: Ceres-limb}}
 \end{centering}
 \end{figure}
