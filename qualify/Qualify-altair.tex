@@ -12,11 +12,11 @@
 \usepackage{color}
 \usepackage{epstopdf}
 \usepackage{pdflscape}
+\usepackage[breaklinks]{hyperref}
 \usepackage[comma,authoryear]{natbib}
-\usepackage{hyperref}
+\usepackage{url}
 \usepackage[nonumberlist]{glossaries}
 %\usepackage[alf]{abntcite}
-\bibliographystyle{apalike}
 
 %%% newcommand %%%%%%%%%%%%%%%%%
 \newcommand{\PE}{Perkin-Elmer}
@@ -126,7 +126,7 @@ Contendo aproximadamente um quinto de toda a massa do cinturão de asteroides, e
 
 A primeira ocultação estelar por Ceres foi observada em 1984 \citep{Millis1987} e determinou seu tamanho com precisão de alguns quilômetros em uma época que as incertezas eram, normalmente, dez vezes maiores. Devido ao brilho aparente de Ceres ser alto, comparado à maioria dos asteroides, estrelas capazes de causar uma queda de magnitude detectável quando ocultadas são limitadas às mais brilhantes. Por exemplo, depois do evento de 1984, apenas 4 ocultações estelares por Ceres foram observadas \citep{Dunham2014}. Duas delas tiveram apenas duas cordas cada que não foram suficientes para prover resultados acurados\footnote{Esses eventos ocorreram em 22 de Agosto de 1994 e 30 de Outubro de 2010.}. Os dois restantes, que ocorreram em 17 de Agosto de 2010 e 25 de Outubro de 2013, foram trabalhos por mim em colaboração com o grupo do Rio \citep[aceito]{GomesJunior2015-Ceres}.
 
-Os dois eventos foram preditos por Steve Preston\footnote{Predições publicadas em http://asteroidoccultation.com.} para a IOTA (International Occultation Timing Association), durante predições de rotina de ocultações de asteroides de estrelas brilhantes. Os caminhos das sombras podem ser visualizados na Fig. \ref{Fig: Ceres-map}.
+Os dois eventos foram preditos por Steve Preston\footnote{Predições publicadas em \url{http://asteroidoccultation.com}.} para a IOTA (International Occultation Timing Association), durante predições de rotina de ocultações de asteroides de estrelas brilhantes. Os caminhos das sombras podem ser visualizados na Fig. \ref{Fig: Ceres-map}.
 
 \begin{figure}[h]
 \begin{centering}
@@ -160,11 +160,25 @@ Todas as observações foram feitas com a utilização de CCDs. As curvas de luz
 
 Os instantes de ingresso e egresso foram obtidas de cada curva de luz ajustando-se um modelo de poço quadrado levando em consideração a difração de Fresnel, a banda do CCD, o diâmetro aparente da estrela e o tempo de exposição utilizado \citep[ver][]{Widemann2009, Braga-Ribas2013}.
 
-O menor tempo de integração usado nas observações positivas foi de $1.0s$, que corresponde a aproximadamente $3.9km$ no plano do céu. Portanto, o erro na determinação dos instantes de ingresso e egresso é dominado principalmente pelo tempo de integração, não pela difração de Fresnel ou diâmetro da estrela, ambos da ordem de algumas centenas de metros para esse evento
+O menor tempo de integração usado nas observações positivas foi de $1.0s$, que corresponde a aproximadamente $3.9km$ no plano do céu. Portanto, o erro na determinação dos instantes de ingresso e egresso é dominado principalmente pelo tempo de integração, não pela difração de Fresnel ou diâmetro da estrela, ambos da ordem de algumas centenas de metros para esse evento.
 
-O ajuste dos dados da ocultação consiste em minimizar uma função de $\chi^{2}$ clássica para cada curva de luz, como descrito em \cite{Sicardy2011} e \cite{Braga-Ribas2013}.
+O ajuste dos dados da ocultação consiste em minimizar uma função de $\chi^{2}$ clássica para cada curva de luz, como descrito em \cite{Sicardy2011} e \cite{Braga-Ribas2013}. Os parâmetros livres para ajustar são os instantes de ingresso e egresso que fornece o valor mínimo de $\chi^{2}$ ($\chi^{2}_{min}$). O melhor ajuste das curvas de luz para a ocultação de 2010 está mostrado na Fig. \ref{Fig: Ceres-2010-curves}.
 
-The occultation data fit consists in minimizing a classical $\chi^{2}$ function for each light curve, as described in \cite{Sicardy2011} and BR13.\ The free parameter to adjust is the ingress or egress instant, which provides the minimum value of $\chi^{2}$, denoted as $\chi^{2}_{min}$. The best fittings to the 2010 occultation light curves are shown in Fig. \ref{Fig: Ceres-2010-curves}, and the derived occultation times are listed in Table~\ref{Tab: obs-2010}.
+\begin{figure}[h]
+\begin{centering}
+\subfigure[Ocultação de 2010]{\includegraphics[scale=0.51]{figuras/Ceres_2010_fluxratio.eps}\label{Fig: Ceres-2010-curves} }
+\subfigure[Ocultação de 2013]{\includegraphics[scale=0.51]{figuras/Ceres_2013_fluxratio.eps}\label{Fig: Ceres-2013-curves} }
+\caption{Curvas de luz normalizadas das cordas positivas dos eventos. As curvas estão desviadas por um fator de 0.2 (a) e 1.0 (b) para melhor visualização. As linhas pretas são os melhores ajustes com o modelo de poço quadrado. As linhas vermelhas são os melhores ajustes com o modelo de poço quadrado, porém levando em conta a difração de Fresnel, o diâmetro da estrela e o tempo de exposição. Os instantes médios de cada curva não coincidem devido às diferentes longitudes dos sítios. A curva de luz de Brookline (b) está desviada por um fator de -64 s como explicado no texto.
+\label{Fig: Ceres-curves}}
+\end{centering}
+\end{figure}
+
+A metodologia usada para analizar o perfil de Ceres a partir das observações é o mesmo descrito em \cite{Sicardy2011} e \cite{Braga-Ribas2013}. Cada combinação de posição do sítio, instantes de ingresso e egresso, junto com as coordenadas da estrela e as efemérides de Ceres, correspondem a um ponto no plano do céu. A coleção de todos esses pontos determina o limbo aparente de Ceres.
+
+Adotamos um modelo elíptico para o perfil do limbo, resultante da projeção de um esferóide com achatamento nos pólos no plano do céu. Essa escolha é suportada pelo trabalho de \cite{Drummond2014}, por meio de imagem direta de Ceres. Dessa forma, nós temos $N=7$ extremidades das cordas para ajustar $M=5$ parâmetros que definem uma elipse: semi-eixo maior e semi-eixo menor aparentes ($a^\prime$ and $b^\prime$, respectivamente), ângulo de posição $P$ do seu semi-eixo maior e as posição $(f_c,g_c)$ do seu centro com respeito à estrela ocultada. O semi-eixo maior {$a^\prime$} é equivalente ao raio equatorial $R_{equa}$ do elipsoide.
+
+As coordenadas $f_{c}$ e $g_{c}$, em quilômetros, foram calculadas usando a efeméride de Ceres JPL\#33 \citep{Giorgini1996} e a posição da estrela ocultada. Elas são positivas na direção Leste e Norte celestes, respectivamente. O ângulo de posição $P$ é contado positivamente a partir do norte celeste local em direção ao leste celeste. O achatamento aparente pode ser definido por $\epsilon^\prime = 1 - (b^\prime/a^\prime)$. O melhor ajuste é obtido minimizando uma função de $\chi^{2}_{r}$ reduzido, onde definimos o número de graus de liberdade do problema como $\mathcal{N} \equiv N - M$. Todos os procedimentos que permitem a determinação das barras de erro dos paramêtros físicos podem ser encontradas em \cite{Braga-Ribas2013}.
+
 \begin{figure}[h]
 \begin{centering}
 \subfigure[Ocultação de 2010]{\includegraphics[scale=0.35]{figuras/Ceres_2010_sphere.eps}\label{Fig: Ceres-limb-2010} }
@@ -173,6 +187,10 @@ The occultation data fit consists in minimizing a classical $\chi^{2}$ function 
 \label{Fig: Ceres-limb}}
 \end{centering}
 \end{figure}
+
+
+\subsection{Ocultação de 2013}
+\label{Subsec: 2013-occ}
 
 \section{Satélites Irregulares}
 \label{Sec: Irregulares}
@@ -190,6 +208,7 @@ The occultation data fit consists in minimizing a classical $\chi^{2}$ function 
 
 
 \bibliography{Referencias}
+\bibliographystyle{apalike}
 
 
 \end{document}
