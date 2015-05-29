@@ -114,7 +114,7 @@
 telescópios espaciais.\\
 \indent Um método que tem se mostrado eficiente para a obtenção desses parâmetros é o métodode ocultações estelares, que proporciona medidas tão precisas que são apenas superadas por medidas oriundas de sondas.
 
-\chapter{Ocultações}
+\chapter{Ocultações Estelares}
 \label{Cap: observacoes}
 
 \section{Ceres}
@@ -199,7 +199,7 @@ $g_c$ (km)             & 16 $\pm$ 15  & \textbf{21 $\pm$ 11}  & 13 $\pm$ 16   & 
 $\chi^2_{r,min}$       & 0.24          &  \textbf{0.42}         & 1.27          & 1.27\\
 \hline
 \end{tabular}
-\textbf{Notas:} Em negrito destacamos nossa melhor solução. As barras de erro estão no nível de 1$\sigma$. O diâmetro polar ($D_{pol}$) pode ser facilmente calculado a partir de $D_{pol}=D_{equa}(1 - \epsilon)$. (*) Ângulos de posição derivados a partir das coordenadas do pólo de Ceres determinapas por \cite{Drummond2014}.
+\textbf{Notas:} Em negrito destaca-se a melhor solução obtida. As barras de erro estão no nível de 1$\sigma$. O diâmetro polar ($D_{pol}$) pode ser facilmente calculado a partir de $D_{pol}=D_{equa}(1 - \epsilon)$. (*) Ângulos de posição derivados a partir das coordenadas do pólo de Ceres determinapas por \cite{Drummond2014}.
 \end{centering}
 \end{table}
 
@@ -221,6 +221,74 @@ Essa solução corresponde ao limite superior da barra de erro 1$\sigma$ da solu
 
 \subsection{Ocultação de 2013}
 \label{Subsec: 2013-occ}
+
+\indent \indent Em 25 de Outubro de 2010, Ceres ocultou a estrela TYC 865-911-1 (UCAC4 496-058191), de magnitude $V = 10.05$. Baseada no UCAC4 \citep{Zacharias2013}, sua posição ICRS para a data da ocultação é:
+
+%
+\begin{equation}
+\left\{ 
+  \begin{array}{l l}
+    \alpha = 11^{h}57^{m}52\fs7641\\
+    \delta = +09\degr 07\arcmin 49\farcs835
+  \end{array}
+\right.
+\end{equation}
+%
+Esse evento foi observado na costa Leste dos Estados Unidos logo antes do amanhecer, como mostrado na Fig. \ref{Fig: Ceres-map-2013}.
+
+Nove cordas positivas foram obtidas em vários sítios (ver Fig. \ref{Fig: Ceres-map-2013}). Cada estação foi equipada com uma câmera de vídeo com tempo de leitura desprezível. Isso é particularmente importante, já que a velocidade da sombra de Ceres para esse evento foi de 42.6 km s$^{-1}$, muito mais rápido que o evento de 2010.
+
+Durante o evento Ceres estava muito baixo no céu com alturas entre $15\degr$ (Winchester) e $20\degr$ (Hampton). Forte cintilação era esperada e, combinada com o curto tempo de integração e baixa diminuição de brilho, resultou em curvas de luz ruidosas e assim grandes incertezas nos instantes de imersão e emersão.
+
+Todos os vídeos foram convertidos para imagens FITS e a fotometria foi obtidia via \textsc{praia} \cite{Assafin2011}. As curvas de luz foram normalizadas por uma estrela de referência quando havia uma estrela no campo.
+
+Para reduzir o ruído, os dados foram binados por grupos de cinco imagens -- com exceção de Greenbelt, onde gupos de dez imagens foram utilizadas. Esse procedimento o tempo de integração efetivo por um fator de 5 (ou 10). Da mesma forma que para o evento de 2010, uma normalização adicional por um polinômio foi aplicada.
+
+Os instantes de ingresso e egresso da ocultação foram obtidos pelo mesmo procedimento descrito na seção \ref{Subsec: 2010-occ}. Uma vez que o tempo de integração efetivo usado (0.17 s) representa aproximadamente 7 km no plano do céu, e a escala de Fresnel e  o diâmetro da estrela estão novamente na ordem de centenas de metros, o erro da determinação dos instantes de imersão e emersão são dominados principalmente pelo tempo de integração, da mesma forma que para o evento de 2010. Os melhores ajustes para as curvas de luz da ocultação estão mostrados na Fig. \ref{Fig: Ceres-2013-curves}.
+
+Uma comparação entre os tempos obtidos pela estação de Brookline e o restante mostrou que esses têm um atraso de aproximadamente 64 s. Dessa forma, não utilizamos os tempos de Brookline na análise.
+
+Perfis elípticos foram ajustados para todas as cordas restantes. pelo mesmo procedimento descrito na seção \ref{Subsec: 2010-occ}. O resultado foi $\chi^2_{r,min} = 13$ , sugerindo que um modelo elíptico não é satisfatório para os dados. De fato, ao olharmos para a Fig. \ref{Fig: Ceres-limb-2013} vemos que a corda de Varina adiantada com respeito às outras. Como nessa estação o tempo não foi inserido diretamente nos frames do vídeo é possível que essa diferença seja oriunda de um eventual problema da correspondência entre os tempos do camcorder e do GPS.
+
+A imersão gravada em Owings também parece atrasada com respeito às cordas próximas (ver Fig. \ref{Fig: Ceres-limb-2013}). Essa corda tem aproximadamente o mesmo tamanho da corda de Mechanicsville, apesar de estarem separadas por cerca de 100 km. Diferentemente de Varina, essa estação teve os tempos inseridos em cada frame do vídeo o que torna mais difícil justificar um problema de tempo. Outras possibilidades seriam uma má determinação dos instantes de ingresso e egresso dessa curva ou uma característica do relevo de Ceres.
+
+Em um segundo ajuste, não consideramos as cordas de Brookline, Varina e Owings. O ajuste dos cinco parâmetros que definem uma elipse para os doze contatos resultou em $\chi^2_{r,min} = 1.27$, indicando  que está em bom acordo com os dados observados dentro das barras de erro. Essa é a solução mostrada na Fig. \ref{Fig: Ceres-limb-2013}, onde podemos ver que o tamanho da corda de Brookline é compatível com o modelo.
+
+Os resultados das soluções nominais e de pólo fixo não são significantemente diferentes. Isso se deve ao fato da barra de erro do ângulo de posição da solução nominal (que é muito menor que o da solução nominal de 2010) ser muito similar à barra de erro do ângulo de posição da solução de pólo fixo ($P = (25 \pm 3)\degr$). Os dois resultados estão apresentados nas colunas 4 e 5 da tabela \ref{Tab: resultados}.
+
+Sobre a hipótese do atraso observado na imersão da curva de luz de Owings ser associado a uma característica topográfica, o contato gravado corresponderia a uma elevação negativa de 31 $\pm$ 4 km com respeito à elipse de melhor ajuste. Porém modelos teóricos prevêem que relevos em Ceres não devem ser maiores que 10--20 km \citep{Johnson1973}, enquanto dados observacionais limitam o contorno em 18 km \citep{Carry2008}. Imagens mais recentes da sonda \textit{Dawn} também revelam uma superfície mais suave. Portanto, a associação da imersão em Owings com um relevo é improvável.
+
+\subsection{Discussão}
+
+\indent \indent Os resultados apresentados na tabela \ref{Tab: resultados} mostram um acordo entre os parâmetros físicos obtidos nas duas ocultações, especialmente no diâmetro equatorial. As diferenças ocorrem basicamente nos tamanhos das barras de erro e podem ser justificadas pelas particularidades de cada conjunto de dados.
+
+O evento de 2010, por exemplo, teve somente sete contatos, porém bem distribuídos sobre o disco de Ceres. Por outro lado, o evento de 2013 teve cinco contatos a mais, todavia concentrados em certas regiões do corpo. Em particular, a ausência de cordas prómimas ao pólo sul fez seu achatamente ser pior determinado para o evento de 2013 que para o evento de 2010. Mesmo nossa melhor medida de achatamento, $\epsilon=0.08 \pm 0.03$, tem alta incerteza se comparado com outros valores publicados na literatura, como mostra a tabela \ref{Tab: Ceres-final}.
+
+Como foi mostrado, usar as coordenadas do pólo de Ceres determinadas por \cite{Drummond2014} para limitar o ângulo de posição não foi um procedimento eficiente para o evento de 2013. Por outro lado, fixar o ângulo de posição para a ocultação de 2010 reduziu as barras de erro dos outros parâmetros (com exceção do achatamento). Por fim, Esse procedimento resultou em um excelente acordo entre os raios equatoriais obtidos para ambos os eventos.
+
+Uma comparação do diâmetro equatorial de Ceres medido por diferentes técnicas está mostrado na tabela \ref{Tab: Ceres-final}. Vemos um acordo entre os nossos resultados e aqueles obtidos por imageamente direto do Hubble Space Telescope (HST) \citep{Thomas2005}, do Keck Observatory e do ESO VLT \citep{Drummond2014}. O menor valor, reportado por \cite{Carry2008}, pode ser justificado pelo fato desse estudo não levar em conta o efeito de escurecimento de bordo.
+
+O evento de 1984 \citep{Millis1987} é a única outra ocultação que podemos comparar nosssos resultados. As medidas do diâmetro não se acordam dentro de 2$\sigma$. É difícil dizer com certeza as razões dessa divergência. Uma forma de clarificar o problema seria redeterminar os instantes de imersão e emersão das curvas de luz originais usando a mesma metodologia aplicada nesse trabalho. Infelizmente, não temos acesso aos dados da curva de luz original do evento de 1984.
+
+A sonda da NASA \textit{Dawn} poderá responder esses questões que são importantes não só no conhecimento do próprio Ceres, mas também para todas as técnicas usadas até agora para o estudo das propriedades físicas dos pequenos objetos do Sistema Solar, como as ocultações estelares.
+
+\begin{table}[h]
+  \caption{Diâmetro equatorial e achatamento de Ceres \label{Tab: Ceres-final}}
+  \begin{centering}
+  \begin{tabular}{@{}lccc}
+  \hline
+     Diâmetro Equatorial (km) & Achatamento & Método & Ref. \\
+\hline
+$972 \pm 6$  & $0.08  \pm 0.03$  & Occultação & 1\\
+$967 \pm 10$ & $0.078 \pm 0.015$ & Keck+VTL    & 2\\
+$959 \pm 5$  & $0.074 \pm 0.007$ & Keck        & 3\\
+$975 \pm 4$  & $0.067 \pm 0.005$ & HST         & 4\\
+$959 \pm 5$  & $0.05  \pm 0.01$  & Occultação & 5\\
+\hline
+\end{tabular}
+\par\end{centering}
+\textbf{Referências.} 1: \cite{GomesJunior2015-Ceres}. 2: \cite{Drummond2014}. 3: \cite{Carry2008}. 4: \cite{Thomas2005}. 5: \cite{Millis1987}.
+\end{table}
 
 \section{Satélites Irregulares}
 \label{Sec: Irregulares}
