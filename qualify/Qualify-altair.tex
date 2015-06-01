@@ -15,6 +15,7 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage[comma,authoryear]{natbib}
 \usepackage[nonumberlist]{glossaries}
+\usepackage{arydshln}
 %\usepackage[alf]{abntcite}
 
 %%% newcommand %%%%%%%%%%%%%%%%%
@@ -289,10 +290,73 @@ $959 \pm 5$  & $0.05  \pm 0.01$  & Occultação & 5\\
 \textbf{Referências.} 1: \cite{GomesJunior2015-Ceres}. 2: \cite{Drummond2014}. 3: \cite{Carry2008}. 4: \cite{Thomas2005}. 5: \cite{Millis1987}.
 \end{table}
 
+
 \section{Satélites Irregulares}
 \label{Sec: Irregulares}
 
-%\citep{GomesJunior2015-Irregular}
+\subsection{Astrometria dos sat\'elites irregulares}
+
+\indent \indent Durante o mestrado, foi realizado junto ao grupo um trabalho de caráter astrométrico para a melhoria das efemérides dos satélites irregulares de Júpiter Saturno. Em colaboração com o Dr. Jean-Eudes Arlot do IMCCE, reduzi um banco de dados observado no Observatoire Haute-Provence (OHP) entre 1998 e 2008, contendo mais de 28 mil posições para 10 satélites. Reduzi também um banco de dados com mais de 100 mil imagens obtidas no Observatório do Pido dos Dias (OPD) entre 1992 e 2014. Já no doutorado, neste mesmo âmbito, reduzi 810 observações feitas no European Southern Observatory (ESO) em 24 noites utilizando o detector mosaico CCD Wide Field Imager (WFI).
+
+Mais de 8000 posições foram identificadas como pertencentes a satélites irregulares. Porém, devido à grande gama de configurações (3 sítios, 5 telescópios, mais de 10 câmeras e mais de 10 filtros) e às condições observacionais de algumas noites, 6523 posições foram selecionadas como boas posições, ou seja, possuem 3 ou mais estrelas do catálogo de referência (UCAC4), estão dentro de 2$\sigma$ da dispersão das posições da noite e a dispersão da noite à qual pertence não é maior que 2$\sigma$ da média das dispersões das noites. Essa estatística é feita satélite por satélite. O trabalho está aceito para publicação \citep{GomesJunior2015-Irregular} e o catálogo de posições está disponível no CDS.
+
+Um dos principais resultados desse trabalho foi a grande quantidade de posições obtidas para os satélites irregulares em comparação com a quantidade utilizada nas integrações numéricas atuais (ver tabela \ref{Tab: comparison-horizons}).
+
+\begin{table}
+\caption{\label{Tab: comparison-horizons} Comparação entre o número de posições obtidas em \cite{GomesJunior2015-Irregular} e o número utilizado nas integrações numéricas das órbitas pelo JPL como publicado por  \cite{Jacobson2012}.}
+\begin{centering}
+\begin{tabular}{lccccc}
+\hline  \hline
+ & \multicolumn{4}{c}{Número de Posições}   &    \tabularnewline
+Satélite  & OPD  & OHP & ESO & Total  & Jacobson \tabularnewline
+\hline
+Himalia & 854 & 357 & 23 & 1234 & 1757 \tabularnewline
+Elara & 403 & 187 & 46 & 636 & 1115 \tabularnewline
+Lysithea & 60 & 84 & 90 & 234 & 431 \tabularnewline
+Leda & 6 & 48 & 44 & 98 & 178 \tabularnewline
+\hdashline
+Pasiphae & 295 & 248 & 66 & 609 & 1629 \tabularnewline
+Callirrhoe & 9 & -  &  16 & 25 & 95 \tabularnewline
+Megaclite & - & -  &  10 & 10 & 50  \tabularnewline
+\hdashline
+Ananke & 52 & 141 & 57 & 250 & 600 \tabularnewline
+Praxidike & - & -  &   2 & 2 & 59 \tabularnewline
+\hdashline
+Carme & 90 & 204 & 37 & 331 & 973 \tabularnewline
+Sinope & 41 & 169 & 11 & 221 & 854 \tabularnewline
+Themisto & - & - & 16 & 16 & 55 \tabularnewline
+\hline
+Phoebe & 1239 & 516 & 32 & 1787 & 3479 \tabularnewline
+\hdashline
+Siarnaq & - & 20 & 56 & 76 & 239 \tabularnewline
+Paaliaq & - & - & 11 & 11 & 82 \tabularnewline
+\hdashline
+Albiorix & - & - & 46 & 46 & 137 \tabularnewline
+\hline
+Sycorax & - & - & 35 & 35 & 237 \tabularnewline
+\hline
+Nereid & 803 & - & 99 & 902 & 716 \tabularnewline
+\hline
+\end{tabular}
+\par\end{centering}
+\end{table}
+
+Com o objetivo ver o potencial das nossas posições em melhorar as órbitas dos satélites irregulares, analizamos os offsets das nossas posições com respeito às efemérides do JPL. Tomando Carme como exemplo, plotamos os offsets médios das efemérides para cada noite na Fig. \ref{Fig: carme_anom} e suas respectivas dispersões (erro de barra 1$\sigma$) em função da anomalia verdadeira em ascenção reta e declinação. A figura mostra claramente um erro sistemático em declinação. Quando Carme está próximo a seu apojove (anomalia verdadeira = 180$\degr$), seus offsets tem maior probabilidade de serem mais negativos do que aqueles próximos ao seu perijove (anomalia verdadeira = 0$\degr$). Todos os offsets obtidos de observações feitas em quatro telescópios diferentes usando câmeras e filtros diferentes estão em bom acordo, o que significa que há um erro nas efemérides de Carme, muito provavelmente devido a um erro em sua inclinação orbital.
+
+\begin{figure}[h]
+\begin{centering}
+\subfigure[Right Ascension]{\includegraphics[scale=0.45]{figuras/Carme_RA}\label{Fig: carme_alfa}}
+\subfigure[Declination]{\includegraphics[scale=0.45]{figuras/Carme_DEC}\label{Fig: carme_delta}}
+\caption{Offsets médios das efemérides e dispersões (barra de erro 1$\sigma$) nas coordenadas de Carme tomadas noite a noite por anomalia verdadeira para cada telescópio. O quadrado vermelho são as observações com o telescópio do OPD Perkin-Elmer, o círculo azul para o Boller \& Chivens também do OPD, o triângulo pra cima preto para o OHP e a estrela verde para o ESO.}
+\label{Fig: carme_anom}
+\end{centering}
+\end{figure}
+
+Esse padrão em declinação também foi identificado para outros satélites como Pasiphae e Ananke. Para alguns satélites a cobertura orbital não foi suficiente para indicar claramente a presença de erros sistemáticos em elementos orbitais específicos. Os gráficos para todos os satélites estão disponíveis em \cite{GomesJunior2015-Irregular}.
+
+\subsection{Previs\~ao das ocultaç\~oes}
+
+\indent \indent 
 
 \section{TNOs}
 \label{Sec: TNOs}
