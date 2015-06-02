@@ -1,0 +1,154 @@
+%========================================================================
+%=================LaTeX TEMPLATE FOR ARTICLE SUBMISSION==================
+%========================================================================
+%
+% When submitting an abstract to the ``Distant EKOs'' Newsletter, please
+% use the following LaTeX template and submit it to:
+%     ekonews@boulder.swri.edu
+% Search for the "%%%" strings for places to put your text.
+%
+%====================================== version 1.12 (2015 April 17) ====
+
+
+\documentstyle[11pt]{article}
+\textheight 9.25in
+\parindent 0pt
+\topmargin -0.75in
+\textwidth 6.58in
+\oddsidemargin 0in
+
+\newcommand{\AbsYes}[4]
+  {\begin{center}{\Large\bf #1}\end{center} \begin{center}{\bf #2}\end{center}
+   \vspace*{-2ex} {\footnotesize #3}  \par \vspace*{2ex} {\parindent=3ex #4}
+   \vspace*{2ex} \par }
+\newcommand{\AbsNo}[3]
+  {{\Large \bf #1} \par {\bf #2} \par {\footnotesize #3} \par }
+
+\newcommand{\Published}[5] {\AbsYes{#1}{#2}{#3}{#4} \mbox{\bf Published in: #5}}
+\newcommand{\Accepted}[5] {\AbsYes{#1}{#2}{#3}{#4} \mbox{\bf To appear in: #5}}
+\newcommand{\Submitted}[5] {\AbsYes{#1}{#2}{#3}{#4} \mbox{\bf Submitted to: #5}}
+\newcommand{\Conference}[5] {\AbsNo{#1}{#2}{#3} \smallskip \mbox{To
+appear in: #5}}
+\newcommand{\Other}[5] {\AbsYes{#1}{#2}{#3}{#4} {\em #5} }
+\newcommand{\OtherN}[5] {\AbsNo{#1}{#2}{#3} \smallskip \mbox{#5} }
+
+\newcommand {\gtrsim}
+  {{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$>$}}}}
+\newcommand {\lesssim}
+  {{\hbox{\rlap{\hbox{\lower4pt\hbox{$\sim$}}}\hbox{$<$}}}}
+
+%%% IF YOU USE ANY SPECIAL MACROS, PLEASE INCLUDE THEM BELOW THIS LINE:
+
+
+
+\begin{document}
+
+
+%%% SELECT THE APPROPRIATE DESCRIPTION FOR YOUR SUBMISSION BY UNCOMMENTING
+%%% THE CORRESPONDING LINE (I.E., REMOVE THE "%" AT THE BEGINNING OF THE LINE):
+%%% "Published = A PAPER THAT HAS BEEN PUBLISHED IN A REFEREED JOURNAL
+%%% "Accepted" = A PAPER ACCEPTED FOR PUBLICATION IN A REFEREED JOURNAL
+%%% "Submitted" = A PAPER SUBMITTED (BUT NOT YET ACCEPTED) TO A JOURNAL
+%%% "Conference" =  A PAPER THAT HAS BEEN PRESENTED AT A CONFERENCE
+%%% "Other" =  THESIS OR NEWS/ANNOUNCEMENT/EDITORIAL
+
+%\Published{
+\Accepted{
+%\Submitted{
+%\Conference{
+%\Other{
+
+
+
+%%% ENTER THE TITLE OF YOUR ARTICLE
+
+Results of two multi-chord stellar occultations by dwarf planet (1) Ceres
+
+
+}{
+%%% ENTER LIST OF AUTHORS BELOW.  PLEASE INDICATE WITHIN $^...$
+%%% THE NUMBER WHICH CORRESPONDS TO THE INSTITUTE OF EACH AUTHOR.
+
+A. R. Gomes-J\'unior$^{1},$%\thanks{E-mail: altair08@astro.ufrj.br},
+B. L. Giacchini$^{2,3,4}$,%\thanks{E-mail: breno@cbpf.br},
+F. Braga-Ribas$^{5, 6, \dag}$,
+M. Assafin$^{1, \dag, \ddag}$,
+R. Vieira-Martins$^{1,5, \dag, \ddag}$,
+J.I.B. Camargo$^{5, \dag}$,
+B. Sicardy$^{7}$,
+B. Timerson$^{4}$, 
+T. George$^{4}$,
+J. Broughton$^{8}$, 
+T. Blank$^{4}$,
+G. Benedetti-Rossi$^{5}$, 
+J. Brooks$^{4}$,  
+R. F. Dantowitz$^{9}$,
+D. W. Dunham$^{4}$, 
+J. B. Dunham$^{4}$, 
+C. K. Ellington$^{4}$,
+M. Emilio$^{10}$,
+F.R. Herpich$^{11}$,
+C. Jacques$^{3, 12}$,
+P. D. Maley$^{4,13}$,
+L. Mehret$^{10}$,
+A.J.T. Mello$^{14}$,
+A.C. Milone$^{15}$,
+E. Pimentel$^{3, 12}$,  
+W. Schoenell$^{11}$,
+N. S. Weber$^{9}$
+
+}{
+%%% ENTER LIST OF AFFILIATIONS/ADDRESS BELOW.  ADD/DELETE LINES AS NEEDED.
+%%% THE NUMBER IN $^..$ INDICATES AUTHOR NUMBER AS GIVEN ABOVE
+
+$^{1}$Observat\'orio do Valongo/UFRJ, Ladeira Pedro Ant\^onio 43,
+CEP 20.080-090 Rio de Janeiro - RJ, Brazil\\
+$^{2}$Centro Brasileiro de Pesquisas F\'isicas, Rua Dr. Xavier Sigaud 150, Rio de Janeiro  22290-180, Brazil\\
+$^{3}$Se\c{c}\~ao de Oculta\c{c}\~oes/REA-Brasil, Belo Horizonte, Brazil\\
+$^{4}$International Occultation Timing Association, P.O. Box 131034, Houston, TX 77219-1034, USA\\
+$^{5}$Observat\'orio Nacional/MCTI, R. General Jos\'e Cristino 77, CEP 20921-400 Rio de Janeiro - RJ, Brazil\\
+$^{6}$Federal University of Technology - Paran\'a (UTFPR / DAFIS), Rua Sete de Setembro, 3165, CEP 80230-901, Curitiba, PR, Brazil\\
+$^{7}$LESIA, Observatoire de Paris, CNRS UMR 8109, Universit\'{e} Pierre et Marie Curie, Universit\'{e} Paris-Diderot, 5 place Jules Janssen,\\ F-92195 Meudon Cedex, France\\
+$^{8}$RASNZ Occultation Section, P.O. Box 3181, Wellington, New Zealand\\
+$^{9}$Clay Center Observatory at Dexter Southfield, 20 Newton Street, Brookline, MA 02445, USA\\
+$^{10}$Universidade Estadual de Ponta Grossa, Ponta Grossa, Brazil\\
+$^{11}$Universidade Federal de Santa Catarina, Florian\'opolis, Brazil\\
+$^{12}$Centro de Estudos Astron\^omicos de Minas Gerais, Belo Horizonte, Brazil\\
+$^{13}$NASA Johnson Space Center Astronomical Society, Houston, Texas, USA\\
+$^{14}$Federal University of Technology - Paran\'a (UTFPR / DAELT), Rua Sete de Setembro, 3165, CEP 80230-901, Curitiba, PR, Brazil\\
+$^{15}$Instituto Nacional de Pesquisas Espaciais, S\~ao Jos\'e dos Campos, Brazil\\
+$^\dag$ Associated to Laborat\'{o}rio Interinstitucional de e-Astronomia - LIneA, Rua Gal. Jos\'e Cristino 77, CEP 20921-400,\\ Rio de Janeiro, Brazil\\
+$^\ddag$Affiliated researcher at Observatoire de Paris/IMCCE, 77 Avenue Denfert Rochereau 75014 Paris, France
+
+
+
+}{
+%%% ENTER TEXT OF ABSTRACT ONLY FOR *ACCEPTED* PAPERS.  CONFERENCE PROCEEDINGS
+%%% OR PAPERS THAT HAVE BEEN SUBMITTED BUT NOT YET ACCEPTED WILL HAVE ONLY THE
+%%% TITLE, AUTHOR LIST, AND CONTACT INFORMATION PUBLISHED IN THE NEWSLETTER.
+
+We report the results of two multi-chord stellar occultations by the dwarf planet (1) Ceres that were observed  from Brazil on 2010 August 17, and from the USA on 2013 October 25. Four positive detections were obtained for the 2010 occultation, and nine for the 2013 occultation. Elliptical models were adjusted to the observed chords to obtain Ceres' size and shape. Two limb fitting solutions were studied for each event. The first one is a nominal solution with an indeterminate polar aspect angle. The second one was constrained by the pole coordinates as given by Drummond et al. Assuming a Maclaurin spheroid, we determine an equatorial diameter of 972 $\pm$ 6 km and an apparent oblateness of $0.08 \pm 0.03$ as our best solution. These results are compared to all available size and shape determinations for Ceres made so far, and shall be confirmed by the NASA's \textit{Dawn} space mission.
+
+
+}{
+%%% ENTER NAME OF JOURNAL OR CONFERENCE PROCEEDINGS BELOW.  YOU MAY INCLUDE
+%%% VOLUME AND PAGE NUMBER IF KNOWN.
+%%% IF SUBMITTING A THESIS ABSTRACT, PLEASE STATE WHEN, WHERE, AND UNDER WHOSE
+%%% DIRECTION YOUR DEGREE WAS COMPLETED, AND ANY RELEVANT CONTACT INFORMATION.
+%%% e.g., Dissertation directed by G. Kuiper \\
+%%%       Ph.D. awarded Month, Year from University X \\
+%%%       Address as of Month, Year: Institute X, postal address
+%%%
+
+Montly Notices of the Royal Astronomical Society
+
+
+}
+%%% ENTER PREPRINT AVAILABILITY INFORMATION
+
+{\it For preprints, contact \ }  {\tt altair08@astro.ufrj.br, breno@cbpf.br, ribas@on.br} \\
+%{\it or by anonymous ftp to \ } {\tt FTP ADDRESS} \\
+{\it or on the web at \ }       {\verb| http://arxiv.org/abs/1504.04902 |}
+
+
+\end{document}
