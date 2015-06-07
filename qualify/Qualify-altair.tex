@@ -81,8 +81,9 @@
 %\end{epigrafe}
 
 \resumo{Resumo}
-%\indent \indent O estudo da estrutura e evolução do Sistema Solar tem muita importância atualmente, por exemplo, na compreensão dos mecanismos de formação dos planetas de outras estrelas (exoplanetas), trazendo em seus desdobramentos valiosas informações quanto a viabilidade de formação de ambientes que comportem vida.\\
-%\indent Praticamente cada satélite é um problema particular de Mecânica Celeste. Dessa forma, a observação de seus movimentos é muito útil por razões teóricas. A preparação e realização de missões espaciais para alguns planetas, e mesmo alguns satélites, como Titã de Saturno ou os Galileanos de Júpiter, requer observações frequentes e posições muito acuradas de todos os satélites do sistema planetário visitado.\\
+%\indent \indent O estudo da estrutura e evolução do Sistema Solar tem muita importância atualmente, por exemplo, na compreensão dos mecanismos de formação dos planetas de outras estrelas (exoplanetas), trazendo em seus desdobramentos valiosas informações quanto a viabilidade de formação de ambientes que comportem vida.
+
+%Praticamente cada satélite é um problema particular de Mecânica Celeste. Dessa forma, a observação de seus movimentos é muito útil por razões teóricas. A preparação e realização de missões espaciais para alguns planetas, e mesmo alguns satélites, como Titã de Saturno ou os Galileanos de Júpiter, requer observações frequentes e posições muito acuradas de todos os satélites do sistema planetário visitado.\\
 %\indent Os satélites irregulares de planetas gigantes, principalmente de Júpiter e de Saturno, são substancialmente menores do que os satélites regulares e possuem órbitas mais distantes, excêntricas, inclinadas e, na maioria dos casos, retrógradas. Explicar a existência dos satélites irregulares dos planetas gigantes é um estudo interessante em dinâmica orbital.\\
 %\indent É amplamente aceito que eles, devido à configuração orbital, foram capturados por seus planetas. Porém, ainda não são certos a origem e o método de captura desses objetos embora as teorias mais prováveis sejam a de arrasto gasoso durante a formação do Sistema Solar e a captura de três corpos.\\
 %\indent A maioria dos satélites formam famílias com características orbitais semelhantes sugerindo uma evolução dada por colisões. A compreensão desses mecanismos nos fará entender melhor o nosso próprio sistema solar e, possivelmente, de sistemas extra-solares.\\
@@ -162,7 +163,7 @@ Os instantes de ingresso e egresso foram obtidas de cada curva de luz ajustando-
 
 O menor tempo de integração usado nas observações positivas foi de $1.0s$, que corresponde a aproximadamente $3.9km$ no plano do céu. Portanto, o erro na determinação dos instantes de ingresso e egresso é dominado principalmente pelo tempo de integração, não pela difração de Fresnel ou diâmetro da estrela, ambos da ordem de algumas centenas de metros para esse evento.
 
-O ajuste dos dados da ocultação consiste em minimizar uma função de $\chi^{2}$ clássica para cada curva de luz, como descrito em \cite{Sicardy2011} e \cite{Braga-Ribas2013}. Os parâmetros livres para ajustar são os instantes de ingresso e egresso que fornece o valor mínimo de $\chi^{2}$ ($\chi^{2}_{min}$). O melhor ajuste das curvas de luz para a ocultação de 2010 está mostrado na Fig. \ref{Fig: Ceres-2010-curves}.
+O ajuste dos dados da ocultação consiste em minimizar uma função dep $\chi^{2}$ clássica para cada curva de luz, como descrito em \cite{Sicardy2011} e \cite{Braga-Ribas2013}. Os parâmetros livres para ajustar são os instantes de ingresso e egresso que fornece o valor mínimo de $\chi^{2}$ ($\chi^{2}_{min}$). O melhor ajuste das curvas de luz para a ocultação de 2010 está mostrado na Fig. \ref{Fig: Ceres-2010-curves}.
 
 \begin{figure}[h]
 \begin{centering}
@@ -356,9 +357,18 @@ Esse padrão em declinação também foi identificado para outros satélites com
 
 \subsection{Previs\~ao das ocultaç\~oes}
 
-\indent \indent 
+\indent \indent Dentre os satélite irregulares dos planetas gigantes, poucos são aqueles que possuem medidas de seus parâmetros físicos. Apenas Himalia, Phoebe e Nereida foram observados por sondas, apesar de não serem medidas ideais, já que foram alvos de oportunidade. A sonda Cassini observou Himalia em 2000 ao passar próximo a Júpiter e obteve o tamanho de Himalia com um erro médio de 10 km \citep{Porco2003}. Em 2004, a Cassini, aproximando-se de Saturno, observou Phoebe em alta resolução obtendo um erro médio na medida de seu tamanho de 0.7 km \citep{Thomas2010}. Por fim, Nereida foi observado em 1989 pela sonda Voyager 2 e seu tamanho foi obtido com um erro de 25 km \citep{Smith1989}. Para outros satélites irregulares de Júpiter, seus tamanhos foram estimados por \cite{Rettig2001} impondo um albedo de 4\% justificando que esse valor é um albedo nominalmente utilizado para objetos do Sistema Solar Externo.
 
-\section{TNOs}
+Com o objetivo de obter parâmetros físicos para os satélites irregulares com maior precisão foram feitas predições de ocultações estelares para os 7 maiores satélites de Júpiter, o satélite Phoebe de Saturno e Nereida de Netuno. Esses objetos são pequenos (ver Tabela \ref{Tab: comparison-horizons}), se comparados aos TNOs e Centauros estudados na seção \ref{Sec: TNOs}, sendo que o menor dos satélites da amostra, Ananke, possui aproximadamente 28 km.
+
+As predições foram feitas utilizando o catálogo UCAC4 e efemérides do JPL. Um total de 588 eventos foram obtidos entre 01 de Janeiro de 2015 e 31 de Dezembro de 2017 para os 9 objetos sendo que a maioria será descartada por passar em regiões de oceano ou onde não há observadores disponíveis. Para Nereida, apenas uma estrela UCAC4 foi identificada para ser ocultada. Nesse caso, utilizamos um catálogo de estrelas feito a partir do caminho aparente do satélite de Netuno Tritão no céu para predições de ocultações estelares pelo mesmo (ver seção \ref{Sec: TNOs}).
+
+Como esses objetos são muito pequenos, em sua maioria as ocultações durarão poucos segundos, portanto apenas eventos com estrelas brilhantes serão selecionados e se houver câmeras de integração rápida disponíveis. Por outro lado, os satélites de Júpiter estão muito mais pertos que os TNOs e como o erro astrométrico é uma medida angular, consequentemente, o erro da sombra da ocultação projetada na Terra será muito menor que aquelas medidas para TNOs. Assim, a área a ser coberta para que uma ocultação por satélite irregular de Júpiter seja detectada será da ordem de poucas centenas de quilômetros.
+
+\subsection{Testes}
+
+
+\section{Centauros e TNOs}
 \label{Sec: TNOs}
 
 \chapter{Astrometria de Netuno e Tritão}
