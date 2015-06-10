@@ -356,7 +356,7 @@ Com o objetivo ver o potencial das nossas posições em melhorar as órbitas dos
 
 Esse padrão em declinação também foi identificado para outros satélites como Pasiphae e Ananke. Para alguns satélites a cobertura orbital não foi suficiente para indicar claramente a presença de erros sistemáticos em elementos orbitais específicos. Os gráficos para todos os satélites estão disponíveis em \cite{GomesJunior2015-Irregular}.
 
-\subsection{Previs\~ao das ocultaç\~oes}
+\subsection{Prediç\~ao das ocultaç\~oes}
 \label{Subsec: Irr-predic}
 
 \indent \indent Dentre os satélite irregulares dos planetas gigantes, poucos são aqueles que possuem medidas de seus parâmetros físicos. Apenas Himalia, Phoebe e Nereida foram observados por sondas, apesar de não serem medidas ideais, já que foram alvos de oportunidade. A sonda Cassini observou Himalia em 2000 ao passar próximo a Júpiter e obteve o tamanho de Himalia com um erro médio de 10 km \citep{Porco2003}. Em 2004, a Cassini, aproximando-se de Saturno, observou Phoebe em alta resolução obtendo um erro médio na medida de seu tamanho de 0.7 km \citep{Thomas2010}. Por fim, Nereida foi observado em 1989 pela sonda Voyager 2 e seu tamanho foi obtido com um erro de 25 km \citep{Smith1989}. Para outros satélites irregulares de Júpiter, seus tamanhos foram estimados por \cite{Rettig2001} impondo um albedo de 4\% justificando que esse valor é um albedo nominalmente utilizado para objetos do Sistema Solar Externo.
@@ -381,6 +381,46 @@ A primeira delas é observar o satélite dias antes, quanto mais próximo do eve
 A segunda alternativa é recalcular as órbitas dos satélites, gerar novas efemérides e estimar seus erros. Espera-se que com o grande número de posições publicadas em \cite{GomesJunior2015-Irregular} as órbitas sejam calculadas com maior precisão. Esse integração numérica será trabalhada durante o doutorado sanduíche em Paris em colaboração com o Dr. Jean-Eudes Arlot e o Dr. Josselin Desmars. Um trabalho semelhante foi abordado para ocultação de Centauros e TNOs (ver seção \ref{Sec: TNOs}).
 
 Por fim, a terceira alternativa consiste em se fazer um ajuste dos offset obtidos em \cite{GomesJunior2015-Irregular} em função da anomalia verdadeira, tempo e/ou anomalia média. Essa escolha é suportada pelas dispersões dos offsets em função da anomalia verdadeira (por exemplo, Fig. \ref{Fig: carme_anom}, para Carme) que apresentaram características notáveis. Os parâmetros a serem utilizados para cada satélite serão estudados e aplicados. Esse é o método que será utilizado para o artigo de predições de satélites irregulares que será submetido logo.
+
+Os primeiros ajustes foram feitos apenas considerando os offsets em declinação, pois são os que apresentaram características mais evidentes e, por seus erros representarem principalmente erros em latitudes, são os principais responsáveis pela não detecção da ocultação. Nesse caso, utilizamos um ajuste em função de três parâmetros: sen${f}, \cos{f}$ e uma constante, onde $f$ é a anomalia verdadeira dada pela efeméride. Esse ajuste é mostrado na Fig. \ref{Fig: Carme-dec-fit}.
+
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.45]{figuras/Carme-DEC_fit.png} 
+\caption{Ajuste dos offsets em declinação de Carme publicados em \cite{GomesJunior2015-Irregular} em função da anomalia verdadeira}
+\label{Fig: Carme-dec-fit}
+\end{centering}
+\end{figure}
+
+É possível ver para o caso de Carme que o ajuste representa razoavelmente bem a dispersão dos offsets em função da anomalia verdadeira. Para outros satélites, ajuste em primeira ordem do seno e do cosseno da anomalia verdadeira também representam razoavelmente bem os offsets em declinação. Para os offsets em ascenção reta, o ajuste com três parâmetros não é suficiente.
+
+Observar uma ocultação estelar de um satélite irregular exige um esforço muito grande por parte dos observadores. A sombra cobrirá uma região muito restrita na Terra devido aos satélites irregulares serem pequenos. Portanto, antes de iniciar uma grande campanha observacional, testaremos algumas ocultações, principalmente dos objetos maiores para confirmar a predição.
+
+Esse teste consiste em se observar o objeto ocultante e a estrela a ser ocultada próximo ao evento, quando os dois objetos estiverem presentes no mesmo campo, preferencialmente próximo ao instante do evento quando os objetos estarão o mais próximo possível. Assim as posições relativas entre os dois objetos terá mínima influência dos erros das estrelas de catálogo utilizadas na redução e das possíveis distorções de campo.
+
+Até o momento, apenas dois testes de ocultações foram feitas, uma de Himalia que ocorreu dia 03 de Março de 2015 e a segunda de Elara que ocorreu dia 30 de Março de 2015. Para cada evento quatro mapas foram gerados: o primeiro com as posições nominais da estrela e do satélite para o instante previsto; a segunda com o offset calculado como descrito anteriomente; o terceiro com os offsets da estrela e do satélite a partir de observações feitas alguns dias antes da ocultação quando os dois objetos estavam separados (campos diferentes); e o quarto a partir de observações feitas com menos de 24 horas de diferença da data prevista com a estrela e o satélite próximos no mesmo campo.
+
+\begin{figure}
+\begin{centering}
+\subfigure[]{\includegraphics[scale=0.16]{figuras/Elara_1_2015-03-30T01:45:15.png} \label{Fig: carme_alfa}}
+\subfigure[]{\includegraphics[scale=0.16]{figuras/Elara_2_2015-03-30T01:45:03.png} \label{Fig: carme_delta}}
+\subfigure[]{\includegraphics[scale=0.16]{figuras/Elara_3_2015-03-30T01:45:41.png}  \label{Fig: carme_delta}}
+\subfigure[]{\includegraphics[scale=0.16]{figuras/Elara_4_2015-03-30T01:44:13.png}  \label{Fig: carme_delta}}
+\caption{Predições para Elara}
+\label{Fig: occ-Elara}
+\end{centering}
+\end{figure}
+
+\begin{figure}
+\begin{centering}
+\subfigure[]{\includegraphics[scale=0.16]{figuras/Himalia_1_2015-03-03T00:39:25.png}  \label{Fig: carme_alfa}}
+\subfigure[]{\includegraphics[scale=0.16]{figuras/Himalia_2_2015-03-03T00:39:34.png}  \label{Fig: carme_delta}}
+\subfigure[]{\includegraphics[scale=0.16]{figuras/Himalia_3_2015-03-03T00:39:14.png}   \label{Fig: carme_delta}}
+\subfigure[]{\includegraphics[scale=0.16]{figuras/Himalia_4_2015-03-03T00:39:31.png}   \label{Fig: carme_delta}}
+\caption{Predições para Himalia}
+\label{Fig: occ-Himalia}
+\end{centering}
+\end{figure}
 
 
 \section{Centauros e TNOs}
