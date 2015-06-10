@@ -16,6 +16,7 @@
 \usepackage[comma,authoryear]{natbib}
 \usepackage[nonumberlist]{glossaries}
 \usepackage{arydshln}
+\usepackage{tablefootnote}
 %\usepackage[alf]{abntcite}
 
 %%% newcommand %%%%%%%%%%%%%%%%%
@@ -296,6 +297,7 @@ $959 \pm 5$  & $0.05  \pm 0.01$  & Occultação & 5\\
 \label{Sec: Irregulares}
 
 \subsection{Astrometria dos sat\'elites irregulares}
+\label{Subsec: Irr-astrometria}
 
 \indent \indent Durante o mestrado, foi realizado junto ao grupo um trabalho de caráter astrométrico para a melhoria das efemérides dos satélites irregulares de Júpiter Saturno. Em colaboração com o Dr. Jean-Eudes Arlot do IMCCE, reduzi um banco de dados observado no Observatoire Haute-Provence (OHP) entre 1998 e 2008, contendo mais de 28 mil posições para 10 satélites. Reduzi também um banco de dados com mais de 100 mil imagens obtidas no Observatório do Pido dos Dias (OPD) entre 1992 e 2014. Já no doutorado, neste mesmo âmbito, reduzi 810 observações feitas no European Southern Observatory (ESO) em 24 noites utilizando o detector mosaico CCD Wide Field Imager (WFI).
 
@@ -304,39 +306,38 @@ Mais de 8000 posições foram identificadas como pertencentes a satélites irreg
 Um dos principais resultados desse trabalho foi a grande quantidade de posições obtidas para os satélites irregulares em comparação com a quantidade utilizada nas integrações numéricas atuais (ver tabela \ref{Tab: comparison-horizons}).
 
 \begin{table}
-\caption{\label{Tab: comparison-horizons} Comparação entre o número de posições obtidas em \cite{GomesJunior2015-Irregular} e o número utilizado nas integrações numéricas das órbitas pelo JPL como publicado por  \cite{Jacobson2012}.}
+\caption{\label{Tab: comparison-horizons} Comparação entre o número de posições obtidas em \cite{GomesJunior2015-Irregular} e o número utilizado nas integrações numéricas das órbitas pelo JPL como publicado por  \cite{Jacobson2012}. Os satélites estão separados por planeta (linha reta) e por família orbital (linha tracejada)}
 \begin{centering}
-\begin{tabular}{lccccc}
+\begin{tabular}{lccccccc}
 \hline  \hline
- & \multicolumn{4}{c}{Número de Posições}   &    \tabularnewline
-Satélite  & OPD  & OHP & ESO & Total  & Jacobson \tabularnewline
+Satélite & Diâm. (km)\tablefootnote{Planetary Satellite Physical Parameters - JPL: \url{http://ssd.jpl.nasa.gov/?sat_phys_par}} & Mag V  & OPD  & OHP & ESO & Total  & Jacobson \tabularnewline
 \hline
-Himalia & 854 & 357 & 23 & 1234 & 1757 \tabularnewline
-Elara & 403 & 187 & 46 & 636 & 1115 \tabularnewline
-Lysithea & 60 & 84 & 90 & 234 & 431 \tabularnewline
-Leda & 6 & 48 & 44 & 98 & 178 \tabularnewline
+Himalia & 170 & 14 & 854 & 357 & 23 & 1234 & 1757 \tabularnewline
+Elara & 86 & 16 & 403 & 187 & 46 & 636 & 1115 \tabularnewline
+Lysithea & 36 & 18 & 60 & 84 & 90 & 234 & 431 \tabularnewline
+Leda & 20 & 19 & 6 & 48 & 44 & 98 & 178 \tabularnewline
 \hdashline
-Pasiphae & 295 & 248 & 66 & 609 & 1629 \tabularnewline
-Callirrhoe & 9 & -  &  16 & 25 & 95 \tabularnewline
-Megaclite & - & -  &  10 & 10 & 50  \tabularnewline
+Pasiphae & 60 & 17 & 295 & 248 & 66 & 609 & 1629 \tabularnewline
+Callirrhoe & 9 & 21 & 9 & -  &  16 & 25 & 95 \tabularnewline
+Megaclite & 5 & 22 & - & -  &  10 & 10 & 50  \tabularnewline
 \hdashline
-Ananke & 52 & 141 & 57 & 250 & 600 \tabularnewline
-Praxidike & - & -  &   2 & 2 & 59 \tabularnewline
+Ananke & 28 & 18 & 52 & 141 & 57 & 250 & 600 \tabularnewline
+Praxidike & 7 & 21 & - & -  &   2 & 2 & 59 \tabularnewline
 \hdashline
-Carme & 90 & 204 & 37 & 331 & 973 \tabularnewline
-Sinope & 41 & 169 & 11 & 221 & 854 \tabularnewline
-Themisto & - & - & 16 & 16 & 55 \tabularnewline
+Carme & 46 & 18 & 90 & 204 & 37 & 331 & 973 \tabularnewline
+Sinope & 38 & 18 & 41 & 169 & 11 & 221 & 854 \tabularnewline
+Themisto & 8 & 21 & - & - & 16 & 16 & 55 \tabularnewline
 \hline
-Phoebe & 1239 & 516 & 32 & 1787 & 3479 \tabularnewline
+Phoebe & 213 & 16 & 1239 & 516 & 32 & 1787 & 3479 \tabularnewline
 \hdashline
-Siarnaq & - & 20 & 56 & 76 & 239 \tabularnewline
-Paaliaq & - & - & 11 & 11 & 82 \tabularnewline
+Siarnaq & 40 & 20 & - & 20 & 56 & 76 & 239 \tabularnewline
+Paaliaq & 22 & 21 & - & - & 11 & 11 & 82 \tabularnewline
 \hdashline
-Albiorix & - & - & 46 & 46 & 137 \tabularnewline
+Albiorix & 32 & 20 & - & - & 46 & 46 & 137 \tabularnewline
 \hline
-Sycorax & - & - & 35 & 35 & 237 \tabularnewline
+Sycorax & 150 & 21 & - & - & 35 & 35 & 237 \tabularnewline
 \hline
-Nereid & 803 & - & 99 & 902 & 716 \tabularnewline
+Nereid & 340 & 19 & 803 & - & 99 & 902 & 716 \tabularnewline
 \hline
 \end{tabular}
 \par\end{centering}
@@ -356,6 +357,7 @@ Com o objetivo ver o potencial das nossas posições em melhorar as órbitas dos
 Esse padrão em declinação também foi identificado para outros satélites como Pasiphae e Ananke. Para alguns satélites a cobertura orbital não foi suficiente para indicar claramente a presença de erros sistemáticos em elementos orbitais específicos. Os gráficos para todos os satélites estão disponíveis em \cite{GomesJunior2015-Irregular}.
 
 \subsection{Previs\~ao das ocultaç\~oes}
+\label{Subsec: Irr-predic}
 
 \indent \indent Dentre os satélite irregulares dos planetas gigantes, poucos são aqueles que possuem medidas de seus parâmetros físicos. Apenas Himalia, Phoebe e Nereida foram observados por sondas, apesar de não serem medidas ideais, já que foram alvos de oportunidade. A sonda Cassini observou Himalia em 2000 ao passar próximo a Júpiter e obteve o tamanho de Himalia com um erro médio de 10 km \citep{Porco2003}. Em 2004, a Cassini, aproximando-se de Saturno, observou Phoebe em alta resolução obtendo um erro médio na medida de seu tamanho de 0.7 km \citep{Thomas2010}. Por fim, Nereida foi observado em 1989 pela sonda Voyager 2 e seu tamanho foi obtido com um erro de 25 km \citep{Smith1989}. Para outros satélites irregulares de Júpiter, seus tamanhos foram estimados por \cite{Rettig2001} impondo um albedo de 4\% justificando que esse valor é um albedo nominalmente utilizado para objetos do Sistema Solar Externo.
 
@@ -366,6 +368,19 @@ As predições foram feitas utilizando o catálogo UCAC4 e efemérides do JPL. U
 Como esses objetos são muito pequenos, em sua maioria as ocultações durarão poucos segundos, portanto apenas eventos com estrelas brilhantes serão selecionados e se houver câmeras de integração rápida disponíveis. Por outro lado, os satélites de Júpiter estão muito mais pertos que os TNOs e como o erro astrométrico é uma medida angular, consequentemente, o erro da sombra da ocultação projetada na Terra será muito menor que aquelas medidas para TNOs. Assim, a área a ser coberta para que uma ocultação por satélite irregular de Júpiter seja detectada será da ordem de poucas centenas de quilômetros.
 
 \subsection{Testes}
+\label{Subsec: Irr-testes}
+
+\indent \indent Até que o primeiro catálogo GAIA seja lançado, as posições das estrelas usadas serão as do catálogo UCAC4. Porém esse catálogo possui imprecisões relevantes principalmente para as estrelas mais fracas. Uma das estrelas testadas apresentou um offset da posição do catálogo para a data da observação de mais de 600 mas. Para a estrela em questão, esse valor representa uma variação de aproximadamente 1900 km da sombra projetada na Terra.
+
+Para corrigir esses erros, será necessário observar as estrelas a serem ocultadas dias antes do evento obtendo os offsets correspondentes e calibrando a predição. Erros em ascensão reta interferem majoritariamente no instante em que a ocultação ocorrerá. Já erros em declinação principalmente na latitude geográfica em que a sombra passará.
+
+Outra fonte de erro na predição é a posição do satélite. Como mostradas na seção \ref{Subsec: Irr-astrometria}, as órbitas dos satélites irregulares não são muito precisas havendo erros sistemáticos em seus elementos orbitais. Infelizmente o JPL não provê suas efemérides com os erros estimados das posições. Dessa forma, há três alternativas para a correção das posições dos satélites.
+
+A primeira delas é observar o satélite dias antes, quanto mais próximo do evento melhor, e determinar um offset. O offset, portanto, seria considerado estável dentro desses poucos dias uma vez que ele não se move muito em sua órbita. Porém, nem sempre é possível observar o alvo com antecedêndia.
+
+A segunda alternativa é recalcular as órbitas dos satélites, gerar novas efemérides e estimar seus erros. Espera-se que com o grande número de posições publicadas em \cite{GomesJunior2015-Irregular} as órbitas sejam calculadas com maior precisão. Esse integração numérica será trabalhada durante o doutorado sanduíche em Paris em colaboração com o Dr. Jean-Eudes Arlot e o Dr. Josselin Desmars. Um trabalho semelhante foi abordado para ocultação de Centauros e TNOs (ver seção \ref{Sec: TNOs}).
+
+Por fim, a terceira alternativa consiste em se fazer um ajuste dos offset obtidos em \cite{GomesJunior2015-Irregular} em função da anomalia verdadeira, tempo e/ou anomalia média. Essa escolha é suportada pelas dispersões dos offsets em função da anomalia verdadeira (por exemplo, Fig. \ref{Fig: carme_anom}, para Carme) que apresentaram características notáveis. Os parâmetros a serem utilizados para cada satélite serão estudados e aplicados. Esse é o método que será utilizado para o artigo de predições de satélites irregulares que será submetido logo.
 
 
 \section{Centauros e TNOs}
