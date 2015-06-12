@@ -390,9 +390,9 @@ $959 \pm 5$  & $0.05  \pm 0.01$  & Occultação & 5\\
 \subsection{Prediç\~ao das ocultaç\~oes}
 \label{Subsec: Irr-predic}
 
-\indent \indent Com o objetivo de obter parâmetros físicos para os satélites irregulares com maior precisão foram feitas predições de ocultações estelares para os 7 maiores satélites de Júpiter, o satélite Phoebe de Saturno e Nereida de Netuno. Esses objetos são pequenos (ver Tabela \ref{Tab: comparison-horizons}), se comparados aos TNOs e Centauros estudados na seção \ref{Sec: TNOs}, sendo que o menor dos satélites da amostra, Ananke, possui aproximadamente 28 km.
+\indent \indent Com o objetivo de obter parâmetros físicos para os satélites irregulares com maior precisão foram feitas predições de ocultações estelares para os 7 maiores satélites de Júpiter, o satélite Phoebe de Saturno e Nereida de Netuno. Esses objetos são pequenos (ver Tabela \ref{Tab: comparison-horizons}), se comparados aos TNOs e Centauros estudados na seção \ref{Sec: TNO-occ}, sendo que o menor dos satélites da amostra, Ananke, possui aproximadamente 28 km.
 
-As predições foram feitas utilizando o catálogo UCAC4 e efemérides do JPL. Um total de 588 eventos foram obtidos entre 01 de Janeiro de 2015 e 31 de Dezembro de 2017 para os 9 objetos sendo que a maioria será descartada por passar em regiões de oceano ou onde não há observadores disponíveis. Para Nereida, apenas uma estrela UCAC4 foi identificada para ser ocultada. Nesse caso, utilizamos um catálogo de estrelas feito a partir do caminho aparente do satélite de Netuno Tritão no céu para predições de ocultações estelares pelo mesmo (ver seção \ref{Sec: TNOs}).
+As predições foram feitas utilizando o catálogo UCAC4 e efemérides do JPL. Um total de 588 eventos foram obtidos entre 01 de Janeiro de 2015 e 31 de Dezembro de 2017 para os 9 objetos sendo que a maioria será descartada por passar em regiões de oceano ou onde não há observadores disponíveis. Para Nereida, apenas uma estrela UCAC4 foi identificada para ser ocultada. Nesse caso, utilizamos um catálogo de estrelas feito a partir do caminho aparente do satélite de Netuno Tritão no céu para predições de ocultações estelares pelo mesmo (ver seção \ref{Sec: TNO-occ}).
 
 Como esses objetos são muito pequenos, em sua maioria as ocultações durarão poucos segundos, portanto apenas eventos com estrelas brilhantes serão selecionados e se houver câmeras de integração rápida disponíveis. Por outro lado, os satélites de Júpiter estão muito mais pertos que os TNOs e como o erro astrométrico é uma medida angular, consequentemente, o erro da sombra da ocultação projetada na Terra será muito menor que aquelas medidas para TNOs. Assim, a área a ser coberta para que uma ocultação por satélite irregular de Júpiter seja detectada será da ordem de poucas centenas de quilômetros.
 
@@ -407,7 +407,7 @@ Outra fonte de erro na predição é a posição do satélite. Como mostradas no
 
 A primeira delas é observar o satélite dias antes, quanto mais próximo do evento melhor, e determinar um offset. O offset, portanto, seria considerado estável dentro desses poucos dias uma vez que ele não se move muito em sua órbita. Porém, nem sempre é possível observar o alvo com antecedêndia.
 
-A segunda alternativa é recalcular as órbitas dos satélites, gerar novas efemérides e estimar seus erros. Espera-se que com o grande número de posições publicadas em \cite{GomesJunior2015-Irregular} as órbitas sejam calculadas com maior precisão. Esse integração numérica será trabalhada durante o doutorado sanduíche em Paris em colaboração com o Dr. Jean-Eudes Arlot e o Dr. Josselin Desmars. Um trabalho semelhante foi abordado para ocultação de Centauros e TNOs (ver seção \ref{Sec: TNOs}).
+A segunda alternativa é recalcular as órbitas dos satélites, gerar novas efemérides e estimar seus erros. Espera-se que com o grande número de posições publicadas em \cite{GomesJunior2015-Irregular} as órbitas sejam calculadas com maior precisão. Esse integração numérica será trabalhada durante o doutorado sanduíche em Paris em colaboração com o Dr. Jean-Eudes Arlot e o Dr. Josselin Desmars. Um trabalho semelhante foi abordado para ocultação de Centauros e TNOs (ver seção \ref{Sec: TNO-occ}).
 
 Por fim, a terceira alternativa consiste em se fazer um ajuste dos offset obtidos em \cite{GomesJunior2015-Irregular} em função da anomalia verdadeira, tempo e/ou anomalia média. Essa escolha é suportada pelas dispersões dos offsets em função da anomalia verdadeira (por exemplo, Fig. \ref{Fig: carme_anom}, para Carme) que apresentaram características notáveis. Os parâmetros a serem utilizados para cada satélite serão estudados e aplicados. Esse é o método que será utilizado para o artigo de predições de satélites irregulares que será submetido logo.
 
@@ -444,7 +444,7 @@ A Fig. \ref{Fig: occ-Himalia} mostra os quatro mapas para o teste da ocultação
 
 Para esse evento é possível ver que a sombra não varia muito dentre os quatro mapas sugerindo que para Himalia uma probabilidade maior de observar um evento. De fato, a maior diferença entre as sombras dos quatros mapas é de $25 s$ e $130 km$ na direção perpendicular às sombras.
 
-Na Fig. \ref{Fig: occ-Elara} temos os mapas para a ocultação de Elara do dia 30 de Março. As observações de teste foram tomadas dias 25 de março e 02 de abril no Zeiss. Na noite do dia 02 eles ainda puderam ser observadas no mesmo campo. Devido à Elara ser bem mais fraco, as dispersões das posições do satélite nas duas noites acabaram sendo maiores que para Himalia. Ainda assim, as diferenças entre os mapas obtidos foram pequenos. A maior diferença entre eles é de $48 s$ e $302 km$.
+Na Fig. \ref{Fig: occ-Elara} temos os mapas para a ocultação de Elara do dia 30 de Março. As observações de teste foram tomadas dias 25 de março e 02 de abril no Zeiss. Na noite do dia 02 eles ainda puderam ser observadas no mesmo campo. Devido à Elara ser bem mais fraco, as dispersões das posições do satélite nas duas noites acabaram sendo maiores que para Himalia. Ainda assim, as diferenças entre os mapas obtidos foram pequenos. A maior diferença entre elas é de $48 s$ e $302 km$.
 
 \begin{figure}
 \begin{centering}
@@ -452,12 +452,12 @@ Na Fig. \ref{Fig: occ-Elara} temos os mapas para a ocultação de Elara do dia 3
 \subfigure[Offset de Elara a partir do ajuste]{\includegraphics[scale=0.16]{figuras/Elara2_2015-03-30T01:44:59.png} \label{Fig: occ-Elara-ajuste}}
 \subfigure[Obs. dia 25 de Março (campos separados)]{\includegraphics[scale=0.16]{figuras/Elara3_2015-03-30T01:44:17.png}  \label{Fig: occ-Elara-off25mar}}
 \subfigure[Obs. dia 02 de Abril (mesmo campo)]{\includegraphics[scale=0.16]{figuras/Elara4_2015-03-30T01:45:30.png}  \label{Fig: occ-Elara-off02abr}}
-\caption{Predições para Elara. Mesmo que a Fig. \ref{Fig: occ-Himalia}, mas para Elara. O mapa (c) feito a partir de observações tomadas dia 25 de março e (d) a partir de 02 de abril.}
+\caption{Predições para Elara. Mesmo que a Fig. \ref{Fig: occ-Himalia}, mas para Elara. O mapa (c) feito a partir de observações tomadas dia 25 de março e (d) a partir de observações de 02 de abril.}
 \label{Fig: occ-Elara}
 \end{centering}
 \end{figure}
 
-Um pedido de tempo foi feito para o telescópio Zeiss para se tentar observar uma ocultação de Himalia  dia 23 de Outubro de 2015. A sombra dessa ocultação passará pela região sudeste do Brasil (ver Fig. \ref{Fig: occ-Himalia-itajuba}). A ocultação passará muito baixo do céu (~22º de altura) e estará próximo ao amanhecer, porém se observar será a primera ocultação de um satélite irregular.
+Um pedido de tempo foi feito para o telescópio Zeiss para se tentar observar uma ocultação de Himalia  dia 23 de Outubro de 2015. A sombra dessa ocultação passará pela região sudeste do Brasil (ver Fig. \ref{Fig: occ-Himalia-itajuba}). O evento ocorrerá muito baixo do céu (~22º de altura) e estará próximo ao amanhecer, porém se observar será a primera ocultação de um satélite irregular.
 
 \begin{figure}
 \includegraphics[scale=0.35]{figuras/Himalia_2015-10-23T07:54:47.png}
@@ -467,9 +467,17 @@ Um pedido de tempo foi feito para o telescópio Zeiss para se tentar observar um
 
 
 \section{Centauros e TNOs}
-\label{Sec: TNOs}
+\label{Sec: TNO-occ}
+
+\indent \indent Como dito no Cap. \ref{Cap: intro}, os objetos do sistema solar exterior podem ser considerados fósseis do sistema solar. Dentre esses, os TNOs, por estarem mais distantes, são os que guardam as informações mais antigas. Ainda é incerta a distribuição de tamanhos dos TNOs e pouco se conhece sobre suas composições, estruturas internas, presença de atmosfera, densidade, etc.
+
+Com o objetivo de obter os parâmetro físicos desses objetos uma grande campanha observacional é realizada para se observar ocultações estelares por TNOs e Centauros. Essa campanha é liderada por pesquisadores brasileiros, franceses e espanhóis e tem colaboração com observadores espalhados por todo o mundo.
 
 
+
+
+\chapter{Cronograma das Atividades}
+\label{Cap: cronograma}
 
 \glsaddall
 \printglossary
