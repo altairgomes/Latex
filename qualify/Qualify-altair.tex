@@ -25,6 +25,7 @@
 
 \newcommand{\degr}{\ensuremath{^{\circ}}}%                    % degree symbol:  °
 \newcommand{\arcmin}{\ensuremath{^{\prime}}}%                    % degree symbol:  °
+\newcommand{\arcsec}{\ensuremath{^{\prime\prime}}}%                    % degree symbol:  °
 \newcommand{\fs}{\mbox{\ensuremath{.\!\!^s}}}
 \newcommand{\farcm}{\mbox{\ensuremath{.\mkern-4mu^\prime}}}%    % fractional arcminute symbol: 0.'0
 \newcommand{\farcs}{\mbox{\ensuremath{.\!\!^{\prime\prime}}}}%  % fractional arcsecond symbol: 0.''0
@@ -82,18 +83,15 @@
 %\end{epigrafe}
 
 \resumo{Resumo}
-%\indent \indent O estudo da estrutura e evolução do Sistema Solar tem muita importância atualmente, por exemplo, na compreensão dos mecanismos de formação dos planetas de outras estrelas (exoplanetas), trazendo em seus desdobramentos valiosas informações quanto a viabilidade de formação de ambientes que comportem vida.
+\indent \indent O estudo de objetos como TNOs, Centauros e Satélites Irregulares (remanescentes relativamente inalterados da formação do sistema solar) nos ajudam a compreender a formação e evolução do Sistema Solar. Poucas foram as sondas enviadas para explorar essas regiões e muito do conhecimento sobre seus constituintes foram adquiridos a partir de observações de solo. Atualmente, é aceito que TNOs e Centauros tenham sido formados nas partes mais internas do sistema solar, que satélites irregulares de planetas gigantes foram capturados pelos planetas. Resta saber quando e como. Para ajudar a responder essas perguntas é necessário caracterizar seus parâmetros físicos.
 
-%Praticamente cada satélite é um problema particular de Mecânica Celeste. Dessa forma, a observação de seus movimentos é muito útil por razões teóricas. A preparação e realização de missões espaciais para alguns planetas, e mesmo alguns satélites, como Titã de Saturno ou os Galileanos de Júpiter, requer observações frequentes e posições muito acuradas de todos os satélites do sistema planetário visitado.\\
-%\indent Os satélites irregulares de planetas gigantes, principalmente de Júpiter e de Saturno, são substancialmente menores do que os satélites regulares e possuem órbitas mais distantes, excêntricas, inclinadas e, na maioria dos casos, retrógradas. Explicar a existência dos satélites irregulares dos planetas gigantes é um estudo interessante em dinâmica orbital.\\
-%\indent É amplamente aceito que eles, devido à configuração orbital, foram capturados por seus planetas. Porém, ainda não são certos a origem e o método de captura desses objetos embora as teorias mais prováveis sejam a de arrasto gasoso durante a formação do Sistema Solar e a captura de três corpos.\\
-%\indent A maioria dos satélites formam famílias com características orbitais semelhantes sugerindo uma evolução dada por colisões. A compreensão desses mecanismos nos fará entender melhor o nosso próprio sistema solar e, possivelmente, de sistemas extra-solares.\\
-%\indent Com o pacote astrométrico PRAIA o tempo empregado na redução de grandes quantidades de imagens foi diminuído significativamente. Os objetivos científicos dos nossos programas observacionais agora tem sido atingidos em curtíssimo prazo, em consonância com a atual demanda astronômica e astrofísica de nossa área.\\
-%\indent Em uma base de dados com mais de 100 mil imagens obtidas entre 1992 e 2012 no telescópios de 1.2m do Observatoire de Haute Province, França, e nos telescópios \PE, \BC{} e Zeiss no Observatório do Pico dos Dias, mais de 4 mil contem satélites irregulares de Júpiter e Saturno. Reduzir essa grande quantidade de observações com precisão só foi possível com a utilização do PRAIA. Como é possível ver nos resultados obtidos, os offsets de posição refletem o erro natural da astrometria e o erro das efemérides dos satélites mais fracos, e sugerem que podemos efetivamente contribuir para que novas integrações numéricas forneçam posições mais precisas. Essas novas efemérides irão permitir que ocultações estelares por esses objetos possam ser preditas com maior precisão. A observações dessas ocultações permitirão um maior conhecimento das propriedades físicas dos satélites. 
+Um dos métodos mais robustos para caracterizar tamanho, forma, densidade, atmosfera, anéis, etc é a ocultação estelar por objetos do Sistema Solar Externo. Este trabalho apresenta a análise de duas ocultações por Ceres, a predição de ocultações por satélites irregulares e o trabalho de ocultações por TNOs e Centauros desenvolvido pelo grupo em colaboração com pesquisadores internacionais.
+
+Parâmetros internos de Netuno e Tritão serão trabalhados em um doutorado sanduíche com o Dr. Valéry Lainey estudando os efeitos de maré do sistema. Uma vez que esses objetos estão muito próximos no céu, uma análise será feita para obter as posições astrométricas relativas Netuno-Tritão utilizando a técnica de coronografia digital para eliminar a contribuição da luz de Netuno na posição de Tritão. Usaremos nosso banco de dados de 23 anos de observações CCD do sistema no OPD/LNA, bem como dados inéditos de telemetria de sondas do espaço (Voyager) de posse do Dr. Lainey, dentro do projeto ESPaCE.
 
 \par
 \vspace{1em}
-\noindent\textbf{Palavras-chave:} Astrometria, Ocultações
+\noindent\textbf{Palavras-chave:} astrometria, fotometria, ocultações estelares, marés, Ceres, satélites irregulares, objetos trans-Neptunianos, Netuno, Tritao
 
 
 \tableofcontents % para gerar o sumário
@@ -108,24 +106,69 @@
 \chapter{Introdução}
 \label{Cap: intro}
 
-\indent \indent O estudo de objetos como TNOs, Centauros e Satélites Irregulares (remanescentes relativamente inalterados da formação do sistema solar) nos ajudam a compreender a formação e evolução do Sistema Solar. Atualmente, é aceito que TNOs e Centauros tenham sido formados nas partes mais internas do sistema solar. Eles teriam então sido colocados em suas posições atuais devido a troca de momento angular entre os planetas e planetésimos quando da migração dos planetas gigantes. A evolução se deu de tal forma que a passagem dos planetesimais e planetas por zonas de ressonância de movimento médio redefiniu as órbitas desses corpos \citep{Tsiganis2005}.\\
-\indent Sabe-se que poucas sondas espaciais foram enviados para estudar o Sistema Solar Externo e que a quantidade de objetos estudados é muito pequena. Por isso, ainda hoje, as observações de solo tem se mostrado de grande importância.\\
-\indent Os sistemas de Júpiter e Saturno já foram pelas Voyager I e II, Galileu (Júpiter) e Cassini (Saturno), porém apenas Saturno continua sendo investigado por uma sonda. Porém as sondas observaram apenas os planetas, os anéis e satélites mais internos. Os satélites externos, que acredita-se ser oriundo de capturas ou foram pouco observados (como Phoebe) ou simplesmente não foram observados.\\
-\indent Já no caso de Urano e Netuno, nenhuma sonda exclusiva foi enviada, apenas as Voyagers I e II os visitaram, mas não permaneceram nos sistemas. A sonda New Horizons já está próxima a Plutão e obterá parâmetros físicos para Plutão e seus satélites (primeira visita por sonda a um objeto do cinturão de Kuiper), porém será uma passagem rápida e o acompanhamento da evolução do sistema, incluindo a evolução da atmosfera de Plutão se dará por observações de solo.\\
-\indent A quantidade de objetos descobertos além da órbita de Saturno tem aumentado muito desde o fim do século passado. Como são raras as oportunidades em que uma sonda se aproxima desses objetos, a obtenção de suas características físicas ficam a cargo de observações de solo ou de
-telescópios espaciais.\\
-\indent Um método que tem se mostrado eficiente para a obtenção desses parâmetros é o métodode ocultações estelares, que proporciona medidas tão precisas que são apenas superadas por medidas oriundas de sondas.
+\indent \indent O estudo de objetos como TNOs, Centauros e Satélites Irregulares nos ajudam a compreender a formação e evolução do Sistema Solar. Nesta região distante do Sol, de baixas temperaturas, objetos principalmente de tamanho relativamente pequeno, e mais dispersos no espaço, provavelmente sofreram muito pouca diferenciação, seja por mecanismos internos, seja por choques com outros corpos, comparados a objetos formados mais próximos do Sol.
 
-\chapter{Astrometria dos satélites irregulares dos planetas gigantes}
-\label{Cap: Irr-astrometria}
+Por serem corpos asteroidais localizados de forma dispersa além da órbita de Netuno, considera-se que os objetos trans-Neptunianos (TNOs) guardam estruturas e composições relativamente inalteradas em relação a sua época de formação, constituindo-se assim em corpos de prova de grande valor para o estudo da origem do sistema solar, ao menos para essa região exterior.
 
-\indent \indent Os satélites irregulares dos planetas gigantes são menores que as regulares, possuindo órbitas mais excêntricas, inclinadas e distantes. Na maioria dos casos, essas órbitas são retrógradas. Devido suas configurações orbitais, é altamente aceito que estes objetos foram capturados nos estágios iniciais da formação do sistema solar \citep{Sheppard2003}.
+Sendo que o primeiro TNO, além de Plutão, foi descoberto a menos de 20 anos \citep{Jewitt1993}, as propriedades básicas desta população ainda não estão inteiramente estabelecidas, como a distribuição de tamanhos, composição, estruturas internas.
 
-Por serem pequenos, eles são pouco brilhantes e só foram descobertos no último século\footnote{Website: http://ssd.jpl.nasa.gov/?sat\_discovery}. Dentre os satélite irregulares dos planetas gigantes, poucos são aqueles que possuem medidas de seus parâmetros físicos. Apenas Himalia, Phoebe e Nereida foram observados por sondas, apesar de não serem medidas ideais, já que foram alvos de oportunidade. A sonda Cassini observou Himalia em 2000 ao passar próximo a Júpiter e obteve o tamanho de Himalia com um erro médio de 10 km \citep{Porco2003}. Em 2004, a Cassini, aproximando-se de Saturno, observou Phoebe em alta resolução obtendo um erro médio na medida de seu tamanho de 0.7 km \citep{Thomas2010}. Por fim, Nereida foi observado em 1989 pela sonda Voyager 2 e seu tamanho foi obtido com um erro de 25 km \citep{Smith1989}. Para outros satélites irregulares de Júpiter, seus tamanhos foram estimados por \cite{Rettig2001} impondo um albedo de 4\% cam a justifica de que esse valor é um albedo nominalmente utilizado para objetos do Sistema Solar Externo.
+Centauros são uma população transiente entre TNOs e cometas da família de Júpiter, orbitando em uma região entre Júpiter e Netuno. Atualmente, cerca de 400 deles são conhecidos e é geralmente aceito que eles compartilham uma origem comum com os objetos do cinturão de Kuiper. Uma vez que Centauros são tipicamente mais brilhantes que TNOs por estarem mais próximos, eles servem como representantes nos quais são possíveis de inferir propriedades mais gerais sobre os objetos mais distantes \citep{Fernandez2002}. Dessa forma, a partir daqui, TNOs e Centauros serão tratados indistintamente como uma única população e referida unicamente como "TNOs".
 
-Existem alguns mecanismos de captura de objetos por planetas gigantes propostos na literatura. Há o Arrasto Gasoso na nebulosa circumplanetária primordial \citep{Sheppard2005} onde o movimento objeto seria afetado gás e sua velocidade diminuiria até que fosse capturado pelo planeta. Outro mecanismo se chama captura pull-down \citep{Sheppard2005}, onde a massa do planeta aumentaria enquanto o objeto estivesse temporariamente capturado.
+Atualmente, é aceito que TNOs tenham sido formados nas partes mais internas do sistema solar. Eles teriam então sido colocados em suas posições atuais devido a troca de momento angular entre os planetas e planetésimos quando da migração dos planetas gigantes. A evolução se deu de tal forma que a passagem dos planetesimais e planetas por zonas de ressonância de movimento médio redefiniu as órbitas desses corpos \citep{Tsiganis2005}.
 
-Um mecanismo baseado no modelo de Nice \citep{Morbidelli2005, Tsiganis2005, Gomes2005} foi proposto por \cite{Nesvorny2007} e, especificamente para Júpiter, por \citealp{Nesvorny2014}. Durante a instabilidade do sistema solar primordial, ocorreram encontros entre os planetas externos. Esses encontros planetários poderiam trocar energia e momento angular entre os planetas e os objetos próximos tornando possível a captura de um corpo irregular por um planeta gigante. Nesse cenário, a taxa de sobrevivência de satélites anteriores ao LHB (Bombardeamento Pesado Tardio\footnote{"Late Heavy Bombardment", em inglês}) é muito pequena.
+Muitos dos objetos que pertenciam ao cinturão de Kuiper primordial acabaram sendo enviados pela interação com os planetas gigantes para as partes mais internas do sistema solar. Alguns podem ter sido capturados pelos planetas criando a população de satélites irregulares ou satélites externos \citep{Nesvorny2007}, troianos \citep{Morbidelli2005} ou até mesmo para o cinturão principal de asteroides \citep{McKinnon2012}. Estudar esses objetos é de grande importância para entender a evolução do sistema solar.
+
+Desses objetos, Tritão possui um interesse particular. Ele foi capturado por Netuno \citep{McKinnon2007} em uma órbita retrógrada e próxima ao planeta. Sua superfície é deformada com características tectônicas e possivelmente criovulcânicas \citep{Nimmo2015} e as propriedades físicas de Tritão já conhecidas mostram uma similaridade com as de Plutão. Além do mais, é um dos poucos objetos do sistema solar que se sabe possuir atmosfera.
+
+Sabe-se que poucas sondas espaciais foram enviados para estudar o sistema solar externo e que a quantidade de objetos estudados é muito pequena. Por isso, ainda hoje, as observações de solo tem se mostrado de grande importância.
+
+Os sistemas de Júpiter e Saturno já foram pelas Voyager I e II, Galileu (Júpiter) e Cassini (Saturno), porém apenas Saturno continua sendo investigado por uma sonda. Todavia, as sondas observaram apenas os planetas, os anéis e satélites mais internos. Os satélites externos ou foram pouco observados (como Phoebe) ou simplesmente não foram observados.
+
+Já no caso de Urano e Netuno, nenhuma sonda exclusiva foi enviada, apenas as Voyagers I e II os visitaram, mas não permaneceram nos sistemas. A sonda New Horizons já está próxima a Plutão e obterá parâmetros físicos para Plutão e seus satélites (primeira visita por sonda a um objeto do cinturão de Kuiper), porém será uma passagem rápida e o acompanhamento da evolução do sistema, incluindo a evolução da atmosfera de Plutão se dará por observações de solo.
+
+A quantidade de objetos descobertos além da órbita de Saturno tem aumentado muito desde o fim do século passado. Como são raras as oportunidades em que uma sonda se aproxima desses objetos, a obtenção de suas características físicas ficam a cargo de observações de solo ou de
+telescópios espaciais.
+
+Um método que tem se mostrado eficiente para a obtenção desses parâmetros é o método de ocultações estelares, que proporciona medidas tão precisas que são apenas superadas por medidas oriundas de sondas. De fato, a sonda \textit{Dawn} já está orbitando Ceres, um dos objetos deste estudo, e a sonda \textit{New Horizons} está prestes a chegar em Plutão. As observações feitas por essas sondas trazem a oportunidade perfeita para comparar os resultados com os obtidos pelas nossas ocultações e calibrar a técnica, de forma que ocultações feitas para outros objetos possam ser mais precisas.
+
+O objetivo desse Doutorado é observar objetos do sistema solar exterior, fazer astrometria para melhorar suas efemérides de forma que ocultações estelares por esses objetos possam ser preditas com precisão, observar as ocultações e obter os parâmetros físicos. Além disso, será feito um estudo astrométrico do sistema Netuno-Tritão para obter parâmetros relacionados a efeitos de maré. 
+
+
+\chapter{Astrometria}
+\label{Cap: Astrometria}
+
+\section{Procedimento de Redução}
+
+O tratamento astrométrico das imagens é feito utilizando a Plataforma para Redução Automática de Imagens Astronômias \citep[PRAIA][]{Assafin2011}. As medidas (x, y) são obtidas através de uma Gaussiana bidimensional simétrica ajustada até uma largura à altura (FWHM = seeing). Em uma FWHM, o perfil da imagem é bem descrito por um perfil gaussiano, livre das distorções de borda que prejudicam a determinação do centro. O PRAIA identifica automaticamente as estrelas de catálogo e determina ($\alpha$, $\delta$) com um modelo definido pelo usuário que relaciona as medidas (x, y) da imagem e as coordenadas projetadas no plano do céu (X, Y).
+
+Majoritariamente, o catálogo UCAC4 \citep{Zacharias2013} é utilizado como representante prático do ICRS. Como será exposto na seção \ref{Sec: TNOs-astrometria}, o catálogo WFI é utilizado para determinados TNOs até 2015. Esses catálogos serão substituídos pelo catálogo GAIA uma vez que seja lançado em meados de 2016.
+
+Para cada frame, usamos um modelo polinomial de seis constantes para relacionar as medidas (x, y) com as coordenadas (X, Y) do plano tangente. Para observações feitas no ESO, o procedimento astrométrico seguido é o mesmo descrito em \citep{Assafin2012}; as medidas (x, y) dos CCDs individuais são pré-corrigidos por um padrão de distorção de campo e todas as posições vindas de diferentes CCDs e mosaicos são combinadas usando o polinômio de grau três para produzir uma solução global para cada noite e campo observado, a as posições ($\alpha$, $\delta$) são então obtidas no sistema do catálogo utilizado.
+
+
+\section{Centauros e TNOs}
+\label{Sec: TNOs-astrometria}
+
+\indent \indent Observar uma ocultação exige um grande trabalho de predição e sua melhoria. Os TNOs estão muito distantes significando que mesmo sem grandes erros nas suas efemérides ou na posição da estrela o erro do local por onde a sombra irá passar pode ser de milhares de quilômetros. Preferencialmente, esse erro tem que ser menor que o tamanho angular do objeto no plano do céu. Por exemplo, Plutão tem um raio de $1190 \pm 5$ km \cite[submetido]{DiasOliveira2015} que a uma distância de aproximadamente 32 UA representam um diâmetro angular de 102 mas. Para a maioria dos objetos selecionados, menores que Plutão e/ou mais distantes, seus tamanhos angulares são menores que 50 mas.
+
+Da mesma forma, estando muito distantes, eles se movem relativamente devagar no céu ocultando relativamente poucas estrelas por ano. Porém, sendo menos brilhantes (Mag $V > 18$) é possível observar ocultações de estrelas mais fracas (estrelas até $R = 17$), onde a queda de brilho da estrela durante a ocultação poderá ser detectada e, mesmo com baixo sinal-ruído (ex: 5 a 10), o tamanho do corpo pode ser calculado com precisão de pelo menos 10 a 20 km, melhorando a medida em que a velocidade da sombra seja menor que 20 km/s (velocidade típica para um corpo em oposição a 30 UA).
+
+Para identificar candidatas a ocultações estelares foi realizada uma campanha observacional no ESO para observar os caminhos aparentes dos TNOs entre 2009 e 2015. As observações foram feitas com o telescópio de 2.2 m Max-Planck (código IAU 809, $70\degr44\arcmin1\farcs5$ L, $29\degr15\arcmin31\farcs8$ S, 2345.4 m)\footnote{Website: \url{www.eso.org/sci/facilities/lasilla/telescopes/national/2p2.html}} e o detector mosaico Wide Field Imager (WFI). Posições para estrelas até magnitude R=21, com nível de completeza em R=19, foram obtidas com precisões menores que 20 mas até R=20 \citep{Assafin2012}. Assim, estrelas que não estão no UCAC4, catálogo comumente utilizado como referência astrométrica, foram identificados bem como estrelas que estão mas não tem posições ou movimentos próprios com precisão suficiente. Tantos os catálogos de estrelas quanto as cadidatas a ocultação foram publicados \citep{Assafin2010, Assafin2012, Camargo2013}. Esses catálogos são utilizados como representante prático do ICRS no tratamento astrométrico e o conjunto é denominado catálogo WFI.
+
+Não somente as posições das estrelas precisam ser atualizadas, mas também as posições dos TNOs. Portanto os TNOs também foram observados tanto no ESO quanto no Observatório do Pico dos Dias (OPD, LNA/MCTI, Itajuba, MG., código IAU 874, $45^{\circ} ~34\arcmin ~57\arcsec$ W, $22^{\circ} ~32\arcmin ~04\arcsec$ S, 1864 m). À princípio as predições das ocultações eram atualizadas utilizando o método de offsets, porém, em colaboração com o Dr. Josselin Desmars, integrações numéricas das órbitas dos TNOs foram realizadas desenvolvendo-se uma ferramenta denominada NIMA\footnote{Numerical Integration of the Motion of an Asteroid} \citep[submetido]{Desmars2015}.
+
+Nesse trabalho, posições obtidas de ocultações já realizadas tem um peso muito maior que as restantes, diferentemente do que é feito pelo JPL. Da mesma forma, noites em que houveram um número de observações maior que as restantes terá um peso moderado já que se fosse utilizado um peso individual, o peso final de uma noite poderia estar superestimado levando a um erro na integração. Neste trabalho contribuí com observações de TNOs feitas no OPD.
+
+\section{Satélites Irregulares dos planetas gigantes}
+\label{Sec: Irr-astrometria}
+
+\indent \indent Os satélites irregulares dos planetas gigantes são menores que os regulares, possuindo órbitas mais excêntricas, inclinadas e distantes. Na maioria dos casos, essas órbitas são retrógradas. Devido a suas configurações orbitais, é amplamente aceito que estes objetos foram capturados nos estágios iniciais da formação do sistema solar \citep{Sheppard2003}.
+
+Por serem pequenos, eles são pouco brilhantes e só foram descobertos no último século\footnote{Website: \url{http://ssd.jpl.nasa.gov/?sat\_discovery}}. Dentre os satélite irregulares dos planetas gigantes, poucos são aqueles que possuem medidas de seus parâmetros físicos. Apenas Himalia, Phoebe e Nereida foram observados por sondas, apesar de não serem medidas ideais, já que foram alvos de oportunidade. A sonda Cassini observou Himalia em 2000 ao passar próximo a Júpiter e obteve o tamanho de Himalia com um erro médio de 10 km \citep{Porco2003}. Em 2004, a Cassini, aproximando-se de Saturno, observou Phoebe em alta resolução obtendo um erro médio na medida de seu tamanho de 0.7 km \citep{Thomas2010}. Por fim, Nereida foi observado em 1989 pela sonda Voyager 2 e seu tamanho foi obtido com um erro de 25 km \citep{Smith1989}. Para outros satélites irregulares de Júpiter, seus tamanhos foram estimados por \cite{Rettig2001} impondo um albedo de 4\% com a justifica de que esse valor é um albedo nominalmente utilizado para objetos do Sistema Solar Externo.
+
+Existem alguns mecanismos de captura de objetos por planetas gigantes propostos na literatura. Há o Arrasto Gasoso na nebulosa circumplanetária primordial \citep{Sheppard2005} onde o movimento do objeto seria afetado pelo gás e sua velocidade diminuiria até que fosse capturado pelo planeta. Outro mecanismo se chama captura pull-down \citep{Sheppard2005}, onde a massa do planeta aumentaria enquanto o objeto estivesse temporariamente capturado.
+
+Um mecanismo baseado no modelo de Nice \citep{Morbidelli2005, Tsiganis2005, Gomes2005} foi proposto por \cite{Nesvorny2007} e, especificamente para Júpiter, por \citealp{Nesvorny2014}. Durante a instabilidade do sistema solar primordial, ocorreram encontros entre os planetas externos. Esses encontros planetários poderia haver troca de energia e momento angular entre os planetas e os objetos próximos tornando possível a captura de um corpo irregular por um planeta gigante. Nesse cenário, a taxa de sobrevivência de satélites anteriores ao LHB (Bombardeamento Pesado Tardio\footnote{"Late Heavy Bombardment", em inglês}) é muito pequena.
 
 Um outro mecanismo importante é a captura através de interações colisionais \citep{Sheppard2005}. Uma colisão entre dois corpos pequenos dentro da esfera de Hill do planeta poderia gerar objetos fragmentados e a energia dissipativa poderia ser tal que alguns desses objetos seriam capturados.
 
@@ -139,14 +182,14 @@ Se esses objetos foram capturados, permanece a pergunta de onde eles vieram. \ci
 
 Para os satélites de saturno, \citealp{Grav2007} mostraram através de suas cores e inclinações espectrais que esses satélites contêm uma fração mais ou menos igual de objetos semelhantes a asteróides tipo c, P e D, mas SXXII Ijiraq é um pouco mais avermelhado que objetos tipo D. Esses trabalhos sugerem origins diferentes para os satélites irregulares.
 
-Nesse contexto, durante o mestrado, foi realizado junto ao grupo um trabalho de caráter astrométrico para a melhoria das efemérides dos satélites irregulares de Júpiter Saturno. Em colaboração com o Dr. Jean-Eudes Arlot do IMCCE, reduzi um banco de dados observado no Observatoire Haute-Provence (OHP) entre 1998 e 2008, contendo mais de 28 mil posições para 10 satélites. Reduzi também um banco de dados com mais de 100 mil imagens obtidas no Observatório do Pido dos Dias (OPD) entre 1992 e 2014. Já no doutorado, neste mesmo âmbito, reduzi 810 observações feitas no European Southern Observatory (ESO) em 24 noites utilizando o detector mosaico CCD Wide Field Imager (WFI).
+Nesse contexto, durante o Mestrado, foi realizado junto ao grupo um trabalho de caráter astrométrico para a melhoria das efemérides dos satélites irregulares de Júpiter Saturno. Em colaboração com o Dr. Jean-Eudes Arlot do IMCCE, reduzi um banco de dados observado no Observatoire Haute-Provence (OHP) entre 1998 e 2008, contendo mais de 28 mil posições para 10 satélites. Reduzi também um banco de dados com mais de 100 mil imagens obtidas no Observatório do Pido dos Dias (OPD) entre 1992 e 2014. Já no Doutorado, neste mesmo âmbito, reduzi 810 observações feitas no European Southern Observatory (ESO) em 24 noites utilizando o detector mosaico CCD Wide Field Imager (WFI).
 
-Mais de 8000 posições foram identificadas como pertencentes a satélites irregulares. Porém, devido à grande gama de configurações (3 sítios, 5 telescópios, mais de 10 câmeras e mais de 10 filtros) e às condições observacionais de algumas noites, 6523 posições foram selecionadas como boas posições, ou seja, possuem 3 ou mais estrelas do catálogo de referência (UCAC4), estão dentro de 2$\sigma$ da dispersão das posições da noite e a dispersão da noite à qual pertence não é maior que 2$\sigma$ da média das dispersões das noites. Essa estatística é feita satélite por satélite. O trabalho está aceito para publicação \citep{GomesJunior2015-Irregular} e o catálogo de posições está disponível no CDS.
+Mais de 8000 posições foram identificadas como pertencentes a satélites irregulares. Porém, devido à grande gama de configurações (3 sítios, 5 telescópios, mais de 10 câmeras e mais de 10 filtros) e às condições observacionais de algumas noites, 6523 posições foram selecionadas como boas posições, ou seja, possuem cinco ou mais estrelas do catálogo de referência (UCAC4), estão dentro de 2$\sigma$ da dispersão das posições da noite e a dispersão da noite à qual pertence não é maior que 2$\sigma$ da média das dispersões do conjunto total de noites. Essa estatística é feita satélite por satélite. O trabalho está aceito para publicação \citep{GomesJunior2015-Irregular} e o catálogo de posições está disponível no CDS.
 
 Um dos principais resultados desse trabalho foi a grande quantidade de posições obtidas para os satélites irregulares em comparação com a quantidade utilizada nas integrações numéricas atuais (ver tabela \ref{Tab: comparison-horizons}).
 
 \begin{table}[h]
-\caption{\label{Tab: comparison-horizons} Comparação entre o número de posições obtidas em \cite{GomesJunior2015-Irregular} e o número utilizado nas integrações numéricas das órbitas pelo JPL como publicado por  \cite{Jacobson2012}. Os satélites estão separados por planeta (linha reta) e por família orbital (linha tracejada)}
+\caption{\label{Tab: comparison-horizons} Comparação entre o número de posições obtidas em \cite{GomesJunior2015-Irregular} e o número utilizado nas integrações numéricas das órbitas pelo JPL como publicado por  \cite{Jacobson2012}. Os satélites estão separados por planeta (linha reta) e por família orbital (linha tracejada).}
 \begin{centering}
 \begin{tabular}{lccccccc}
 \hline  \hline
@@ -189,26 +232,28 @@ Com o objetivo ver o potencial das nossas posições em melhorar as órbitas dos
 \begin{centering}
 \subfigure[Right Ascension]{\includegraphics[scale=0.45]{figuras/Carme_RA}\label{Fig: carme_alfa}}
 \subfigure[Declination]{\includegraphics[scale=0.45]{figuras/Carme_DEC}\label{Fig: carme_delta}}
-\caption{Offsets médios das efemérides e dispersões (barra de erro 1$\sigma$) nas coordenadas de Carme tomadas noite a noite por anomalia verdadeira para cada telescópio. O quadrado vermelho são as observações com o telescópio do OPD Perkin-Elmer, o círculo azul para o Boller \& Chivens também do OPD, o triângulo pra cima preto para o OHP e a estrela verde para o ESO.}
-\label{Fig: carme_anom}
+\caption{Offsets médios das efemérides e dispersões (barra de erro 1$\sigma$) nas coordenadas de Carme tomadas noite a noite por anomalia verdadeira para cada telescópio. O quadrado vermelho são as observações com o telescópio do OPD Perkin-Elmer, o círculo azul para o Boller \& Chivens também do OPD, o triângulo pra cima preto para o OHP e a estrela verde para o ESO.
+\label{Fig: carme_anom}}
 \end{centering}
 \end{figure}
 
 Esse padrão em declinação também foi identificado para outros satélites como Pasiphae e Ananke. Para alguns satélites a cobertura orbital não foi suficiente para indicar claramente a presença de erros sistemáticos em elementos orbitais específicos. Os gráficos para todos os satélites estão disponíveis em \cite{GomesJunior2015-Irregular}.
 
-Um método que tem se mostrado eficiente para a obtenção desses parâmetros é o métodode ocultações estelares, que proporciona medidas tão precisas que são apenas superadas por medidas oriundas de sondas. Uma vez que suas efemérides não são muito precisas, predizer e observar ocultações estelares é muito difícil e nenhuma observação de um evento desses para um satélite irregular é encontrado na literatura. Um projeto nesse sentido está sendo encaminhado e será discutido na seção \ref{Sec: Irregulares}.
+Um método que tem se mostrado eficiente para a obtenção dos parâmetros físicos (tamanho, forma, albedo, etc) desses objetos é o método de ocultações estelares, que proporciona medidas tão precisas que são apenas superadas por medidas oriundas de sondas. Uma vez que suas efemérides não são muito precisas, predizer e observar ocultações estelares é muito difícil e nenhuma observação de um evento desses para um satélite irregular ainda foi relatado na literatura. Um projeto nesse sentido está sendo encaminhado e será discutido na seção \ref{Sec: Irregulares}.
 
 
-\chapter{Astrometria de Netuno e Tritão}
-\label{Cap: Netuno}
+\section{Netuno e Tritão}
+\label{Sec: Netuno-astrometria}
 
 
 \chapter{Ocultações Estelares}
-\label{Cap: observacoes}
+\label{Cap: ocultacoes}
+
+\section{Noções Gerais}
 
 \indent \indent Ocultação estelar é um evento que ocorre quando um objeto do sistema solar passa na frente de uma estrela de forma que o brilho da estrela é completamente ou parcialmente apagado durante um intervalo de tempo. A variação de brilho da estrela pode ser medido fazendo-se observações com exposições curtas. O produto gerado é uma curva de luz luminosidade x tempo. Essa técnica pode ser utilizada para se obter parâmetros físicos dos objetos ocultantes como tamanho, densidade, detecção da presença de atmosfera, satélites ou anéis, etc \citep{Elliot1979}.
 
-A Fig. \ref{Fig: occ-scheme}.1 mostra uma curva de luz esquemática de uma ocultação estelar central por um planeta com atmosfera e anéis. Ao ocultar a estrela, os anéis passarão primeiro, a densidade do anel, tamanho e tempo de exposição determinará a queda de brilho da estrela. Ao chegar no corpo principal, caso não possua atmosfera, a queda de brilho será abrupta, caso possua, a queda de brilho será mais suave devido à refração da luz da estrela na atmosfera dificultando a determinação da superfície do objeto.
+A Fig. \ref{Fig: occ-scheme} mostra uma curva de luz esquemática de uma ocultação estelar central por um planeta com atmosfera e anéis. Ao ocultar a estrela, os anéis passarão primeiro, a densidade do anel, tamanho e tempo de exposição determinará a queda de brilho da estrela. Ao chegar no corpo principal, caso não possua atmosfera, a queda de brilho será abrupta, caso possua, a queda de brilho será mais suave devido à refração da luz da estrela na atmosfera dificultando a determinação da superfície do objeto.
 
 \begin{figure}[h]
 \begin{centering}
@@ -218,15 +263,40 @@ A Fig. \ref{Fig: occ-scheme}.1 mostra uma curva de luz esquemática de uma ocult
 \end{centering} 
 \end{figure}
 
-A suavidade da curva portanto será determinada pelo gradiente de temperatura, pressão e densidade da atmosfera, presença de nuvens, etc. A luz da estrela nunca será completamente apagada quando ocultada por um objeto com atmosfera devido à refração da luz na atmosfera onde parte dela convergirá na direção do observador. Caso a ocultação seja central para o observador haverá um aumento de brilho no meio do evento pois a convergência da luz será máxima. A atmosfera, no caso, agiria como uma lente como mostrado na Fig. \ref{Fig: occ-scheme}.1.
+A suavidade da curva portanto será determinada pelo gradiente de temperatura, pressão e densidade da atmosfera, presença de nuvens, etc. A luz da estrela nunca será completamente apagada quando ocultada por um objeto com atmosfera devido à refração da luz na atmosfera onde parte dela convergirá na direção do observador. Caso a ocultação seja central para o observador haverá um aumento de brilho no meio do evento pois a convergência da luz será máxima. A atmosfera, no caso, agiria como uma lente como mostrado na Fig. \ref{Fig: occ-scheme}.
 
-Quando o evento é observado por diversos telescópios espalhados, cada observador verá a ocultação em latitudes diferentes. Essas diversas curvas de luz permitirá reconstruir a forma do objeto possivelmente identificando estruturas superficiais como montanhas e crateras. Como a estrela está muito distante, podendo ser considerada quase pontual, a sombra do objeto durante a ocultação é muito próximo ao seu tamanho real.
+Quando o evento é observado por diversos telescópios espalhados, cada observador verá a ocultação em latitudes diferentes. Essas diversas curvas de luz permitirá reconstruir a forma do objeto, possivelmente identificando estruturas superficiais como montanhas e crateras. Como a estrela está muito distante, podendo ser considerada quase pontual, a sombra do objeto durante a ocultação é muito próximo ao seu tamanho real.
 
 Para se observar esses eventos, portanto, é necessário uma campanha grande com observadores espalhados por várias regiões para cobrir a sombra do objeto. A precisão nas posições da estrela e do objeto são cruciais pois o evento ocorre em instantes específicos e passará por regiões específicas da Terra alheias à escolha do observador.
 
 %Since their ephemerides are not very precise, predicting and observing stellar occultations are very difficult, and no observation of such an event for an irregular satellite is found in the literature. The precise star positions to be derived by the ESA astrometry satellite Gaia \citep{deBruijne2012} will render better predictions with the only source of error being the ephemeris. The positions derived from our observations can be used in new orbital numerical integrations, generating more precise ephemerides.
 
 %The power of stellar occultations for observing relatively small diameter solar system objects is supported by recent works, such as the discovery of a ring system around the Centaur (10199) Chariklo \citep{Braga-Ribas2014}. Once irregular satellites start to be observed by this technique, it will be possible to obtain their physical parameters (shape, size, albedo, density) with unprecedented precision. For instance, in this case, sizes could be obtained with kilometer accuracy. The knowledge of these parameters would in turn bring valuable information for studying the capture mechanisms and origin of the irregular satellites.
+
+\section{Centauros e TNOs}
+\label{Sec: TNO-occ}
+
+\indent \indent Como dito no Cap. \ref{Cap: intro}, certos objetos do sistema solar exterior podem ser considerados fósseis do sistema solar. Dentre esses, os TNOs, por estarem mais distantes, são os que guardam as informações mais antigas. Com o objetivo de obter os parâmetro físicos desses objetos, para melhor caracterizar as propriedades básicas dessas populações, uma grande campanha observacional é realizada para se observar ocultações estelares por TNOs e Centauros. Essa campanha é liderada por pesquisadores brasileiros, franceses e espanhóis e tem colaboração com observadores espalhados por todo o mundo.
+
+Vários objetos já foram observados pelo grupo, sendo que o Sistema Plutão-Caronte conta com várias ocultações observadas além de um trabalho astrométrico minucioso baseado em 19 anos de observações no OPD, mais observações no ESO \citep{Rossi2014}. As observações bem sucedidas de ocultações estelares resultantes desse trabalho de predição já geraram diversas publicações, inclusive na revista Nature, por exemplo \cite{Sicardy2011} e \cite{BragaRibas2014} nas quais contribuí em caráter observacional. A ocultação de Plutão de 04 de Maio de 2013, a qual observei, gerou duas publicações \citep{Olkin2015, DiasOliveira2015}.
+
+\cite{Sicardy2011} identificaram, a partir de uma ocultação de 06 de Novembro de 2010, que Eris é um planeta anão menor do que se esperava. Devido a seu brilho e distância acreditava-se que ele fosse muito maior, mas na verdade ele tem um albedo geométrico no visível de $p_v=0.96^{+0.09}_{-0.04}$ e seu tamanho é de $1163 \pm 6$ km, muito próximo ao tamanho de Plutão. O alto albedo de Eris pode ser relacionado à presença de uma atmosfera colapsada devido ao fato dele estar se aproximando de seu afélio.
+
+\cite{BragaRibas2014} observaram uma ocultação do Centauro Chariklo que ocorreu dia 03 de Junho de 2013. O ocultação revelou que o objeto possui um sistema de anéis nunca visto antes em um objeto tão pequeno. Até o momento, conhecia-se apenas anéis em torno dos planetas gigantes. Essa descoberta levanta muitas questões sobre formação dos anéis, estabilidade e tempo de vida e nos leva a crer que pode haver mais objetos com anéis no sistema solar, ao menos nessa região.
+
+\cite{Olkin2015} determinaram a partir de observações de ocultações por Plutão que a atmosfera do objeto não colapsa durante os 248 anos de sua órbita, como acontece com Eris. Modelos anteriores previam um colapso de sua atmosfera devido a Plutão receber três vezes menos luz do Sol em afélio que em seu periélio.
+
+\cite{DiasOliveira2015}, também a partir de ocultações de Plutão, utilizaram modelos para obter os perfis de temperatura, pressão e densidade da atmosfera do objeto. Os modelos ajustam perfeitamente os perfis de temperatura para as duas ocultações utilizadas assumindo uma atmosfera esfericamente simétrica. Foram usadas as curvas de luz de melhor resolução até hoje obtidas para Plutão, sendo a melhor obtida em  Paranal em 18 de Julho de 2012, usando a câmera NAOS-CONICA (NACO) ligada ao 8.2-m “Yepun” Very Large Telescope (VLT) do ESO a uma taxa de 5 frames por segundo na banda H. Por fim, foi obtido que a pressão da atmosfera aumentou cerca de 6\% entre 2012 e 2013 significando que a atmosfera de Plutão ainda está se expandindo e confirmando o trabalho de \cite{Olkin2015}.
+
+No dia 29 de Junho de 2015 haverá uma ocultação de Plutão de máxima importância. Será a última antes da chegada da sonda \textit{New Horizons} no sistema e poderá ser observada na Austrália. Observada a ocultação, os modelos de perfil de atmosfera para Plutão poderão ser calibrados com os dados da \textit{New Horizons} para serem utilizados em futuras ocultações e estudar a evolução da atmosfera do planeta anão.
+
+Em 29 de Abril de 2014, uma ocultação de Chariklo foi observada na África. Eu trabalhei com a redução de três curvas de luz (Gifberb, SAAO e Springbok). Um fato interessante dessa ocultação foi que a estrela era uma binária não catalogada. Como a segunda estrela era bem mais fraca, acreditava-se que poderia ser algum material próximo à Chariklo.
+
+Essa ocultação foi importante para obter com total certeza a direção do pólo de Chariklo. Além disso, as câmeras utilizadas eram de alta qualidade possibilitando obter que pelo menos um dos anéis é opaco. Uma das cordas, fortuitamente, passou contígua ao anel observando apenas o anel externo. Os resultados ainda não foram publicados.
+
+Outro evento que observei foi uma ocultação de 2003VS2 dia 07 de Novembro de 2014 no OPD. As variações do céu não permitiram uma boa observação de forma que a curva de luz estava muito ruidosa, mas boa o suficiente próximo ao instante do evento. Um trabalho foi feito para identificar alguma ocultação mas nada pôde ser extraído. Nesse evento foram obtidas 3 cordas positivas e 7 negativas. A redução preliminar revelou que 2003VS2 é possui um corpo levemente alongado com aproximadamente 600 km de diâmetro. O trabalho ainda está em análise.
+
+
 
 \section{Ceres}
 \label{Sec: Ceres}
@@ -299,7 +369,7 @@ Para o evento de 2010, a solução nominal teve como melhor ajuste $\chi^2_{r,mi
   \caption{Resultados do ajuste de limbo de Ceres com os dados dos eventos de 2010 e 2013.\label{Tab: resultados}}
   \begin{tabular}{@{}lcccc}
   \hline
-     Solution & 2010/Nominal & \textbf{2010/Pólo fixo} & 2013/Nominal & 2013/Pólo fixo \\
+     Solução & 2010/Nominal & \textbf{2010/Pólo fixo} & 2013/Nominal & 2013/Pólo fixo \\
 \hline
 Diam. equat.  (km) & 982 $\pm$ 14 & \textbf{972 $\pm$ 6}  & 971 $\pm$ 7  & 971 $\pm$ 7\\
 %Equatorial radius (km) & 491 $\pm$ 7  & \textbf{486 $\pm$ 3}  & 485.5 $\pm$ 3.5 & 485.5 $\pm$ 3.5\\
@@ -408,26 +478,26 @@ $959 \pm 5$  & $0.05  \pm 0.01$  & Occultação & 5\\
 \subsection{Predição das ocultações}
 \label{Subsec: Irr-predic}
 
-\indent \indent Com o objetivo de obter parâmetros físicos para os satélites irregulares com maior precisão foram feitas predições de ocultações estelares para os 7 maiores satélites de Júpiter, o satélite Phoebe de Saturno e Nereida de Netuno. Esses objetos são pequenos (ver Tabela \ref{Tab: comparison-horizons}), se comparados aos TNOs e Centauros estudados na seção \ref{Sec: TNO-occ}, sendo que o menor dos satélites da amostra, Ananke, possui aproximadamente 28 km.
+\indent \indent Com o objetivo de obter parâmetros físicos para os satélites irregulares com maior precisão foram feitas predições de ocultações estelares para os 7 maiores satélites de Júpiter (Himalia, Elara, Pasiphae, Sinope, Lysithea, Carme, Ananke), o satélite Phoebe de Saturno e Nereida de Netuno. Esses objetos são pequenos (ver Tabela \ref{Tab: comparison-horizons}), se comparados aos TNOs estudados na seção \ref{Sec: TNO-occ}, sendo que o menor dos satélites da amostra, Ananke, possui um diâmetro estimado de 28 km.
 
-As predições foram feitas utilizando o catálogo UCAC4 e efemérides do JPL. Um total de 588 eventos foram obtidos entre 01 de Janeiro de 2015 e 31 de Dezembro de 2017 para os 9 objetos sendo que a maioria será descartada por passar em regiões de oceano ou onde não há observadores disponíveis. Para Nereida, apenas uma estrela UCAC4 foi identificada para ser ocultada. Nesse caso, utilizamos um catálogo de estrelas feito a partir do caminho aparente do satélite de Netuno Tritão no céu para predições de ocultações estelares pelo mesmo (ver seção \ref{Sec: TNO-occ}).
+As predições foram feitas utilizando as posições de estrelas dadas no cataálogo UCAC4. Tomou-se como referência as efemérides do JPL, corrigidas com as posições de satélites obtidas, de acordo com o descrito a seguir. Um total de 588 eventos foram obtidos entre 01 de Janeiro de 2015 e 31 de Dezembro de 2017 para os 9 objetos sendo que a maioria será descartada por passar em regiões de oceano ou onde não há observadores disponíveis. Para Nereida, apenas uma estrela UCAC4 foi identificada para ser ocultada. Nesse caso, utilizamos um catálogo de estrelas feito a partir do caminho aparente do satélite de Netuno Tritão no céu para predições de ocultações estelares pelo mesmo (ver seção \ref{Sec: TNO-occ}).
 
-Como esses objetos são muito pequenos, em sua maioria as ocultações durarão poucos segundos, portanto apenas eventos com estrelas brilhantes serão selecionados e se houver câmeras de integração rápida disponíveis. Por outro lado, os satélites de Júpiter estão muito mais pertos que os TNOs e como o erro astrométrico é uma medida angular, consequentemente, o erro da sombra da ocultação projetada na Terra será muito menor que aquelas medidas para TNOs. Assim, a área a ser coberta para que uma ocultação por satélite irregular de Júpiter seja detectada será da ordem de poucas centenas de quilômetros.
+Como esses objetos são muito pequenos, em sua maioria as ocultações durarão poucos segundos, portanto apenas eventos com estrelas brilhantes serão selecionados e se houver câmeras de integração rápida disponíveis. Por outro lado, os satélites de Júpiter estão muito mais perto que os TNOs e como o erro astrométrico é uma medida angular, consequentemente, o erro da sombra da ocultação projetada na Terra será muito menor que para TNOs. Assim, as latituds a serem cobertas para que uma ocultação por satélite irregular de Júpiter seja detectada corresponde a poucas centenas de quilômetros.
 
 \subsection{Testes}
 \label{Subsec: Irr-testes}
 
 \indent \indent Até que o primeiro catálogo GAIA seja lançado, as posições das estrelas usadas serão as do catálogo UCAC4. Porém esse catálogo possui imprecisões relevantes principalmente para as estrelas mais fracas. Uma das estrelas testadas apresentou um offset da posição do catálogo para a data da observação de mais de 600 mas. Para a estrela em questão, esse valor representa uma variação de aproximadamente 1900 km da sombra projetada na Terra.
 
-Para corrigir esses erros, será necessário observar as estrelas a serem ocultadas dias antes do evento obtendo os offsets correspondentes e calibrando a predição. Erros em ascensão reta interferem majoritariamente no instante em que a ocultação ocorrerá. Já erros em declinação principalmente na latitude geográfica em que a sombra passará.
+Para corrigir esses erros, será necessário observar as estrelas a serem ocultadas dias antes do evento obtendo os offsets correspondentes e calibrando a predição. Erros em ascensão reta interferem majoritariamente no instante em que a ocultação ocorrerá. Já erros em declinação, principalmente na latitude geográfica em que a sombra passará.
 
-Outra fonte de erro na predição é a posição do satélite. Como mostradas no capítulo \ref{Cap: Irr-astrometria}, as órbitas dos satélites irregulares não são muito precisas havendo erros sistemáticos em seus elementos orbitais. Infelizmente o JPL não provê suas efemérides com os erros estimados das posições. Dessa forma, há três alternativas para a correção das posições dos satélites.
+Outra fonte de erro na predição é a posição do satélite. Como mostradas no capítulo \ref{Sec: Irr-astrometria}, as órbitas dos satélites irregulares não são muito precisas havendo erros sistemáticos em seus elementos orbitais. Infelizmente o JPL não provê suas efemérides com os erros estimados das posições. Dessa forma, há três alternativas para a correção das posições dos satélites.
 
 A primeira delas é observar o satélite dias antes, quanto mais próximo do evento melhor, e determinar um offset. O offset, portanto, seria considerado estável dentro desses poucos dias uma vez que ele não se move muito em sua órbita. Porém, nem sempre é possível observar o alvo com antecedêndia.
 
-A segunda alternativa é recalcular as órbitas dos satélites, gerar novas efemérides e estimar seus erros. Espera-se que com o grande número de posições publicadas em \cite{GomesJunior2015-Irregular} as órbitas sejam calculadas com maior precisão. Esse integração numérica será trabalhada durante o doutorado sanduíche em Paris em colaboração com o Dr. Jean-Eudes Arlot e o Dr. Josselin Desmars. Um trabalho semelhante foi abordado para ocultação de Centauros e TNOs (ver seção \ref{Sec: TNO-occ}).
+A segunda alternativa é recalcular as órbitas dos satélites, gerar novas efemérides e estimar seus erros. Espera-se que com o grande número de posições publicadas em \cite{GomesJunior2015-Irregular} as órbitas sejam calculadas com maior precisão. Esse integração numérica será trabalhada durante o doutorado sanduíche em Paris em colaboração com o Dr. Jean-Eudes Arlot e o Dr. Josselin Desmars. Um trabalho semelhante foi abordado para ocultação de TNOs (ver seção \ref{Sec: TNO-occ}).
 
-Por fim, a terceira alternativa consiste em se fazer um ajuste dos offset obtidos em \cite{GomesJunior2015-Irregular} em função da anomalia verdadeira, tempo e/ou anomalia média. Essa escolha é suportada pelas dispersões dos offsets em função da anomalia verdadeira (por exemplo, Fig. \ref{Fig: carme_anom}, para Carme) que apresentaram características notáveis. Os parâmetros a serem utilizados para cada satélite serão estudados e aplicados. Esse é o método que será utilizado para o artigo de predições de satélites irregulares que será submetido logo.
+Por fim, a terceira alternativa consiste em se fazer um ajuste dos offsets de efeméride obtidos em \cite{GomesJunior2015-Irregular} em função da anomalia verdadeira, tempo e/ou anomalia média. Essa escolha é suportada pelas dispersões dos offsets em função da anomalia verdadeira (por exemplo, Fig. \ref{Fig: carme_anom}, para Carme) que apresentaram características notáveis. Os parâmetros a serem utilizados para cada satélite serão estudados e aplicados. Esse é o método que será utilizado para o artigo de predições de satélites irregulares que será submetido logo.
 
 Os primeiros ajustes foram feitos apenas considerando os offsets em declinação, pois são os que apresentaram características mais evidentes e, por seus erros representarem principalmente erros em latitudes, são os principais responsáveis pela não detecção da ocultação. Nesse caso, utilizamos um ajuste em função de três parâmetros: sen${f}, \cos{f}$ e uma constante, onde $f$ é a anomalia verdadeira dada pela efeméride. Esse ajuste é mostrado na Fig. \ref{Fig: Carme-dec-fit}.
 
@@ -441,87 +511,54 @@ Os primeiros ajustes foram feitos apenas considerando os offsets em declinação
 
 É possível ver para o caso de Carme que o ajuste representa razoavelmente bem a dispersão dos offsets em função da anomalia verdadeira. Para outros satélites, ajuste em primeira ordem do seno e do cosseno da anomalia verdadeira também representam razoavelmente bem os offsets em declinação. Para os offsets em ascenção reta, o ajuste com três parâmetros não é suficiente.
 
-Observar uma ocultação estelar de um satélite irregular exige um esforço muito grande por parte dos observadores. A sombra cobrirá uma região muito restrita na Terra devido aos satélites irregulares serem pequenos. Portanto, antes de iniciar uma grande campanha observacional, testaremos algumas ocultações, principalmente dos objetos maiores para confirmar a predição.
+Observar uma ocultação estelar de um satélite irregular exige um esforço muito grande por parte dos observadores. A sombra cobrirá uma região muito restrita na Terra devido aos satélites irregulares serem pequenos. Portanto, antes de iniciar uma grande campanha observacional, testamos algumas predições de ocultações para objetos maiores, para avaliar a qualidade da predição.
 
-Esse teste consiste em se observar o objeto ocultante e a estrela a ser ocultada próximo ao evento, quando os dois objetos estiverem presentes no mesmo campo, preferencialmente próximo ao instante do evento quando os objetos estarão o mais próximo possível. Assim as posições relativas entre os dois objetos terá mínima influência dos erros das estrelas de catálogo utilizadas na redução e das possíveis distorções de campo.
+Esse teste consiste em se observar o objeto ocultante e a estrela a ser ocultada próximo ao evento, quando os dois objetos estiverem presentes no mesmo campo, preferencialmente próximo ao instante do evento quando os objetos estarão próximos pum do outro. Assim as posições relativas entre os dois objetos terá mínima influência dos erros das estrelas de catálogo utilizadas na redução e das possíveis distorções de campo.
 
-Até o momento, apenas dois testes de ocultações foram feitas, uma de Himalia que ocorreu dia 03 de Março de 2015 e a segunda de Elara que ocorreu dia 30 de Março de 2015. Para cada evento quatro mapas foram gerados: o primeiro com as posições nominais da estrela e do satélite para o instante previsto; a segunda com o offset calculado como descrito anteriomente; o terceiro com os offsets da estrela e do satélite a partir de observações feitas alguns dias antes da ocultação quando os dois objetos estavam separados (campos diferentes); e o quarto a partir de observações feitas com menos de 24 horas de diferença da data prevista com a estrela e o satélite próximos no mesmo campo.
+Até o momento, dois testes de ocultações foram feitos, um de Himalia que ocorreu dia 03 de Março de 2015 e o segundo de Elara que ocorreu dia 30 de Março de 2015. Para cada evento quatro mapas foram gerados: o primeiro com as posições nominais da estrela e do satélite para o instante previsto; o segundo com o offset calculado como descrito anteriomente; o terceiro com os offsets da estrela e do satélite a partir de observações feitas alguns dias antes da ocultação quando os dois objetos estavam separados (campos diferentes); e o quarto a partir de observações feitas com menos de 24 horas de diferença da data prevista com a estrela e o satélite próximos no mesmo campo.
 
-A Fig. \ref{Fig: occ-Himalia} mostra os quatro mapas para o teste da ocultação de Himalia de 03 de Março de 2015. O mapa \ref{Fig: occ-Himalia-off22fev} foi feito a partir de posições obtidas em 22 de fevereiro observadas no telescópio Zeiss do Observatório do Pico dos Dias (OPD). Nesse dia, Himalia e a estrela a ser ocultada foram observados em campos separados por ainda estarem distantes. Na noite do evento, 03 de março, os objetos foram observados com o telescópio Perkin-Elmer do OPD pouco mais de uma hora após os instante previsto para o evento. Satélite e estrela estavam separados por aproximadamente 16 arcsec, portanto muito próximos no campo. A partir dos offsets calculados, o mapa \ref{Fig: occ-Himalia-off03mar} foi gerado.
+A Fig. \ref{Fig: occ-Himalia} mostra os quatro mapas para o teste da ocultação de Himalia de 03 de Março de 2015. O mapa \ref{Fig: occ-Himalia-off22fev} foi feito a partir de posições obtidas em 22 de Fevereiro observadas no telescópio Zeiss do Observatório do Pico dos Dias (OPD). Nesse dia, Himalia e a estrela a ser ocultada foram observados em campos separados por ainda estarem distantes. Na noite do evento, 03 de Março, os objetos foram observados com o telescópio Perkin-Elmer do OPD pouco mais de uma hora após os instante previsto para o evento. Satélite e estrela estavam separados por aproximadamente 16 arcsec, portanto muito próximos no campo. A partir dos offsets calculados, o mapa \ref{Fig: occ-Himalia-off03mar} foi gerado.
 
-\begin{figure}
+\begin{figure}[h!]
 \begin{centering}
 \subfigure[Sem offsets]{\includegraphics[scale=0.16]{figuras/Himalia1_2015-03-03T00:39:25.png}  \label{Fig: occ-Himalia-nooff}}
 \subfigure[Offset de Himalia a partir do ajuste]{\includegraphics[scale=0.16]{figuras/Himalia2_2015-03-03T00:39:18.png}  \label{Fig: occ-Himalia-ajuste}}
 \subfigure[Obs. dia 22 de Fevereiro (campos separados)]{\includegraphics[scale=0.16]{figuras/Himalia3_2015-03-03T00:39:40.png}   \label{Fig: occ-Himalia-off22fev}}
 \subfigure[Obs. dia 03 de Março (mesmo campo)]{\includegraphics[scale=0.16]{figuras/Himalia4_2015-03-03T00:39:15.png}   \label{Fig: occ-Himalia-off03mar}}
-\caption{Predições para Himalia. O ponto grande em vermelho mostra o local de máxima aproximação da sombra na Terra, os pontos vermelhos menores são os centros da ocultação separados por um minuto, as linhas retas são os limites das sombras dado o tamanho do objeto e as linhas tracejadas demonstram uma diferença de 40 mas do centro da sombra. (a) é o mapa utilizando apenas as posições nominais da estrela e do satélite. (b) mostra a sombra dado um offset estimado pra posição de Himalia dado sua anomalia verdadeira segundo um ajuste feito em cima dos offsets publicados em \cite{GomesJunior2015-Irregular}. Em (c) são aplicados offsets às posições da estrela e do satélite dado observações feitas em 22 de fevereiro no telescópio Zeiss. Em (d), temos o mesmo que para (c) porém com offsets obtidos de observações feitas em 03 de Março no telescópio Perkin-Elmer quando os objetos estavam próximos no campo}
+\caption{Predições para Himalia. O ponto grande em vermelho mostra o ponto de máxima aproximação geocêntrica da sombra na Terra, os pontos vermelhos menores são os centros da ocultação separados por um minuto, as linhas retas são os limites das sombras dado o tamanho estimado do objeto e as linhas tracejadas equivalem a uma diferença de 40 mas do centro da sombra representando o erro estimado da predição. (a) é o mapa utilizando apenas as posições nominais da estrela e do satélite. (b) mostra a sombra dado um offset estimado para a posição de Himalia dada sua anomalia verdadeira segundo um ajuste feito em cima dos offsets de efeméride encntrados em \cite{GomesJunior2015-Irregular}. Em (c) são aplicados offsets às posições da estrela e do satélite a partir de observações feitas em 22 de Fevereiro no telescópio Zeiss. Em (d), temos o mesmo que para (c) porém com offsets obtidos de observações feitas em 03 de Março no telescópio Perkin-Elmer quando os objetos estavam próximos no campo.}
 \label{Fig: occ-Himalia}
 \end{centering}
 \end{figure}
 
-Para esse evento é possível ver que a sombra não varia muito dentre os quatro mapas sugerindo que para Himalia uma probabilidade maior de observar um evento. De fato, a maior diferença entre as sombras dos quatros mapas é de $25 s$ e $130 km$ na direção perpendicular às sombras.
+Para esse evento é possível ver que a sombra não varia muito dentre os quatro mapas sugerindo que para Himalia há uma probabilidade maior de observar um evento. De fato, a maior diferença entre as sombras dos quatros mapas é de $25 s$ e $130 km$ na direção perpendicular às sombras.
 
-Na Fig. \ref{Fig: occ-Elara} temos os mapas para a ocultação de Elara do dia 30 de Março. As observações de teste foram tomadas dias 25 de março e 02 de abril no Zeiss. Na noite do dia 02 eles ainda puderam ser observadas no mesmo campo. Devido à Elara ser bem mais fraco, as dispersões das posições do satélite nas duas noites acabaram sendo maiores que para Himalia. Ainda assim, as diferenças entre os mapas obtidos foram pequenos. A maior diferença entre elas é de $48 s$ e $302 km$.
+Na Fig. \ref{Fig: occ-Elara} temos os mapas para a ocultação de Elara do dia 30 de Março de 2015. As observações de teste foram tomadas nos dias 25 de Março e 02 de Abril de 2015 no Zeiss. Na noite do dia 02 eles ainda puderam ser observadas no mesmo campo. Devido à Elara ser bem mais fraco, as dispersões das posições do satélite nas duas noites acabaram sendo maiores que para Himalia. Ainda assim, as diferenças entre os mapas obtidos foram relativamente pequenas. A maior diferença entre elas é de $48 s$ e $302 km$.
 
-\begin{figure}
+\begin{figure}[h]
 \begin{centering}
 \subfigure[Sem offsets]{\includegraphics[scale=0.16]{figuras/Elara1_2015-03-30T01:45:15.png} \label{Fig: occ-Elara-nooff}}
 \subfigure[Offset de Elara a partir do ajuste]{\includegraphics[scale=0.16]{figuras/Elara2_2015-03-30T01:44:59.png} \label{Fig: occ-Elara-ajuste}}
 \subfigure[Obs. dia 25 de Março (campos separados)]{\includegraphics[scale=0.16]{figuras/Elara3_2015-03-30T01:44:17.png}  \label{Fig: occ-Elara-off25mar}}
 \subfigure[Obs. dia 02 de Abril (mesmo campo)]{\includegraphics[scale=0.16]{figuras/Elara4_2015-03-30T01:45:30.png}  \label{Fig: occ-Elara-off02abr}}
-\caption{Predições para Elara. Mesmo que a Fig. \ref{Fig: occ-Himalia}, mas para Elara. O mapa (c) feito a partir de observações tomadas dia 25 de março e (d) a partir de observações de 02 de abril.}
+\caption{Predições para Elara. Mesmo que a Fig. \ref{Fig: occ-Himalia}, mas para Elara. O mapa (c) feito a partir de observações tomadas no dia 25 de Março e (d) a partir de observações de 02 de Abril de 2015.}
 \label{Fig: occ-Elara}
 \end{centering}
 \end{figure}
 
-Um pedido de tempo foi feito para o telescópio Zeiss para se tentar observar uma ocultação de Himalia  dia 23 de Outubro de 2015. A sombra dessa ocultação passará pela região sudeste do Brasil (ver Fig. \ref{Fig: occ-Himalia-itajuba}). O evento ocorrerá muito baixo do céu (~22º de altura) e estará próximo ao amanhecer, porém se observar será a primera ocultação de um satélite irregular.
+Um pedido de tempo foi feito para o telescópio Zeiss para se tentar observar uma ocultação de Himalia  dia 23 de Outubro de 2015. A sombra dessa ocultação passará pela região sudeste do Brasil (ver Fig. \ref{Fig: occ-Himalia-itajuba}). O evento ocorrerá muito baixo do céu (~22º de altura) e estará próximo ao amanhecer, porém se formos bem sucedidos será a primeira ocultação estelar por um satélite irregular a ser observada.
 
-\begin{figure}
+\begin{figure}[h]
 \includegraphics[scale=0.35]{figuras/Himalia_2015-10-23T07:54:47.png}
 \caption{Mapa da ocultação de Himalia que ocorrerá em 23 de Outubro de 2015}
 \label{Fig: occ-Himalia-itajuba}
 \end{figure}
 
 
-\section{Centauros e TNOs}
-\label{Sec: TNO-occ}
-
-\indent \indent Como dito no Cap. \ref{Cap: intro}, os objetos do sistema solar exterior podem ser considerados fósseis do sistema solar. Dentre esses, os TNOs, por estarem mais distantes, são os que guardam as informações mais antigas. Ainda é incerta a distribuição de tamanhos dos TNOs e pouco se conhece sobre suas composições, estruturas internas, presença de atmosfera, densidade, etc.
-
-Com o objetivo de obter os parâmetro físicos desses objetos uma grande campanha observacional é realizada para se observar ocultações estelares por TNOs e Centauros (a partir daqui, "TNOs" se referem a TNOs e Centauros). Essa campanha é liderada por pesquisadores brasileiros, franceses e espanhóis e tem colaboração com observadores espalhados por todo o mundo.
-
-Assim como para os satélites irregulares, observar uma ocultação exige um grande trabalho de predição e sua melhoria. Os TNOs estão muito distantes significando que erros pequenos em sua posição ou na posição da estrela podem significar um erro do local onde a sombra irá passar de muitos quilômetros. Preferencialmente, esse erro tem que ser menor que o tamanho angular do objeto no plano do céu. Por exemplo, Plutão tem um raio de $1190 \pm 5$ km \cite[em preparação]{DiasOliveira2015} que a uma distância de aproximadamente 32 UA representam um diâmetro angular de 102 mas. Para a maioria dos objetos selecionados, menores que Plutão e/ou mais distantes, seus tamanhos angulares são manores que 50 mas.
-
-Da mesma forma, estando muito distantes, eles se movem pouco no céu ocultando poucas esrelas, porém sendo menos brilhantes (Mag V > 18) é possível observar ocultações de estrelas mais fracas, onde a queda de brilho da estrela durante a ocultação poderá ser detectada com baixo sinal-ruído.
-
-Para identificar candidatas a ocultações estelares foi realizado uma campanha observacional no ESO para observar os caminhos aparentes dos TNOs entre 2009 e 2015. As observações foram feitas com o telescópio de 2.2 m e o detector mosaico WFI. Posições para estrelas até magnitude R=21, com nível de completeza em R=19, foram obtidas com precisões menores que 20 mas até R=20 \citep{Assafin2012}. Assim, estrelas que não estão no UCAC4, catálogo comumente utilizado como referência astrométrica, foram identificados bem como estrelas que estão mas não tem posições ou movimentos próprios com precisão suficiente. Tantos os catálogos de estrelas quanto as cadidatas a ocultação foram publicados em periódicos \citep{Assafin2010, Assafin2012, Camargo2013}.
-
-Não somente as posições das estrelas precisam ser atualizadas, mas também as posições dos TNOs. Portanto os TNOs também foram observados tanto no ESO quanto No Observatório do Pico dos Dias. À princípio as predições das ocultações eram atualizadas utilizando o método de offsets, porém, em colaboração, integrações numéricas das órbitas dos TNOs foram realizadas desenvolvendo-se uma ferramenta denominada NIMA\footnote{Numerical Integration of the Motion of an Asteroid} \citep[submetido]{Desmars2015}.
-
-Nesse trabalho, posições obtidas de ocultações já realizadas tem um peso muito maior que as restantes, diferentemente do que é feito pelo JPL. Da mesma forma, noites em que houveram um número de observações maior que as restantes terá um peso moderado já que se fosse utilizado um peso individual, o peso final de uma noite poderia estar superestimado levando a um erro na integração. Neste trabalho contribuí com observações de TNOs feitas no OPD.
-
-Vários objetos já foram observados pelo grupo, sendo que o Sistema Plutão-Caronte conta com várias ocultações observadas. Essa trabalho já gerou diversas publicações, incluindo na revista Nature, por exemplo \cite{Sicardy2011} e \cite{BragaRibas2014} nas quais contribuí em caráter observacional. A ocultação de Plutão de 04 de Maio de 2013, a qual observei, gerou duas publicações \citep{Olkin2015, DiasOliveira2015}.
-
-\cite{Sicardy2011} identificaram, a partir de uma ocultação de 06 de Novembro de 2010, que Eris é um planeta anão menor do que se esperava. Devido a seu brilho e distância acreditava-se que ele fosse muito maior, mas na verdade ele tem um albedo geométrico no visível de $p_v=0.96^{+0.09}_{-0.04}$ e que seu tamanho é de $1163 \pm 6$ km, muito próximo ao tamanho de Plutão. O alto albedo de Eris pode ser relacionada à presença de uma atmosfera colapsada devido ao fato dele estar se aproximando de seu afélio.
-
-\cite{BragaRibas2014} observaram uma ocultação do Centauro Chariklo que ocorreu dia 03 de Junho de 2013. O ocultação revelou que o objeto possui um sistema de anéis nunca visto antes em um objeto tão pequeno. Até o momento, conhecia-se apenas anéis em torno dos planetas gigantes. Essa descoberta levanta muitas questão sobre formação dos anéis, estabilididade ou tempo de vida e nos leva a crer que pode haver mais objetos com anéis no sistema solar.
-
-\cite{Olkin2015} determinaram a partir de observações de ocultações por Plutão que a atmosfera do objeto não colapsa durante os 248 anos de sua órbita, como acontece com Eris. Modelos anteriores previam um colapso de sua atmosfera devido a Plutão receber três vezes menos luz do Sol em afélio que em seu periélio.
-
-\cite{DiasOliveira2015}, também a partir de ocultações de Plutão, utilizaram modelos para obter os perfis de temperatura, pressão e densidade da atmosfera do objeto. Os modelos ajustam perfeitamente os perfis de temperatura para as duas ocultações utilizadas assumindo uma atmosfera esfericamente simétrica. Foi obtido que a pressão da atmosfera aumentou cerca de 6\% entre 2012 e 2013 significando que a atmosfera de Plutão ainda está se expandindo e confirmando o trabalho de \cite{Olkin2015}.
-
-No dia 29 de Junho de 2015 haverá uma ocultação de Plutão de máxima importância. Será a última antes da chegada da sonda \textit{New Horizons} no sistema e poderá ser observada na Austrália. Observada a ocultação, os modelos de perfil de atmosfera para Plutão poderão ser calibrados com os dados da \textit{New Horizons} para serem utilizadas em futuras ocultações e estudar a evolução da atmosfera do planeta anão.
-
-Em 29 de Abril de 2014, uma ocultação de Chariklo foi observada na África. Eu trabalhei com a redução de três curvas de luz (Gifberb, SAAO e Springbok). Um fato interessante dessa ocultação foi que a estrela era uma binária não catalogada. Como a segunda estrela era bem mais fraca, acreditava-se que poderia ser algum material próximo à Chariklo.
-
-Essa ocultação foi importante para obter com total certeza a direção do pólo de Chariklo. Além disso, as câmeras utilizadas eram de alta qualidade possibilitando obter que pelo menos um dos anéis é opaco. Uma das cordas, fortuitamente, passou contígua ao anel observando apenas o anel externo. Os resultados ainda não foram publicados.
-
-Outro evento que observei foi uma ocultação de 2003VS2 dia 07 de Novembro de 2014 no OPD. As variações do céu não permitiram uma boa observação de forma que a curva de luz estava muito variada com instantes de tempo bom próximos ao instante do evento. Um trabalho foi feito para identificar alguma ocultação mas nada pôde ser extraído. O trabalho ainda está em análise.
+\section{Tritão}
+\label{Sec: occ-Tritao}
 
 
-
-\chapter{Cronograma das Atividades}
+\chapter{Perspectivas}
 \label{Cap: cronograma}
 
 \glsaddall
