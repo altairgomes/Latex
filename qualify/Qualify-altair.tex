@@ -16,7 +16,7 @@
 \usepackage[comma,authoryear]{natbib}
 \usepackage[nonumberlist]{glossaries}
 \usepackage{arydshln}
-\usepackage{tablefootnote}
+\usepackage{footnote}
 %\usepackage[alf]{abntcite}
 
 %%% newcommand %%%%%%%%%%%%%%%%%
@@ -41,7 +41,7 @@
 \input{glossario}
 
 \begin{document}
-\doutorado
+\qualify
 
 \titulo{Um Estudo Astrométrico e Fotométrico do Sistema Solar Exterior}
 \autor{Altair Ramos Gomes Júnior}
@@ -170,7 +170,7 @@ Todas as informações fotométricas e astrométricas da redução, para todos o
 
 \indent \indent Ocultação estelar é um evento que ocorre quando um objeto do Sistema Solar passa na frente de uma estrela de forma que o brilho da estrela é completamente ou parcialmente bloqueado durante um intervalo de tempo. A variação de brilho da estrela pode ser medido fazendo-se observações com exposições curtas. O produto gerado é uma curva de fluxo de luz x tempo. Essa técnica pode ser utilizada para se obter parâmetros físicos dos objetos ocultantes como tamanho, forma, albedo, densidade (se a massa é conhecida), detecção da presença de atmosfera, satélites, anéis, etc \citep{Elliot1979}.
 
-A Fig. \ref{Fig: occ-scheme} mostra uma curva de luz esquemática de uma ocultação estelar central por um planeta com atmosfera e anéis. Ao ocultar a estrela, os anéis passarão primeiro, a densidade do anel, tamanho e tempo de exposição determinará a queda de brilho da estrela. Ao chegar no corpo principal, caso não possua atmosfera, a queda de brilho será abrupta, caso possua, a queda de brilho será mais suave devido à refração da luz da estrela na atmosfera dificultando a determinação da superfície do objeto.
+A Fig. \ref{Fig: occ-scheme}.1 mostra uma curva de luz esquemática de uma ocultação estelar central por um planeta com atmosfera e anéis. Ao ocultar a estrela, os anéis passarão primeiro, a densidade do anel, tamanho e tempo de exposição determinará a queda de brilho da estrela. Ao chegar no corpo principal, caso não possua atmosfera, a queda de brilho será abrupta, caso possua, a queda de brilho será mais suave devido à refração da luz da estrela na atmosfera dificultando a determinação da superfície do objeto.
 
 \begin{figure}[h]
 \begin{centering}
@@ -180,7 +180,7 @@ A Fig. \ref{Fig: occ-scheme} mostra uma curva de luz esquemática de uma oculta�
 \end{centering} 
 \end{figure}
 
-A suavidade da curva portanto será determinada pelo gradiente de temperatura, pressão e densidade da atmosfera, presença de nuvens, etc. A luz da estrela nunca será completamente apagada quando ocultada por um objeto com atmosfera devido à refração da luz na atmosfera onde parte dela convergirá na direção do observador. Caso a ocultação seja central para o observador haverá um aumento de brilho no meio do evento ("flash") pois a convergência da luz será máxima. A atmosfera, no caso, agiria como uma lente como mostrado na Fig. \ref{Fig: occ-scheme}.
+A suavidade da curva portanto será determinada pelo gradiente de temperatura, pressão e densidade da atmosfera, presença de nuvens, etc. A luz da estrela nunca será completamente apagada quando ocultada por um objeto com atmosfera devido à refração da luz na atmosfera onde parte dela convergirá na direção do observador. Caso a ocultação seja central para o observador haverá um aumento de brilho no meio do evento ("flash") pois a convergência da luz será máxima. A atmosfera, no caso, agiria como uma lente como mostrado na Fig. \ref{Fig: occ-scheme}.1.
 
 Quando o evento é observado por diversos telescópios espalhados, cada observador verá a ocultação em latitudes diferentes. Essas diversas curvas de luz permitirão reconstruir a forma do objeto, possivelmente identificando estruturas superficiais como montanhas e crateras. Como a estrela está muito distante, podendo ser considerada quase pontual, a sombra do objeto durante a ocultação é muito próximo ao seu tamanho real.
 
@@ -196,7 +196,7 @@ Para se observar esses eventos, portanto, é necessário uma campanha grande com
 \section{Astrometria}
 \label{Sec: TNOs-astrometria}
 
-\indent \indent Observar uma ocultação exige um grande trabalho de predição e de sua melhoria. Os TNOs estão muito distantes significando que mesmo sem grandes erros nas suas efemérides ou na posição da estrela o erro do local por onde a sombra irá passar pode ser de milhares de quilômetros. Preferencialmente, esse erro tem que ser menor que o tamanho angular do objeto no plano do céu. Por exemplo, Plutão tem um raio de $1190 \pm 5$ km \cite[submetido]{DiasOliveira2015} que a uma distância de aproximadamente 32 UA representam um diâmetro angular de 102 mas. Para a maioria dos objetos selecionados, menores que Plutão e/ou mais distantes, seus tamanhos angulares são menores que 50 mas.
+\indent \indent Observar uma ocultação exige um grande trabalho de predição e de sua melhoria. Os TNOs estão muito distantes significando que mesmo sem grandes erros nas suas efemérides ou na posição da estrela o erro do local por onde a sombra irá passar pode ser de milhares de quilômetros. Preferencialmente, esse erro tem que ser menor que o tamanho angular do objeto no plano do céu. Por exemplo, Plutão tem um raio de $1190 \pm 5$ km \cite[submetido]{DiasOliveira2015} que a uma distância de aproximadamente 32 UA representa um diâmetro angular de 102 mas. Para a maioria dos objetos selecionados, menores que Plutão e/ou mais distantes, seus tamanhos angulares são menores que 50 mas.
 
 Da mesma forma, estando muito distantes, eles se movem relativamente devagar no céu ocultando relativamente poucas estrelas por ano. Porém, sendo menos brilhantes (Mag $V > 18$) é possível observar ocultações de estrelas mais fracas (estrelas até $R = 17$), onde a queda de brilho da estrela durante a ocultação poderá ser detectada e, mesmo com baixo sinal-ruído (ex: 5 a 10), o tamanho do corpo pode ser calculado com precisão de pelo menos 10 a 20 km, melhorando a medida em que a velocidade da sombra seja menor que 20 km/s (velocidade típica para um corpo em oposição a 30 UA).
 
@@ -242,7 +242,7 @@ Outro evento que observei foi uma ocultação de 2003VS2 dia 07 de Novembro de 2
 
 Contendo aproximadamente um quinto de toda a massa do cinturão de asteroides, espera-se que Ceres esteja em equilíbrio gravitacional e seja, portanto, um elipsoide Maclaurin ou Jacobi. De fato, observações diretas de Ceres com a utilização de ótica adaptativa indica que ele é um esferoide achatado nos polos \citep{Drummond2014}. O conhecimento preciso de seu tamanho e forma é extrema importância para modelos de densidade, estrutura interna e diferenciação.
 
-A primeira ocultação estelar por Ceres foi observada em 1984 \citep{Millis1987} e determinou seu tamanho com precisão de alguns quilômetros em uma época que as incertezas eram, normalmente, dez vezes maiores. Devido ao brilho aparente de Ceres ser alto, comparado à maioria dos asteroides, estrelas capazes de causar uma queda de magnitude detectável quando ocultadas são limitadas às mais brilhantes. Por exemplo, depois do evento de 1984, apenas 4 ocultações estelares por Ceres foram observadas \citep{Dunham2014}. Duas delas tiveram apenas duas cordas cada que não foram suficientes para prover resultados acurados\footnote{Esses eventos ocorreram em 22 de Agosto de 1994 e 30 de Outubro de 2010.}. Os dois restantes, que ocorreram em 17 de Agosto de 2010 e 25 de Outubro de 2013, foram trabalhos por mim em colaboração com o grupo do Rio \citep[aceito]{GomesJunior2015-Ceres}.
+A primeira ocultação estelar por Ceres foi observada em 1984 \citep{Millis1987} e determinou seu tamanho com precisão de alguns quilômetros em uma época que as incertezas eram, normalmente, dez vezes maiores. Devido ao brilho aparente de Ceres ser alto, comparado à maioria dos asteroides, estrelas capazes de causar uma queda de magnitude detectável quando ocultadas são limitadas às mais brilhantes. Por exemplo, depois do evento de 1984, apenas 4 ocultações estelares por Ceres foram observadas \citep{Dunham2014}. Duas delas tiveram apenas duas cordas cada que não foram suficientes para prover resultados acurados\footnote{Esses eventos ocorreram em 22 de Agosto de 1994 e 30 de Outubro de 2010.}. Os dois restantes, que ocorreram em 17 de Agosto de 2010 e 25 de Outubro de 2013, foram trabalhos por mim em colaboração com o grupo do Rio \citep{GomesJunior2015-Ceres}.
 
 Os dois eventos foram preditos por Steve Preston\footnote{Predições publicadas em \url{http://asteroidoccultation.com}.} para a IOTA (International Occultation Timing Association), durante predições de rotina de ocultações de asteroides de estrelas brilhantes. Os caminhos das sombras podem ser visualizados na Fig. \ref{Fig: Ceres-map}.
 
@@ -278,7 +278,7 @@ Todas as observações foram feitas com a utilização de CCDs. As curvas de luz
 
 Os instantes de ingresso e egresso foram obtidas de cada curva de luz ajustando-se um modelo de poço quadrado levando em consideração a difração de Fresnel, a banda do CCD, o diâmetro aparente da estrela e o tempo de exposição utilizado \citep[ver][]{Widemann2009, Braga-Ribas2013}.
 
-O menor tempo de integração usado nas observações positivas foi de $1.0s$, que corresponde a aproximadamente $3.9km$ no plano do céu. Portanto, o erro na determinação dos instantes de ingresso e egresso é dominado principalmente pelo tempo de integração, não pela difração de Fresnel ou diâmetro da estrela, ambos da ordem de algumas centenas de metros para esse evento.
+O menor tempo de integração usado nas observações positivas foi de 1.0 s, que corresponde a aproximadamente 3.9 km no plano do céu. Portanto, o erro na determinação dos instantes de ingresso e egresso é dominado principalmente pelo tempo de integração, não pela difração de Fresnel ou diâmetro da estrela, ambos da ordem de algumas centenas de metros para esse evento.
 
 O ajuste dos dados da ocultação consiste em minimizar uma função dep $\chi^{2}$ clássica para cada curva de luz, como descrito em \cite{Sicardy2011} e \cite{Braga-Ribas2013}. Os parâmetros livres para ajustar são os instantes de ingresso e egresso que fornece o valor mínimo de $\chi^{2}$ ($\chi^{2}_{min}$). O melhor ajuste das curvas de luz para a ocultação de 2010 está mostrado na Fig. \ref{Fig: Ceres-2010-curves}.
 
@@ -382,7 +382,7 @@ Sobre a hipótese do atraso observado na imersão da curva de luz de Owings ser 
 
 O evento de 2010, por exemplo, teve somente sete contatos, porém bem distribuídos sobre o disco de Ceres. Por outro lado, o evento de 2013 teve cinco contatos a mais, todavia concentrados em certas regiões do corpo. Em particular, a ausência de cordas próximas ao polo sul fez seu achatamento ser pior determinado para o evento de 2013 que para o evento de 2010. Mesmo nossa melhor medida de achatamento, $\epsilon=0.08 \pm 0.03$, tem alta incerteza se comparado com outros valores publicados na literatura, como mostra a tabela \ref{Tab: Ceres-final}.
 
-Como foi mostrado, usar as coordenadas do polo de Ceres determinadas por \cite{Drummond2014} para limitar o ângulo de posição não foi um procedimento eficiente para o evento de 2013. Por outro lado, fixar o ângulo de posição para a ocultação de 2010 reduziu as barras de erro dos outros parâmetros (com exceção do achatamento). Por fim, Esse procedimento resultou em um excelente acordo entre os raios equatoriais obtidos para ambos os eventos.
+Como foi mostrado, usar as coordenadas do polo de Ceres determinadas por \cite{Drummond2014} para limitar o ângulo de posição não foi um procedimento eficiente para o evento de 2013. Por outro lado, fixar o ângulo de posição para a ocultação de 2010 reduziu as barras de erro dos outros parâmetros (com exceção do achatamento). Por fim, esse procedimento resultou em um excelente acordo entre os raios equatoriais obtidos para ambos os eventos.
 
 Uma comparação do diâmetro equatorial de Ceres medido por diferentes técnicas está mostrado na tabela \ref{Tab: Ceres-final}. Vemos um acordo entre os nossos resultados e aqueles obtidos por imageamente direto do Hubble Space Telescope (HST) \citep{Thomas2005}, do Keck Observatory e do ESO VLT \citep{Drummond2014}. O menor valor, reportado por \cite{Carry2008}, pode ser justificado pelo fato desse estudo não levar em conta o efeito de escurecimento de bordo.
 
@@ -450,7 +450,7 @@ Um dos principais resultados desse trabalho foi a grande quantidade de posiçõe
 \begin{centering}
 \begin{tabular}{lccccccc}
 \hline  \hline
-Satélite & Diâm. (km)\tablefootnote{Planetary Satellite Physical Parameters - JPL: \url{http://ssd.jpl.nasa.gov/?sat_phys_par}} & Mag V  & OPD  & OHP & ESO & Total  & Jacobson \tabularnewline
+Satélite & Diâm. (km)\footnote{Planetary Satellite Physical Parameters - JPL: \url{http://ssd.jpl.nasa.gov/?sat_phys_par}} & Mag V  & OPD  & OHP & ESO & Total  & Jacobson \tabularnewline
 \hline
 Himalia & 170 & 14 & 854 & 357 & 23 & 1234 & 1757 \tabularnewline
 Elara & 86 & 16 & 403 & 187 & 46 & 636 & 1115 \tabularnewline
@@ -502,9 +502,9 @@ Um método que tem se mostrado eficiente para a obtenção dos parâmetros físi
 \section{Predição das ocultações}
 \label{Sec: Irr-predic}
 
-\indent \indent Com o objetivo de obter parâmetros físicos para os satélites irregulares com maior precisão foram feitas predições de ocultações estelares para os 7 maiores satélites de Júpiter (Himalia, Elara, Pasiphae, Sinope, Lysithea, Carme, Ananke), o satélite Phoebe de Saturno e Nereida de Netuno. Esses objetos são pequenos (ver Tabela \ref{Tab: comparison-horizons}), se comparados aos TNOs estudados na seção \ref{Sec: TNO-occ}, sendo que o menor dos satélites da amostra, Ananke, possui um diâmetro estimado de 28 km.
+\indent \indent Com o objetivo de obter parâmetros físicos para os satélites irregulares com maior precisão foram feitas predições de ocultações estelares para os 7 maiores satélites de Júpiter (Himalia, Elara, Pasiphae, Sinope, Lysithea, Carme, Ananke), o satélite Phoebe de Saturno e Nereida de Netuno. Esses objetos são pequenos (ver Tabela \ref{Tab: comparison-horizons}), se comparados aos TNOs estudados no capítulo \ref{Cap: TNOs}, sendo que o menor dos satélites da amostra, Ananke, possui um diâmetro estimado de 28 km.
 
-As predições foram feitas utilizando as posições de estrelas dadas no catálogo UCAC4. Tomou-se como referência as efemérides do JPL, corrigidas com as posições de satélites obtidas, de acordo com o descrito a seguir. Um total de 588 eventos foram obtidos entre 01 de Janeiro de 2015 e 31 de Dezembro de 2017 para os 9 objetos sendo que a maioria será descartada por passar em regiões de oceano ou onde não há observadores disponíveis. Para Nereida, apenas uma estrela UCAC4 foi identificada para ser ocultada. Nesse caso, utilizamos um catálogo de estrelas feito a partir do caminho aparente do satélite de Netuno Tritão no céu para predições de ocultações estelares pelo mesmo (ver seção \ref{Sec: TNO-occ}).
+As predições foram feitas utilizando as posições de estrelas dadas no catálogo UCAC4. Tomou-se como referência as efemérides do JPL, corrigidas com as posições de satélites obtidas, de acordo com o descrito a seguir. Um total de 588 eventos foram obtidos entre 01 de Janeiro de 2015 e 31 de Dezembro de 2017 para os 9 objetos sendo que a maioria será descartada por passar em regiões de oceano ou onde não há observadores disponíveis. Para Nereida, apenas uma estrela UCAC4 foi identificada para ser ocultada. Nesse caso, utilizamos um catálogo de estrelas feito a partir do caminho aparente do satélite de Netuno, Tritão, no céu para predições de ocultações estelares pelo mesmo (ver seção \ref{Sec: Netuno-astrometria}).
 
 Como esses objetos são muito pequenos, em sua maioria as ocultações durarão poucos segundos, portanto apenas eventos com estrelas brilhantes serão selecionados e se houver câmeras de integração rápida disponíveis. Por outro lado, os satélites de Júpiter estão muito mais perto que os TNOs e como o erro astrométrico é uma medida angular, consequentemente, o erro da sombra da ocultação projetada na Terra será muito menor que para TNOs. Assim, as latitudes a serem cobertas para que uma ocultação por satélite irregular de Júpiter seja detectada corresponde a poucas centenas de quilômetros.
 
@@ -515,11 +515,11 @@ Como esses objetos são muito pequenos, em sua maioria as ocultações durarão 
 
 Para corrigir esses erros, será necessário observar as estrelas a serem ocultadas dias antes do evento obtendo os offsets correspondentes e calibrando a predição. Erros em ascensão reta interferem majoritariamente no instante em que a ocultação ocorrerá. Já erros em declinação, principalmente na latitude geográfica em que a sombra passará.
 
-Outra fonte de erro na predição é a posição do satélite. Como mostradas no capítulo \ref{Sec: Irr-astrometria}, as órbitas dos satélites irregulares não são muito precisas havendo erros sistemáticos em seus elementos orbitais. Infelizmente o JPL não provê suas efemérides com os erros estimados das posições. Dessa forma, há três alternativas para a correção das posições dos satélites.
+Outra fonte de erro na predição é a posição do satélite. Como mostradas na seção \ref{Sec: Irr-astrometria}, as órbitas dos satélites irregulares não são muito precisas havendo erros sistemáticos em seus elementos orbitais. Infelizmente o JPL não provê suas efemérides com os erros estimados das posições. Dessa forma, há três alternativas para a correção das posições dos satélites.
 
 A primeira delas é observar o satélite dias antes, quanto mais próximo do evento melhor, e determinar um offset. O offset, portanto, seria considerado estável dentro desses poucos dias uma vez que ele não se move muito em sua órbita. Porém, nem sempre é possível observar o alvo com antecedência.
 
-A segunda alternativa é recalcular as órbitas dos satélites, gerar novas efemérides e estimar seus erros. Espera-se que com o grande número de posições publicadas em \cite{GomesJunior2015-Irregular} as órbitas sejam calculadas com maior precisão. Esse integração numérica será trabalhada durante o doutorado sanduíche em Paris em colaboração com o Dr. Jean-Eudes Arlot e o Dr. Josselin Desmars. Um trabalho semelhante foi abordado para ocultação de TNOs (ver seção \ref{Sec: TNO-occ}).
+A segunda alternativa é recalcular as órbitas dos satélites, gerar novas efemérides e estimar seus erros. Espera-se que com o grande número de posições publicadas em \cite{GomesJunior2015-Irregular} as órbitas sejam calculadas com maior precisão. Esse integração numérica será trabalhada durante o doutorado sanduíche em Paris em colaboração com o Dr. Jean-Eudes Arlot e o Dr. Josselin Desmars como foi feito para o trabalho de ocultações de TNOs na seção \ref{Sec: TNO-occ}.
 
 Por fim, a terceira alternativa consiste em se fazer um ajuste dos offsets de efeméride obtidos em \cite{GomesJunior2015-Irregular} em função da anomalia verdadeira, tempo e/ou anomalia média. Essa escolha é suportada pelas dispersões dos offsets em função da anomalia verdadeira (por exemplo, Fig. \ref{Fig: carme_anom}, para Carme) que apresentaram características notáveis. Os parâmetros a serem utilizados para cada satélite serão estudados e aplicados. Esse é o método que será utilizado para o artigo de predições de satélites irregulares que será submetido logo.
 
@@ -582,7 +582,17 @@ Um pedido de tempo foi feito para o telescópio Zeiss para se tentar observar um
 \label{Cap: Netuno-Tritao}
 
 \section{Introdução}
-\label{Sec: Netuno-introducao}
+\label{Sec: Netuno-intro}
+
+\indent \indent Tritão é um satélite de Netuno que, diferentemente dos satélites regulares dos outros planetas, possui uma órbita retrógrada, circular e altamente inclinada. Devido à sua configuração orbital é muito provável que Tritão tenha sido capturado por Netuno \citep{McKinnon2007}. Ele possui um diâmetro de 1353 km \citep{Thomas2000}, sendo portanto pouco maior que Plutão, e seus parâmetros físicos mostram similaridades com os do planeta anão \citep{Nimmo2015}.
+
+Dentre os diversos mecanismos propostos para a captura do satélite, o mais provável foi proposto por \cite{Agnor2006} onde Tritão seria capturado através da dissociação de um sistema binário de planetesimais ao passar próximo a Netuno. Após a captura, a órbita de Tritão seria encolhida e circularizada para sua órbita atual. Um dos possíveis mecanismos seria a interação gravitacional com Netuno, i.e., efeito de maré \citep{Nogueira2011}.
+
+A combinação entre a obliquidade do eixo de rotação de Netuno em relação ao seu eixo orbital e a alta inclinação da órbita de Tritão dá a Tritão um complicado e extremo ciclo sazonal \citep{McKinnon2007}. As marés associadas à sua captura podem ter fortemente aquecido e transformado seu interior.
+
+Tritão é um dos poucos objetos do sistema solar que possuem atmosfera e é constituída principalmente de nitrogênio. A extrema variação da latitude subsolar em Tritão causam bruscas variações na distribuição de nitrogênio congelado na superfície do objeto de forma que a calota polar pode chegar até próximo o equador do satélite \citep{Hansen1992}. Modelos preveem que a pressão da atmosfera de Tritão varia ao longo do tempo de duas ordens de grandeza.
+
+
 
 \section{Astrometria}
 \label{Sec: Netuno-astrometria}
@@ -600,6 +610,10 @@ Como o tamanho aparente de Netuno ($\approx 2\arcsec$) é da ordem do seeing, um
 
 \section{Predições ESO/WFI}
 \label{Sec: Netuno-predic}
+
+\indent \indent Nos mesmos moldes em foram feitos observações dos caminhos de TNOs para predição de ocultações estelares (ver seção \ref{Sec: TNOs-astrometria}), o caminho de Tritão também foi observado gerando um catálogo de estrelas inclusos no catálogo WFI. Infelizmente, devido a Netuno estar passando por regiões pouco populada por estrelas brilhantes, nenhum evento pôde ser observado oriundo deste trabalho.
+
+Para 2015, antes que o catálogo WFI não cubra mais o caminho orbital de Tritão, ainda haverá uma oportunidade de observar uma ocultação estelar pelo objeto. O evento está predito para ocorrer dia 10 de Novembro de 2015 com a sombra passando pela China. Dependendo do offset da estrela e de Tritão, há possibilidade da sombra ir mais ao sul passando pelo Japão ou Austrália, onde temos colaboradores que poderão observar o evento.
 
 
 \section{Ocultação Maio/2008}

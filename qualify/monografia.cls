@@ -303,11 +303,13 @@
 %%%%%%%%%%%%%%%Novas Definicoes%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def\grau#1{\gdef\@grau{#1}}
 \def\tipo#1{\gdef\@tipo{#1}}
-\def\bacharelado{\grau{BACHAREL} \tipo{Monografia}}
-\def\licenciatura{\grau{LICENCIADO} \tipo{Monografia}}
-\def\especializacao{\grau{ESPECIALISTA} \tipo{Monografia}\es@ptrue}
-\def\mestrado{\grau{MESTRE} \tipo{Disserta\c{c}\~{a}o}\ps@dtrue}
-\def\doutorado{\grau{DOUTOR} \tipo{Tese}\ph@dtrue \ps@dtrue}
+\def\apre#1{\gdef\@apre{#1}}
+\def\bacharelado{\grau{BACHAREL} \tipo{Monografia} \apre{apresentada}}
+\def\licenciatura{\grau{LICENCIADO} \tipo{Monografia} \apre{apresentada}}
+\def\especializacao{\grau{ESPECIALISTA} \tipo{Monografia} \apre{apresentada} \es@ptrue}
+\def\mestrado{\grau{MESTRE} \tipo{Disserta\c{c}\~{a}o} \apre{apresentada} \ps@dtrue}
+\def\qualify{\grau{Doutor} \tipo{Exame de qualifica\c{c}\~ao} \apre{apresentado}\ph@dtrue \ps@dtrue}
+\def\doutorado{\grau{DOUTOR} \tipo{Tese} \apre{apresentada}\ph@dtrue \ps@dtrue}
 \def\autor#1{\gdef\@autor{#1}}
 \def\titulo#1{\gdef\@titulo{#1}}
 \def\subtitulo#1{\gdef\@subtitulo{#1}\sb@ttrue} 
@@ -432,7 +434,7 @@
   \vspace{2.0em}
   \end{center}
   \begin{comentario}
-  {        \@tipo\ apresentada ao Curso
+  {        \@tipo\ \@apre\ ao Curso
            de \@curso\ da \@sigla, como 
            requisito parcial para a obten\c{c}\~ao do grau
            de \@grau\ em \@curso. }
@@ -482,7 +484,7 @@
   \vfill
   \end{center}
   \begin{comentario}
-  {        \@tipo\ apresentada ao Curso
+  {        \@tipo\ \@apre\ ao Curso
            de \@curso\ da \@sigla, como 
            requisito parcial para a 
            obten\c{c}\~ao do grau
