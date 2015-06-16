@@ -137,7 +137,7 @@ Assim, além do trabalho rotineiro de estudo de TNOs e Centauros feito pelo grup
 
 No capítulo \ref{Cap: Astrometria} descrevemos a astrometria feita para ajudar a corrigir as efemérides dos corpos aqui estudados, etapa essencial para melhorar a predição e viabilizar a efetiva observação de ocultações estelares. No capítulo \ref{Cap: ocultacoes} destacamos a importância da técnica de ocultações estelares e sua capacidade de obter parâmetros físicos dos objetos do Sistema Solar a partir de observações de solo.
 
-Nos capítulos \ref{Cap: TNOs}, \ref{Cap: Ceres}, \ref{Cap: Irregulares} e \ref{Cap: Netuno-Tritao} relatamos os trabalhos desenvolvidos envolvendo predições, observações e testes de ocultações estelares com Centauros e TNOs, Ceres, satélites irregulares dos planetas gigantes e com o sistema Netuno-Tritão, respectivamente. Por fim, no capítulo \ref{Cap: perspectivas} resumimos o que já foi desenvolvido e descrevemos o que ainda está para ser desenvolvido.
+Nos capítulos \ref{Cap: TNOs}, \ref{Cap: Ceres}, \ref{Cap: Irregulares} e \ref{Cap: Netuno-Tritao} relatamos os trabalhos desenvolvidos envolvendo predições e observações de ocultações estelares com Centauros e TNOs, Ceres, satélites irregulares dos planetas gigantes e com o sistema Netuno-Tritão, respectivamente. Por fim, no capítulo \ref{Cap: perspectivas} resumimos o que já foi desenvolvido e descrevemos o que ainda está para ser desenvolvido.
 
 
 \chapter{Astrometria}
@@ -186,12 +186,20 @@ Quando o evento é observado por diversos telescópios espalhados, cada observad
 
 Para se observar esses eventos, portanto, é necessário uma campanha grande com observadores espalhados por várias regiões para cobrir a sombra do objeto. A precisão nas posições da estrela e do objeto são cruciais pois o evento ocorre em instantes específicos e passará por regiões específicas da Terra alheias à escolha do observador.
 
-%Since their ephemerides are not very precise, predicting and observing stellar occultations are very difficult, and no observation of such an event for an irregular satellite is found in the literature. The precise star positions to be derived by the ESA astrometry satellite Gaia \citep{deBruijne2012} will render better predictions with the only source of error being the ephemeris. The positions derived from our observations can be used in new orbital numerical integrations, generating more precise ephemerides.
+As curvas de luz são geradas a partir das observações seguindo a técnica da fotometria diferencial. Em nosso trabalho usamos as tasks de fotometria diferencial do pacote PRAIA. As imagens são previamente calibradas de bias e "flatfield". Os alvos e objetos de calibração são marcados em uma imagem de referência (normalmente a primeira da série) e depois automaticamente identificados no resto da sequência. Técnicas de cálculo do fundo de céu são empregadas, envolvendo a análise da moda de histogramas, e o fluxo dos objetos e do alvo são calculados. Diversas aberturas são testadas até que a menor dispersão seja obtida para a curva (melhor relação sinal-ruído). Ao final, obtêm-se as razões de fluxo alvo/calibrador(es), sinal-ruído, erros da razão de fluxo, entre outras informações. O instante de tempo a cada ponto da curva também é registrado.
 
-%The power of stellar occultations for observing relatively small diameter solar system objects is supported by recent works, such as the discovery of a ring system around the Centaur (10199) Chariklo \citep{Braga-Ribas2014}. Once irregular satellites start to be observed by this technique, it will be possible to obtain their physical parameters (shape, size, albedo, density) with unprecedented precision. For instance, in this case, sizes could be obtained with kilometer accuracy. The knowledge of these parameters would in turn bring valuable information for studying the capture mechanisms and origin of the irregular satellites.
+Nas seções \ref{Sec: Ceres-2010-occ} e \ref{Sec: Ceres-2013-occ} detalhamos os procedimentos da análise da curva para obtenção dos instantes de imersão e emersão, para o cálculo da dimensão e forma do alvo, no caso de ausência de atmosfera. Na presença de atmosfera, técnicas de "ray-tracing" são utilizadas para ajustar a altura e perfis de densidade/temperatura a partir da curva de luz obtida. Maiores detalhes desta técnica são dadas em \cite{DiasOliveira2015} e referências. 
 
 \chapter{Centauros e TNOs}
 \label{Cap: TNOs}
+
+\section{Introdução}
+\label{Sec: TNOs-intro}
+
+\indent \indent Os objetos trans-Netunianos (TNOs) estão localizados após a órbita de Netuno, como o própio nome diz. Devido às suas grandes distâncias, eles podem ser considerados remanescentes quase inalterados da formação do Sistema Solar \cite{Assafin2012}. Já os Centauros se localizam entre as órbitas de Júpiter e Netuno. Eles são objetos transientes entre TNOs e cometas da família de Júpiter e acredita-se que tenha origem comum aos TNOs \citep{Camargo2013}.
+
+Estudá-los é essencial para entender a formação e evolução do Sistema Solar.
+
 
 \section{Astrometria}
 \label{Sec: TNOs-astrometria}
@@ -256,7 +264,7 @@ Os dois eventos foram preditos por Steve Preston\footnote{Predições publicadas
 \end{figure}
 
 \section{Ocultação de 2010}
-\label{Subsec: 2010-occ}
+\label{Sec: Ceres-2010-occ}
 
 \indent \indent Em 17 de Agosto de 2010 Ceres ocultou a estrela TYC 6833-163-1 (UCAC4 313-111823), cuja magnitude é $V = 11.55$ e tem posição no ICRS para a data do evento baseada no catálogo UCAC4 \citep{Zacharias2013}:
 
@@ -338,7 +346,7 @@ Essa solução corresponde ao limite superior da barra de erro 1$\sigma$ da solu
 
 
 \section{Ocultação de 2013}
-\label{Subsec: 2013-occ}
+\label{Sec: Ceres-2013-occ}
 
 \indent \indent Em 25 de Outubro de 2010, Ceres ocultou a estrela TYC 865-911-1 (UCAC4 496-058191), de magnitude $V = 10.05$. Baseada no UCAC4 \citep{Zacharias2013}, sua posição ICRS para a data da ocultação é:
 
@@ -362,11 +370,11 @@ Todos os vídeos foram convertidos para imagens FITS e a fotometria foi obtida v
 
 Para reduzir o ruído, os dados foram binados por grupos de cinco imagens -- com exceção de Greenbelt, onde grupos de dez imagens foram utilizadas. Esse procedimento o tempo de integração efetivo por um fator de 5 (ou 10). Da mesma forma que para o evento de 2010, uma normalização adicional por um polinômio foi aplicada.
 
-Os instantes de ingresso e egresso da ocultação foram obtidos pelo mesmo procedimento descrito na seção \ref{Subsec: 2010-occ}. Uma vez que o tempo de integração efetivo usado (0.17 s) representa aproximadamente 7 km no plano do céu, e a escala de Fresnel e  o diâmetro da estrela estão novamente na ordem de centenas de metros, o erro da determinação dos instantes de imersão e emersão são dominados principalmente pelo tempo de integração, da mesma forma que para o evento de 2010. Os melhores ajustes para as curvas de luz da ocultação estão mostrados na Fig. \ref{Fig: Ceres-2013-curves}.
+Os instantes de ingresso e egresso da ocultação foram obtidos pelo mesmo procedimento descrito na seção \ref{Sec: Ceres-2010-occ}. Uma vez que o tempo de integração efetivo usado (0.17 s) representa aproximadamente 7 km no plano do céu, e a escala de Fresnel e  o diâmetro da estrela estão novamente na ordem de centenas de metros, o erro da determinação dos instantes de imersão e emersão são dominados principalmente pelo tempo de integração, da mesma forma que para o evento de 2010. Os melhores ajustes para as curvas de luz da ocultação estão mostrados na Fig. \ref{Fig: Ceres-2013-curves}.
 
 Uma comparação entre os tempos obtidos pela estação de Brookline e o restante mostrou que esses têm um atraso de aproximadamente 64 s. Dessa forma, não utilizamos os tempos de Brookline na análise.
 
-Perfis elípticos foram ajustados para todas as cordas restantes. pelo mesmo procedimento descrito na seção \ref{Subsec: 2010-occ}. O resultado foi $\chi^2_{r,min} = 13$ , sugerindo que um modelo elíptico não é satisfatório para os dados. De fato, ao olharmos para a Fig. \ref{Fig: Ceres-limb-2013} vemos que a corda de Varina adiantada com respeito às outras. Como nessa estação o tempo não foi inserido diretamente nos frames do vídeo é possível que essa diferença seja oriunda de um eventual problema da correspondência entre os tempos do camcorder e do GPS.
+Perfis elípticos foram ajustados para todas as cordas restantes. pelo mesmo procedimento descrito na seção \ref{Sec: Ceres-2010-occ}. O resultado foi $\chi^2_{r,min} = 13$ , sugerindo que um modelo elíptico não é satisfatório para os dados. De fato, ao olharmos para a Fig. \ref{Fig: Ceres-limb-2013} vemos que a corda de Varina adiantada com respeito às outras. Como nessa estação o tempo não foi inserido diretamente nos frames do vídeo é possível que essa diferença seja oriunda de um eventual problema da correspondência entre os tempos do camcorder e do GPS.
 
 A imersão gravada em Owings também parece atrasada com respeito às cordas próximas (ver Fig. \ref{Fig: Ceres-limb-2013}). Essa corda tem aproximadamente o mesmo tamanho da corda de Mechanicsville, apesar de estarem separadas por cerca de 100 km. Diferentemente de Varina, essa estação teve os tempos inseridos em cada frame do vídeo o que torna mais difícil justificar um problema de tempo. Outras possibilidades seriam uma má determinação dos instantes de ingresso e egresso dessa curva ou uma característica do relevo de Ceres.
 
@@ -377,6 +385,7 @@ Os resultados das soluções nominais e de polo fixo não são significantemente
 Sobre a hipótese do atraso observado na imersão da curva de luz de Owings ser associado a uma característica topográfica, o contato gravado corresponderia a uma elevação negativa de 31 $\pm$ 4 km com respeito à elipse de melhor ajuste. Porém modelos teóricos preveem que relevos em Ceres não devem ser maiores que 10--20 km \citep{Johnson1973}, enquanto dados observacionais limitam o contorno em 18 km \citep{Carry2008}. Imagens mais recentes da sonda \textit{Dawn} também revelam uma superfície mais suave. Portanto, a associação da imersão em Owings com um relevo é improvável.
 
 \section{Discussão}
+\label{Sec: Ceres-discussao} 
 
 \indent \indent Os resultados apresentados na tabela \ref{Tab: resultados} mostram um acordo entre os parâmetros físicos obtidos nas duas ocultações, especialmente no diâmetro equatorial. As diferenças ocorrem basicamente nos tamanhos das barras de erro e podem ser justificadas pelas particularidades de cada conjunto de dados.
 
@@ -590,28 +599,28 @@ Dentre os diversos mecanismos propostos para a captura do satélite, o mais prov
 
 A combinação entre a obliquidade do eixo de rotação de Netuno em relação ao seu eixo orbital e a alta inclinação da órbita de Tritão dá a Tritão um complicado e extremo ciclo sazonal \citep{McKinnon2007}. As marés associadas à sua captura podem ter fortemente aquecido e transformado seu interior.
 
-Tritão é um dos poucos objetos do sistema solar que possuem atmosfera e é constituída principalmente de nitrogênio. A extrema variação da latitude subsolar em Tritão causam bruscas variações na distribuição de nitrogênio congelado na superfície do objeto de forma que a calota polar pode chegar até próximo o equador do satélite \citep{Hansen1992}. Modelos preveem que a pressão da atmosfera de Tritão varia ao longo do tempo de duas ordens de grandeza.
+Tritão é um dos poucos objetos do sistema solar que possuem atmosfera e é constituída principalmente de $N_{2}$. A extrema variação da latitude subsolar em Tritão causa bruscas variações na distribuição de nitrogênio congelado na superfície do objeto de forma que a calota polar pode chegar até próximo o equador do satélite \citep{Hansen1992}. Modelos preveem que a pressão da atmosfera de Tritão varia ao longo do tempo de duas ordens de grandeza.
 
 
 
 \section{Astrometria}
 \label{Sec: Netuno-astrometria}
 
-\indent \indent Com o objetivo de estudar os efeitos de maré sobre o sistema Netuno-Tritão, serão obtidos as posições desses objetos em mais de 7000 imagens observadas no OPD desde 1992. Uma vez que eles estão muito próximos no céu e Netuno é muito mais brilhante do que Tritão, a posição do satélite pode estar afetada pela luz do planeta. Para eliminar essa influência será utilizada uma técnica chamada de "coronografia digital".
+\indent \indent Com o objetivo de estudar os efeitos de maré sobre o sistema Netuno-Tritão, serão obtidos as posições desses objetos em mais de 7000 imagens observadas no OPD desde 1992 até o presente. Uma vez que eles estão muito próximos no céu e Netuno é muito mais brilhante do que Tritão, a posição do satélite pode estar afetada pela luz do planeta. Para eliminar essa influência será utilizada uma técnica chamada de "coronografia digital".
 
-O procedimento de coronografia digital faz parte do pacote PRAIA e foi desenvolvido para se observar os satélites principais de Urano durante os fenômenos mútuos de 2008 \citep{Assafin2008}. A técnica consiste em computar o perfil de luz do objeto mais brilhante dado uma área. A imagem original, então, é subtraída do perfil do objeto gerando uma imagem coronografada.
+O procedimento de coronografia digital faz parte do pacote PRAIA e foi desenvolvido para se observar os satélites principais de Urano durante os fenômenos mútuos de 2007 \citep{Assafin2009}. A técnica consiste em computar o perfil de luz do objeto mais brilhante dado uma área. A imagem original, então, é subtraída do perfil do objeto gerando uma imagem coronografada.
 
-Para se obter o perfil do objeto, a distância $d$ de cada pixel ($j$,$i$) às coordenadas centrais do baricentro ($x_{c}$,$y_{c}$) da fonte brilhante. Para cada anel de 1 pixel de largura a uma distância $d$ do baricentro é feito um histograma de contagens. Por fim, o perfil é obtido sendo que, para cada pixel, a contagem é estimada como a moda do histograma de contagens de seu respectivo anel.
+Para se obter o perfil do objeto, é calculada a distância $d$ de cada pixel ($j$,$i$) às coordenadas centrais do baricentro ($x_{c}$,$y_{c}$) da fonte brilhante. Para cada anel de 1 pixel de largura a uma distância $d$ do baricentro é feito um histograma de contagens. Por fim, o perfil é obtido sendo que, para cada pixel, a contagem é estimada como a moda do histograma de contagens de seu respectivo anel.
 
 No caso, a luz de Netuno será removida diminuindo a sua influência sobre a posição de Tritão. Como subproduto, as coordenadas do baricentro calculadas são uma boa estimativa da posição de Netuno.
 
-Como o tamanho aparente de Netuno ($\approx 2\arcsec$) é da ordem do seeing, uma técnica está sendo desenvolvida para determinar o centro de objetos extensos. No caso, supõe-se que, para cada ponto da imagem, a luz é espalhada sobre o CCD como uma gaussiana e a imagem correspondente é a soma de todas estas gaussianas.
+Como o tamanho aparente de Netuno ($\approx 2\arcsec$) é da ordem do seeing, uma técnica está sendo desenvolvida para determinar o centroide de objetos extensos. No caso, supõe-se que, para cada ponto da imagem, a luz é espalhada sobre o CCD como uma gaussiana e a imagem correspondente é a soma de todas estas gaussianas. O perfil resultante não tem forma analítica fechada, devendo ser calculado numericamente. Este estudo ainda está em andamento.
 
 
 \section{Predições ESO/WFI}
 \label{Sec: Netuno-predic}
 
-\indent \indent Nos mesmos moldes em foram feitos observações dos caminhos de TNOs para predição de ocultações estelares (ver seção \ref{Sec: TNOs-astrometria}), o caminho de Tritão também foi observado gerando um catálogo de estrelas inclusos no catálogo WFI. Infelizmente, devido a Netuno estar passando por regiões pouco populada por estrelas brilhantes, nenhum evento pôde ser observado oriundo deste trabalho.
+\indent \indent Nos mesmos moldes em que foram feitas observações dos caminhos de TNOs para predição de ocultações estelares (ver seção \ref{Sec: TNOs-astrometria}), o caminho de Tritão também foi observado gerando um catálogo de estrelas inclusos no catálogo WFI. Infelizmente, devido a Netuno estar passando por regiões pouco populadas por estrelas brilhantes, nenhum evento pôde ser observado oriundo deste trabalho.
 
 Para 2015, antes que o catálogo WFI não cubra mais o caminho orbital de Tritão, ainda haverá uma oportunidade de observar uma ocultação estelar pelo objeto. O evento está predito para ocorrer dia 10 de Novembro de 2015 com a sombra passando pela China. Dependendo do offset da estrela e de Tritão, há a possibilidade da sombra ir mais ao sul passando pelo Japão ou Austrália, onde temos colaboradores que poderão observar o evento.
 
@@ -619,13 +628,22 @@ Para 2015, antes que o catálogo WFI não cubra mais o caminho orbital de Tritã
 \section{Ocultação de Maio/2008}
 \label{Sec: Netuno-maio2008}
 
-\indent \indent Em 21 de Maio de 2008 houve uma ocultação por Tritão cuja sombra cruzou o sul da África. Dos sítios que observaram, apenas duas cordas foram positivas. As observações foram feitas de La Réunion e da Namíbia com câmeras rápidas. Dentre elas, uma observou somente a atmosfera do objeto. Foi a segunda ocultação de Tritão, sendo a primeira observada em Julho de 1997 \citep{Elliot2000}.
+\indent \indent Em 21 de Maio de 2008 houve uma ocultação por Tritão cuja sombra cruzou o sul da África. Dos sítios que observaram, apenas duas cordas foram positivas. As observações foram feitas de La Réunion e da Namíbia com câmeras rápidas. Dentre elas, uma observou somente a atmosfera do objeto. Foi a primeira ocultação de Tritão desde 1997 \citep{Elliot2000}.
 
-Os perfis de pressão da atmosfera de Tritão foram calculadas, porém, devido a uma das cordas ter pego somente atmosfera, não foi possível determinar a posição das cordas em relação ao corpo com precisão. Isso resultou em valores com barras de erro muito grandes comparadas às encontradas na literatura.
+Os perfis de pressão da atmosfera de Tritão foram calculados (Sicardy et al., comunicação privada), porém, devido a uma das cordas ter pego somente atmosfera, não foi possível determinar a posição das cordas em relação ao corpo com precisão. Isso resultou em valores de pressão próximo à superfície com pequenas barras de erro interno, mas que podem estar desviados em mais de 3 sigmas do valor real.
 
-\cite{Hansen1992} obteve que a pressão atmosférica de Tritão em sua superfície estaria em ascensão. Neste trabalho, a pressão atmosférica foi obtida com um valor muito diferente do valor esperado mesmo ao nível de $3\sigma$. O resultado obtido também é inconsistente com outros valores da literatura que confirmam o esperado por \cite{Hansen1992}.
+\begin{figure}[h]
+\begin{centering}
+\subfigure[]{\includegraphics[scale=0.29]{figuras/tritao-2008.png} \label{Fig: Tritao-body}}
+\subfigure[]{\includegraphics[scale=0.29]{figuras/pressao-2008.png} \label{Fig: Tritao-pressao}}
+\caption{a) Reconstrução pós-ocultação da forma de Tritão. As linhas são as cordas observadas. Como é possível ver, a corda da Namíbia observou apenas a atmosfera de Tritão. b) Comparação entre a pressão atmosférica na superfície de Tritão obtida por Sicardy et al. (comunicação privada) e pressões publicadas na literatura: \cite{Gurola1995, Olkin1997, Sicardy1998} e \cite{Elliot2000}.
+\label{Fig: Ceres-map}}
+\end{centering}
+\end{figure}
 
-Para recuperar essa ocultação, um trabalho astrométrico deve ser feito de forma a medir com precisão maior a posição do centro do corpo no instante da ocultação. Dessa forma, será possível localizar as cordas observadas às suas respectivas latitudes diminuindo as barras de erro.
+\cite{Hansen1992} geraram modelos que preveem que a pressão atmosférica de Tritão em sua superfície estaria em ascensão. Neste trabalho, a pressão atmosférica foi obtida com um valor muito diferente do valor esperado mesmo ao nível de $3\sigma$. O resultado obtido também é inconsistente com outros valores da literatura que confirmam o esperado por \cite{Hansen1992}.
+
+Para recuperar essa ocultação, um trabalho astrométrico deve ser feito de forma a medir com precisão maior a posição do centro do corpo no instante da ocultação. Dessa forma, será possível localizar as cordas observadas às suas respectivas latitudes, diminuindo as barras de erro.
 
 
 \section{Telemetria de sondas, marés}
@@ -642,7 +660,7 @@ Durante a circularização da órbita, o aquecimento causado por efeito de maré
 Pela órbita de Tritão ser retrógrada, espera-se que sua órbita diminua devido ao efeito de maré que provoca em Netuno e seja destruído ao se aproximar do planeta devido à força de maré provocada por Netuno \citep{McKinnon2007}. Estima-se que a órbita de Tritão encolha em aproximadamente 15\% nos próximos 5 bilhões de anos.
 
 
-\chapter{Conclus\~ao e Perspectivas}
+\chapter{Conclusão e Perspectivas}
 \label{Cap: perspectivas}
 
 \indent \indent Esse trabalho tem por objeto estudar os objetos do Sistema Solar exterior, de forma a obter características físicas e dinâmicas relevantes para entender a formação e evolução do Sistema Solar. As técnicas utilizadas consistem em obter posições astrométricas precisas para integração orbital e geração de efemérides. Além disso, prever, observar e reduzir ocultações estelares por esses objetos e obter seus parâmetros físicos (tamanho, forma, albedo, densidade, presença de atmosfera, satélites ou anéis).
