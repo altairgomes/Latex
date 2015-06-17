@@ -152,7 +152,7 @@
 \input{size1\@ptsize.clo}
 \setlength\lineskip{1\p@}
 \setlength\normallineskip{1\p@}
-\renewcommand\baselinestretch{1.5}
+\renewcommand\baselinestretch{1.3}
 \setlength\parskip{0\p@ \@plus \p@}
 \@lowpenalty   51
 \@medpenalty  151
@@ -577,7 +577,7 @@
 \evensidemargin0cm
 \textwidth16cm
 \textheight25.5cm
-\parskip5.8pt
+\parskip1.3pt
 \headsep.4cm
 \marginparwidth 40pt \marginparsep 10pt
 \newcommand*\chaptermark[1]{}
