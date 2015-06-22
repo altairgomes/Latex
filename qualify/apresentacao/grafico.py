@@ -12,15 +12,14 @@ fig = plt.figure(frameon=False)
 ax = fig.add_axes([0, 0, 1, 1])
 ax.axis('off')
 
-plt.plot([0.0, 2.4], [20.0, 20.0], color='black')
-plt.plot([2.4, 2.4], [20.0, 16.65], color='black')
-plt.plot([2.4, 25.6], [16.65, 16.65], color='black')
-plt.plot([25.6, 25.6], [16.65, 20.0], color='black')
-plt.plot([25.6, 28.0], [20.0, 20.0], color='black')
+x = np.linspace(0, 28.0, 1000)
+y = np.zeros(len(x)) + 20.0 + 0.1*np.random.normal(0, 1, len(x))
+y[np.where((x < 25.6) & (x > 2.4))] = y[np.where((x < 25.6) & (x > 2.4))] - 3.35
+
+plt.plot(x, y, color='black')
 
 plt.plot([27.0, 27.0], [0.0, 2.0], color='black', zorder=0.9)
 
-x = np.linspace(0, 28.0, 1000)
 y = 3*gaussian(x, 1.4, 0.5) + gaussian(x, 3.4, 0.5) + 1
 plt.plot(x,y, color='black', zorder=0.9)
 
