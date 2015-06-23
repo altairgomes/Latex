@@ -33,4 +33,4 @@ plt.ylim(0,tam[1].value)
 
 #fig = plt.gcf()
 fig.set_size_inches(tam[0].to(u.imperial.inch).value, tam[1].to(u.imperial.inch).value)
-fig.savefig('Fundo.png', format='png', transparent=True)
+fig.savefig('Fundo.png', format='png', dpi=300, transparent=True)
