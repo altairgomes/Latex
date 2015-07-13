@@ -16,6 +16,7 @@
 \usepackage{subfigure}
 \usepackage{gensymb}
 \usepackage{longtable}
+\usepackage{color}
 %\usepackage{setspace}
 %
 %\usepackage{etoolbox}
@@ -75,18 +76,18 @@
 %          \inst{4},      
           J. I. B. Camargo
           \inst{2,3},     
-          F. Braga-Ribas
-          \inst{2,4}, 
+%          F. Braga-Ribas
+%          \inst{2,4}, 
 %          D. N. da Silva Neto
 %          \inst{6},
 %          A. H. Andrei
 %          \inst{1,2} \fnmsep\thanks{Affiliated researcher at Observatoire de Paris/SYRTE, 77 Avenue Denfert Rochereau, 75014 Paris, France},
           B. E. Morgado
           \inst{1},
-          A. Dias-Oliveira
-          \inst{2},
-          G. Benedetti-Rossi
-          \inst{2},
+%          A. Dias-Oliveira
+%          \inst{2},
+%          G. Benedetti-Rossi
+%          \inst{2},
 %          Y. Duchemin
 %          \inst{4,7},
 %          J. Desmars
@@ -112,8 +113,8 @@ Laboratório Interinstitucional de e-Astronomia - LIneA, Rua Gal. José Cristino
 %Institut de mécanique céleste et de calcul des éphémérides - Observatoire %de Paris, UMR 8028 du CNRS,
 %77 Av. Denfert-Rochereau, 75014 Paris, France\\
 %              \email{arlot@imcce.fr}
-              \and
-Federal University of Technology - Paraná (UTFPR / DAFIS), Rua Sete de Setembro, 3165, CEP 80230-901, Curitiba, PR, Brazil
+%              \and
+%Federal University of Technology - Paraná (UTFPR / DAFIS), Rua Sete de Setembro, 3165, CEP 80230-901, Curitiba, PR, Brazil
 %              \and
 %Centro Universitário Estadual da Zona Oeste, Av. Manual Caldeira de Alvarenga 1203, CEP 23.070-200 Rio de Janeiro RJ, Brazil
 %              \and
@@ -133,7 +134,7 @@ Federal University of Technology - Paraná (UTFPR / DAFIS), Rua Sete de Setembro
 %{Comparison of our positions with recent JPL ephemeris suggests the presence of systematic errors in the orbits for some of the irregular satellites. The most evident case was an error in the inclination of Carme.}
 
 
-\keywords{Astrometry - Planets and satellites: general - Planets and satellites: individual: Jovian and Saturnian irregular satellites}
+\keywords{Occultations - Planets and satellites: general - Planets and satellites: individual: Jovian and Saturnian irregular satellites}
 
 \maketitle
 
@@ -155,15 +156,15 @@ For Phoebe, ejected material from its surface caused by impacts could evolve due
 
 The region of origin of these object is not well known, \cite{Grav2003} and \cite{Grav2007} showed that the irregular satellites from the giant planest have their colors and spectral slopes similar to C-, D- and P-type asteroids, Centaurs and trans-neptunian objects (TNOs) suggesting that they have been originated from different locations in the early solar system.
 
-In this work, we study these objects as possible representatives of the small TNOs population. TNOs are objects that due to their distance may be highly preserved having their properties similar to those they had when they were formed then providing history and evolution of the outer solar system \citep{Camargo2013}. Due to their distance, the smaller objects from this region are more difficult to observe and study.
+In this work, we study these objects as possible representatives of the small TNOs population. TNOs are objects that due to their distance may be highly preserved having their properties similar to those they had when they were formed, then providing history and evolution of the outer solar system \citep{Camargo2013}. Due to their distance, the smaller objects from this region are more difficult to observe and study.
 
-In the intent to obtain their physical parameters (size, shape, albedo, density, etc) and help identify their origin locations, we will make use of the stellar occultation technique. This technique is the best one to obtain the physical parameters of the solar system objects from ground-based observations providing more accurate results than other groud-based techniques \citep{Sicardy2011, Ortiz2012, Braga-Ribas2014}.
+In the intent to obtain the physical parameters (size, shape, albedo, density, etc) of the irregular satellites and help identify their origin locations, we will make use of the stellar occultation technique. This technique is the best one to obtain these parameters of the solar system objects from ground-based observations providing more accurate results than other ground-based techniques \citep{Sicardy2011, Ortiz2012, Braga-Ribas2014}.
 
-Since their sizes are very small (see table \ref{}), predict the exact location and instant where the shadow will cross the Earth demands a good precision. For instance, the bigger irregular satellite of Jupiter has an estimated size of 150 km \citep{Porco2003}, which is equivalent to an apparent size of 40 mas, must have an error smaller than its size for being observable. For the other objects, smaller or farther than Himalia, the situation is more difficult.
+Since their sizes are very small (see table \ref{} \textcolor{red}{Ainda vou fazer a tabela}), predict the exact location and instant where the shadow will cross the Earth demands a good precision. For instance, the bigger irregular satellite of Jupiter has an estimated size of 150 km \citep{Porco2003}, which is equivalent to an apparent size of 40 mas, must have an error smaller than its size for being observable. For the other objects, smaller or farther than Himalia, the situation is more difficult.
 
 As pointed out by \cite{GomesJunior2015}, the ephemeris of the irregular satellites have errors that may reach 200 mas for some satellites. For an object at the distance of Jupiter, this represents an error bigger than 700 km in the shadow path.
 
-We present in this paper the stellar occultation predictions for the 8 major irregular satellites of Jupiter (Himalia, Elara, Pasiphae, Lysithea, Carme, Ananke and Sinope), Phoebe from Saturn and Nereid from Neptune. In the section \ref{Sec: Rationale} we explore the scientific rationale for study the irregular satellites. In section \ref{Sec: Offset} we show the correction made to the ephemeris for better predict stellar occultations. In section \ref{Sec: predictions}, we present the predictions of the stellar occultations by irregular satellites. Some test realized to confirm the predictions are presented in section \ref{Sec: testes} and the conclusion is given in section \ref{Sec: conclusions}.
+We present in this paper the stellar occultation predictions for the 7 major irregular satellites of Jupiter (Himalia, Elara, Pasiphae, Lysithea, Carme, Ananke and Sinope), Phoebe from Saturn and Nereid from Neptune. In the section \ref{Sec: Rationale} we explore the scientific rationale for study the irregular satellites and the possibility of having a common origin with TNOs. In section \ref{Sec: Offset} we show the correction made to the ephemeris for better predict stellar occultations. In section \ref{Sec: predictions}, we present the predictions of the stellar occultations by irregular satellites and how they were made. Some test realized to confirm the predictions are presented in section \ref{Sec: testes} and the conclusion is given in section \ref{Sec: conclusions}.
 
 \section{Scientific Rationale} \label{Sec: Rationale}
 
