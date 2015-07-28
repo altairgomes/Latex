@@ -160,7 +160,7 @@ In this work, we study these objects as possible representatives of the small TN
 
 In the intent to obtain the physical parameters (size, shape, albedo, density, etc) of the irregular satellites and help identify their origin locations, we will make use of the stellar occultation technique. This technique is the best one to obtain these parameters of the solar system objects from ground-based observations providing more accurate results than other ground-based techniques \citep{Sicardy2011, Ortiz2012, Braga-Ribas2014}.
 
-Since their sizes are very small (see table \ref{} \textcolor{red}{Ainda vou fazer a tabela}), predict the exact location and instant where the shadow will cross the Earth demands a good precision. For instance, the bigger irregular satellite of Jupiter has an estimated size of 150 km \citep{Porco2003}, which is equivalent to an apparent size of 40 mas, must have an error smaller than its size for being observable. For the other objects, smaller or farther than Himalia, the situation is more difficult.
+Since their estimated sizes are very small (see table \ref{} \textcolor{red}{Ainda vou fazer a tabela}), predict the exact location and instant where the shadow will cross the Earth demands a good precision. For instance, the bigger irregular satellite of Jupiter has an estimated size of 150 km \citep{Porco2003}, which is equivalent to an apparent size of 40 mas, must have an error smaller than its size for being observable. For the other objects, smaller or farther than Himalia, the situation is more difficult.
 
 As pointed out by \cite{GomesJunior2015}, the ephemeris of the irregular satellites have errors that may reach 200 mas for some satellites. For an object at the distance of Jupiter, this represents an error bigger than 700 km in the shadow path.
 
@@ -188,7 +188,37 @@ As explicited in section \ref{Sec: introducao}
 
 \cite{GomesJunior2015} showed from observations made at the Observatório do Pico dos Dias (OPD), Observatoire Haute-Provence (OHP) and European Southern Observatory (ESO) that the orbits of the irregular satellites of the giant planets have systematic errors. The offsets of the observations relative to the JPL ephemeris could be up to 200 mas for some satellites. These differences could be associated with errors in their orbital elements.
 
-We utilize the offsets obtained by \cite{GomesJunior2015} to identify a pattern in the error of the ephemeris. This pattern could be used to extrapolate an offset to the satellite by the time of the occultation predicted. Plots of the offsets over time and true anomaly (see Fig. \ref{} for ??) clearly show that these two parameters are the most important in the differences observed.
+We utilize the offsets obtained by \cite{GomesJunior2015} to identify a pattern in the error of the ephemeris. This pattern could be used to extrapolate an offset to the satellite by the time of the occultation predicted. Plots of the offsets over time and true anomaly (see Fig. \ref{Fig:offxtime} and \ref{Fig:offxtanom} for Carme) clearly show that these two parameters are the most important in the differences observed.
+
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.25]{figures/DEC.png}\label{Fig:offxtime}
+\caption{Offsets of the declination of Carme by time. \textcolor{red}{Figura só para visualização, vou colocar alguma melhor depois}}
+\end{centering}
+\end{figure}
+
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.25]{figures/DEC_anom.png} \label{Fig:offxtanom}
+\caption{Offsets of the declination of Carme by true anomaly. \textcolor{red}{Figura só para visualização, vou colocar alguma melhor depois}}
+\end{centering}
+\end{figure}
+
+
+
+\begin{equation}
+F(t,f) = p[0]\times \frac{t - jd_{0}}{365.65} + p[1]\times \sin(f) + p[2]\times\cos(f) + p[3],
+\label{eq:linear}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+%F = \{F_{x} \in  F_{c} &: (|S| > |C|) \\
+% &\quad \cap (\text{minPixels}  < |S| < \text{maxPixels}) \\
+% &\quad \cap (|S_{\text{conected}}| > |S| - \epsilon) \}
+F(t,f) = p[0]\times\sin\left(\frac{2\pi}{p[1]}\times \frac{t - jd_{0}}{365.25} + p[2]\right) + p[3]\times\sin(f) + \\ +p[4]\times\cos(f) + p[5],
+\end{split}
+\end{equation}
 
 
 
