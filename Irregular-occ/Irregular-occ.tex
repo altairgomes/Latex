@@ -76,14 +76,14 @@
 %          \inst{4},      
           J. I. B. Camargo
           \inst{2,3},     
-%          F. Braga-Ribas
-%          \inst{2,4}, 
+          B. E. Morgado
+          \inst{1,2},
+          F. Braga-Ribas
+          \inst{2,4}, 
 %          D. N. da Silva Neto
 %          \inst{6},
 %          A. H. Andrei
 %          \inst{1,2} \fnmsep\thanks{Affiliated researcher at Observatoire de Paris/SYRTE, 77 Avenue Denfert Rochereau, 75014 Paris, France},
-          B. E. Morgado
-          \inst{1},
 %          A. Dias-Oliveira
 %          \inst{2},
 %          G. Benedetti-Rossi
@@ -113,8 +113,8 @@ Laboratório Interinstitucional de e-Astronomia - LIneA, Rua Gal. José Cristino
 %Institut de mécanique céleste et de calcul des éphémérides - Observatoire %de Paris, UMR 8028 du CNRS,
 %77 Av. Denfert-Rochereau, 75014 Paris, France\\
 %              \email{arlot@imcce.fr}
-%              \and
-%Federal University of Technology - Paraná (UTFPR / DAFIS), Rua Sete de Setembro, 3165, CEP 80230-901, Curitiba, PR, Brazil
+              \and
+Federal University of Technology - Paraná (UTFPR / DAFIS), Rua Sete de Setembro, 3165, CEP 80230-901, Curitiba, PR, Brazil
 %              \and
 %Centro Universitário Estadual da Zona Oeste, Av. Manual Caldeira de Alvarenga 1203, CEP 23.070-200 Rio de Janeiro RJ, Brazil
 %              \and
@@ -129,9 +129,9 @@ Laboratório Interinstitucional de e-Astronomia - LIneA, Rua Gal. José Cristino
 \abstract
 {The irregular satellites of the giant planets are believed, due to their orbital configurations, to not have been formed where they are located, but they were probably captured in the early solar system. To constrain their origin location, it's important to know their physical parameters, such as size, density and albedo. These informations would to understand better their densities and consequently their composition. The best ground-based technique to obtain these parameters is the observation of stellar occultations by these objects.}
 {We aimed to predict stellar occultation for the seven biggest irregular satellites of Jupiter: Himalia, Elara, Pasiphae, Carme, Lysithea, Sinope and Ananke; for the irregular satellite of Saturn: Phoebe; and the satellites of Neptune: Nereid and Triton.}
-{\textcolor{red}{We identified and reduced observations of several irregular satellites from three databases containing more than 8000 images obtained between 1992 and 2014 at three sites (Observatório do Pico dos Dias, Observatoire de Haute-Provence and European Southern Observatory - La Silla).  We used the software PRAIA (Platform for Reduction of Astronomical Images Automatically) to make the astrometric reduction of the CCD frames. The UCAC4 catalogue represented the International Celestial Reference System in the reductions. The identification of the satellites in the frames was done through their ephemerides as determined from the SPICE/NAIF kernels. Some procedures were taken to overcome missing or incomplete information (coordinates, date), mostly for the older images.}}
-{\textcolor{red}{We managed to obtain more than 6000 positions for 18 irregular satellites, being 12 of Jupiter, 4 of Saturn, 1 of Uranus (Sycorax) and 1 of Neptune (Nereid). For some satellites the number of obtained positions is more than 50\% of that used in earlier orbital numerical integrations.}}
-{\textcolor{red}{Comparison of our positions with recent JPL ephemeris suggests the presence of systematic errors in the orbits for some of the irregular satellites. The most evident case was an error in the inclination of Carme.}}
+{We identified stars candidates to stellar occultation by the irregular satellites in the UCAC4 catalogue and a catalogue of stars in the sky-path of Neptune obtained from observations made with the ESO2p2/WFI (2.2 m Max-Planck ESO telescope with the Wide Field Imager) instrument. These catalogue were crossed with the JPL ephemeris of the satellites using the methodology applied to identify stellar occultation by TNOs by \cite{Assafin2012}. The ephemeris were corrected of offsets using an numerical integration \textcolor{red}{(Here we may write something about after the work of Laurène)} of the positions obtained by \cite{GomesJunior2015} to improve the predictions.}
+{We managed to obtain \textcolor{red}{588} candidates of stellar occultations between the period of January, 2015 and December, 2017. Tests were develop to obtain offsets for the star and satellite for the events of Himalia in March 03, 2015 and Elara in March 30, 2015. The observations were made in the same field to minimize errors and the offsets were used to correct the predictions and evaluate them.}
+{The comparisons between the nominal predictions, the corrected predictions using the numerical integration and the observation tests show a good agreement. This reveals that observe an stellar occultation by these objects, at least for Himalia, is quite possible.}
 
 
 \keywords{Occultations - Planets and satellites: general - Planets and satellites: individual: Jovian and Saturnian irregular satellites}
@@ -197,7 +197,7 @@ Unlikely stellar occultations by TNOs, which has been proved effective, the obse
 
 \cite{GomesJunior2015} obtained 6523 suitable positions for 18 irregular satellites between 1992 and 2014 with an estimated error in the positions of about 60 to 80 mas. For some satellites the number of positions obtained is comparable to the number used in the numerical integration of orbits by the JPL \citep{Jacobson2012}. They pointed out that the ephemeris of the irregular satellites have systematic errors that may reach 200 mas for some satellites. For an object at the distance of Jupiter, this represents an error bigger than 700 km in the shadow path. Using the offsets obtained by \cite{GomesJunior2015} it is possible to correct the ephemeris and better predict stellar occultations for these objects.
 
-We present in this paper stellar occultation predictions for the 7 major irregular satellites of Jupiter (Himalia, Elara, Pasiphae, Lysithea, Carme, Ananke and Sinope), Phoebe from Saturn and Nereid from Neptune. In the section \ref{Sec: Rationale} we explore the scientific rationale for the study of the irregular satellites and the possibility of having a common origin with TNOs. In section \ref{Sec: Offset} we show the correction made to the ephemeris of these satellites for better predicting the stellar occultations. In section \ref{Sec: predictions}, we present the predictions of the stellar occultations by irregular satellites and how they were made. Some tests made to confirm the predictions are presented in section \ref{Sec: testes} and the conclusions are given in section \ref{Sec: conclusions}.
+We present in this paper stellar occultation predictions for the 7 major irregular satellites of Jupiter (Himalia, Elara, Pasiphae, Lysithea, Carme, Ananke and Sinope), Phoebe from Saturn and Nereid and Triton from Neptune. In the section \ref{Sec: Rationale} we explore the scientific rationale for the study of the irregular satellites and the possibility of having a common origin with TNOs. In section \ref{Sec: Offset} we show the correction made to the ephemeris of these satellites for better predicting the stellar occultations. In section \ref{Sec: predictions}, we present the predictions of the stellar occultations by irregular satellites and how they were made. Some tests made to confirm the predictions are presented in section \ref{Sec: testes} and the conclusions are given in section \ref{Sec: conclusions}.
 
 \section{Scientific Rationale} \label{Sec: Rationale}
 
@@ -210,7 +210,7 @@ We present in this paper stellar occultation predictions for the 7 major irregul
 
 %\textcolor{red}{E dizer que, mesmo que a hipotese de TNOs que nos motiva a fazer as predicoes, venha a ser refutada no futuro, seja por outros trabalhos, seja pelos resultados futuros de observacoes de nossas proprias ocultacoes, o levantamento em si das propriedades fisicas, tamanho, forma e albedo ainda assim seriam muito uteis para testar as hiposteses de captura, ou seja, contribui para o estudo da formacao e evolucao dos sistemas de Jupiter, Saturno e Netuno.}
 
-As explicited in section \ref{Sec: introducao}, there is no consensus on a single model about the region where the irregular satellites were formed. 
+As explicited in section \ref{Sec: introducao}, there is no consensus on a single model about the region where the irregular satellites were formed. \cite{Cuk2004} showed that the progenitor of the Himalia group may have origin in heliocentric orbits similar to the Hilda asteroid group.
 
 Phoebe, the most studied irregular satellite, was identified by \cite{Clark2005} that its surface is probably covered by material of cometary origin. It was also stated by \cite{Johnson2005} that if the porosity of Phoebe would be of about 15\%, Phoebe would have an uncompressed density similar to those of Pluto and Triton.
 
@@ -236,42 +236,43 @@ Similarly to the irregular satellites, Triton was probably capture in the early 
 
 \cite{GomesJunior2015} published 6523 precise positions for 18 irregular satellites from observations made at the Observatório do Pico dos Dias (OPD), Observatoire Haute-Provence (OHP) and European Southern Observatory (ESO) between 1992 and 2014. They showed that the orbits of the irregular satellites of the giant planets have systematic errors. The offsets of the observations relative to the JPL ephemeris could be up to 200 mas for some satellites. These differences could be associated with errors in their orbital elements.
 
-Making a new model for the orbits of these objects would demand a lot of time and delay the publication of predictions of possible events to occur in the very near future. Thus, we utilized the ephemeris offsets obtained by \cite{GomesJunior2015} to identify error patterns in the ephemeris. The error patterns in right ascension and in declination could be used to extrapolate the offsets to the satellite ephemeris by the time of the predicted occultation, improving it. Plots of the offsets over time and true anomaly (see Fig. \ref{Fig:offxtime} and \ref{Fig:offxtanom} for Carme) clearly show the systematic errors in the JPL ephemeris.
+Making a new model for the orbits of these objects would demand a lot of time and delay the publication of predictions of possible events to occur in the very near future. Thus, we utilized the positions obtained by \cite{GomesJunior2015} to identify error patterns in the ephemeris. The error patterns in right ascension and in declination could be used to extrapolate the offsets to the satellite ephemeris by the time of the predicted occultation, improving it. Plots of the offsets over true anomaly (see Fig. \ref{Fig:offxtanom} for declination offsets of Carme, for instance) clearly show the systematic errors in the JPL ephemeris.
 
-\begin{figure}
+%\begin{figure}
+%\begin{centering}
+%\includegraphics[scale=0.25]{figures/DEC.png}\label{Fig:offxtime}
+%\caption{Offsets of the declination of Carme by time. \textcolor{red}{Figura só para visualização, vou colocar alguma melhor depois}}
+%\end{centering}
+%\end{figure}
+
+\begin{figure*}
 \begin{centering}
-\includegraphics[scale=0.25]{figures/DEC.png}\label{Fig:offxtime}
-\caption{Offsets of the declination of Carme by time. \textcolor{red}{Figura só para visualização, vou colocar alguma melhor depois}}
+\subfigure[Offset from the JPL ephemeris]{\includegraphics[scale=0.25]{figures/DEC_anom.png} \label{Fig:offxtanomxjpl}}
+\subfigure[\textcolor{red}{Offset from the numerical integration}]{\includegraphics[scale=0.25]{figures/DEC_anom.png} \label{Fig:offxtanomxni}}
+\caption{Offsets of the declination of Carme by true anomaly from the JPL ephemeris and \textcolor{red}{from the numerical integration from the positions obtained in \cite{GomesJunior2015}}.}
 \end{centering}
-\end{figure}
-
-\begin{figure}
-\begin{centering}
-\includegraphics[scale=0.25]{figures/DEC_anom.png} \label{Fig:offxtanom}
-\caption{Offsets of the declination of Carme by true anomaly. \textcolor{red}{Figura só para visualização, vou colocar alguma melhor depois}}
-\end{centering}
-\end{figure}
+\end{figure*}
 
 
-The two kinds of error or offset patterns adopted depending on the case are given by Eqs. \ref{eq:linear} and \ref{eq:seno}:
+%The two kinds of error or offset patterns adopted depending on the case are given by Eqs. \ref{eq:linear} and \ref{eq:seno}:
+%
+%\begin{equation}
+%F(t,f) = p[0]\times t + p[1]\times \sin(f) + p[2]\times\cos(f) + p[3],
+%\label{eq:linear}
+%\end{equation}
+%
+%\begin{equation}
+%\begin{split}
+%%F = \{F_{x} \in  F_{c} &: (|S| > |C|) \\
+%% &\quad \cap (\text{minPixels}  < |S| < \text{maxPixels}) \\
+%% &\quad \cap (|S_{\text{conected}}| > |S| - \epsilon) \}
+%F(t,f) = p[0]\times\sin\left(\frac{2\pi}{p[1]}\times t + p[2]\right) + p[3]\times\sin(f) + \\ +p[4]\times\cos(f) + p[5],
+%\end{split}
+%\label{eq:seno}
+%\end{equation}
+%where $F(t,f)$ is the offset obtained, $t$ is time in years counting from J2000.0 and $f$ is the true anomaly. The patterns could be applied for right ascension as well as for declination ephemeris offsets.
 
-\begin{equation}
-F(t,f) = p[0]\times t + p[1]\times \sin(f) + p[2]\times\cos(f) + p[3],
-\label{eq:linear}
-\end{equation}
-
-\begin{equation}
-\begin{split}
-%F = \{F_{x} \in  F_{c} &: (|S| > |C|) \\
-% &\quad \cap (\text{minPixels}  < |S| < \text{maxPixels}) \\
-% &\quad \cap (|S_{\text{conected}}| > |S| - \epsilon) \}
-F(t,f) = p[0]\times\sin\left(\frac{2\pi}{p[1]}\times t + p[2]\right) + p[3]\times\sin(f) + \\ +p[4]\times\cos(f) + p[5],
-\end{split}
-\label{eq:seno}
-\end{equation}
-where $F(t,f)$ is the offset obtained, $t$ is time in years counting from J2000.0 and $f$ is the true anomaly. The patterns could be applied for right ascension as well as for declination ephemeris offsets.
-
-\textcolor{red}{Falta justificar as funções}
+\textcolor{red}{...}
 
 
 
@@ -307,7 +308,7 @@ d m Year & h m s & \multicolumn{2}{c}{RA (ICRS) Dec} & C/A & P/A & v & D & R* & 
 \hline
 \end{tabular}
 \par\end{centering}
-\textbf{Notes}. Entries included: day of the year and UTC time of the prediction; right ascension and declination of the occulted star - in the original table, these coordinates are immediately followed by the geocentric astrometric equatorial coordinates of the satellite (corrected the computed ephemeris offset using Eqs \ref{eq:linear} or \ref{eq:seno}); C/A: the geocentric closest approach, in arcseconds; P/A: the planet position angle with respect to the occulted star at C/A, in degrees; velocity in plane of sky, in km s$^{-1}$: positive = prograde, negative = retrograde; D: planet range to Earth, in AU; R*: normalized magnitude to a common shadow velocity of 20 km s$^{-1}$ by the relationship $\textrm{Mag}* = \textrm{Mag}_{\textrm{actual}} + 2.5 \times \log 10 \left(\frac{\textrm{velocity}} {20 \textrm{km}\, \textrm{s}^{-1}} \right)$. A value of 50.0 means that the star is not in the 2MASS; $\lambda$: east longitude of subplanet point in degrees, positive towards east; LST: UT + $\lambda$: local solar time at subplanet point, hh:mm; $\Delta e_{\alpha *}$ and $\Delta e_{\delta}$: computed offsets in mas applied to the ephemeris right ascension and declination, respectively; pm: ok = proper motion applied, no = no proper motion applied; catalogue cross-identification (ct) = uc (UCAC2), 2m (2MASS), fs (field star); $E_{\alpha *}$ and $E_{\delta}$: uncertainties (mas) in right ascension and declination. A value of 9999 means that there was no estimation of the respective uncertainty; $\mu_{\alpha *}$ and $\mu_{\delta}$: proper motions in right ascension and declination, respectively (mas/year).
+\textbf{Notes}. Entries included: day of the year and UTC time of the prediction; right ascension and declination of the occulted star - in the original table, these coordinates are immediately followed by the geocentric astrometric equatorial coordinates of the satellite (corrected the computed ephemeris offset derived in Sec. \ref{Sec: Offset}); C/A: the geocentric closest approach, in arcseconds; P/A: the planet position angle with respect to the occulted star at C/A, in degrees; velocity in plane of sky, in km s$^{-1}$: positive = prograde, negative = retrograde; D: planet range to Earth, in AU; R*: normalized magnitude to a common shadow velocity of 20 km s$^{-1}$ by the relationship $\textrm{Mag}* = \textrm{Mag}_{\textrm{actual}} + 2.5 \times \log 10 \left(\frac{\textrm{velocity}} {20 \textrm{km}\, \textrm{s}^{-1}} \right)$. A value of 50.0 means that the star is not in the 2MASS; $\lambda$: east longitude of subplanet point in degrees, positive towards east; LST: UT + $\lambda$: local solar time at subplanet point, hh:mm; $\Delta e_{\alpha *}$ and $\Delta e_{\delta}$: computed offsets in mas applied to the ephemeris right ascension and declination, respectively; pm: ok = proper motion applied, no = no proper motion applied; catalogue cross-identification (ct) = uc (UCAC2), 2m (2MASS), fs (field star); $E_{\alpha *}$ and $E_{\delta}$: uncertainties (mas) in right ascension and declination. A value of 9999 means that there was no estimation of the respective uncertainty; $\mu_{\alpha *}$ and $\mu_{\delta}$: proper motions in right ascension and declination, respectively (mas/year).
 \label{Tab: occ-list}
 \end{table*}
 
@@ -417,11 +418,11 @@ Triton &  &  &  &  \tabularnewline
 Occultations predicted using the UCAC4 catalogue. For Nereid and Triton, the occultations in 2015 and 2016 were predicted using the WFI catalogue as explained in Sec. \ref{Sec: predictions}.
 \end{table}
 
-Concerning the UCAC4 stars, an accuracy of about 20-50 mas in the star position would give a 15-40\% probability of observe such an event by Ananke, the smallest irregular satellite in the sample. For Himalia, the occultation would have 80-100\% probability. Combined with a mean accuracy in the position of 30 mas for Himalia and 100 mas for Ananke mas published in Table 2 of \cite{Jacobson2012}, the probability of success would be around 50-80\% for Himalia and $\approx$5\% for Ananke. Observations a few days before the date of occultation predicted may diminish the combined accuracy to 40-80 mas, depending on the magnitude of the objects.
+Concerning the UCAC4 stars, an accuracy of about 20-50 mas in the star position would give a 15-40\% probability of observe such an event by Ananke, the smallest irregular satellite in the sample. For Himalia, the occultation would have 80-100\% probability of success. Combined with a mean accuracy in the position of 30 mas for Himalia and 100 mas for Ananke mas published in Table 2 of \cite{Jacobson2012}, the probability of success would be around 50-80\% for Himalia and $\approx$5\% for Ananke. Observations a few days before the date of occultation predicted may diminish the combined accuracy to 40-80 mas, depending on the magnitude of the objects.
 
-The tests made with an occultation expected to happen in March 03, 2015 for Himalia showed that this event could probably be observed in case there were observers available in the shadow area. Fig. \ref{Fig: occ-Himalia} show the maps made for 4 different offset corrections as explained in Sec. \ref{Sec: testes}. Table \ref{Tab: comparison-Himalia} show numerically the difference between the maps. A similar test was made for an occultation of Elara in March 30, 2015. The difference between the maps can be seen summarized in Table \ref{Tab: comparison-Elara}.
+The tests made with an occultation expected to happen in March 03, 2015 for Himalia showed that this event could probably be observed in case there were observers available in the shadow area. Fig. \ref{Fig: occ-Himalia} shows the maps made for 4 different offset corrections as explained in Sec. \ref{Sec: testes}. Table \ref{Tab: comparison-Himalia} shows numerically the difference between the maps. A similar test was made for an occultation of Elara in March 30, 2015. The difference between the maps in this case can be seen summarized in Table \ref{Tab: comparison-Elara}.
 
-Continuous observations of the satellites and candidates are recommended and new numerical integrations of the orbits of the satellites are expected to reduce the respective position errors. The GAIA catalogue, which are to be released in mid-2016 will improve the position error of the stars and occultations of fainter stars not present in the UCAC4 catalogue may be found as candidates. Consequently, the astrometry of the satellites with the GAIA catalogue will improve the position errors of the satellites that will allow for better predictions and a bigger probability of observe stellar occultations by irregular satellites.
+Continuous observations of the satellites and candidates are recommended and new numerical integrations of the orbits of the satellites are expected to reduce the respective position errors. The GAIA catalogue, which are to be released in the end of 2016 will improve the position error of the stars and will allow for the detection of occultations candidates of fainter stars, which are not present in the UCAC4 catalogue. Consequently, the astrometry of the satellites with the GAIA catalogue will improve the position errors of the satellites that will allow for better predictions and a bigger probability of observe stellar occultations by irregular satellites.
 
 %We managed a large database with FITS images acquired by 5 telescopes in 3 sites between 1992 and 2014. From that, we identified 8466 observations of irregular satellites, from which we managed to obtain 6523 suitable astrometric positions, giving a total of 3666 positions for 12 satellites of Jupiter, 1920 positions for 4 satellites of Saturn, 35 positions for Sycorax (Uranus) and 902 positions for Nereid (Neptune).
 
