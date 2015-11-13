@@ -1,0 +1,21 @@
+Description: 
+
+Foreword: 
+*how about STE for the ephemeris, for Special tailored ephemeris, and it's also the most common abbreviation for Star Trek: Enterprise ? Any other idea is of course welcome, but it's short, and should not be confused with anything else
+*for the article, I didn't see it before, but you don't have Leda and Themisto in your article. I don't know if you want to add them. I wrote my part as if they were included. If you decide not to include them, you just need to remove a few lines in the Table of orbital elements and the main text (though I only discuss Themisto there).
+*edit what I did as much as you need/want 
+*the long-term Himalia ephemeris is still in progress, the simulation is a bit longer than I had expected, so it does not come with this mail. I will try to upload it tomorrow if have the time to find a good wifi spot (maybe the airport), at worst you'll have it saturday evening or on sunday. If there is nothing on Sunday, send me an angry mail. 
+
+
+
+File description:
+
+folder residuals: presents the residuals of observations with regard to STE. 
+For each file: 1st column=Julian Day, 2nd=residuals in RA, 3rd= residuals in dec
+
+article.tex: there is a title and an abstract, but they are juste here for decoration since they belong to my first article. XD
+As you can see in it, I have done my part, but there are a few gaps to complete (they should appear in red italics in the pdf if you do nothing). Basically, I tried to write it to replace the Correction of the ephemerides section. 
+
+biblio.bib: the bibliographic references in bibtex format. I don't know if you use bibtex or another kind of bibliography
+
+
