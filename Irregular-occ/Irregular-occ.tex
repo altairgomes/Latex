@@ -59,7 +59,7 @@
 
 \begin{document}
 
-\title{Stellar occultation predictions for  9 irregular satellites of giant planets and Triton for 2015-2017
+\title{Stellar occultation predictions for  10 irregular satellites of giant planets and Triton for 2015-2017
 %\fnmsep\thanks{Table 8 are only available in electronic form at the CDS via anonymous ftp to cdsarc.u-strasbg.fr (130.79.128.5) or via http://cdsweb.u-strasbg.fr/cgi-bin/qcat?J/A+A/ and IAU NSDC data base at www.imcce.fr/nsdc.}
 %\fnmsep\thanks{The complete version of Table 8 is available through CDS and IAU NSDC data base at www.imcce.fr/nsdc.}
 %\fnmsep\thanks{Partially based on observations made at Laborat\'orio Nacional de Astrof\'{\i}sica (LNA), Itajub\'a-MG, Brazil.}
@@ -133,7 +133,7 @@ Laboratório Interinstitucional de e-Astronomia - LIneA, Rua Gal. José Cristino
 {Due to their orbital configurations, it is common belief that the irregular satellites were probably captured by the giant planets in the early solar system. It is important to know their physical parameters, such as size, albedo and composition, to trace back their true origin. The best ground-based technique to constrain those parameters is the observation of stellar occultations by these objects.}
 {We aim to predict stellar occultations for the seven biggest irregular satellites of Jupiter: Himalia, Elara, Pasiphae, Carme, Lysithea, Sinope, Ananke and Leda; the irregular satellite of Saturn: Phoebe; and the satellites of Neptune: Nereid and Triton.}
 {We identified candidates to stellar occultations by the irregular satellites from the UCAC4 catalogue and from a catalogue of stars in the sky-path of Neptune obtained from observations made with the ESO2p2/WFI (2.2 m Max-Planck ESO telescope with the Wide Field Imager) instrument. These catalogues were crossed with the ephemeris of the satellites to identify stellar occultations. We used a new ephemeris based solely on the observations from \cite{GomesJunior2015} to generate quick predictions for the short-time future for the satellites of Jupiter. For Phoebe, Nereid and Triton we used the JPL ephemeris.}
-{We managed to obtain \textcolor{red}{588} candidates of stellar occultations between the period of January, 2015 and December, 2017. We made observational tests for the predictions of the events of Himalia in March 03, 2015 and Elara in March 30, 2015. The stars and objects were observed close to the date predicted and and in the same field to minimize errors and the obtained relative satellite-star positions were used to evaluate the predictions.}
+{We managed to identify 687 candidates of stellar occultations between the period of January, 2015 and December, 2017. We made observational tests for the predictions of the events of Himalia in March 03, 2015 and Elara in March 30, 2015. The stars and objects were observed close to the date predicted and in the same field to minimize errors and the obtained relative satellite-star positions were used to evaluate the predictions.}
 {The comparisons between the predictions and the observation tests show a good agreement. We discuss how the successful observation of a stellar occultation by these objects is quite possible and present some of those potential occultations.}
 
 
@@ -175,7 +175,7 @@ Ananke & 8 & 29 & 1 \tabularnewline
 Carme & 13 & 46 & 1 \tabularnewline
 Elara & 24 & 86 & 1 \tabularnewline
 Himalia & 41 & $(150\times120) \pm 20$\tablefootmark{b} & 2 \tabularnewline
-Leda &  &  & 1 \tabularnewline
+Leda & 5 & 20 & 1 \tabularnewline
 Lysithea & 10 & 36 & 1 \tabularnewline
 Pasiphae & 17 & 62 & 1 \tabularnewline
 Sinope & 10 & 37 & 1 \tabularnewline
@@ -289,7 +289,13 @@ U_{\bar{l}\hat{J}}=&\displaystyle -\frac{R_J^2 J_2}{r_{iJ}^3}\left(\frac{3}{2}\s
 The expressions of $\nabla_lU_{\bar{l}\, \hat{i}}$ and $\nabla_i U_{\bar{i}\, \hat{l}}.$ have been developed in \citet{Lainey2004}.The equations of motion are integrated with the numerical integrator RADAU \citep{Everhart1985}. 
 Our model was fitted to the observations through a least-squares procedure. The satellites were integrated one dynamical family at a time, to gain computing time, while losing minimum precision. Indeed, the interactions between satellites not belonging to the same dynamical family are negligible considering the short timespan of our integration. 
 
-The initial osculating elements at the origin of integration are presented in Table \ref{Tab: sat_ell}, while the residuals are presented in Fig \ref{omcHim} to \ref{}. %don't remember wich one
+The initial osculating elements at the origin of integration are presented in Table \ref{Tab: sat_ell}, while the residuals are presented in Fig \ref{Fig: residuals} for Himalia and Carme.
+
+\begin{figure*}
+\subfigure{\includegraphics[width=8.8cm]{Laurene/residuals/Himalia_resid.eps}   \label{Fig: residuals-Himalia}}
+\subfigure{\includegraphics[width=8.8cm]{Laurene/residuals/Carme_resid.eps}  \label{Fig: residuals-Carme}}
+\caption{Residuals of Himalia and Carme \label{Fig: residuals}}
+\end{figure*}
 
 All the orbits determined for the satellites show satisfying residuals. %Yet, one of the satellites has a peculiar situation. Its small number of observations in our set means that its orbit is definitely loosely constrained. 
 The residuals are lower than those obtained with JPL ephemeris, but the accuracy of an ephemeris decreases when we get further from the time of observations. The main risk of divergence over time comes from the possible absence of long-term effects when fitting to a short timespan of observations. If that were the case, our ephemeris would diverge too quickly to be of any use. JPL ephemerides are fitted over all the available observations. As a result, they will diverge less quickly than our own. Though they are no longer precise enough for our use, they remain a precious reference to identify whether our own model presents a quick divergence. We compared our ephemeris to the JPL for all the Jupiter satellites we fitted, until 2017. The divergence between 2015 and 2018 is at most \textit{\color{red}insert value here} for \textit{\color{red}insert right satellite name here}. A example of this difference for satellites Himalia and \textit{\color{red}whichever satellite you want, if you want)} is presented in Figure \ref{JPL-STE}.
@@ -297,7 +303,8 @@ The residuals are lower than those obtained with JPL ephemeris, but the accuracy
 The obtained ephemeris is hereafter refered as STE, for special-tailored ephemeris. 
 
 \begin{table*}
-\caption{Initial osculating elements for Jupiter irregular satellites at JD 2451545.0. For Themisto's case, the small number of observations meant that the statistical uncertainty was even greater than the obtained elements, though the fitting proved satisfying. We decided to provide its elements with significant number comparable to the other satellite for information, but left it without uncertainty.  }\label{Tab: sat_ell}
+\caption{Initial osculating elements for Jupiter irregular satellites at JD 2451545.0.% For Themisto's case, the small number of observations meant that the statistical uncertainty was even greater than the obtained elements, though the fitting proved satisfying. We decided to provide its elements with significant number comparable to the other satellite for information, but left it without uncertainty.
+ }\label{Tab: sat_ell}
 \begin{center}
 \begin{tabular}{ccccccc}
 \hline\hline
@@ -356,9 +363,6 @@ Ananke &  21683800  $\pm$ 7200  &     0.380 $\pm$ 0.002      &   172.29 $\pm$ 0.
 %\end{equation}
 %where $F(t,f)$ is the offset obtained, $t$ is time in years counting from J2000.0 and $f$ is the true anomaly. The patterns could be applied for right ascension as well as for declination ephemeris offsets.
 
-\textcolor{red}{Here we write something about the numerical integration}
-
-
 
 \section{Prediction of occultations} \label{Sec: predictions}
 
@@ -368,7 +372,7 @@ We predicted occultation for the 7 major irregular satellites of Jupiter:  Anank
 
 For Triton and Nereid, the candidates for stellar occultations in 2015 and 2016 was searched using the WFI catalogue in the same way as the predictions for Centaurs and TNOs occultations by \cite{Assafin2010, Assafin2012} and \cite{Camargo2014}. This catalogue contains the stars in the path of Neptune in the sky up to mid-2016. The catalogue was generated by observations made at the ESO 2p2 telescope (IAU code 809) using the Wide Field Imager (WFI) CCD mosaic detector. The filter used was the broad-band R filter ESO\#844 with $\lambda_c$ = 651.725 nm and $\Delta\lambda$ = 162.184 nm.
 
-A total of 588 events \textcolor{red}{(Not counting Triton's event yet)} were identified between January 2015 and December 2017. In table \ref{Tab: satellite-occultation} we present the number of stellar occultations predicted by year for each satellite. Table \ref{Tab: occ-list} shows a sample of the catalogue of occultations generated and their parameters, which are necessary to produce occultation maps (see Fig. \ref{Fig: ocultacao} as an example). Since these objects are very small, the duration of each event is a few seconds.
+A total of 687 events were identified between January 2015 and December 2017. In table \ref{Tab: satellite-occultation} we present the number of stellar occultations predicted by year for each satellite. Table \ref{Tab: occ-list} shows a sample of the catalogue of occultations generated and their parameters, which are necessary to produce occultation maps (see Fig. \ref{Fig: ocultacao} as an example). Since these objects are very small, the duration of each event is a few seconds.
 
 \begin{table}
 \caption{\label{Tab: satellite-occultation} Number of stellar occultations for each satellite from 2015 up to 2017.}
@@ -378,46 +382,40 @@ A total of 588 events \textcolor{red}{(Not counting Triton's event yet)} were id
 %\multicolumn{4}{c}{Diameter of the satellites} \tabularnewline
 Satellite  & 2015  & 2016 & 2017 & Total \tabularnewline
 \hline
-Ananke & 22 & 12 & 16 & 50 \tabularnewline
-Carme & 25 & 20 & 14 & 59 \tabularnewline
+Ananke & 21 & 12 & 16 & 49 \tabularnewline
+Carme & 26 & 20 & 14 & 60 \tabularnewline
 Elara & 32 & 14 & 16 & 62 \tabularnewline
-Himalia & 25 & 15 & 12 & 52 \tabularnewline
+Himalia & 26 & 15 & 12 & 53 \tabularnewline
+Leda & 13 & 8 & 24 & 45 \tabularnewline
 Lysithea & 22 & 16 & 11 & 49 \tabularnewline
-Pasiphae & 26 & 19 & 20 & 65 \tabularnewline
+Pasiphae & 25 & 20 & 19 & 64 \tabularnewline
 Sinope & 19 & 15 & 21 & 55 \tabularnewline
-Leda &  &  &  &  \tabularnewline
 \hdashline
 Phoebe\tablefootmark{a} & 13 & 32 & 98 & 143 \tabularnewline
 \hdashline
 Nereid\tablefootmark{a} & 41\tablefootmark{b} & 11\tablefootmark{b} & 1 & 53 \tabularnewline
-Triton\tablefootmark{a} & \tablefootmark{b} & \tablefootmark{b} &  &  \tabularnewline
+Triton\tablefootmark{a} & 37\tablefootmark{b} & 16\tablefootmark{b} & 1 & 54 \tabularnewline
 \hline
 \end{tabular}
 \par \end{centering}
 Occultations predicted using the UCAC4 catalogue and STE ephemeris.
 \tablefoottext{a}{Using JPL ephemeris.}
-\tablefoottext{b} {Using the WFI catalogue as explained in Sec. \ref{Sec: predictions}} \textcolor{red}{Numbers of Triton yet to be written}.
+\tablefoottext{b} {Using the WFI catalogue as explained in Sec. \ref{Sec: predictions}}.
 \end{table}
 
 \begin{table*}
 \caption{\label{Tab: sample-cds} Stellar occultation sampled predictions for Himalia \textcolor{red}{I still have to fix the table}}
 \begin{centering}
-\begin{tabular}{ccccccccccccccccccccccc}
+\begin{tabular}{l}
 \hline 
 %\multicolumn{9}{c}{Himalia} \tabularnewline
 \hline
 % & \multicolumn{2}{c}{Mean errors} & Nr & Nr &  UCAC4       \tabularnewline
-d m Year & h m s & \multicolumn{2}{c}{RA (ICRS) Dec} & C/A & P/A & v & D & R* & $\lambda$ & LST & $\Delta e_{\alpha *}$ & $\Delta e_{\delta}$ & pm & ct & $E_{\alpha *}$ & $E_{\delta}$ & $\mu_{\alpha *}$ & $\mu_{\delta}$ \tabularnewline
-\hline
- 07 10 2015 & 21 52 34. &  10 53 40.1835 & +08 21  00.489 & 0.465 & 200.31 & 39.31 & 6.25 & 16.6 & 179. & 09:48 & -31.0 & -13.0 & ok & uc &   0  &  0 & -13 &  -7 \tabularnewline
- 23 10 2015 & 07 54 50. &  11 05 26.6037 & +07 14  32.030 & 1.017 & 201.33  & 36.11 & 6.12 & 15.5 & 16. & 08:59 & -31.0 & -13.0 & ok & uc &  0  &  0 &  -7 &  -4 \tabularnewline
- 31 10 2015 & 00 24 19. &  11 10 56.2964 & +06 42  07.110 &  1.801 &  21.84 & 33.94 &  6.04 & 16.9 &  123. & 08:34 & -31.0 & -13.0 & ok & uc & 0  &  0 & -4 & -13 \tabularnewline
- 07 11 2015 &  21 22 53. &  11 16 14.3041 & +06 10  05.194 &  0.306 &  202.36 & 31.33 & 5.94 & 16.2 & 162. & 08:09 & -31.0 & -13.0 & ok & uc & 0 & 0 & 0 & 0 \tabularnewline
- 08 11 2015 & 04 27 21. &  11 16 25.7881 & +06 08  55.566 & 1.077 & 202.38 & 31.23 & 5.94 & 16.9 & 55. & 08:08 & -31.0 & -13.0 & ok & uc & 0 & 0 & 9 & -10 \tabularnewline
-% 09 11 2015  09 01  4.   11 17 11.6890 +06 04  11.474   11 17 11.7030 +06 04  11.980   0.549   22.45  30.79  5.92 15.9  0.5  0.5  0.5   346. 08:04     -31.0    -13.0 ok uc 0    0    0   19  -13 \tabularnewline
-% 11 11 2015  12 58 46.   11 18 33.8286 +05 55  43.695   11 18 33.8357 +05 55  43.946   0.274   22.59  29.98  5.90 14.6  0.4  0.4  0.4   285. 07:57     -31.0    -13.0 ok uc 0    0    0  -14    1 \tabularnewline
-% 12 11 2015  20 14 22.   11 19 22.2740 +05 50  40.732   11 19 22.3183 +05 50  42.312   1.713   22.68  29.48  5.88 15.7  0.4  0.4  0.4   175. 07:52     -31.0    -13.0 ok uc 0    0    0   -7   -4 \tabularnewline
-% 04 12 2015  03 31 56.   11 30 41.9967 +04 37  36.039   11 30 42.0020 +04 37  36.217   0.196   24.18  20.14  5.56 15.0  0.0  0.0  0.0    47. 06:40     -31.0    -13.0 ok uc 0    0    0    5   -9 \tabularnewline
+
+
+
+ 
+ 
 \hline
 \end{tabular}
 \par\end{centering}
@@ -428,7 +426,7 @@ d m Year & h m s & \multicolumn{2}{c}{RA (ICRS) Dec} & C/A & P/A & v & D & R* & 
 \begin{figure*}
 \begin{centering}
 \includegraphics[scale=0.4]{figures/Pasiphae_2016-04-09T03:58:19.png}   
-\caption{Occultation map for Himalia regarding to the second event sampled in Table \ref{Tab: occ-list}}
+\caption{Occultation map for Himalia regarding to the fifth event sampled in Table \ref{Tab: occ-list}}
 \label{Fig: ocultacao}
 \end{centering}
 \end{figure*}
