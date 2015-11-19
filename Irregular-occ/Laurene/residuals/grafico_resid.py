@@ -32,7 +32,7 @@ for t in np.arange(len(obj)):
     alfa = dados[1]*u.rad
     dec = dados[2]*u.rad
     plt.plot(time.jd - 2451544.5,alfa.to(u.mas), '+', markersize=5, label='RA')
-    plt.plot(time.jd - 2451544.5,dec.to(u.mas), 'x', markersize=5, label='DEC')
+    plt.plot(time.jd - 2451544.5,dec.to(u.mas), 'x', markersize=5, label='Dec')
     plt.title('{}'.format(obj[t]), fontsize=sizel)
     plt.xlim(Time('1995-01-01 00:00:00', format='iso').jd - 2451544.5,Time('2016-01-01 00:00:00', format='iso').jd - 2451544.5)
     plt.ylim(-400,400)
