@@ -373,7 +373,7 @@ The initial osculating elements at the origin of integration are presented in Ta
 \begin{center}
 \begin{tabular}{ccccccc}
 \hline\hline
-Satellite & a (km) & e & I$\degr$ (EQJ2000) & $\Omega\degr$ & $\omega\degr$ & $v$ \\ 
+Satellite & a (km) & e & I$\degr$ & $\Omega\degr$ & $\omega\degr$ & $v\degr$ \\ 
 \hline
 Himalia &   11372100 $\pm$ 500    &    0.166 $\pm$ 0.002      &   45.14 $\pm$ 0.15      &   39.77 $\pm$ 0.19      &   351.48 $\pm$ 0.46      &   97.35 $\pm$ 0.48    \\
 Elara &   11741170 $\pm$ 690  &      0.222 $\pm$ 0.002      &   28.64 $\pm$ 0.18      &   68.42 $\pm$ 0.43      &   179.82 $\pm$ 0.56      &   339.08 $\pm$ 0.82  \\
@@ -386,8 +386,8 @@ Ananke &  21683800  $\pm$ 7200  &     0.380 $\pm$ 0.002      &   172.29 $\pm$ 0.
 %Themisto  & 7393800    &     0.198       &   25.77  &   220.0     &   216.3    &   262.1     \\
 \hline
 \end{tabular} 
-
 \end{center}
+\textbf{Notes}: a: Semimajor axis; e : Excentricity; I: Inclination relative to the Equatorial Reference Plane J2000; $\Omega$: Longitude of the ascending node; $\omega$: Argument of periapsis; $v$: True Anomaly.
 \end{table*}
 
 All the orbits determined for the satellites show satisfying residuals. %Yet, one of the satellites has a peculiar situation. Its small number of observations in our set means that its orbit is definitely loosely constrained. 
@@ -401,7 +401,7 @@ The residuals are lower than those obtained with JPL ephemeris, but the accuracy
 
 The obtained ephemeris is hereafter refered as STE, for special-tailored ephemeris.
 
-In this work, the STE was used in all but three satellites, not Jovian ones. For these 3 cases, the JPL ephemeris was used instead. The JPL ephemeris for Phoebe is of enough high quality for the short term, mostly thanks to the observations by Cassini \textcolor{red}{(é verdade? O paper do Tadjedine foi usado pelo JPL? dar alguma citacao aqui)}. In the case of Triton, the JPL ephemeris is also good enough, as the relatively large diameter of Triton favours the positive detection of occultations. A new short term ephemeris for Nereid is however still needed, but its production was beyond the scope of this work, so we used the JPL ephemeris in this case too.
+In this work, the STE was used in all but three satellites, not Jovian ones. For these 3 cases, the JPL ephemeris was used instead. The JPL ephemeris for Phoebe is of enough high quality for the short term, mostly thanks to the observations by Cassini. In the case of Triton, the JPL ephemeris is also good enough, as the relatively large diameter of Triton favours the positive detection of occultations. A new short term ephemeris for Nereid is however still needed, but its production was beyond the scope of this work, so we used the JPL ephemeris in this case too.
 
 %Making a new model for the orbits of these objects would demand a lot of time and delay the publication of predictions of possible events to occur in the very near future. Thus, we utilized the positions obtained by \cite{GomesJunior2015} to identify error patterns in the ephemeris. The error patterns in right ascension and in declination could be used to extrapolate the offsets to the satellite ephemeris by the time of the predicted occultation, improving it. Plots of the offsets over true anomaly (see Fig. \ref{Fig:offxanom} for declination offsets of Carme, for instance) clearly show the systematic errors in the JPL ephemeris.
 
@@ -537,6 +537,15 @@ Figure \ref{Fig: occ-Himalia} shows four zoomed in occultation maps correspondin
 \subfigure[Observation at February 22 (different FOVs)]{\includegraphics[width=8.8cm]{figures/Himalia_22fev.eps}   \label{Fig: occ-Himalia-off22fev}}
 \subfigure[Observation at March 03 (same FOV)]{\includegraphics[width=8.8cm]{figures/Himalia_03mar.eps}   \label{Fig: occ-Himalia-off03mar}}
 \caption{Predictions for Himalia: The straight lines show the size of the shadow. The big red dot show the geocentric closest approach of the shadow. The black "+" marks at maps (b,c,d) are the STE prediction closest approach for reference. The small red ones are the center of the shadow separated by one minute. \ref{Fig: occ-Himalia-STE} is the map using the STE ephemeris showed in Sec. \ref{Sec: integration}. \ref{Fig: occ-Himalia-JPL} shows the shadow using the JPL ephemeris. In \ref{Fig: occ-Himalia-off22fev} we apply offsets to the positions of star and satellite accordingly the observations made at February 22. \ref{Fig: occ-Himalia-off03mar} is as in \ref{Fig: occ-Himalia-off22fev} but with observations made at March 03 when the objects were close to each other. The green dot at the bottom of the maps is the location of Observatório do Pico dos Dias.}
+\label{Fig: occ-Himalia}
+\end{centering}
+\end{figure*}
+
+\begin{figure*}
+\begin{centering}
+\includegraphics[width=17.6cm]{figures/HIMALIA.eps}
+\caption{TESTE DE MAPA. STE = AZUL, JPL=VERMELHO, 22FEV=PRETO, 03MAR=VERDE%Predictions for Himalia: The straight lines show the size of the shadow. The big red dot show the geocentric closest approach of the shadow. The black "+" marks at maps (b,c,d) are the STE prediction closest approach for reference. The small red ones are the center of the shadow separated by one minute. \ref{Fig: occ-Himalia-STE} is the map using the STE ephemeris showed in Sec. \ref{Sec: integration}. \ref{Fig: occ-Himalia-JPL} shows the shadow using the JPL ephemeris. In \ref{Fig: occ-Himalia-off22fev} we apply offsets to the positions of star and satellite accordingly the observations made at February 22. \ref{Fig: occ-Himalia-off03mar} is as in \ref{Fig: occ-Himalia-off22fev} but with observations made at March 03 when the objects were close to each other. The green dot at the bottom of the maps is the location of Observatório do Pico dos Dias.
+}
 \label{Fig: occ-Himalia}
 \end{centering}
 \end{figure*}
