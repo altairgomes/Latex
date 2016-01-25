@@ -306,20 +306,20 @@ Since 2009 many successful observations of stellar occultations by TNOs have bee
 In section \ref{Sec: integration} we show the building of the production of the new ephemeris. In section \ref{Sec: predictions}, we present the predictions of the stellar occultations by irregular satellites and how they were made. Some tests made to check the accuracy of the predictions are presented in section \ref{Sec: testes} and the final discussion is presented in section \ref{Sec: discussion}.
 
 
-\section{Special tailored Ephemerides (STE) for Jupiter irregular satellites} \label{Sec: integration}
+\section{Ephemeris} \label{Sec: integration}
 
-\subsection{Observations used}
-
-The last observations used to develop JPL current ephemeris of the irregular satellites of Jupiter were obtained in 2012 \citep{Jacobson2012}. As a result, the errors in the JPL ephemeris for the current epoch are large enough to prevent accurate predictions of stellar occultations without any corrections. %In order to have efficient ephemerides for predicting the stellar occultations by irregular satellites, we need predictions based on recent observations. This is why we decided to develop our own ephemeris based on the observations published in \cite{GomesJunior2015}.
+%\subsection{Observations used}
+In order to have efficient ephemerides for predicting the stellar occultations by irregular satellites, we need predictions based on such recent observations.  This is why we decided to develop our own
+ephemeris based on the observations published in \cite{GomesJunior2015}. First because many of the authors of this paper worked in the production of that set of positions, so that it was very well known. Second, this consistent set of numerous and precise positions covers many orbital periods at many distinct orbital plane sights, so that the orbital inclinations along with all other orbital elements could be satisfactorily derived without the need of further position sets. For these reasons, only this set of recent positions was used for building the new ephemeris for the satellites.
 
 \cite{GomesJunior2015} published 6523 precise positions for 18 irregular satellites from observations made at the Observatório do Pico dos Dias (OPD), Observatoire Haute-Provence (OHP) and European Southern Observatory (ESO) between 1992 and 2014. %They showed that the orbits of the irregular satellites of the giant planets have systematic errors.
 Their observed position offsets relative to the JPL ephemeris reached up to 200 mas for some satellites. At the distance of Jupiter, this represents an difference larger than 700 km in the shadow path of an occultation.%These differences could be associated with errors in their orbital elements.
 
-In order to have efficient ephemerides for predicting the stellar occultations by irregular satellites, we need predictions based on such recent observations. This is why we decided to develop our own
-ephemeris based on the observations published in \cite{GomesJunior2015}. First because many of the authors of this paper worked in the production of that set of positions, so that it was very well known. Second, this consistent set of numerous and precise positions covers many orbital periods at many distinct orbital plane sights, so that the orbital inclinations along with all other orbital elements could be satisfactorily derived without the need of further position sets. For these reasons, only this set of recent positions was used for building the new ephemeris for the satellites.
+%In order to have efficient ephemerides for predicting the stellar occultations by irregular satellites, we need predictions based on such recent observations. This is why we decided to develop our own ephemeris based on the observations published in \cite{GomesJunior2015}. First because many of the authors of this paper worked in the production of that set of positions, so that it was very well known. Second, this consistent set of numerous and precise positions covers many orbital periods at many distinct orbital plane sights, so that the orbital inclinations along with all other orbital elements could be satisfactorily derived without the need of further position sets. For these reasons, only this set of recent positions was used for building the new ephemeris for the satellites.
 
-\subsection{Description of the model}
+\subsection{Special tailored Ephemerides (STE) for Jupiter irregular satellites}
 
+The last observations used to develop JPL current ephemeris of the irregular satellites of Jupiter were obtained in 2012 \citep{Jacobson2012}. As a result, the errors in the JPL ephemeris for the current epoch are large enough to prevent accurate predictions of stellar occultations without any corrections.
 
 Our numerical model describes the dynamical evolution of the irregular satellites of Jupiter in a jovicentric reference frame. The satellites are submitted to the influence of the Sun and the rest of the solar system, as well as those of the Galilean satellites and the first harmonics of Jupiter's gravity field. The axis of the reference frame are those of the equatorial reference frame J2000. 
 
@@ -401,7 +401,13 @@ The residuals are lower than those obtained with JPL ephemeris, but the accuracy
 
 The obtained ephemeris is hereafter refered as STE, for special-tailored ephemeris.
 
-In this work, the STE was used in all but three satellites, not Jovian ones. For these 3 cases, the JPL ephemeris was used instead. The JPL ephemeris for Phoebe is of enough high quality for the short term, mostly thanks to the observations by Cassini. In the case of Triton, the JPL ephemeris is also good enough, as the relatively large diameter of Triton favours the positive detection of occultations. A new short term ephemeris for Nereid is however still needed, but its production was beyond the scope of this work due to its more complicated dynamic, so we used the JPL ephemeris in this case too.
+\subsection{Phoebe's ephemeris}
+
+For the specific case of Phoebe, the ninth satellite of Saturn, we have updated the ephemeris published in \cite{Desmars2013}. The new ephemeris (PH15) used the same dynamical model, including the perturbations of the Sun and the eight planets, the eight major satellites of Saturn and the $J_2$ parameter. The observations used to fit the model are identical to \cite{Desmars2013} (including 223 Cassini observations) with additional observations from \cite{GomesJunior2015}, \cite{Peng2015}, observations from Minor Planet Circulars between 2012 and 2014 (available on the Natural Satellite Data Center at \url{http://lnfm1.sai.msu.ru/neb/nss/bsapoouf.htm}), and observations from Flagstaff \citep{NOFS} between 2012 and 2014. It represents a total number of 5886 observations from 1898 to 2014.
+
+\subsection{Triton's and Nereid's ephemeris}
+
+
 
 %Making a new model for the orbits of these objects would demand a lot of time and delay the publication of predictions of possible events to occur in the very near future. Thus, we utilized the positions obtained by \cite{GomesJunior2015} to identify error patterns in the ephemeris. The error patterns in right ascension and in declination could be used to extrapolate the offsets to the satellite ephemeris by the time of the predicted occultation, improving it. Plots of the offsets over true anomaly (see Fig. \ref{Fig:offxanom} for declination offsets of Carme, for instance) clearly show the systematic errors in the JPL ephemeris.
 
@@ -443,7 +449,7 @@ In this work, the STE was used in all but three satellites, not Jovian ones. For
 
 \section{Prediction of occultations} \label{Sec: predictions}
 
-The prediction of the occultations was made by crossing the stellar coordinates and proper motions of the UCAC4 catalogue \citep{Zacharias2013} with the STE ephemeris for Jupiter satellites (see Sec. \ref{Sec: integration}) and JPL ephemeris for the others. The search for stellar candidates follows the same procedure as presented by \cite{Assafin2010, Assafin2012} and \cite{Camargo2014}.
+The prediction of the occultations was made by crossing the stellar coordinates and proper motions of the UCAC4 catalogue \citep{Zacharias2013} with the ephemeris explicited in Sec. \ref{Sec: integration}. The search for stellar candidates follows the same procedure as presented by \cite{Assafin2010, Assafin2012} and \cite{Camargo2014}.
 
 We predicted occultation for the 8 major irregular satellites of Jupiter:  Ananke, Carme, Elara, Himalia, Leda, Lysithea, Pasiphae and Sinope; Phoebe of Saturn and Triton and Nereid of Neptune.
 
