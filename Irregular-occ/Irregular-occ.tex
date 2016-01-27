@@ -32,7 +32,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
 \usepackage{natbib,twoopt}
-\usepackage[breaklinks=true]{hyperref} %% to avoid \citeads line fills
+\usepackage[breaklinks=true, draft]{hyperref} %% to avoid \citeads line fills
 \usepackage{arydshln}
 \bibpunct{(}{)}{;}{a}{}{,} %% natbib format for A&A and ApJ
 \makeatletter
@@ -359,13 +359,13 @@ U_{\bar{l}\hat{J}}=&\displaystyle -\frac{R_J^2 J_2}{r_{iJ}^3}\left(\frac{3}{2}\s
 The expressions of $\nabla_lU_{\bar{l}\, \hat{i}}$ and $\nabla_i U_{\bar{i}\, \hat{l}}.$ have been developed in \citet{Lainey2004}.The equations of motion are integrated with the numerical integrator RADAU \citep{Everhart1985}. 
 Our model was fitted to the observations through a least-squares procedure. The satellites were integrated one dynamical family at a time, to gain computing time, while losing minimum precision. Indeed, the interactions between satellites not belonging to the same dynamical family are negligible considering the short timespan of our integration. 
 
-The initial osculating elements at the origin of integration are presented in Table \ref{Tab: sat_ell}, while the residuals are presented in Fig \ref{Fig: residuals} for Himalia and Carme as representatives.
+The initial osculating elements at the origin of integration are presented in Table \ref{Tab: sat_ell}.%, while the residuals are presented in Fig \ref{Fig: residuals} for Himalia and Carme as representatives.
 
-\begin{figure*}
-\subfigure{\includegraphics[width=8.8cm]{figures/Himalia_resid.eps}   \label{Fig: residuals-Himalia}}
-\subfigure{\includegraphics[width=8.8cm]{figures/Carme_resid.eps}  \label{Fig: residuals-Carme}}
-\caption{Residuals in topocentric right ascension and declination of the numerical integration for Himalia and Carme. \label{Fig: residuals}}
-\end{figure*}
+%\begin{figure*}
+%\subfigure{\includegraphics[width=8.8cm]{figures/Himalia_resid.eps}   \label{Fig: residuals-Himalia}}
+%\subfigure{\includegraphics[width=8.8cm]{figures/Carme_resid.eps}  \label{Fig: residuals-Carme}}
+%\caption{Residuals in topocentric right ascension and declination of the numerical integration for Himalia and Carme. \label{Fig: residuals}}
+%\end{figure*}
 
 \begin{table*}
 \caption{Initial osculating elements for Jupiter irregular satellites at JD 2451545.0.% For Themisto's case, the small number of observations meant that the statistical uncertainty was even greater than the obtained elements, though the fitting proved satisfying. We decided to provide its elements with significant number comparable to the other satellite for information, but left it without uncertainty.
@@ -391,13 +391,22 @@ Ananke &  21683800  $\pm$ 7200  &     0.380 $\pm$ 0.002      &   172.29 $\pm$ 0.
 \end{table*}
 
 All the orbits determined for the satellites show satisfying residuals. %Yet, one of the satellites has a peculiar situation. Its small number of observations in our set means that its orbit is definitely loosely constrained. 
-The residuals are lower than those obtained with JPL ephemeris, but the accuracy of an ephemeris decreases when we get further from the time of observations. The main risk of divergence over time comes from the possible absence of long-term effects when fitting to a short timespan of observations. If that were the case, our ephemeris would diverge too quickly to be of any use. JPL ephemerides are fitted over all the available observations. As a result, they will diverge less quickly than our own. Though they are no longer precise enough for our use, they remain a precious reference to identify whether our own model presents a quick divergence. We compared our ephemeris to the JPL for all the Jupiter satellites we fitted, until 2017. The divergence between 2015 and 2018 is at most 98 mas in $\Delta \alpha \cos \delta$ and 58 mas in $\Delta \delta$ for Himalia and 181 mas in $\Delta \alpha \cos \delta$ and 152 mas in $\Delta \delta$ for Carme. A example of this difference for satellites Himalia and Carme over time is presented in Figure \ref{Fig: JPL-STE}.
+The residuals are lower than those obtained with JPL ephemeris, but the accuracy of an ephemeris decreases when we get further from the time of observations. The main risk of divergence over time comes from the possible absence of long-term effects when fitting to a short timespan of observations. If that were the case, our ephemeris would diverge too quickly to be of any use. JPL ephemerides are fitted over all the available observations. As a result, they will diverge less quickly than our own. Though they are no longer precise enough for our use, they remain a precious reference to identify whether our own model presents a quick divergence.
 
-\begin{figure*}
-\subfigure{\includegraphics[width=8.8cm]{figures/JPL_DEC_Himalia.eps}    \label{Fig: JPL-STE-Himalia}}
-\subfigure{\includegraphics[width=8.8cm]{figures/JPL_DEC_Carme.eps}  \label{Fig: JPL-STE-Carme}}
-\caption{Geocentric right ascension and declination differences between the JUP300 JPL ephemeris and the special-tailored ephemeris for Himalia and Carme. \label{Fig: JPL-STE}}
-\end{figure*}
+We compared our ephemeris to the JPL for all the Jupiter satellites we fitted, until 2017. For instance, the divergence between 2015 and 2018 is at most 98 mas in $\Delta \alpha \cos \delta$ and 58 mas in $\Delta \delta$ for Himalia and 181 mas in $\Delta \alpha \cos \delta$ and 152 mas in $\Delta \delta$ for Carme.
+
+In Fig. \ref{Fig: JPL-STE} it is presented the offsets of the positions published by \cite{GomesJunior2015} in declination relative to our ephemeris, to \cite{Jacobson2012} JUP300 JPL ephemeris and \cite{Emelyanov2008} ephemeris. It is possible to see that the systematic error point out by \cite{GomesJunior2015} is reduced with our ephemeris, as expected.
+
+\begin{figure}
+\includegraphics[width=8.8cm]{figures/Carme_ephemeris.eps} 
+\caption{Offsets in declination of the positions published by \cite{GomesJunior2015} for Carme. The red "x" relative to the special-tailored ephemeris, the blue "+" relative to the JUP300 JPL ephemeris and the green dot relative to \cite{Emelyanov2008}. \label{Fig: JPL-STE}}
+\end{figure}
+
+%\begin{figure*}
+%\subfigure{\includegraphics[width=8.8cm]{figures/JPL_DEC_Himalia.eps}    \label{Fig: JPL-STE-Himalia}}
+%\subfigure{\includegraphics[width=8.8cm]{figures/JPL_DEC_Carme.eps}  \label{Fig: JPL-STE-Carme}}
+%\caption{Geocentric right ascension and declination differences between the JUP300 JPL ephemeris and the special-tailored ephemeris for Himalia and Carme. \label{Fig: JPL-STE}}
+%\end{figure*}
 
 The obtained ephemeris is hereafter refered as STE, for special-tailored ephemeris.
 
@@ -407,12 +416,14 @@ For the specific case of Phoebe, the ninth satellite of Saturn, we have updated 
 
 \subsection{Triton's and Nereid's ephemeris}
 
+
+
 \begin{figure*}
 \begin{centering}
-\subfigure[Offset from the JPL ephemeris]{\includegraphics[width=8.8cm]{figures/JPL-EME_Triton.eps} \label{Fig:offxtanomxjpl}}
-\subfigure[\textcolor{red}{Offset from the numerical integration}]{\includegraphics[width=8.8cm]{figures/Zhang-EME.eps} \label{Fig:offxtanomxni}}
-\caption{Offsets of the declination of Carme by true anomaly from the JPL ephemeris and \textcolor{red}{from the numerical integration of the positions obtained in \cite{GomesJunior2015}}.
-\label{Fig:offxanom}}
+\subfigure[NEP081 JPL and \cite{Emelyanov2015} ephemeris]{\includegraphics[width=8.8cm]{figures/JPL-EME_Triton.eps} \label{Fig:offxtanomxjpl}}
+\subfigure[\cite{Zhang2013} and \cite{Emelyanov2015} ephemeris]{\includegraphics[width=8.8cm]{figures/Zhang-EME.eps} \label{Fig:offxtanomxni}}
+\caption{Comparison between the ephemeris between the \cite{Emelyanov2015}, \cite{Zhang2013} and JPL ephemeris.}
+\label{Fig:offxanom}
 \end{centering}
 \end{figure*}
 
