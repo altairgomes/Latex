@@ -32,7 +32,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
 \usepackage{natbib,twoopt}
-\usepackage[breaklinks=true, draft]{hyperref} %% to avoid \citeads line fills
+\usepackage[breaklinks=true]{hyperref} %% to avoid \citeads line fills
 \usepackage{arydshln}
 \bibpunct{(}{)}{;}{a}{}{,} %% natbib format for A&A and ApJ
 \makeatletter
@@ -414,18 +414,39 @@ The obtained ephemeris is hereafter refered as STE, for special-tailored ephemer
 
 For the specific case of Phoebe, the ninth satellite of Saturn, we have updated the ephemeris published in \cite{Desmars2013}. The new ephemeris (PH15) used the same dynamical model, including the perturbations of the Sun and the eight planets, the eight major satellites of Saturn and the $J_2$ parameter. The observations used to fit the model are identical to \cite{Desmars2013} (including 223 Cassini observations) with additional observations from \cite{GomesJunior2015}, \cite{Peng2015}, observations from Minor Planet Circulars between 2012 and 2014 (available on the Natural Satellite Data Center at \url{http://lnfm1.sai.msu.ru/neb/nss/bsapoouf.htm}), and observations from Flagstaff \citep{NOFS} between 2012 and 2014. It represents a total number of 5886 observations from 1898 to 2014.
 
-\subsection{Triton's and Nereid's ephemeris}
-
-
+In Fig. \ref{Fig:eph-Phoebe} we compare our ephemeris (PH15) with the SAT375 JPL\footnote{Jacobson, R.A. 2015-Feb-27. "Satellite Ephemeris: SAT375", JPL Satellite Ephemeris File Release, \url{ftp://ssd.jpl.nasa.gov/pub/eph/satellites/nio/LINUX_PC/sat375l.txt}} and the \cite{Emelyanov2007} ephemeris. We can see that our ephemeris is closer to the SAT375 JPL ephemeris where the difference between them is smaller than 20 mas (< 10 mas in Declination). This difference is smaller than the apparent diameter of Phoebe (see Table \ref{Tab: satellite-diameter})
 
 \begin{figure*}
 \begin{centering}
-\subfigure[NEP081 JPL and \cite{Emelyanov2015} ephemeris]{\includegraphics[width=8.8cm]{figures/JPL-EME_Triton.eps} \label{Fig:offxtanomxjpl}}
-\subfigure[\cite{Zhang2013} and \cite{Emelyanov2015} ephemeris]{\includegraphics[width=8.8cm]{figures/Zhang-EME.eps} \label{Fig:offxtanomxni}}
-\caption{Comparison between the ephemeris between the \cite{Emelyanov2015}, \cite{Zhang2013} and JPL ephemeris.}
-\label{Fig:offxanom}
+\subfigure[SAT375 JPL and PH15 ephemeris]{\includegraphics[width=8.8cm]{figures/Phoebe_JPL-ph15.eps} \label{Fig:eph-Triton-eme}}
+\subfigure[\cite{Emelyanov2007} and PH15 ephemeris]{\includegraphics[width=8.8cm]{figures/Phoebe_EME-ph15.eps} \label{Fig:eph-Triton-zhang}}
+\caption{Comparison between the PH15, SAT375 JPL and \cite{Emelyanov2007} ephemeris.}
+\label{Fig:eph-Phoebe}
 \end{centering}
 \end{figure*}
+
+\subsection{Triton's and Nereid's ephemeris}
+
+For Triton, we used the most recent ephemeris published by \cite{Emelyanov2015}. In Fig. \ref{Fig:eph-Triton} we compare the ephemeris with the ephemeris published in \cite{Zhang2014} and the NEP081 JPL ephemeris \citep{Jacobson2009}. It is possible to see that the difference between the three ephemeris is smaller than 15 mas for the period 2015-2018. This value is smaller than the apparent size of Triton (124 mas, see Table \ref{Tab: satellite-diameter}), which means a good probability of observing an event by this object.
+
+\begin{figure*}
+\begin{centering}
+\subfigure[NEP081 JPL and \cite{Emelyanov2015} ephemeris]{\includegraphics[width=8.8cm]{figures/JPL-EME_Triton.eps} \label{Fig:eph-Triton-eme}}
+\subfigure[\cite{Zhang2014} and \cite{Emelyanov2015} ephemeris]{\includegraphics[width=8.8cm]{figures/Zhang-EME.eps} \label{Fig:eph-Triton-zhang}}
+\caption{Comparison between the \cite{Emelyanov2015}, \cite{Zhang2014} and NEP081 JPL \citep{Jacobson2009} ephemeris.}
+\label{Fig:eph-Triton}
+\end{centering}
+\end{figure*}
+
+For Nereid, we used the ephemeris published by \cite{Emelyanov2011}, which is more recent than the JPL ephemeris published by \cite{Jacobson2009}. The comparison between the two ephemeris can be seen in Fig. \ref{Fig:eph-Nereid}. The difference between them is smaller than 60 mas which is bigger than the satellite apparent diameter (see Table \ref{Tab: satellite-diameter}). Although this fact, the difference in bigger in Right Ascension than in Declination, which means that, in an event, the error would be smaller in the latitude where the shadow will pass on Earth than the error at the time of the occultation.
+
+\begin{figure}
+\begin{centering}
+\includegraphics[width=8.8cm]{figures/JPL-EME_Nereid.eps}
+\caption{Comparison between the \cite{Emelyanov2011} and NEP081 JPL \citep{Jacobson2009} ephemeris }
+\label{Fig:eph-Nereid}
+\end{centering}
+\end{figure}
 
 %Making a new model for the orbits of these objects would demand a lot of time and delay the publication of predictions of possible events to occur in the very near future. Thus, we utilized the positions obtained by \cite{GomesJunior2015} to identify error patterns in the ephemeris. The error patterns in right ascension and in declination could be used to extrapolate the offsets to the satellite ephemeris by the time of the predicted occultation, improving it. Plots of the offsets over true anomaly (see Fig. \ref{Fig:offxanom} for declination offsets of Carme, for instance) clearly show the systematic errors in the JPL ephemeris.
 
@@ -529,8 +550,9 @@ d m Year~~~~h~~m~~~s & RA~~~(ICRS)~~~Dec & C/A & P/A & $\nu$ & {\it D} & $R^*$ &
 
 \begin{figure*}
 \begin{centering}
-\includegraphics[scale=0.4]{figures/Pasiphae_2016-04-09T03:58:19.png}   
-\caption{Occultation map for Pasiphae regarding to the first event sampled in Table \ref{Tab: occ-list}. The central red dot show the geocentric closest approach of the shadow. The small ones shows the center of the shadow separated by one minute. The lines show the path of the shadow over the Earth.}
+\includegraphics[scale=0.4]{figures/Triton_2017-10-05T23:51:53.png}   
+\caption{Occultation map for Triton.% regarding to the first event sampled in Table \ref{Tab: occ-list}.
+The central red dot show the geocentric closest approach of the shadow. The small ones shows the center of the shadow separated by one minute. The lines show the path of the shadow over the Earth. The shadow moves from right to left.}
 \label{Fig: ocultacao}
 \end{centering}
 \end{figure*}
