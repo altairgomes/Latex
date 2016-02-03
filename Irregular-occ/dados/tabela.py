@@ -14,8 +14,10 @@ tabela = Table(names=('object', 'instantes', 'RA (ICRS) DEC', 'C/A', 'P/A', 'vel
     dtype=(np.str, np.str, np.str, np.float, np.float, np.float, np.float, np.float, np.float, np.float, np.str))
     
 def texto(i):
-    if i in ['Triton', 'Nereida', 'Phoebe']:
-        return '/JPL/'
+    if i in ['Triton', 'Nereida']:
+        return '/Emelyanov/'
+    if i == 'Phoebe':
+        return '/Josselin/'
     return '/LAU/'
     
 def mostrar(i):
