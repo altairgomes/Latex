@@ -5,6 +5,7 @@ import astropy.units as u
 from astropy.table import Table, Column, vstack
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
+import csv
 
 f = open('lista_tables', 'r')
 lista = f.readlines()
@@ -12,6 +13,9 @@ f.close()
 
 tabela = Table(names=('object', 'instantes', 'RA (ICRS) DEC', 'C/A', 'P/A', 'vel', 'distance', 'magR', 'magK', 'long', 'caminho'),\
     dtype=(np.str, np.str, np.str, np.float, np.float, np.float, np.float, np.float, np.float, np.float, np.str))
+
+c = csv.writer(open("agenda.csv", "wb"))
+c.writerow(["Subject","Start Date","Start Time","End Date","End Time","All Day Event","Description","Private"])
     
 def texto(i):
     if i in ['Triton', 'Nereida']:
@@ -61,6 +65,13 @@ for i in lista:
     caminho = '/home/altair/Documentos/Maps/All/' + np.char.array(datas.iso).rpartition(' ')[:,0].rpartition('-')[:,0].rpartition('-')[:,0] + '/Altair/' + arquivo[15:-11].capitalize() + texto(arquivo[15:-11].capitalize()) + arquivo[15:-11].capitalize() + '_' + np.char.array(datas.isot) + '.png'
     t = Table([name, occ_data, star_coord, ca, pa, vel, dist, magR, magK, longi, caminho], names=('object', 'instantes', 'RA (ICRS) DEC', 'C/A', 'P/A', 'vel', 'distance', 'magR', 'magK', 'long', 'caminho'))
     tabela = vstack([tabela, t])
+
+    for i in np.arange(len(stars)):
+        subj = 'Ocultation by {}'.format(arquivo[15:-11].capitalize())
+        stdate = '{}/{}/{}'.format(datas.iso[i][5:7], datas.iso[i][8:10], datas.iso[i][0:4])
+        sttime = datas.iso[i][11:16]
+        desc = 'Coord Star: {}\nC/A: {} arcsec\nP/A {} deg\nVelocity: {} km/s\nDistance: {} AU\nMagR: {}\n'.format(star_coord[i], ca[i], pa[i], vel[i], dist[i], magR[i])
+        c.writerow([subj,stdate,sttime,stdate,sttime,"False",desc,"False"])
     
 tabela.sort('instantes')
 aa = Column(np.arange(len(tabela)), name='numero')
