@@ -32,9 +32,9 @@
 \author[A. R. Gomes-J\'unior, M. Assafin, L. Beauvalet et al.]{A. R. Gomes-J\'unior$^{1}$\thanks{E-mail: altair08@astro.ufrj.br},
 M. Assafin$^{1,\dag}$,
 L. Beauvalet$^{2,3}$,
-R. Vieira-Martins$^{1,2,4,\dag}$,\newauthor
-J. I. B. Camargo$^{2,4}$,
-J. Desmars$^{5}$,
+J. Desmars$^{4}$,
+R. Vieira-Martins$^{1,2,5,\dag}$,\newauthor
+J. I. B. Camargo$^{2,5}$,
 B. E. Morgado$^{1,2}$
 F. Braga-Ribas$^{2,6}$
 \\
@@ -42,12 +42,12 @@ $^{1}$Observat\'orio do Valongo/UFRJ, Ladeira Pedro Ant\^onio 43,
 CEP 20.080-090 Rio de Janeiro - RJ, Brazil\\
 $^{2}$Observat\'orio Nacional/MCTI, R. General Jos\'e Cristino 77, CEP 20921-400 Rio de Janeiro - RJ, Brazil\\
 $^{3}$Observatoire de Paris/SYRTE, 77 Avenue Denfert Rochereau 75014 Paris, France\\
-$^{4}$Laborat\'orio Interinstitucional de e-Astronomia - LIneA, Rua Gal. Jos\'e Cristino 77, Rio de Janeiro, RJ 20921-400, Brazil\\
-$^{5}$Institut de m\'ecanique c\'eleste et de calcul des \'eph\'em\'erides - Observatoire de Paris, UMR 8028 du CNRS, 77 Av. Denfert-Rochereau,\\ 75014 Paris, France\\
+$^{4}$Institut de m\'ecanique c\'eleste et de calcul des \'eph\'em\'erides - Observatoire de Paris, UMR 8028 du CNRS, 77 Av. Denfert-Rochereau,\\ 75014 Paris, France\\
+$^{5}$Laborat\'orio Interinstitucional de e-Astronomia - LIneA, Rua Gal. Jos\'e Cristino 77, Rio de Janeiro, RJ 20921-400, Brazil\\
 $^{6}$Federal University of Technology - Paran\'a (UTFPR / DAFIS), Rua Sete de Setembro, 3165, CEP 80230-901, Curitiba, PR, Brazil
 }
 \begin{document}
-\newcommand{\noccs}{396 } % total number of occultations
+\newcommand{\noccs}{5457 } % total number of occultations
 
 \date{Accepted . Received ; in original form }
 
@@ -60,9 +60,9 @@ $^{6}$Federal University of Technology - Paran\'a (UTFPR / DAFIS), Rua Sete de S
 \begin{abstract}
 Due to their orbital configurations, it is common belief that the irregular satellites were probably captured by the giant planets in the early solar system. It is important to know their physical parameters, such as size, shape, albedo and composition, to trace back their true origin. The best ground-based technique to determine size and shape, and thus constrain the albedo and in a broader sense composition, is the observation of stellar occultations by these objects.
 We aim to predict stellar occultations for the eight largest irregular satellites of Jupiter: Himalia, Elara, Pasiphae, Carme, Lysithea, Sinope, Ananke and Leda, and for the irregular satellites Phoebe of Saturn and Nereid of Neptune, and also for Triton.
-We identified candidates to stellar occultations by the irregular satellites from the UCAC4 catalogue and from a catalogue of stars in the sky-path of Neptune obtained from observations made with the ESO2p2/WFI (2.2 m Max-Planck ESO telescope with the Wide Field Imager) instrument. These catalogues were crossed with the ephemeris of the satellites to identify stellar occultations. We used a new ephemeris based solely on the observations from \cite{GomesJunior2015} to generate predictions for the short-time future or the satellites of Jupiter. For Phoebe, we used an updated ephemeris and for Nereid and Triton we used recently published ephemeris.
-We managed to identify \noccs candidates of stellar occultations between the period of January, 2016 and December, 2017. We made observational tests for the prediction of the event of Himalia in March 03, 2015. The stars and objects were observed close to the date predicted and in the same field to minimize errors and the obtained relative satellite-star positions were used to evaluate the predictions. We call attention for an occultation by Triton of a bright star (R=12.5) in October 5, 2017. The event can be observed from Europe and the east coast of USA and will be a good opportunity to access the current state of the atmosphere of the satellite.
-The comparisons between the predictions and the observation tests show a good agreement. We discuss how the successful observation of a stellar occultation by these objects is quite possible and present some of those potential occultations.
+We identified candidates to stellar occultations by the irregular satellites from the UCAC4 catalogue and from a catalogue of stars in the sky-path of Neptune obtained from observations made with the ESO2p2/WFI (2.2 m Max-Planck ESO telescope with the Wide Field Imager) instrument. These catalogues were crossed with the ephemeris of the satellites to identify stellar occultations. We used a new ephemeris based solely on the observations from \cite{GomesJunior2015} to generate predictions for the short-time future of the satellites of Jupiter. For Phoebe, we used an updated ephemeris and for Nereid and Triton we used recently published ephemeris.
+We managed to identify \noccs candidates of stellar occultations between the period of January, 2016 and December, 2020. We made observational tests for the prediction of the event of Himalia in March 03, 2015. The stars and objects were observed close to the date predicted and in the same field to minimize errors and the obtained relative satellite-star positions were used to evaluate the predictions. The comparisons between the predictions and the observation tests show a good agreement. We call attention for an occultation by Triton of a bright star (R=12.5) in October 5, 2017. The event can be observed from Europe and the east coast of USA and will be a good opportunity to access the current state of the atmosphere of the satellite. We note that Jupiter will cross a populated region of stars in 2019-2020 and Saturn in 2018. This results in a large number of occultations predicted for that period.
+We discuss how the successful observation of a stellar occultation by these objects is quite possible and present some of those potential occultations.
 \end{abstract}
 
 \begin{keywords}
@@ -130,7 +130,7 @@ In section \ref{Sec: integration} we show the building of the production of the 
 
 In order to improve ephemeris in short time spans in the near future for a more efficient prediction of stellar occultations by irregular satellites, we need predictions based on new and recent observations. In this context, \cite{GomesJunior2015} published 6523 precise positions for 18 irregular satellites from observations made at the Observatório do Pico dos Dias (OPD), Observatoire Haute-Provence (OHP) and European Southern Observatory (ESO) between 1992 and 2014. 
 
-Here we develop our own ephemeris based on the observations published in \cite{GomesJunior2015}. First, because the reduction was made with consistent and precise stellar catalogue and with a robust and reliable software (PRAIA, \cite{Assafin2011}). Second, besides recent observations, this consistent set of numerous and precise positions covers many orbital periods at many distinct orbital plane sights, so that the orbital inclinations along with all other orbital elements could be satisfactorily derived without the need of further position sets. For these reasons, only this set of positions was used for building the new ephemeris for the satellites of Jupiter.
+Here we develop our own ephemeris based on the observations published in \cite{GomesJunior2015}. First, because the reduction was made with consistent and precise stellar catalogue and with a robust and reliable software \citep[PRAIA,][]{Assafin2011}. Second, besides recent observations, this consistent set of numerous and precise positions covers many orbital periods at many distinct orbital plane sights, so that the orbital inclinations along with all other orbital elements could be satisfactorily derived without the need of further position sets. For these reasons, only this set of positions was used for building the new ephemeris for the satellites of Jupiter.
 
 \subsection{Special tailored Ephemerides (STE) for Jupiter irregular satellites}
 
@@ -197,7 +197,9 @@ Ananke &  21683800  $\pm$ 7200  &     0.380 $\pm$ 0.002      &   172.29 $\pm$ 0.
 \hline
 \end{tabular} 
 \end{center}
+\begin{flushleft}
 \textbf{Notes}: a: semimajor axis; e : excentricity; I: inclination relative to the equatorial reference plane J2000; $\Omega$: longitude of the ascending node; $\omega$: argument of periapsis; $v$: true anomaly.
+\end{flushleft}
 \end{table*}
 
 All the orbits determined for the satellites show satisfying residuals. The residuals are smaller than those obtained with JPL ephemeris, which was expected because the accuracy of an ephemeris decreases when we get further from the time of observations. The main risk of divergence over time comes from the possible absence of long-term effects when fitting to a short timespan of observations. If that were the case, our ephemeris would diverge too quickly to be of any use. JPL ephemerides are fitted over all the available observations. As a result, they will diverge less quickly than our own. Though they are no longer precise enough for our use, they remain a precious reference to identify whether our own model presents a quick divergence.
@@ -207,7 +209,7 @@ We compared our ephemeris to the JPL for all the Jupiter satellites we fitted, u
 Fig. \ref{Fig: JPL-STE} displays the offsets of the positions published by \cite{GomesJunior2015} for the satellite Carme in declination relative to our ephemeris, to \cite{Jacobson2012} JUP300 JPL ephemeris and \cite{Emelyanov2008} ephemeris.We see that the systematic JPL ephemeris offsets pointed out by \cite{GomesJunior2015} are reduced with our ephemeris, as expected.
 
 \begin{figure}
-\includegraphics[width=8.8cm]{figures/Carme_ephemeris.eps} 
+\includegraphics[width=8.8cm]{figures/Carme_ephemeris.eps}
 \caption{Offsets in declination of the positions published by \protect\cite{GomesJunior2015} for Carme. The red "x" relative to the special-tailored ephemeris, the blue "+" relative to the JUP300 JPL ephemeris and the green dot relative to \protect\cite{Emelyanov2008}. As expected, the ephemeris systematic errors pointed out by \protect\cite{GomesJunior2015} are reduced with the STE ephemeris. \label{Fig: JPL-STE}}
 \end{figure}
 
@@ -217,7 +219,7 @@ The obtained ephemeris is hereafter refered as STE, for special-tailored ephemer
 
 For the specific case of Phoebe, the ninth satellite of Saturn, we have updated the ephemeris published in \cite{Desmars2013}. The new ephemeris (PH15) used the same dynamical model, including the perturbations of the Sun and the eight planets, the eight major satellites of Saturn and the $J_2$ parameter. The observations used to fit the model are identical to \cite{Desmars2013} (including 223 Cassini observations) with additional observations from \cite{GomesJunior2015}, \cite{Peng2015}, observations from Minor Planet Circulars between 2012 and 2014 (available on the Natural Satellite Data Center\footnote{\url{http://lnfm1.sai.msu.ru/neb/nss/bsapoouf.htm}}), and observations from Flagstaff \citep{NOFS} between 2012 and 2014. It represents a total number of 5886 observations from 1898 to 2014.
 
-In Fig. \ref{Fig:eph-Phoebe} we compare our ephemeris (PH15) with the SAT375 JPL\footnote{Jacobson, R.A. 2015-Feb-27. "Satellite Ephemeris: SAT375", JPL Satellite Ephemeris File Release, \url{ftp://ssd.jpl.nasa.gov/pub/eph/satellites/nio/LINUX_PC/sat375l.txt}} and the \cite{Emelyanov2007} ephemeris. We can see that our ephemeris is closer to the SAT375 JPL ephemeris where the difference between them is smaller than 20 mas (< 10 mas in Declination). This difference is smaller than the apparent diameter of Phoebe (see Table \ref{Tab: satellite-diameter})
+In Fig. \ref{Fig:eph-Phoebe} we compare our ephemeris (PH15) with the SAT375 JPL\footnote{Jacobson, R.A. 2015-Feb-27. "Satellite Ephemeris: SAT375", JPL Satellite Ephemeris File Release, \url{ftp://ssd.jpl.nasa.gov/pub/eph/satellites/nio/LINUX_PC/sat375l.txt}} ephemeris. The difference between them is smaller than 30 mas (< 10 mas in Declination). This difference is smaller than the apparent diameter of Phoebe (see Table \ref{Tab: satellite-diameter})
 
 \begin{figure}
 \begin{centering}
@@ -234,7 +236,7 @@ For Triton, we used the most recent ephemeris published by \cite{Emelyanov2015}.
 \begin{figure*}
 \begin{centering}
 \subfigure[NEP081 JPL and \protect\cite{Emelyanov2015}]{\includegraphics[width=8.7cm]{figures/JPL-EME_Triton.eps} \label{Fig:eph-Triton-eme}}
-\subfigure[\protect\cite{Zhang2014} and \protect\cite{Emelyanov2015}]{\includegraphics[width=8.7cm]{figures/Zhang-EME.eps} \label{Fig:eph-Triton-zhang}}
+\subfigure[\protect\cite{Zhang2014} and \protect\cite{Emelyanov2015}]{\includegraphics[width=8.7cm]{figures/Zhang-EME_Triton.eps} \label{Fig:eph-Triton-zhang}}
 \caption{Comparison between the \protect\cite{Emelyanov2015}, \protect\cite{Zhang2014} and NEP081 JPL \protect\citep{Jacobson2009} ephemeris for the satellite Triton.}
 \label{Fig:eph-Triton}
 \end{centering}
@@ -260,7 +262,7 @@ We predicted occultations for the 8 major irregular satellites of Jupiter,  Anan
 
 For Triton and Nereid, the candidates for stellar occultations in 2016 were searched using the WFI catalogue in the same way as the predictions for Centaurs and TNOs occultations by \cite{Assafin2010, Assafin2012} and \cite{Camargo2014}. This catalogue contains the stars in the path of Neptune in the sky up to mid-2016. The catalogue was generated by observations made at the ESO 2p2 telescope (IAU code 809) using the Wide Field Imager (WFI) CCD mosaic detector. The filter used was the broad-band R filter ESO\#844 with $\lambda_c$ = 651.725 nm and $\Delta\lambda$ = 162.184 nm.
 
-A total of \noccs events were identified between January 2016 and December 2017. In Table \ref{Tab: satellite-occultation} we present the number of stellar occultations predicted by year for each satellite. Table \ref{Tab: occ-list} shows a sample of the catalogue of occultations generated and their parameters, which are necessary to produce occultation maps. Since these objects are very small, the duration of each event is a few seconds. All the occultation tables and maps will be publicly available at the CDS. No star brighter than MagR*=18 will be occulted by Triton in 2016. For this satellite, we cut events with stars fainter than R=18, since for Triton the flux drop during such an occultation would be very small. In Fig. \ref{Fig: ocultacao} we show an example of an occultation map. This is the only found occultation by Triton and it will happen in October 05, 2017. This event can be observed from Europe and the east coast of USA and will be a great opportunity to study in high resolution the atmosphere of the satellite.
+A total of \noccs events were identified between January 2016 and December 2020. In Table \ref{Tab: satellite-occultation} we present the number of stellar occultations predicted by year for each satellite. Table \ref{Tab: occ-list} shows a sample of the catalogue of occultations generated and their parameters, which are necessary to produce occultation maps. Since these objects are very small, the duration of each event is a few seconds. All the occultation tables and maps will be publicly available at the CDS. No star brighter than MagR*=18 will be occulted by Triton in 2016. For this satellite, we cut events with stars fainter than R=18, since for Triton the flux drop during such an occultation would be very small. In Fig. \ref{Fig: ocultacao} we show an example of an occultation map. This is one of the only two found occultation by Triton and it will happen in October 05, 2017. This event can be observed from Europe and the east coast of USA and will be a great opportunity to study in high resolution the atmosphere of the satellite.
 
 \begin{table}
 \caption{\label{Tab: satellite-occultation} Number of stellar occultations for each satellite from January, 2016 up to December, 2020.}
@@ -270,23 +272,22 @@ A total of \noccs events were identified between January 2016 and December 2017.
 %\multicolumn{4}{c}{Diameter of the satellites} \tabularnewline
 Satellite  & 2016 & 2017 & 2018 & 2019 & 2020 & Total \tabularnewline
 \hline
-Ananke & 12 & 16 & & & &  \tabularnewline
-Carme & 20 & 14 & & & &  \tabularnewline
-Elara & 14 & 16 & & & &  \tabularnewline
-Himalia & 15 & 12 & & & &  \tabularnewline
-Leda & 8 & 24 & & & &  \tabularnewline
-Lysithea & 16 & 11 & & & &  \tabularnewline
-Pasiphae & 20 & 19 & & & &  \tabularnewline
-Sinope & 15 & 21 & & & &  \tabularnewline
+Ananke & 12 & 16 & 49 & 359 & 187 & 623 \tabularnewline
+Carme & 20 & 14 & 30 & 369 & 220 & 653 \tabularnewline
+Elara & 14 & 16 & 33 & 305 & 193 & 561 \tabularnewline
+Himalia & 15 & 12 & 54 & 257 & 230 & 568 \tabularnewline
+Leda & 8 & 24 & 38 & 362 & 208 & 640 \tabularnewline
+Lysithea & 16 & 11 & 35 & 330 & 212 & 604 \tabularnewline
+Pasiphae & 20 & 19 & 44 & 362 & 206 & 651 \tabularnewline
+Sinope & 15 & 21 & 34 & 356 & 256 & 682 \tabularnewline
 \hdashline
 Phoebe & 32 & 98 & 238 & 79 & 13 & 460 \tabularnewline
 \hdashline
-Nereid & 11$^{a}$ & 1 & & & &  \tabularnewline
-Triton & -- & 1 & & & &  \tabularnewline
+Nereid & 11$^{a}$ & 1 & 1 & 0 & 0 & 13 \tabularnewline
+Triton & -- & 1 & 1 & 0 & 0 & 2 \tabularnewline
 \hline
 \end{tabular}
 \par \end{centering}
-Occultations predicted using the UCAC4 catalogue and STE ephemeris.
 $^{a}$ {Using the WFI catalogue as explained in Sec. \ref{Sec: predictions}}.
 \end{table}
 
@@ -325,7 +326,7 @@ The central red dot show the geocentric closest approach of the shadow. The smal
 \end{centering}
 \end{figure}
 
-The first preliminary catalogue version of the ESA astrometry satellite GAIA \citep{deBruijne2012} is expected to be released up to the end of 2016. The precise star positions to be derived by GAIA will provide better predictions with the main source of error being the ephemeris. Astrometric reduction of observations published in \cite{GomesJunior2015} will be revised with the GAIA catalogue and the predictions from 2017 onwards will be improved. Since we cannot foresee exactly when the GAIA catalogue will be released and when new and re-reduced satellite positions in the GAIA frame will become available, we decided to publish only the predictions for occultations restricted to the 2016-2017 time interval.
+The first preliminary catalogue version of the ESA astrometry satellite GAIA \citep{deBruijne2012} is expected to be released up to the end of 2016 (The catalogue with five-parameter astrometric solutions is up to the end of 2017). The precise star positions to be derived by GAIA will provide better predictions with the main source of error being the ephemeris. Astrometric reduction of observations published in \cite{GomesJunior2015} will be revised with the GAIA catalogue and the predictions will be improved. Since we cannot foresee exactly when the GAIA catalogue will be released and when new and re-reduced satellite positions in the GAIA frame will become available, we decided to publish predictions up to the end of 2020. In the GAIA era, the occultation predictions will be updated.
 
 
 \subsection{Prediction test} \label{Sec: testes}
@@ -366,7 +367,7 @@ C/A: geocentric closest approach; Sit: Situation test considered.
 
 \section{Discussion} \label{Sec: discussion}
 
-We predict stellar occultations for the period of 2016-2017 for eight irregular satellites of Jupiter: Ananke, Carme, Elara, Himalia, Leda, Lysithea, Pasiphae, and Sinope; one satellite of Saturn: Phoebe; and two satellites of Neptune: Triton and Nereid. The procedure used was the same as that for the prediction of stellar occultations by Pluto and its satellites in \cite{Assafin2010} and by Centaurs and TNOs in \cite{Assafin2012} and \cite{Camargo2014}.
+We predict stellar occultations for the period of 2016-2020 for eight irregular satellites of Jupiter: Ananke, Carme, Elara, Himalia, Leda, Lysithea, Pasiphae, and Sinope; one satellite of Saturn: Phoebe; and two satellites of Neptune: Triton and Nereid. The procedure used was the same as that for the prediction of stellar occultations by Pluto and its satellites in \cite{Assafin2010} and by Centaurs and TNOs in \cite{Assafin2012} and \cite{Camargo2014}.
 
 The candidate stars were searched in the UCAC4 catalogue, except for the candidates in 2016 for Triton and Nereid. In this case, we used the WFI catalogue that was generated from observations made with ESO2p2/WFI CCD mosaic that covered the path of Neptune in the sky-plane up to 2016 (see Sec. \ref{Sec: predictions}). From this, a total of \noccs events are foreseen. 
 
