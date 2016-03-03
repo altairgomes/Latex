@@ -17,13 +17,6 @@ tabela = Table(names=('object', 'instantes', 'RA (ICRS) DEC', 'C/A', 'P/A', 'vel
 c = csv.writer(open("agenda.csv", "wb"))
 c.writerow(["Subject","Start Date","Start Time","End Date","End Time","All Day Event","Description","Private"])
     
-def texto(i):
-    if i in ['Triton', 'Nereida']:
-        return '/Emelyanov/'
-    if i == 'Phoebe':
-        return '/Josselin/'
-    return '/LAU/'
-    
 def mostrar(i):
     imagem = tabela[np.where(tabela['numero'] == i)]
     imagem.pprint(max_width=-1)
@@ -62,7 +55,7 @@ for i in lista:
     magK = Column(dados['mK'], name='MagK', format='4.1f')
     longi = Column(dados['long'], name='long', format='+3.0f')
     name = Column([arquivo[15:-11].capitalize()]*len(ca), name='object')
-    caminho = '/home/altair/Documentos/Maps/All/' + np.char.array(datas.iso).rpartition(' ')[:,0].rpartition('-')[:,0].rpartition('-')[:,0] + '/Altair/' + arquivo[15:-11].capitalize() + texto(arquivo[15:-11].capitalize()) + arquivo[15:-11].capitalize() + '_' + np.char.array(datas.isot) + '.png'
+    caminho = '/home/altair/Documentos/Maps/Todos/' + np.char.array(datas.iso).rpartition(' ')[:,0].rpartition('-')[:,0].rpartition('-')[:,0] + arquivo[15:-11].capitalize() + arquivo[15:-11].capitalize() + '_' + np.char.array(datas.isot) + '.png'
     t = Table([name, occ_data, star_coord, ca, pa, vel, dist, magR, magK, longi, caminho], names=('object', 'instantes', 'RA (ICRS) DEC', 'C/A', 'P/A', 'vel', 'distance', 'magR', 'magK', 'long', 'caminho'))
     tabela = vstack([tabela, t])
 
