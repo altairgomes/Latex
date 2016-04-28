@@ -65,13 +65,13 @@
 
 \section*{Introduction}
 
-In this report I present the preliminary results of the astrometric reductions of the images from the Observatório do Pico dos Dias (OPD) in Brazil. The aim is to obtain precise positions for the Neptune - Triton system. The telescopes used was the \PE (160) with a diameter of 1.6m, the \BC (IAG) with a diameter of 0.6m, and the Zeiss telescope with a diameter of 0.6m.
+In this report I present the preliminary results of the astrometric reductions of the images from the Observatório do Pico dos Dias (OPD) in Brazil. The aim is to obtain precise positions for the Neptune - Triton system and to investigate the orbit of Neptune alone around the Sun. The telescopes used were the \PE (160) with a diameter of 1.6m, the \BC (IAG) with a diameter of 0.6m, and the Zeiss telescope with a diameter of 0.6m.
 
 The observations were carried out since 1992 when a CCD big enough was installed in the OPD. The planet and satellite have been constantly observed, and still are, by our group. There were many CCDs (IKON, IXON, CCD101, CCD106, ...) and many filters (V, R, I, No Filter, ...) utilized.
 
-%\section*{Data}
+There was a total of 9942 images from June 1992 to September 2015. Many of the oldest images had no coordinates in header or they were wrong. Sometimes the filter was missing. Many nights had two exposure sets. The first one with low exposure times so Neptune was not saturated, but there were few reference stars in the field. The second one with higher exposure time so Triton was brighter and had more reference stars than with the the previous exposure, but the image of Neptune were saturated.
 
-In Table \ref{Tab:dados} it is summarized the final number of images for Neptune and Triton for the 3 telescopes. It is also shown the number of positions where Neptune and Triton were identified automatically in the same image.
+In Table \ref{Tab:dados} it is summarized the final number of images for Neptune (short-exposure observations) and Triton (all observations) for the 3 telescopes. It is also shown the number of positions where Neptune and Triton were identified automatically in the same image (short-exposure observations for precision premium; see Section Tests).
 
 \begin{table*}[h]
 \centering
@@ -93,26 +93,83 @@ Total & 3249 & 4158 & 2657 \\
 \\Number of positions identified of Neptune and Triton by telescope. Matches: Number of positions where Neptune and Triton were identified automatically in the same image.
 \end{table*}
 
-There were a total of 9942 images from June 1992 to September 2015. Many of the oldest images had no coordinates in header or they were wrong. Sometimes the filter was missing. Many nights had two exposure sets. The first one with low exposure time so Neptune were not saturated, but there were few reference stars in the field. The second one with higher exposure time so Triton were brighter and had more reference stars the the previous exposure, but the image of Neptune were saturated.
 
-Fig. 1 shows the distribution of positions identified for Neptune and Triton over the years.
 
-\begin{figure}[h]
+Fig. \ref{Fig:pos-dist} shows the distribution of positions where Neptune and Triton are identified in the same image (short-exposure observations) over the years. Figs \ref{Fig:filtro-160}-\ref{Fig:filtro-ZEI} summarizes the distribution of positions with Neptune and Triton in the same image by filter obtained in the \PE , the \BC and the Zeiss telescopes, respectively.
+
+\begin{figure}
 \includegraphics[width=16.0cm]{pos-distribution.png} 
-\caption{Distribution of positions for Neptune and Triton by year}
+\caption{Distribution of positions with Neptune and Triton in the same image (short-exposure observations) by year.}
 \label{Fig:pos-dist}
 \end{figure}
+
+
+
+\begin{figure}[H]
+\includegraphics[width=16.0cm]{filtro_160.png} 
+\caption{Distribution of positions with Neptune and Triton in the same image (short-exposure observations) by filter for the \PE telescope.}
+\label{Fig:filtro-160}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=16.0cm]{filtro_IAG.png} 
+\caption{Same as in Fig \ref{Fig:filtro-160} for the \BC telescope.}
+\label{Fig:filtro-IAG}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=16.0cm]{filtro_ZEI.png} 
+\caption{Same as in Fig \ref{Fig:filtro-160} for the Zeiss telescope.}
+\label{Fig:filtro-ZEI}
+\end{figure}
+
+It is possible to see that the 
 
 
 \section*{Reduction}
 
 The images were reduced using PRAIA, developed by Marcelo Assafin. To avoid the missing or wrong coordinates I used the coordinates of the ephemeris as input. This way PRAIA could identify reference stars in the images. The reference catalogue used was UCAC4. The ephemeris used to identify Neptune and Triton in the images was DE430+NEP081. The positions where the image of Neptune were saturated was removed of the results.
 
+In Table 2 it is presented the mean errors in X and Y of the bidimensional Gaussian used to fit the PSF of the objects using only short-exposure observations.
+
+\begin{longtable}{|l|c|c|c|c|}
+\caption{Table of erros of the reduction. Gaussian error stands for the error in X and Y of the bidimensional Gaussian used to fit the PSF. Mean offset errors is the average dispersion of the positions of each night  using only short-exposure observations.}\\
+\hline
+Telescope/Satellite &  \multicolumn{2}{|c|}{Gaussian error} &   \multicolumn{2}{|c|}{Mean offet errors} \\
+%\hline
+ &  X (mas) & Y (mas) & RA (mas) & DEC (mas) \\
+\hline
+\endfirsthead
+\multicolumn{5}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+Telescope/Satellite &  X & Y & RA & DEC \\
+\hline
+\endhead
+\hline \multicolumn{5}{r}{\textit{Continued on next page}} \\
+\endfoot
+\hline
+\endlastfoot
+160/Neptune & 8 & 8 & 42 & 37 \\
+160/Triton & 14 & 14 & 28 & 29 \\
+IAG/Neptune & 9 & 9 & 36 & 38 \\
+IAG/Triton & 20 & 20 & 34 & 37 \\
+Zeiss/Neptune & 9 & 9 & 28 & 32 \\
+Zeiss/Triton & 27 & 27 & 28 & 35 \\
+\hline
+\end{longtable}
+
 We applied the digital coronagraphy technique to test if the scattered light of Neptune would influence in the Triton's photocenter. No influence was identified in the 1 mas range.
 
-From the offsets in the sense "position minus ephemeris" identified I made statistics night by night to eliminate discrepant positions with a sigma-clip procedure where offsets (modulus) larger than 80 mas or 2-sigma discrepant from the mean offset were removed.
+From the offsets in the sense "position minus ephemeris" identified I made statistics night by night to eliminate discrepant positions with a sigma-clip procedure where offsets (modulus) larger than 80 mas or 2-sigma discrepant from the mean offset were removed. This procedure was applied for each set of observations (short exposures and long exposures) separately.
 
-We also tested two other process of reduction in the nights with two different exposure sets. The first one is the uniform reduction where only stars presented in all fields were used to represent the reference system. The second one is the global reduction where all the stars presented in all fields are used within a unique least-square procedure to obtain the reference system. With this, four situations were considered.
+\section*{Tests}
+
+The idea behind the short and long exposures was to obtain Neptune not saturated (measurable with more precision) and Triton better exposed with higher S/N ratio, so as to get the best for determining the relative orbit of Triton around Neptune, and the orbit of Neptune itself around the Sun.
+
+To put both short-exposed Neptune and long-exposed Triton separate images in the same consistent reference frame, we can follow some astrometric procedures that we already use (uniform reduction, global reduction). We explain them here in this section, and test them with respect to standard procedures. We are also interested in the performance of short-exposed Triton, since it is imaged together with short-exposed Neptune in the same CCD frames, so the so called "precision premium" (Pascu, 1994; Peng et al., 2008, 2012) is present and may compensate the smaller S/N ratio of Triton.
+
+We also used two other processes of reduction in 9 test nights with two different exposure sets. The first one is the uniform reduction where only stars presented in all fields were used to represent the reference system. The second one is the global reduction where all the stars presented in all fields are used within a unique least-square procedure to obtain the reference system. With this, four situations were considered.
 
 \begin{enumerate}
 \item The standard procedure of astrometric reduction.
@@ -121,20 +178,113 @@ We also tested two other process of reduction in the nights with two different e
 \item The global reduction over the identified stars in the procedure 2.
 \end{enumerate}
 
-For each situation we tested two sets of positions. The first one with the positions of Neptune and Triton within the same exposure set as explained above. The second one with the positions of Neptune in the smallest exposure set and the positions of Triton in the biggest exposure set (where Neptune were saturated).
+For each situation we tested two sets of positions. The first one only with the positions of Neptune and Triton in the same image (precision premium). The second one with the positions of Neptune in the smallest exposure set and the positions of Triton in the longest exposure set (where Neptune was saturated).
 
-For each night tested, we obtained the mean difference in the offsets of Triton-Neptune for the 4 situations and the 2 sets of positions. The dispersion of the 4 situations for the set where Neptune and Triton have the same exposure is in majority smaller than the set where they have different exposures.
+For each of the 9 nights tested, we obtained the mean difference in the offsets of Triton-Neptune for the 4 situations and the 2 sets of positions. The dispersion of the 4 situations for the set where Neptune and Triton have the same exposure is in generally smaller than the set where they have different exposures.
 
-Figs 2 e 4 show the offsets of Neptune and Triton, respectively, in RA e DEC for all the positions not eliminated in the previous procedure. Figs 3 e 5 show the mean offsets of each night and respective discrepancy (error bars).
+Fig \ref{Fig:test-match} shows the mean position of the difference of Triton's and Neptune's offsets using only positions where the two objects are in the same image. The four situations are shown with different colors. Fig \ref{Fig:test-sat} is the same but using the positions of Neptune in the frames with short exposure time and the positions of Triton in the frames with long exposure time (where Neptune image was saturated).
 
-Fig 6 shows the difference between the relative observed positions and the relative ephemeris positions of Triton and Neptune in the sense Triton - Neptune where they were identified in the same frame and not eliminated by the sigma-clip procedure.
+In Table 3 we present the mean differences and standard deviations used in Figs. \ref{Fig:test-match} and \ref{Fig:test-sat}
 
-Fig 7 shows the difference in the mean offsets night by night for all matched nights and not eliminated by the sigma-clip procedure in the sense Triton - Neptune. The dispersions (error bars) is the mean value of the dispersion in the night for each satellite.
+It is possible to see that the difference in offsets using only the positions in the same image presents smaller dispersion compared to those with Triton and Neptune in different frames. We can also see that the mean differences in the offsets are not very different between the 4 situations explored, although the mean offsets using Global Reduction (GR1 and GR2) show a better agreement.
+
+These preliminary tests show that the precision premium (short exposed Neptune and Triton in the same CCD frames) gives better results than using long-exposed Triton. But they also show that the UCAC4 catalogue is quite consistent and rigid in this sky region, because the improvement of the reference frame with the global reduction procedure only marginally improve the results.
+ 
+
+This allows us to take a look at the current provisional results of all the years of observations (see next section), for which we already have positions based on the simple standard astrometric procedure (regarded to set 1 here), but only considering the precision premium ones, that is, using only short-exposed images where Neptune and Triton are measured in the same CCD frame.
+
+
+\begin{figure}
+\includegraphics[width=16.0cm]{Triton-Netuno_nsat_match.png} 
+\caption{Difference between Triton's and Neptune's offsets using only positions where the two objects are in the same image. 'usual' stands for the situation 1 with the standard procedure of reduction. 'uni' stands for situation 2 with the uniform reduction. 'gr1' stands for situation 3 with global reduction over the identified stars in the procedure 1. 'gr2' stands for situation 4 with global reduction over the identified stars in the procedure 2.}
+\label{Fig:test-match}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=16.0cm]{Triton-Netuno_sat.png} 
+\caption{Difference between Triton's and Neptune's offsets using the positions of Neptune in the frames with short exposure time and the positions of Triton in the frames with long exposure time (where Neptune image were saturated). Labels is the same as in Fig. \ref{Fig:test-match}}
+\label{Fig:test-sat}
+\end{figure}
+
+
+
+\begin{landscape}
+
+\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\caption{Table with the data used in the Figs. \ref{Fig:test-match} and \ref{Fig:test-sat}. Situation 1 is for the positions of Triton and Neptune in the same frame. Situation 2 is for the position of Neptune in frames with short exposure time and the positions of Triton in the frames with long exposure time (where Neptune image were saturated). 'Usual' stands for the situation 1 with the standard procedure of reduction. 'Uni' stands for situation 2 with the uniform reduction. 'GR1' stands for situation 3 with global reduction over the identified stars in the procedure 1. 'GR2' stands for situation 4 with global reduction over the identified stars in the procedure 2. N is the number of positions used. For the situation 2 N is not presented because there may have different numbers of positions for Triton and Neptune used. For some nights, the uniform or global reduction procedure had issues, so they are not presented.}\\
+\hline
+Night & Sit & \multicolumn{3}{|c|}{Usual} & \multicolumn{3}{|c|}{Uni} & \multicolumn{3}{|c|}{GR1} & \multicolumn{3}{|c|}{GR2} \\
+%\hline
+ & &  RA & DEC & N & RA & DEC & N & RA & DEC & N & RA & DEC & N \\
+\hline
+\endfirsthead
+\multicolumn{13}{c}%
+{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+\hline
+Night & Sit & \multicolumn{3}{|c|}{Usual} & \multicolumn{3}{|c|}{Uni} & \multicolumn{3}{|c|}{GR1} & \multicolumn{3}{|c|}{GR2} \\
+%\hline
+ & &  RA & DEC & N & RA & DEC & N & RA & DEC & N & RA & DEC & N \\
+\hline
+\endhead
+\hline \multicolumn{13}{r}{\textit{Continued on next page}} \\
+\endfoot
+\hline
+\endlastfoot
+1993-06-23 & 1 & 17 $\pm$ 38 & 5 $\pm$ 42 & 9 & 45 $\pm$ 18 & 15 $\pm$ 30 & 5 & 49 $\pm$ 20 & 15 $\pm$ 36 & 7 & 47 $\pm$ 23 & 14 $\pm$ 36 & 7\\
+ & 2 & 30 $\pm$ 22 & 129 $\pm$ 32 & - & 64 $\pm$ 23 & 142 $\pm$ 41 & - & 71 $\pm$ 16 & 149 $\pm$ 39 & - & 76 $\pm$ 26 & 132 $\pm$ 32 & - \\
+\hline
+
+1994-09-22 & 1 & 18 $\pm$ 20 & -79 $\pm$ 31 & 10 & 23 $\pm$ 24 & -12 $\pm$ 24 & 6 & 20 $\pm$ 22 & -100 $\pm$ 29 & 10 & 20 $\pm$ 22 & -99 $\pm$ 28 & 10\\
+ & 2 &  17 $\pm$ 19 & 83 $\pm$ 28 & - & 10 $\pm$ 24 & 85 $\pm$ 48 & - & 31 $\pm$ 20 & 62 $\pm$ 28 & - & 48 $\pm$ 20 & -38 $\pm$ 28 & -\\
+\hline
+
+1994-09-23 & 1 & 7 $\pm$ 13 & -57 $\pm$ 13 & 10 & 9 $\pm$ 9 & -76 $\pm$ 14 & 9 & 8 $\pm$ 9 & -75 $\pm$ 14 & 9 & 7 $\pm$ 9 & -75 $\pm$ 14 & 9\\
+ & 2 & 13 $\pm$ 16 & 47 $\pm$ 20 & - & 9 $\pm$ 20 & -129 $\pm$ 27 & - & 17 $\pm$ 14 & 49 $\pm$ 17 & - & 15 $\pm$ 14 & 34 $\pm$ 16 & -\\
+\hline
+
+1994-09-24 & 1 & -28 $\pm$ 4 & 17 $\pm$ 8 & 5 & 3 $\pm$ 10 & 20 $\pm$ 14 & 9 & 1 $\pm$ 9 & 17 $\pm$ 6 & 6 & 1 $\pm$ 8 & 17 $\pm$ 7 & 6\\
+ & 2 & -19 $\pm$ 11 &  123 $\pm$ 18 & - & 4 $\pm$ 15 &  99 $\pm$ 31 & - & -11 $\pm$ 14 &  123 $\pm$ 20 & - & 7 $\pm$ 14 & 110 $\pm$ 20 & -\\
+\hline
+
+1996-06-22 & 1 & -16 $\pm$ 10 & 21 $\pm$ 13 & 9 & -12 $\pm$ 8 & 21 $\pm$ 9 & 8 & -15 $\pm$ 8 & 24 $\pm$ 10 & 8 & -16 $\pm$ 9 & 25 $\pm$ 10 & 8\\
+ & 2 & -26 $\pm$ 12 & 19 $\pm$ 18 & - & -22 $\pm$ 36 & 22 $\pm$ 49 & - & -23 $\pm$ 16 & 17 $\pm$ 16 & - & -25 $\pm$ 17 & 15 $\pm$ 10 & -\\
+\hline
+
+1996-08-21 & 1 & -184 $\pm$ 27 & 72 $\pm$ 29 & 13 & -181 $\pm$ 24 & 76 $\pm$ 31 & 13 & - & - & - & - & - & - \\
+ & 2 & -188 $\pm$ 35 &  81 $\pm$ 45 & - & -159 $\pm$ 44 & -8 $\pm$ 60 & - & - & - & - & - & - & -\\
+\hline
+
+1997-06-01 & 1 & -50 $\pm$ 21 & 34 $\pm$ 16 & 26 & - & - & - & -52 $\pm$ 21 & 34 $\pm$ 15 & 26 & - & - & -\\
+ & 2 & 191 $\pm$ 39 &  70 $\pm$ 9 & - & - & - & - & 254 $\pm$ 43 &  77 $\pm$ 9 & - & - & - & -\\
+\hline
+
+1997-06-02 & 1 & 6 $\pm$ 35 & 33 $\pm$ 21 & 22 & - & - & - & 75 $\pm$ 30 & 30 $\pm$ 22 & 19 & - & - & -\\
+ & 2 & 101 $\pm$ 77 &  20 $\pm$ 14 & - & - & - & - & 76 $\pm$ 78 & 52 $\pm$ 16 & - & - & - & -\\
+\hline
+
+2011-09-19 & 1 & -88 $\pm$ 15 & 75 $\pm$ 12 & 35 & - & - & - & -88 $\pm$ 15 & 74 $\pm$ 11 & 35 & - & - & -\\
+ & 2 & -55 $\pm$ 13 & 50 $\pm$ 11 & - & - & - & - & -80 $\pm$ 21 & 71 $\pm$ 10 & - & - & - & -\\
+\hline
+
+\hline
+\end{longtable}
+
+\end{landscape}
+
+
+\section*{Final Remarks}
+
+Fig \ref{Fig:netuno-all} shows the offsets of Neptune, respectively, in RA e DEC for all the positions not eliminated in the sigma-clip procedure. Fig \ref{Fig:netuno-media} shows the mean offsets of each night and respective discrepancy (error bars).
+
+Fig \ref{Fig:triton-netuno-all} shows the difference between the relative observed positions and the relative ephemeris positions of Triton and Neptune in the sense Triton - Neptune where they were identified in the same frame and not eliminated by the sigma-clip procedure.
+
+Fig \ref{Fig:triton-netuno-mean} shows the difference in the mean offsets night by night for all matched nights and not eliminated by the sigma-clip procedure in the sense Triton - Neptune. The dispersions (error bars) is the mean value of the dispersion in the night for each satellite.
 
 %The large offsets found in 2002-2003 must be checked. It may be caused by few reference stars in the field or saturation.\\
 
 
-We plan to do the following:
+It seems that there are long term systematic errors in the orbit of Neptune, and in the orbit of Triton around Neptune, but it is too soon to state that with confidence. We must still further refine the positions. We plan to do the following:
+
 \begin{itemize}
 \item Separate images by filter.
 \item Study the effects of chromatic refraction in the offsets (difference of offsets Triton - Neptune). I already have nights separated with observations distributed over six hours during the night.
@@ -142,11 +292,9 @@ We plan to do the following:
 \item Further refinements in the data may be needed as we further investigate these position sets.
 \end{itemize}
 
-Figures 8-10 summarizes the distribution of positions by filter obtained in the \PE , the \BC and the Zeiss telescopes, respectively.
-
 %In Tables 2 and 3 it is shown the mean offsets in Right Ascension and Declination night by night for Neptune and Triton, respectively, observed in the \PE telescope. The dispersion of the positions (standard deviation), number of frames that was not eliminated by the sigma-clip procedure, the mean date of the night and the average number of reference stars by frame is also available in the tables. The respective mean offsets night by night for the \BC telescope is available in Tables 4 and 5. As for the previous telescopes, tables 6 and 7 summarizes the offsets obtained with the Zeiss telescope.
 
-In Table 2 it is presented the mean errors in X and Y of the bidimensional Gaussian used to fit the PSF of the objects. %The average dispersion of the offsets in Tables 2-7 is also presented in the table.
+ %The average dispersion of the offsets in Tables 2-7 is also presented in the table.
 
 
 \begin{figure}[h]
@@ -159,16 +307,16 @@ In Table 2 it is presented the mean errors in X and Y of the bidimensional Gauss
 \caption{Neptune - Mean offsets by day}
 \label{Fig:netuno-media}
 \end{figure}
-\begin{figure}
-\includegraphics[width=16.0cm]{Triton_all.png} 
-\caption{Triton - All Offsets}
-\label{Fig:triton-all}
-\end{figure}
-\begin{figure}
-\includegraphics[width=16.0cm]{Triton_media.png} 
-\caption{Triton - Mean offsets by day}
-\label{Fig:trito-media}
-\end{figure}
+%\begin{figure}
+%\includegraphics[width=16.0cm]{Triton_all.png} 
+%\caption{Triton - All Offsets}
+%\label{Fig:triton-all}
+%\end{figure}
+%\begin{figure}
+%\includegraphics[width=16.0cm]{Triton_media.png} 
+%\caption{Triton - Mean offsets by day}
+%\label{Fig:trito-media}
+%\end{figure}
 \begin{figure}
 \includegraphics[width=16.0cm]{Triton-Netuno_all.png} 
 \caption{Difference between the offsets of Triton and Neptune - All data}
@@ -182,11 +330,7 @@ In Table 2 it is presented the mean errors in X and Y of the bidimensional Gauss
 
 %\section*{160}
 
-\begin{figure}
-\includegraphics[width=16.0cm]{filtro_160.png} 
-\caption{Distribution of positions by filter for the \PE telescope.}
-\label{Fig:filtro-160}
-\end{figure}
+
 
 %\begin{longtable}{|c|c|c|c|c|c|c|}
 %\caption{Mean offsets of Neptune night by night observed in the \PE telescope. Off-ra: mean offset em Right Ascension (mas). Off-de: mean offset in Declination (mas). E-ra: Dispersion (standard deviation) of the offsets in RA (mas). E-de: Dispersion in DEC (mas). Nfr: Number of observations per night. Date: the mean date of the observations. Ncat: average number of reference stars by frame.}\\
@@ -345,11 +489,7 @@ In Table 2 it is presented the mean errors in X and Y of the bidimensional Gauss
 
 %\section*{IAG}
 
-\begin{figure}
-\includegraphics[width=16.0cm]{filtro_IAG.png} 
-\caption{Distribution of positions by filter for the \BC telescope.}
-\label{Fig:filtro-IAG}
-\end{figure}
+
 
 %\begin{longtable}{|c|c|c|c|c|c|c|}
 %\caption{Same as in Table 2 for Neptune in the \BC telescope.}\\
@@ -577,11 +717,7 @@ In Table 2 it is presented the mean errors in X and Y of the bidimensional Gauss
 %\section*{Zeiss}
 
 
-\begin{figure}
-\includegraphics[width=16.0cm]{filtro_ZEI.png} 
-\caption{Distribution of positions by filter for the Zeiss telescope.}
-\label{Fig:filtro-ZEI}
-\end{figure}
+
  
 %\begin{longtable}{|c|c|c|c|c|c|c|}
 %\caption{Same as in Table 2 for Neptune in the Zeiss telescope.}\\
@@ -638,32 +774,7 @@ In Table 2 it is presented the mean errors in X and Y of the bidimensional Gauss
 %\hline
 %\end{longtable}
 
-\begin{longtable}{|l|c|c|c|c|}
-\caption{Table of erros of the reduction. Gaussian error stands for the error in X and Y of the bidimensional Gaussian used to fit the PSF. Mean offset errors is the average dispersion of the positions of each night.}\\
-\hline
-Telescope/Satellite &  \multicolumn{2}{|c|}{Gaussian error} &   \multicolumn{2}{|c|}{Mean offet errors} \\
-%\hline
- &  X (mas) & Y (mas) & RA (mas) & DEC (mas) \\
-\hline
-\endfirsthead
-\multicolumn{5}{c}%
-{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
-\hline
-Telescope/Satellite &  X & Y & RA & DEC \\
-\hline
-\endhead
-\hline \multicolumn{5}{r}{\textit{Continued on next page}} \\
-\endfoot
-\hline
-\endlastfoot
-160/Neptune & 8 & 8 & 42 & 37 \\
-160/Triton & 14 & 14 & 28 & 29 \\
-IAG/Neptune & 9 & 9 & 36 & 38 \\
-IAG/Triton & 20 & 20 & 34 & 37 \\
-Zeiss/Neptune & 9 & 9 & 28 & 32 \\
-Zeiss/Triton & 27 & 27 & 28 & 35 \\
-\hline
-\end{longtable}
+
 
 %\bibliography{Referencias}
 %\bibliographystyle{apalike}
