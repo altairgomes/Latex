@@ -163,7 +163,7 @@ We applied the digital coronagraphy technique to test if the scattered light of 
 
 From the offsets in the sense "position minus ephemeris" identified I made statistics night by night to eliminate discrepant positions with a sigma-clip procedure where offsets (modulus) larger than 80 mas or 2-sigma discrepant from the mean offset were removed. This procedure was applied for each set of observations (short exposures and long exposures) separately.
 
-\section*{Tests}
+\section*{Reduction Tests}
 
 The idea behind the short and long exposures was to obtain Neptune not saturated (measurable with more precision) and Triton better exposed with higher S/N ratio, so as to get the best for determining the relative orbit of Triton around Neptune, and the orbit of Neptune itself around the Sun.
 
@@ -271,6 +271,28 @@ Night & Sit & \multicolumn{3}{|c|}{Usual} & \multicolumn{3}{|c|}{Uni} & \multico
 
 \end{landscape}
 
+\section*{Chromatic Refraction Test}
+
+Since the colors of Neptune and Triton are different, it is expected that their positions have influence of chromatic refraction with different intensities. The apparent position of Neptune, which is more blue than Triton, would be more shifted towards the zenith than the Triton's position.
+
+To test the effects of chromatic refraction I looked for nights with many observations distributed over the night. I selected two of them (August 22, 2004 and September 25, 2011) with more than 4 hours between the first and last observations. In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter. In both nights there was only one exposure time used.
+
+In Fig \ref{Fig:refraction} it is plotted the difference in the positions of Triton and Neptune compared to the difference of their ephemeris in RA and DEC for both nights.
+
+\begin{figure}[h]
+\includegraphics[width=16.0cm]{plot_hour_gr1.png} 
+\caption{Distribution of the difference of offsets in the sense Triton - Neptune for the nights August 22, 2004 and September 25, 2011.}
+\label{Fig:refraction}
+\end{figure}
+
+Teoretically, the difference in the positions of the objects in the sense Triton - Neptune compared to the difference in the ephemeris over a night would cause the following effects.
+
+\begin{itemize}
+\item RA: the difference in the offsets would be positives in the East side of the sky, negative in the West side and zero in the culmination, with the assumption that only chromatic refraction affects the offsets.
+\item DEC: the difference in the offsets in the culmination would be positive (Neptune is in the North side in both nights for the site). Farther from the culmination the difference in the offsets would be more positive.
+\end{itemize}
+
+Fig \ref{Fig:refraction} clearly shows that that the chromatic refraction is affecting the offsets confirming our expectation.
 
 \section*{Final Remarks}
 
@@ -287,7 +309,6 @@ It seems that there are long term systematic errors in the orbit of Neptune, and
 
 \begin{itemize}
 \item Separate images by filter.
-\item Study the effects of chromatic refraction in the offsets (difference of offsets Triton - Neptune). I already have nights separated with observations distributed over six hours during the night.
 \item It may be required the use of a specific PSF for Neptune due to its large size.
 \item Further refinements in the data may be needed as we further investigate these position sets.
 \end{itemize}
