@@ -275,12 +275,12 @@ Night & Sit & \multicolumn{3}{|c|}{Usual} & \multicolumn{3}{|c|}{Uni} & \multico
 
 Since the colors of Neptune and Triton are different, it is expected that their positions have influence of chromatic refraction with different intensities. The apparent position of Neptune, which is more blue than Triton, would be more shifted towards the zenith than the Triton's position.
 
-To test the effects of chromatic refraction I looked for nights with many observations distributed over the night. I selected two of them (August 22, 2004 and September 25, 2011) with more than 4 hours between the first and last observations. In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter. In both nights there was only one exposure time used.
+To test the effects of chromatic refraction I looked for nights with many observations distributed over the night. I selected five of them (\PE: 1997-05-31 and 1997-06-01; \BC: 2003-07-27, 2004-08-22 and 2011-09-25) with more than 4 hours between the first and last observations. In the nights of \PE and in the 2003 night of \BC it was used no filter (clear). In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter.% In both nights there was only one exposure time used.
 
-In Fig \ref{Fig:refraction} it is plotted the difference in the positions of Triton and Neptune compared to the difference of their ephemeris in RA and DEC for both nights.
+In Fig \ref{Fig:refraction} it is plotted the difference in the positions of Triton and Neptune compared to the difference of their ephemeris in RA and DEC for the 5 nights.
 
 \begin{figure}[h]
-\includegraphics[width=16.0cm]{plot_hour_gr1.png} 
+\includegraphics[width=16.0cm]{plot_hour.png} 
 \caption{Distribution of the difference of offsets in the sense Triton - Neptune for the nights August 22, 2004 and September 25, 2011.}
 \label{Fig:refraction}
 \end{figure}
@@ -292,7 +292,78 @@ Teoretically, the difference in the positions of the objects in the sense Triton
 \item DEC: the difference in the offsets in the culmination would be positive (Neptune is in the North side in both nights for the site). Farther from the culmination the difference in the offsets would be more positive.
 \end{itemize}
 
-Fig \ref{Fig:refraction} clearly shows that that the chromatic refraction is affecting the offsets confirming our expectation.
+Fig \ref{Fig:refraction} clearly shows that that the chromatic refraction is affecting the offsets confirming our expectation. It is possible to see that the distribution of the offsets for the 5 night are very similar over the hour angles observed.
+
+We use the equation \:
+\begin{equation}
+\Delta [\alpha, \delta] = V_{\alpha,\delta} (\phi,\delta, H) \cdot \Delta B,
+\label{Eq:refraction}
+\end{equation}
+to model the chromatic refraction of the nights. $\Delta [\alpha, \delta]$ is the position offset for each coordinate ($\alpha, \delta$), $V_{\alpha,\delta} (\phi,\delta, H)$ is the first part of refraction which is due to the position of the observed objects and is a function of the latitude of the site ($\phi$), of the object’s declination ($\delta$), and of the hour angle ($H$) and $\Delta B$ is the the second part is the differential chromatic refraction which is due to the atmospheric conditions and the wavelength ($\lambda$) of the object and of the stars in the field. This equation is available in Benedetti-Rossi et al. (2014) where it was applied for observations of Pluto.
+
+The offsets corrected by chromatic refraction of the 5 nights is presented in Fig. \ref{Fig:refraction-cor}.
+
+\begin{figure}[h]
+\includegraphics[width=16.0cm]{plot_hour_dif_cor.png} 
+\caption{Same as in Fig. \ref{Fig:refraction} but corrected by chromatic refraction.}
+\label{Fig:refraction-cor}
+\end{figure}
+
+In Table \ref{Tab:refraction} it is shown the mean of the difference in the offsets of Triton and Neptune for each night and their dispersions. We made two tests in the chromatic refraction, the first one we made the correction in the difference of the offsets of both objects. In the second test we made the corrections in the offsets separately for each object, then we took the difference between them.
+
+\begin{table}[h]
+\centering
+\caption{Mean and Standard deviation of the difference in the offsets of Triton - Neptune before and after the chromatic refraction correction}
+\label{Tab:refraction}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+ \multicolumn{1}{|c|}{Night} & \multicolumn{2}{|c|}{No correction} & \multicolumn{2}{|c|}{Correction 1} & \multicolumn{2}{|c|}{Correction 2}\\
+  & RA & DEC & RA & DEC & RA & DEC \\
+ \hline
+PE:1997-05-31 &   83+-138 & -1+-34 &  58+-88 & -22+-34 & 58+- 88 & -22+-34 \\
+PE:1997-06-01 &   120+-118 &  31+-26 &  84+-38 &  9+-27 & 84+-38 &  9+-27 \\
+BC:2003-07-27  &  -13+-111 & 25+-70 &  32+-70 &  7+-70 & 35+-100 &  6+-70 \\
+BC:2004-08-22  &   -11+-43 & 53+-38 &  22+-22 & 41+-37 & 19+- 23 & 42+-37 \\
+BC:2011-09-25  &   -33+-34 & 70+-17 &   5+-23 & 55+-16  &  5+- 23 & 55+-16 \\
+\hline
+\end{tabular}
+"Correction 1" means that the correction was made in the difference of the offsets of Triton and Neptune. "Correction 2" means that the correction of chromatic refraction was made in the offsets of Triton and Neptune separately then we took the difference between them.
+\end{table}
+
+It is possible to see that the dispersion of the offsets in RA after the correction is much smaller than before the correction. The mean offsets in RA also show significant difference. For DEC the dispersion does not change, but the mean offsets presents significant difference. It is also possible to see that the results for both tests are basically the same, with the exception of the night of 2003 in RA.
+
+In Table \ref{Tab:refraction-cor} it is shown the values of $\Delta B$ obtained in the fit of the offsets of Triton and Neptune separately and their differences. The minimum and maximum values of Hour Angle for each night is also presented.
+
+\begin{table}[h]
+\centering
+\caption{Results of the fit of $\Delta B$ in the 5 nights for the difference Triton - Neptune and for each object separately.}
+\label{Tab:refraction-cor}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+ Night & Filter  & $H_{min}$ & $H_{max}$ & $\Delta H$ & Object & $\Delta B$ & err $\Delta B$\\
+ \hline
+ & &  & & & T-N  &     0.214  &  0.004   \\
+ PE:1997-05-31 &   Clear & -3.0 & 2.1 & 5.1 & Neptune &   -0.219 &  0.004  \\
+ & & & & & Triton &  -0.006  &  0.004 \\
+\hline
+ & & & & & T-N  &  0.239  &  0.004 \\
+ PE:1997-06-01 & Clear & -2.6 & 2.2 & 4.8 & Neptune &   -0.347  &  0.004 \\
+ & & & & & Triton &   -0.107  &   0.004  \\
+\hline
+ & & & & & T-N &   0.052 &   0.003  \\
+BC:2003-07-27 & Clear & -3.5 & 4.8 & 8.3 & Neptune &   -0.015  &  0.002  \\
+ & & & & & Triton &    0.038  &  0.003  \\
+\hline
+ & & & & & T-N &   0.048  &  0.004  \\
+BC:2004-08-22 & Clear? & -0.8 & 4.3 & 5.1 & Neptune &   -0.059  &   0.003  \\
+ & & & & & Triton &   -0.015  &  0.004 \\
+\hline
+& & & & & T-N &   0.046  &  0.002  \\
+BC:2011-09-25 & I & 0.4 & 4.5 & 4.1 & Neptune &   -0.046  &   0.002  \\
+ & & & & & Triton &    0.000  &  0.002   \\
+\hline
+\end{tabular}
+\end{table}
 
 \section*{Final Remarks}
 
