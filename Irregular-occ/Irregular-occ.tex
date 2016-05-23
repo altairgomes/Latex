@@ -175,7 +175,7 @@ U_{\bar{l}\hat{J}}=&\displaystyle -\frac{R_J^2 J_2}{r_{iJ}^3}\left(\frac{3}{2}\s
 The expressions of $\nabla_lU_{\bar{l}\, \hat{i}}$ and $\nabla_i U_{\bar{i}\, \hat{l}}.$ have been developed in \citet{Lainey2004}. The equations of motion are integrated with the numerical integrator RADAU \citep{Everhart1985}. 
 Our model was fitted to the observations through a least-squares procedure. The satellites were integrated one dynamical family at a time, to gain computing time, while losing minimum precision. Indeed, the interactions between satellites not belonging to the same dynamical family are negligible considering the short timespan of our integration. 
 
-The initial osculating elements at the origin of integration are presented in Table \ref{Tab: sat_ell}.
+The obtained ephemeris is hereafter refered as STE, for special-tailored ephemeris. The initial osculating elements at the origin of integration are presented in Table \ref{Tab: sat_ell}.
 
 \begin{table*}
 \caption{Initial osculating elements for Jupiter irregular satellites at JD 2451545.0.
@@ -204,16 +204,40 @@ Ananke &  21683800  $\pm$ 7200  &     0.380 $\pm$ 0.002      &   172.29 $\pm$ 0.
 
 All the orbits determined for the satellites show satisfying residuals. The residuals are smaller than those obtained with JPL ephemeris, which was expected because the accuracy of an ephemeris decreases when we get further from the time of observations. The main risk of divergence over time comes from the possible absence of long-term effects when fitting to a short timespan of observations. If that were the case, our ephemeris would diverge too quickly to be of any use. JPL ephemerides are fitted over all the available observations. As a result, they will diverge less quickly than our own. Though they are no longer precise enough for our use, they remain a precious reference to identify whether our own model presents a quick divergence.
 
-We compared our ephemeris to the JPL for all the Jupiter satellites we fitted, until 2018. For instance, the divergence between 2015 and 2018 is at most 98 mas in $\Delta \alpha \cos \delta$ and 58 mas in $\Delta \delta$ for Himalia and 181 mas in $\Delta \alpha \cos \delta$ and 152 mas in $\Delta \delta$ for Carme.
+We compared the STE ephemeris to the JPL for all the Jupiter satellites we fitted, until 2021. For instance, the divergence between 2015 and 2021 is at most 98 mas in $\Delta \alpha \cos \delta$ and 58 mas in $\Delta \delta$ for Himalia and 181 mas in $\Delta \alpha \cos \delta$ and 152 mas in $\Delta \delta$ for Carme.
 
-Fig. \ref{Fig: JPL-STE} displays the offsets of the positions published by \cite{GomesJunior2015} for the satellite Carme in declination relative to our ephemeris, to \cite{Jacobson2012} JUP300 JPL ephemeris and \cite{Emelyanov2008} ephemeris.We see that the systematic JPL ephemeris offsets pointed out by \cite{GomesJunior2015} are reduced with our ephemeris, as expected.
+Fig. \ref{Fig: JPL-STE} displays the offsets of the positions published by \cite{GomesJunior2015} for the satellite Carme in declination relative to the STE ephemeris, to \cite{Jacobson2012} JUP300 JPL ephemeris and \cite{Emelyanov2008} ephemeris.We see that the systematic JPL ephemeris offsets pointed out by \cite{GomesJunior2015} are reduced with our ephemeris, as expected.
 
 \begin{figure}
 \includegraphics[width=8.8cm]{figures/Carme_ephemeris.eps}
 \caption{Offsets in declination of the positions published by \protect\cite{GomesJunior2015} for Carme. The red "x" relative to the special-tailored ephemeris, the blue "+" relative to the JUP300 JPL ephemeris and the green dot relative to \protect\cite{Emelyanov2008}. As expected, the ephemeris systematic errors pointed out by \protect\cite{GomesJunior2015} are reduced with the STE ephemeris. \label{Fig: JPL-STE}}
 \end{figure}
 
-The obtained ephemeris is hereafter refered as STE, for special-tailored ephemeris.
+Table \ref{Tab:STE-error}
+
+\begin{table}
+\caption{\label{Tab:STE-error} Mean offsets of the \protect\cite{GomesJunior2015} positions relative to the STE, \protect\cite{Jacobson2012} and \protect\cite{Emelyanov2008} ephemeris .}
+\begin{centering}
+\begin{tabular}{lcccccc}
+\hline  \hline
+%\multicolumn{4}{c}{Diameter of the satellites} \tabularnewline
+ & \multicolumn{2}{c}{STE} & \multicolumn{2}{c}{JPL} & \multicolumn{2}{c}{Eme2008}\tabularnewline
+Satellite  & RA & DEC & RA & DEC & RA & DEC \tabularnewline
+\hline
+Ananke & 12 & 16 & 49 & 359 & 187 & 623 \tabularnewline
+Carme & 20 & 14 & 30 & 369 & 220 & 653 \tabularnewline
+Elara & 14 & 16 & 33 & 305 & 193 & 561 \tabularnewline
+Himalia & 15 & 12 & 54 & 257 & 230 & 568 \tabularnewline
+Leda & 8 & 24 & 38 & 362 & 208 & 640 \tabularnewline
+Lysithea & 16 & 11 & 35 & 330 & 212 & 604 \tabularnewline
+Pasiphae & 20 & 19 & 44 & 362 & 206 & 651 \tabularnewline
+Sinope & 15 & 21 & 34 & 356 & 256 & 682 \tabularnewline
+\hline
+\end{tabular}
+\par \end{centering}
+\end{table}
+
+
 
 \subsection{Phoebe's ephemeris}
 
@@ -224,7 +248,7 @@ In Fig. \ref{Fig:eph-Phoebe} we compare our ephemeris (PH15) with the SAT375 JPL
 \begin{figure}
 \begin{centering}
 \includegraphics[width=8.8cm]{figures/Phoebe.eps} 
-\caption{Comparison between the PH15, SAT375 JPL and \protect\cite{Emelyanov2007} ephemeris for the satellite Phoebe.}
+\caption{Comparison between the PH15 and SAT375 JPL ephemeris for the satellite Phoebe.}
 \label{Fig:eph-Phoebe}
 \end{centering}
 \end{figure}
