@@ -48,6 +48,7 @@ $^{6}$Federal University of Technology - Paran\'a (UTFPR / DAFIS), Rua Sete de S
 }
 \begin{document}
 \newcommand{\noccs}{5442 } % total number of occultations
+\defcitealias{GomesJunior2015}{GJ15}
 
 \date{Accepted . Received ; in original form }
 
@@ -82,10 +83,10 @@ There is no consensus for a single model explaining where the irregular satellit
 
 Phoebe is the most studied irregular satellite. \cite{Clark2005} suggest that its surface is probably covered by material of cometary origin. It was also stated by \cite{Johnson2005} that if the porosity of Phoebe is 15\%, Phoebe would have an uncompressed density similar to those of Pluto and Triton.
 
-\cite{GomesJunior2015} obtained 6523 suitable positions for 18 irregular satellites between 1992 and 2014 with an estimated error in the positions of about 60 to 80 mas. For some satellites the number of positions obtained is comparable to the number used in the numerical integration of orbits by the JPL \citep{Jacobson2012}. They pointed out that the ephemeris of the irregular satellites have systematic errors that may reach 200 mas for some satellites.
+\cite{GomesJunior2015} (which shall be referred as \citetalias{GomesJunior2015} hereafter) obtained 6523 suitable positions for 18 irregular satellites between 1992 and 2014 with an estimated error in the positions of about 60 to 80 mas. For some satellites the number of positions obtained is comparable to the number used in the numerical integration of orbits by the JPL \citep{Jacobson2012}. They pointed out that the ephemeris of the irregular satellites have systematic errors that may reach 200 mas for some satellites.
 
-We present in this paper new numerical integration of the orbits of the 8 major irregular satellites of Jupiter (Himalia, Elara, Pasiphae, Lysithea, Carme, Ananke, Sinope and Leda) using only the positions obtained by \cite{GomesJunior2015}. We aim to eliminate the systematic errors in the JPL ephemeris (see Sec. \ref{Sec: integration}). %For an object at the distance of Jupiter, this represents an error langer than 700 km in the shadow path of an occultation.
-For Phoebe, we updated the ephemeris of \cite{Desmars2013} using the observations of \cite{GomesJunior2015}, \cite{Peng2015}, observations from Minor Planet Center and observations from Flagstaff. 
+We present in this paper new numerical integration of the orbits of the 8 major irregular satellites of Jupiter (Himalia, Elara, Pasiphae, Lysithea, Carme, Ananke, Sinope and Leda) using only the positions obtained by \citetalias{GomesJunior2015}. We aim to eliminate the systematic errors in the JPL ephemeris (see Sec. \ref{Sec: integration}). %For an object at the distance of Jupiter, this represents an error langer than 700 km in the shadow path of an occultation.
+For Phoebe, we updated the ephemeris of \cite{Desmars2013} using the observations of \citetalias{GomesJunior2015}, \cite{Peng2015}, observations from Minor Planet Center and observations from Flagstaff. 
 
 Phoebe, being the most studied object with a good measured size, can be used to calibrate and evaluate the technique for similar objects. Up to date, no observation of a stellar occultation by an irregular satellite was published. Since their estimated sizes are very small (see Table \ref{Tab: satellite-diameter}), this may have discouraged earlier tries. But, in fact, given their relatively closer distances as compared to TNOs and Centaurs, and considering the precision of our ephemeris and of star positions, we can now reliably predict the exact location and instant where the shadow of the occultation will cross the Earth.
 
@@ -125,9 +126,9 @@ In section \ref{Sec: integration} the new determination of the orbits. In sectio
 
 \section{Orbit computations} \label{Sec: integration}
 
-\cite{GomesJunior2015} published 6523 precise positions for 18 irregular satellites from observations made at the Observatório do Pico dos Dias (OPD), Observatoire Haute-Provence (OHP) and European Southern Observatory (ESO) between 1992 and 2014. 
+\citetalias{GomesJunior2015} published 6523 precise positions for 18 irregular satellites from observations made at the Observatório do Pico dos Dias (OPD), Observatoire Haute-Provence (OHP) and European Southern Observatory (ESO) between 1992 and 2014. 
 
-Here we compute new orbits based on the observations published in \cite{GomesJunior2015}. First, because the reduction was made with a consistent and precise stellar catalogue and with a robust astrometry \citep[PRAIA,][]{Assafin2011}. Second, besides recent observations, this consistent set of numerous and precise positions covers many orbital periods at many distinct orbital plane sights, so that the orbital inclinations along with all other orbital elements could be satisfactorily derived without the need of further position sets. For these reasons, only this set of positions was used for the satellites of Jupiter.
+Here we compute new orbits based on the observations published in \citetalias{GomesJunior2015}. First, because the reduction was made with a consistent and precise stellar catalogue and with a robust astrometry \citep[PRAIA,][]{Assafin2011}. Second, besides recent observations, this consistent set of numerous and precise positions covers many orbital periods at many distinct orbital plane sights, so that the orbital inclinations along with all other orbital elements could be satisfactorily derived without the need of further position sets. For these reasons, only this set of positions was used for the satellites of Jupiter.
 
 Due to the context of this work regarding to stellar occultations, the orbit fitting procedures used aimed primarily to derive precise ephemerides for the near future. The procedures allow for the improvement of orbits as new observations are added.
 
@@ -206,17 +207,17 @@ All the orbits determined for the satellites show satisfying residuals. The resi
 
 We compared the STE ephemeris to the JPL for all the Jupiter satellites we fitted, until 2021. For instance, the divergence between 2015 and 2021 is at most 98 mas in $\Delta \alpha \cos \delta$ and 58 mas in $\Delta \delta$ for Himalia and 181 mas in $\Delta \alpha \cos \delta$ and 152 mas in $\Delta \delta$ for Carme.
 
-Fig. \ref{Fig: JPL-STE} displays the offsets of the positions published by \cite{GomesJunior2015} for the satellite Carme in declination relative to the STE ephemeris, to \cite{Jacobson2012} JUP300 JPL ephemeris and \cite{Emelyanov2008} ephemeris.We see that the systematic JPL ephemeris offsets pointed out by \cite{GomesJunior2015} are reduced with our ephemeris, as expected.
+Fig. \ref{Fig: JPL-STE} displays the offsets of the positions published by \citetalias{GomesJunior2015} for the satellite Carme in declination relative to the STE ephemeris, to \cite{Jacobson2012} JUP300 JPL ephemeris and \cite{Emelyanov2008} ephemeris.We see that the systematic JPL ephemeris offsets pointed out by \citetalias{GomesJunior2015} are reduced with our ephemeris, as expected.
 
 \begin{figure}
 \includegraphics[width=8.8cm]{figures/Carme_ephemeris.eps}
-\caption{Offsets in declination of the positions published by \protect\cite{GomesJunior2015} for Carme. The red "x" relative to the special-tailored ephemeris, the blue "+" relative to the JUP300 JPL ephemeris and the green dot relative to \protect\cite{Emelyanov2008}. As expected, the ephemeris systematic errors pointed out by \protect\cite{GomesJunior2015} are reduced with the STE ephemeris. \label{Fig: JPL-STE}}
+\caption{Offsets in declination of the positions published by \protect\citetalias{GomesJunior2015} for Carme. The red "x" relative to the special-tailored ephemeris, the blue "+" relative to the JUP300 JPL ephemeris and the green dot relative to \protect\cite{Emelyanov2008}. As expected, the ephemeris systematic errors pointed out by \protect\citetalias{GomesJunior2015} are reduced with the STE ephemeris. \label{Fig: JPL-STE}}
 \end{figure}
 
-Table \ref{Tab:STE-error}
+In Table \ref{Tab:STE-error} it is presented the mean offsets of the \citetalias{GomesJunior2015} positions relative to the same 3 ephemeris as above. We can see that the mean offsets are highly reduced with the STE ephemeris.
 
 \begin{table}
-\caption{\label{Tab:STE-error} Mean offsets of the \protect\cite{GomesJunior2015} positions relative to the STE, \protect\cite{Jacobson2012} and \protect\cite{Emelyanov2008} ephemeris .}
+\caption{\label{Tab:STE-error} Mean offsets of the \protect\citetalias{GomesJunior2015} positions relative to the STE, \protect\cite{Jacobson2012} and \protect\cite{Emelyanov2008} ephemeris .}
 \begin{centering}
 \begin{tabular}{lcccccc}
 \hline  \hline
@@ -224,14 +225,14 @@ Table \ref{Tab:STE-error}
  & \multicolumn{2}{c}{STE} & \multicolumn{2}{c}{JPL} & \multicolumn{2}{c}{Eme2008}\tabularnewline
 Satellite  & RA & DEC & RA & DEC & RA & DEC \tabularnewline
 \hline
-Ananke & 12 & 16 & 49 & 359 & 187 & 623 \tabularnewline
-Carme & 20 & 14 & 30 & 369 & 220 & 653 \tabularnewline
-Elara & 14 & 16 & 33 & 305 & 193 & 561 \tabularnewline
-Himalia & 15 & 12 & 54 & 257 & 230 & 568 \tabularnewline
-Leda & 8 & 24 & 38 & 362 & 208 & 640 \tabularnewline
-Lysithea & 16 & 11 & 35 & 330 & 212 & 604 \tabularnewline
-Pasiphae & 20 & 19 & 44 & 362 & 206 & 651 \tabularnewline
-Sinope & 15 & 21 & 34 & 356 & 256 & 682 \tabularnewline
+Ananke & $-10$ & $3$ & $60$ & $-108$ & $101$ & $-107$ \tabularnewline
+Carme & $14$ & $-1$ & $-3$ & $-80$ & $-6$ & $-45$ \tabularnewline
+Elara & $3$ & $-12$ & $20$ & $-50$ & $23$ & $-83$ \tabularnewline
+Himalia & $-15$ & $-7$  & $-19$  & $-11$ & $-18$  & $-13$ \tabularnewline
+Leda & $-9$ & $-8$ & $60$ & $-13$ & $166$ & $92$ \tabularnewline
+Lysithea & $15$ & $-21$ & $40$ & $-43$ & $117$ & $-76$ \tabularnewline
+Pasiphae & $4$ & $-16$ & $-17$ & $-82$ & $-10$ & $-54$ \tabularnewline
+Sinope & $9$ & $-4$ & $10$ & $-35$ & $11$ & $-52$ \tabularnewline
 \hline
 \end{tabular}
 \par \end{centering}
@@ -241,7 +242,7 @@ Sinope & 15 & 21 & 34 & 356 & 256 & 682 \tabularnewline
 
 \subsection{Phoebe's ephemeris}
 
-For the specific case of Phoebe, the ninth satellite of Saturn, we have updated the ephemeris published in \cite{Desmars2013}. The new ephemeris (PH15) used the same dynamical model, including the perturbations of the Sun and the eight planets, the eight major satellites of Saturn and the $J_2$ parameter. The observations used to fit the model are identical to \cite{Desmars2013} (including 223 Cassini observations) with additional observations from \cite{GomesJunior2015}, \cite{Peng2015}, observations from Minor Planet Circulars between 2012 and 2014 (available on the Natural Satellite Data Center\footnote{\url{http://lnfm1.sai.msu.ru/neb/nss/bsapoouf.htm}}), and observations from Flagstaff \citep{NOFS} between 2012 and 2014. It represents a total number of 5886 observations from 1898 to 2014. In contrast, in \cite{Desmars2013} was used 3367 observations from 1898 to 2012. It represents an increase of almost 75\% in the number of observations.
+For the specific case of Phoebe, the ninth satellite of Saturn, we have updated the ephemeris published in \cite{Desmars2013}. The new ephemeris (PH15) used the same dynamical model, including the perturbations of the Sun and the eight planets, the eight major satellites of Saturn and the $J_2$ parameter. The observations used to fit the model are identical to \cite{Desmars2013} (including 223 Cassini observations) with additional observations from \citetalias{GomesJunior2015}, \cite{Peng2015}, observations from Minor Planet Circulars between 2012 and 2014 (available on the Natural Satellite Data Center\footnote{\url{http://lnfm1.sai.msu.ru/neb/nss/bsapoouf.htm}}), and observations from Flagstaff \citep{NOFS} between 2012 and 2014. It represents a total number of 5886 observations from 1898 to 2014. In contrast, in \cite{Desmars2013} was used 3367 observations from 1898 to 2012. It represents an increase of almost 75\% in the number of observations.
 
 In Fig. \ref{Fig:eph-Phoebe} we compare our ephemeris (PH15) with the SAT375 JPL\footnote{Jacobson, R.A. 2015-Feb-27. "Satellite Ephemeris: SAT375", JPL Satellite Ephemeris File Release, \url{ftp://ssd.jpl.nasa.gov/pub/eph/satellites/nio/LINUX_PC/sat375l.txt}} ephemeris. The difference between them is smaller than 30 mas (< 10 mas in Declination). This difference is smaller than the apparent diameter of Phoebe (see Table \ref{Tab: satellite-diameter})
 
@@ -250,6 +251,16 @@ In Fig. \ref{Fig:eph-Phoebe} we compare our ephemeris (PH15) with the SAT375 JPL
 \includegraphics[width=8.8cm]{figures/Phoebe.eps} 
 \caption{Comparison between the PH15 and SAT375 JPL ephemeris for the satellite Phoebe.}
 \label{Fig:eph-Phoebe}
+\end{centering}
+\end{figure}
+
+We computed the precision of the PH15 ephemeris considering three sets of observations: all the positions available; only the positions of \citetalias{GomesJunior2015}; and all the positions without \citetalias{GomesJunior2015}. In Fig. \ref{Fig:err-Phoebe} is shown the comparison between them for the time spam 2016-2021. It is possible to see that even considering only the positions of \citetalias{GomesJunior2015}, the estimated error of the ephemeris is smaller than 12 mas. The computed precision does not take into account the precision in the position of Saturn.
+
+\begin{figure}
+\begin{centering}
+\includegraphics[width=8.8cm]{figures/PH15_err_angsep.eps}  
+\caption{Comparison of the precision of the PH15 ephemeris where three different sets of positions were used to compute the ephemeris: all observations; only positions of \citetalias{GomesJunior2015}; and all the positions without \citetalias{GomesJunior2015}.}
+\label{Fig:err-Phoebe}
 \end{centering}
 \end{figure}
 
@@ -352,7 +363,7 @@ The central red dot show the geocentric closest approach of the shadow. The smal
 \end{centering}
 \end{figure}
 
-The first preliminary catalogue version of the ESA astrometry satellite GAIA \citep{deBruijne2012} is expected to be released up to the end of 2016 (The catalogue with five-parameter astrometric solutions is up to the end of 2017). The precise star positions to be derived by GAIA will provide better predictions with the main source of error being the ephemeris. Astrometric reduction of observations published in \cite{GomesJunior2015} will be revised with the GAIA catalogue and the predictions will be improved. Since we cannot foresee exactly when the GAIA catalogue will be released and when new and re-reduced satellite positions in the GAIA frame will become available, we decided to publish predictions up to the end of 2020. In the GAIA era, the occultations predicted will be updated.
+The first preliminary catalogue version of the ESA astrometry satellite GAIA \citep{deBruijne2012} is expected to be released up to the end of 2016 (The catalogue with five-parameter astrometric solutions is up to the end of 2017). The precise star positions to be derived by GAIA will provide better predictions with the main source of error being the ephemeris. Astrometric reduction of observations published in \citetalias{GomesJunior2015} will be revised with the GAIA catalogue and the predictions will be improved. Since we cannot foresee exactly when the GAIA catalogue will be released and when new and re-reduced satellite positions in the GAIA frame will become available, we decided to publish predictions up to the end of 2020. In the GAIA era, the occultations predicted will be updated.
 
 
 \subsection{Robustness of predictions} \label{Sec: testes}
@@ -397,11 +408,11 @@ C/A: geocentric closest approach; Sit: Situation test considered.
 
 We performed new numerical integration for improving the orbits of some of the larger irregular satellites. Consequently, with more precise ephemeris, we, then, predicted stellar occultations aiming to access fundamental parameters like size, shape, albedo, ultimately aiming to track the formation origin of these bodies.
 
-For the irregular satellites of Jupiter (Ananke, Carme, Elara, Himalia, Leda, Lysithea, Pasiphae and Sinope), we produced ephemeris using only the observations of \cite{GomesJunior2015}. The systematic errors found in the JPL ephemeris \citep{Jacobson2012} and \cite{Emelyanov2008} were corrected. This new ephemeris was denominated Special Tailored Ephemeris.
+For the irregular satellites of Jupiter (Ananke, Carme, Elara, Himalia, Leda, Lysithea, Pasiphae and Sinope), we produced ephemeris using only the observations of \citetalias{GomesJunior2015}. The systematic errors found in the JPL ephemeris \citep{Jacobson2012} and \cite{Emelyanov2008} were corrected. This new ephemeris was denominated Special Tailored Ephemeris.
 
-We also updated the ephemeris of Phoebe \citep{Desmars2013} using the observations of \cite{GomesJunior2015}, \cite{Peng2015} observations from  MPC and from Flagstaff. A total of 5886 observations between 1989 and 2014 were used in the process. This represents and increase of about 75\% in the number used to generate the orbits of Phoebe by \cite{Desmars2013}.
+We also updated the ephemeris of Phoebe \citep{Desmars2013} using the observations of \citetalias{GomesJunior2015}, \cite{Peng2015}, observations from  MPC and from Flagstaff. A total of 5886 observations between 1989 and 2014 were used in the process. This represents and increase of about 75\% in the number used to generate the orbits of Phoebe by \cite{Desmars2013}.
 
-\textcolor{red}{Colocar mais alguma coisa sobre as efemérides}
+As it was shown for Phoebe, when we use only the positions of \citetalias{GomesJunior2015}, the ephemeris presents a precision in the order of those where all the positions were used. Moreover, the case of Phoebe is particular because we have many observations in a large time spam (1898 to 2014) including observations from Cassini. For the Jovian satellites with less observations, the precision we have by using only \citetalias{GomesJunior2015} observations would be quite equivalent or even better than the precision of other ephemeris for the short time explored in this work.
 
 We predict stellar occultations for the period of 2016-2020 for eight irregular satellites of Jupiter: Ananke, Carme, Elara, Himalia, Leda, Lysithea, Pasiphae, and Sinope; and one satellite of Saturn: Phoebe. The procedure used was the same as that for the prediction of stellar occultations by Pluto and its satellites in \cite{Assafin2010} and by Centaurs and TNOs in \cite{Assafin2012} and \cite{Camargo2014}.The candidate stars were searched in the UCAC4 catalogue. The occasional passage of Jupiter by the galactic plane in 2019-2020 and Saturn in 2018 creates the best opportunity of observing stellar occultations in the near future due to the great density of stars in the region. Indeed, a total of \noccs events are foreseen.
 
@@ -409,7 +420,7 @@ In a broader, general sense, the probability of successfully observing an occult
 
 The test made with an occultation expected to happen in March 03, 2015 for Himalia showed that this event would probably have been observed successfully in case there were observers available in the shadow area. The results show satisfying small offsets with respect to the local of the prediction.
 
-\cite{GomesJunior2015} also observed Sycorax (satellite of Uranus) and Nereid (satellite of Neptune). Sycorax had a few observations on 9 nights in two years which did not cover one orbital period. For Nereid, the observations covered many orbital periods, but due to Nereid's large orbital eccentricity there are no observations near the pericenter.
+\citetalias{GomesJunior2015} also observed Sycorax (satellite of Uranus) and Nereid (satellite of Neptune). Sycorax had a few observations on 9 nights in two years which did not cover one orbital period. For Nereid, the observations covered many orbital periods, but due to Nereid's large orbital eccentricity there are no observations near the pericenter.
 
 Uranus and Neptune are crossing a very low dense region of stars. This results in almost no stellar occultation by these objects up to 2020. In fact, using JPL ephemeris, we identified only 2 events for each satellite in this period, but due to the bad conditions of the events (shadow far from observatories; faint stars) we chose not to publish any events here.  For these reasons we did not attempt to generate new orbits for these satellites here.
 
