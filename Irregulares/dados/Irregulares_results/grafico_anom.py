@@ -20,10 +20,11 @@ nobj= [512, 511, 507, 506, 513, 510, 802, 508, 609, 509]
 pee = ['160-1', '160-total', '160-total', '160-total', '160-total', '160-1', '160-total', '160-total', '160-total', '160-total']
 iage = ['IAG_total', 'IAG1', 'IAG_total', 'IAG_total', 'IAG_total', 'IAG1', 'IAG_total', 'IAG1', 'IAG_total', 'IAG1']
 zeie = ['ZEI1', 'ZEI1', 'ZEI1', 'ZEI_total', 'ZEI1', 'ZEI1', 'ZEI1', 'ZEI1', 'ZEI1', 'ZEI1']
-locald = [2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+locald = [2, 3, 1, 1, 1, 1, 1, 1, 1, 1]
 localr = [2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
 sizel = 18
+sizek = 14
 
 def julian(idx):
     f = open('julian_date_{}'.format(obj[idx]), 'w')
@@ -103,12 +104,12 @@ def plot(idx):
     plt.xlabel('True Anomaly', fontsize=sizel)
     plt.xticks(np.arange(0,361,45))
     plt.ylabel('Offset (mas)', fontsize=sizel)
-#    plt.legend(loc=locald[idx], numpoints=1, prop={'size':sizel})
+    plt.legend(loc=locald[idx], numpoints=1, prop={'size':sizek})
     plt.axhline(0, color='black')
     fig =plt.gcf()
     fig.set_size_inches(7.2,4.05)
     plt.tick_params(axis='both', which='major', labelsize=sizel)
-    fig.savefig('{}_DEC.eps'.format(obj[idx]),dpi=300, format='eps', bbox_inches='tight')
+    fig.savefig('{}_DEC.png'.format(obj[idx]),dpi=300, format='png', bbox_inches='tight')
     plt.clf()
 
     if os.path.isfile(arq160) == True:
@@ -127,12 +128,12 @@ def plot(idx):
     plt.xlabel('True Anomaly', fontsize=sizel)
     plt.xticks(np.arange(0,361,45))
     plt.ylabel('Offset (mas)', fontsize=sizel)
-#    plt.legend(loc=localr[idx], numpoints=1, prop={'size':sizel})
+    plt.legend(loc=localr[idx], numpoints=1, prop={'size':sizek})
     plt.axhline(0, color='black')
     fig = plt.gcf()
     fig.set_size_inches(7.2,4.05)
     plt.tick_params(axis='both', which='major', labelsize=sizel)
-    fig.savefig('{}_RA.eps'.format(obj[idx]),dpi=300, format='eps', bbox_inches='tight')
+    fig.savefig('{}_RA.png'.format(obj[idx]),dpi=300, format='png', bbox_inches='tight')
     plt.clf()
 
 for idx, value in enumerate(obj):
