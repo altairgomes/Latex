@@ -20,7 +20,7 @@ nobj= [512, 511, 507, 506, 513, 510, 802, 508, 609, 509]
 pee = ['160-1', '160-total', '160-total', '160-total', '160-total', '160-1', '160-total', '160-total', '160-total', '160-total']
 iage = ['IAG_total', 'IAG1', 'IAG_total', 'IAG_total', 'IAG_total', 'IAG1', 'IAG_total', 'IAG1', 'IAG_total', 'IAG1']
 zeie = ['ZEI1', 'ZEI1', 'ZEI1', 'ZEI_total', 'ZEI1', 'ZEI1', 'ZEI1', 'ZEI1', 'ZEI1', 'ZEI1']
-locald = [2, 3, 1, 1, 1, 1, 1, 1, 1, 1]
+locald = [2, 3, 1, 1, 1, 1, 1, 2, 1, 1]
 localr = [2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
 sizel = 18
