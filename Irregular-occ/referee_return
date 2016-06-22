@@ -1,0 +1,332 @@
+Comments to the Author
+
+REVIEWER:    This paper describes a very necessary work.
+The authors recently published a huge portion of new astrometric observations of the eight largest irregular satellites of Jupiter and Phoebe, the ninth satellite of Saturn.
+Thus there was an opportunity to create a new, more accurate ephemeris of these satellites.
+The paper describes an attempt to do so.
+    It is known that the ephemeris accuracy improves with an increase in observation time interval.
+    Nevertheless, the authors limited the observation time interval for the eight irregular satellites of Jupiter using only their own observations on the time interval of 1996-2013 that does 1/7 part
+of the full time interval of published observations.
+     The authors apparently feared of the effort needed to make in order to use all the available observations of these satellites.
+     Thus, the powerful potential of new observations was not realized.
+It's disappointing the importance of the proposed article. This reduce the applicability of the new ephemeris.
+Believing that they have the most accurate ephemeris the authors used them to predict stellar occultations by irregular satellites in the immediate future.
+    Despite the above disadvantage I recommend publication of the article in MNRAS.
+    Moderate revision of the manuscript is requested before it is considered for publication (see below).
+First of all I point to the incorrect concept of the authors on the ephemeris precision. In fact, no assessment the accuracy of the ephemeris is made by the authors.
+
+AUTHORS:
+
+
+REVIEWER: The authors state "The residuals are smaller than those obtained with JPL ephemeris"
+(see line 37 on the page 3 left column).
+In fact, the smaller is the observation time interval the smaller residuals we get, however, the worst ephemeris accuracy is obtained.
+    It is true that "the accuracy of an ephemeris decreases when we get further from the time of observations" (see lines 38, 39 on the page 3 left column).
+But a longer observation time interval may be more important for the accuracy of the ephemeris than proximity to the observation time.
+In general, ephemerides based on the limited set of observations carry the specific errors of this set of observations.
+The ephemerides based on an extended set of observations are more precise as observational errors have more possibility of being averaged.
+    For these reasons the conclusion (page 2, right column, lines 20-21)
+"The procedures allow for the improvement of orbits as recent observations are added"
+is not correct and must be excluded.
+
+AUTHORS:
+
+
+REVIEWER:     The authors write in the manuscript that
+"GJ15 published 6523 precise positions for 18 irregular satellites
+from observations made between 1992 and 2014.".
+But not all these observations were used for STE.
+Please communicate in your paper that you used 3613 observations of the irregular satellites of Jupiter made on the time interaval 1996-2013 (for the most of 8 satellites) to construct your STE.
+Please provide a Table disclosing the number and time interval of observations you used for each of 8 irregular satellites of Jupiter.
+It is quite necessary. Otherwise, you will mislead the reader.
+
+It may be a table as following
+
+Satellite  N    beg    end
+Himalia   1234  1995   2014
+Elara      636  1996   2014
+Pasiphae   609  1996   2013
+Sinope     221  1996   2009
+Lysithea   234  1996   2010
+Carme      331  1996   2013
+Ananke     250  1996   2010
+Leda        98  1996   2009
+ --------------
+In sum    3613
+
+AUTHORS:
+
+
+REVIEWER: Please precise in the Abstract how many observations of 8 irregular satellites of Jupiter you used on what time intervals.
+
+AUTHORS:
+
+
+REVIEWER:    In Arstract the phrase
+"Based on this set of positions, we performed numerical integrations ..."
+is not correct. Not the numerical integrations is based on this set of positions but the fit of the initial conditions (obital parameters). Please fix it.
+
+    
+AUTHORS:
+
+
+REVIEWER:    In Arstract the phrase
+"This corrected systematic errors and resulted in an ephemeris more accurate/precise than JPL jup300 for these bodies at least in the immediate future"
+mus be excluded. It is not justified.
+
+AUTHORS:
+
+
+REVIEWER:    It is not clear what means 'long-term effects' in the line 41 (page 3 left column).
+Long-term perturbations are usually neglected when an analytical theory is applied. The authors do not
+use any analytical theory but the numerical integration of the equations of motion where all necessary terms are included. Only a tidal dissipation can generate long-term effects. And being mentionned these effects must be evaluated.
+Please explain what do you mean.
+
+AUTHORS:
+
+
+REVIEWER: It is not clear what kind of divergence is in question in the lines 40-46 (page 3 left column).
+Please explain.
+
+AUTHORS:
+
+
+REVIEWER: The statement
+"they (JPL ephemeris) are not as much precise as required for the use."
+in the lines 44-45 (page 3 left column) is unjustified and must be excluded.
+Furthermore, JPL ephemeris being based on the more large time interval may provide us by more precise ephemerides.
+
+AUTHORS:
+
+
+REVIEWER:    In any case the residuals are not an indicator of the ephemeris precision.
+The O-C values include the errors of the planetary theory and systematic errors.
+Small residuals may lead to incorrect positions and to incorrect ephemeris.
+    As a result, I recommend that authors excluded the paragraphe in the lines 37-46 (page 3 left column).
+Instead of this it must be noted in the article that a reliable method to evaluate the real precision of the irregular satellites ephemeris created from real observation is described in the paper
+Emelyanov N. (2010)
+Precision of the ephemerides of outer planetary satellites.
+Planetary and Space Science. V. 58. P. 411-420.
+Whith this method the real precision of ephemeris can by obtained for any irregular satellite at any given time moment using the natiral satellite ephemeride service MULTI-SAT
+(Emel'yanov, Arlot, 2008).
+These ephemerides are constructed from all available to date observations.
+(Emelyanov N.V., 2005,
+Ephemerides of the outer Jovian satellites.
+Astronomy and Astrophysics. V. 435, p. 1173-1179.)
+Last update is on 19.02.2012.
+    The authors should mention these circonstances in the article and note that they set aside this method and limited to see the observation residual deviations and comparisons of their ephemeris with the results of other authors.
+No conclusion that the STE are more precise can be made from these deviations and comparisons with other ephemeris.
+
+AUTHORS:
+
+
+REVIEWER: Please exclude anywhere in the article conclusions about the precision of your ephemeris of the irregular satellites of Jupiter. You do not evaluate the precision correctly.
+
+AUTHORS:
+
+
+REVIEWER: Citation Emel’yanov & Arlot (2008) for the ephemerides in question is not correct. In reality these ephemerides were described in the paper
+Emelyanov N.V. (2005) Ephemerides of the outer Jovian satellites.
+Astronomy and Astrophysics. V. 435, p. 1173-1179.
+The ephemerides were included in the satellite ephemerides server MULTI-SAT described in (Emel’yanov & Arlot, 2008).
+    Furthermore, updates of these ephemerides were made since the publication by Emelyanov N.V. (2005). The date of last update can be read in the pages 'Sources' of the  server MULTI-SAT.
+Really last update was made on 19.02.2012.
+
+AUTHORS:
+
+
+REVIEWER:   Concerning the Fig. 1 I recommend the authors to calculate and put in the Fig. 1 caption the rms of the offsets in declination of the positions  published by GJ15 for Carme for all three models considered.
+
+AUTHORS:
+
+
+REVIEWER:   Concerning the Table 3 it is clear (and it must be noted in the paper)  that the deviation of the GJ15 positions relative to the ephemeris includes the error of the calculated planet position. Therefore the planetary motion model used for the deviation calculation must be specified for each
+ephemeride (STE, Jacobson et al. (2012) and Emelyanov (2005).
+For correct comparison it must be the same planetary motion model.
+
+AUTHORS:
+
+
+REVIEWER:    After the conclusion in the lines 58-60 (page 3 left column)
+"We can see that ..." the following explanation must be added
+"It is obvious because the STE were based on the same observations
+with which they are compared. In contrast, two other ephemeris
+were based on different sets of observations."
+Because it is not surprising that the deviations of other ephemeris with GJ15 are greater.
+Note for the authors: this fact does not approve better accuracy of STE.
+
+AUTHORS:
+
+
+REVIEWER:    Note that all these comments relate only to the STE and not to the ephemeris of Phoebe being constructed from extended set of observatiobns. Really the ephemeris of Phoebe can be expected more precise.
+
+REVIEWER:   See line 36 on the page 2 right column. You point to the jovicentric reference frame. In contrast, in the following notations (line 48 on the page 2 right column) the positions are with respect to the barycentre of Jupiter System. Please exclude this contradiction.
+
+AUTHORS:
+
+
+REVIEWER:See line 40 on the page 2 right column. The statement
+"The axes of the reference frame are those of the ICRS"
+must be corrected as
+"The axes of the reference frame are expected those of the ICRS"
+because only the observations related to the ICRS may provide a link
+to the ICRS.
+
+AUTHORS:
+
+
+REVIEWER:    See line 42 on the page 2 right column and following lines.
+THe indices i, l and j denote the numbers of bodies and not the bodies themselves. Please fix it and explane correctly.
+
+AUTHORS:
+
+
+REVIEWER: See line 55 on the page 2 right column. Phi_i is not the inclination of satellite (satellite can not have an inclination, it may be inclination of an orbit). In this case Phi_i is the latitude of the
+satellte with respect to the Jupiter equator. Please fix it.
+
+AUTHORS:
+
+
+REVIEWER: See line 58-60 on the page 2 right column. What means the number N in each case? There are confusions with the equations (1).
+What is the number of irregular satellites?
+What is the number of regular satellites satellites?
+What is the number of other bodies?
+What is the number of the Sun?
+Please fix it.
+
+AUTHORS:
+
+
+REVIEWER:The expression "the rest of the Solar System" is not convenient in this case. The rest of the Solar System includes many asteroids and satellites of other planets.
+Also above in the lines 37-38 "the rest of the Solar System" must be corrected.
+
+AUTHORS:
+
+
+REVIEWER:   Please specify what planets were taken into account. Do Mercure and Pluto be included?
+
+AUTHORS:
+
+
+REVIEWER: The equations (1) are not correctly written. In the third line what means the index "l" (also in the expression (2))?
+Where is the index "i" in the third line of the equation (1)?
+In the expression (2) what is a link between the indexes "l" and "i"?
+Please revise the equations (1) and (2) and exclude all confusions.
+
+AUTHORS:
+
+
+REVIEWER: Please verify the caption in the Table 2
+"... with respect to the center of Jupiter".
+Is it not the barycenter of the jovian system?
+
+AUTHORS:
+
+
+REVIEWER:    Please specify planetary theory was used to calculete the coordinates of the Sun and planets (DE431, INPOP10, ???).
+Reference?
+
+AUTHORS:
+
+
+REVIEWER:    Please specify how the coordinates of the Galilean satellites were calculated. With what model? theory? Reference?
+
+AUTHORS:
+
+
+REVIEWER: See line 28 on the page 3 left column. Please specify the order in the RADAU integrator used and specify the constant or automatic step.
+
+AUTHORS:
+
+
+REVIEWER: See line 35 on the page 3 right column. Please replace the footnote 1 by the citation of the paper
+Arlot J.-E., Emelyanov N. V. (2009)
+The NSDB natural satellites astrometric database.
+Astronomy and Astrophysics. V. 503. P. 631–638.
+
+AUTHORS:
+
+
+REVIEWER: See line 47 on the page 3 right column. Please explain what means "in angular separation of Saturn"
+or use other term. From what Saturn is separated?
+
+AUTHORS:
+
+
+REVIEWER: See footnote 3 on the page 3 right column, also caption in Figure 3.
+The expressions "precision in angular separation",
+"the precision in right ascension and declination" are
+not clear. How defined this "precision" is?
+Really it may not be precision but deviation. Please explain or replace this term.
+
+AUTHORS:
+
+
+REVIEWER: See line 54 on the page 4 right column. Please explain what is "magR" or express the idea otherwise.
+
+AUTHORS:
+
+
+REVIEWER: See line 59 on the page 4 right column. Please explain: "CDS".
+
+AUTHORS:
+
+
+REVIEWER: Table 5. Notes. These notes are not clear. What is "the central instant of occultation". Please explain.
+Expression "C/A:  the geocentric closest approach" is not correct.
+This is a distance between ... and ... at the moment of the geocentric closest approach.
+May be better to replace C/A by CAD (closest approach distance) with corresponding explanation.
+Expression  "velocity in the plane of sky" is not correct.
+
+AUTHORS:
+
+
+REVIEWER: In the plane of sky one can measure angles and not linear objects. The expression
+"R*: normalized magnitude to a common shadow velocity of 20 km s^-1 ..."
+is not clear at all. Please explain in the text what it is.
+In the expression "east longitude of subplanet point in degrees"
+please explain to what instant it relates.
+
+AUTHORS:
+
+
+REVIEWER: Section 4. Discussion. First paragraphe. Plase replace
+"Consequently, with more precise ephemeris, we predicted ..."
+by
+"Consequently, with our ephemeris, we predicted ..."
+because the fact that the ephemeris are more precise is not justified. Second paragraphe.
+Phrase
+"The systematic errors found in the JPL ephemeris (Jacobson et al. 2012)
+and Emel’yanov & Arlot (2008) were improved."
+must be excluded as no systematic errors were shown in these ephemerides.
+
+AUTHORS:
+
+
+REVIEWER: Section 4. Discussion. Fourth paragraphe, last phrase.
+The fragment
+"... the precision we have by using only GJ15 observations would be quite
+equivalent or even better ..."
+replace by
+"... the precision we have by using only GJ15 observations may be quite
+equivalent or even better ..."
+
+AUTHORS:
+
+
+REVIEWER:See line 12 on the page 7 left column.
+Please correct the expression
+"Sycorax had a few observations ..."
+Sycorax is not an observer nor researcher.
+
+AUTHORS:
+
+
+REVIEWER: In conclusion, I suggest the authors to address to the managers of the
+ephemeris service MULTI-SAT (Emel’yanov & Arlot, 2008)
+to include their ephemeris to the server. This will really evaluate the ephemeris and enable colleagues to profit advantage of new achievement. To do this, of course, the satellite positions must be developed in
+expansions in Chebyshev polynomials.
+
+AUTHORS:
+
+
