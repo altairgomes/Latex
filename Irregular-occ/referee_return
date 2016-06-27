@@ -13,12 +13,19 @@ It's disappointing the importance of the proposed article. This reduce the appli
 Believing that they have the most accurate ephemeris the authors used them to predict stellar occultations by irregular satellites in the immediate future.
     Despite the above disadvantage I recommend publication of the article in MNRAS.
     Moderate revision of the manuscript is requested before it is considered for publication (see below).
-First of all I point to the incorrect concept of the authors on the ephemeris precision. In fact, no assessment the accuracy of the ephemeris is made by the authors.
 
-AUTHORS:
+AUTHORS: The main goal of the paper is to publish the occultation predictions of the irregular satellites.
+This predictions demands a very good ephemeris in order to observe such an event.
+But recent observations show differences from current ephemeris that are large enough to not allow a very accurate prediction.
+With this in mind, we decided to create new ephemeris based only in recent observations for the near future.
+The use of only the GJ15 positions was due to the trust we have on this observations for a fast numerical integration.
+The creation of a complete orbit using all the observations available was not the scope of this work.
+We see that the title of paper may confuse the reader.
+So we decided to change the title to show that the ephemeris has a specific purpose.
 
 
-REVIEWER: The authors state "The residuals are smaller than those obtained with JPL ephemeris"
+REVIEWER: First of all I point to the incorrect concept of the authors on the ephemeris precision. In fact, no assessment the accuracy of the ephemeris is made by the authors.
+The authors state "The residuals are smaller than those obtained with JPL ephemeris"
 (see line 37 on the page 3 left column).
 In fact, the smaller is the observation time interval the smaller residuals we get, however, the worst ephemeris accuracy is obtained.
     It is true that "the accuracy of an ephemeris decreases when we get further from the time of observations" (see lines 38, 39 on the page 3 left column).
@@ -54,12 +61,13 @@ Leda        98  1996   2009
  --------------
 In sum    3613
 
-AUTHORS:
+AUTHORS: The correct number of observations used was modified in the text.
+The number of observations by satellite and the time-span of the observations were added in the table 2.
 
 
 REVIEWER: Please precise in the Abstract how many observations of 8 irregular satellites of Jupiter you used on what time intervals.
 
-AUTHORS:
+AUTHORS: This information was added to the abstract.
 
 
 REVIEWER:    In Arstract the phrase
@@ -70,11 +78,11 @@ is not correct. Not the numerical integrations is based on this set of positions
 AUTHORS:
 
 
-REVIEWER:    In Arstract the phrase
+REVIEWER:    In Abstract the phrase
 "This corrected systematic errors and resulted in an ephemeris more accurate/precise than JPL jup300 for these bodies at least in the immediate future"
 mus be excluded. It is not justified.
 
-AUTHORS:
+AUTHORS: The sentence was removed.
 
 
 REVIEWER:    It is not clear what means 'long-term effects' in the line 41 (page 3 left column).
@@ -132,7 +140,7 @@ The ephemerides were included in the satellite ephemerides server MULTI-SAT desc
     Furthermore, updates of these ephemerides were made since the publication by Emelyanov N.V. (2005). The date of last update can be read in the pages 'Sources' of the  server MULTI-SAT.
 Really last update was made on 19.02.2012.
 
-AUTHORS:
+AUTHORS: The reference was changed to the correct one.
 
 
 REVIEWER:   Concerning the Fig. 1 I recommend the authors to calculate and put in the Fig. 1 caption the rms of the offsets in declination of the positions  published by GJ15 for Carme for all three models considered.
@@ -144,7 +152,7 @@ REVIEWER:   Concerning the Table 3 it is clear (and it must be noted in the pape
 ephemeride (STE, Jacobson et al. (2012) and Emelyanov (2005).
 For correct comparison it must be the same planetary motion model.
 
-AUTHORS:
+AUTHORS: The information about the planetary ephemeris was added to the text
 
 
 REVIEWER:    After the conclusion in the lines 58-60 (page 3 left column)
@@ -162,7 +170,7 @@ REVIEWER:    Note that all these comments relate only to the STE and not to the 
 
 REVIEWER:   See line 36 on the page 2 right column. You point to the jovicentric reference frame. In contrast, in the following notations (line 48 on the page 2 right column) the positions are with respect to the barycentre of Jupiter System. Please exclude this contradiction.
 
-AUTHORS:
+AUTHORS: The contradiction was corrected.
 
 
 REVIEWER:See line 40 on the page 2 right column. The statement
