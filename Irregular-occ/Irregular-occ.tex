@@ -69,7 +69,7 @@ $^{6}$Federal University of Technology - Paran\'a (UTFPR / DAFIS), Rua Sete de S
 %Based on this observations, we aimed to generate new numerical integration of the orbits of eight largest irregular satellites of Jupiter: Himalia, Elara, Pasiphae, Carme, Lysithea, Sinope, Ananke and Leda. This is a short-time ephemeris that corrected systematic errors from previous ephemeris (JPL JUP300). For Phoebe we updated ephemeris from \cite{Desmars2013} using 75\% more positions than the previous one.
 %Also Jupiter will cross the galactic plane in 2019-2020 and Saturn in 2018. This creates a good opportunity to predict stellar occultations due to the large number of events that can be predicted in these periods. Thus, we aimed to predict stellar occultations for the same 9 satellites cited above. Using the UCAC4 catalogue we managed to identify \noccs candidates of stellar occultations between the period of January, 2016 and December, 2020.
 %We discuss how the successful observation of a stellar occultation by these objects is quite possible and present some of those potential occultations.
-\cite{GomesJunior2015} published \textbf{3613 positions for the 8 largest irregular satellites of Jupiter and 1787 positions for the largest irregular satellite of Saturn, Phoebe}.  These observations were made between \textbf{1995} and 2014 and have an estimated error of about 60 to 80 mas. Based on this set of positions, we performed numerical integrations for deriving new orbits for the eight largest irregular satellites of Jupiter: Himalia, Elara, Pasiphae, Carme, Lysithea, Sinope, Ananke and Leda. %This corrected systematic errors and resulted in an ephemeris more accurate/precise than JPL jup300 for these bodies at least in the immediate future.
+\cite{GomesJunior2015} published \textbf{3613 positions for the 8 largest irregular satellites of Jupiter and 1787 positions for the largest irregular satellite of Saturn, Phoebe}.  These observations were made between \textbf{1995} and 2014 and have an estimated error of about 60 to 80 mas. Based on this set of positions, \textbf{we derived} new orbits for the eight largest irregular satellites of Jupiter: Himalia, Elara, Pasiphae, Carme, Lysithea, Sinope, Ananke and Leda. %This corrected systematic errors and resulted in an ephemeris more accurate/precise than JPL jup300 for these bodies at least in the immediate future.
 For Phoebe we updated the ephemeris from \cite{Desmars2013} using 75\% more positions than the previous one. Due to their orbital characteristics, it is common belief that the irregular satellites were captured by the giant planets in the early Solar System, but there is no consensus for a single model explaining where they were formed. Size, shape, albedo and composition would help to trace back their true origin, but these physical parameters are yet poorly known for irregular satellites. The observation of stellar occultations would allow for the determination of such parameters. Indeed Jupiter will cross the galactic plane in 2019-2020 and Saturn in 2018, improving a lot the chances of observing such events in the near future. Using the derived ephemerides and the UCAC4 catalogue we managed to identify \noccs candidate stellar occultations between January 2016 and December 2020 for the 9 satellites studied here. We discussed how the successful observation of a stellar occultation by these objects is possible and present some potential occultations.
 \end{abstract}
 
@@ -148,7 +148,7 @@ Our numerical model describes the dynamical evolution of the irregular satellite
 We use the following notations: \begin{itemize}
 \item \textbf{in one dynamical family consisting of $\mathcal{N}$ irregular satellites, $i$ will stand for the one whose equation of motion we are considering, $l$ will stand for another irregular satellite in gravitationnal interaction belonging to the same family}
 \item $J$ Jupiter
-\item $j$ another body of the Solar System, \textbf{among the 10 included (Sun+planets+Pluto+Moon)}
+\item \textbf{$j$ another body of the Solar System, among the galilean satellites, the Sun, the planets, Pluto and the Moon (14 bodies)}
 \item $M_j$ the mass of the $j$-th body, not an irregular satellite
 \item $m_i$ the mass of the irregular satellite $i$
 \item $\vec{r_i}$ the position of the $i$-th body with respect \textbf{to the center of Jupiter}
@@ -165,11 +165,10 @@ For an irregular satellite $i$, under the gravitational influence of Jupiter, th
 \begin{array}{ll}
 
 \ddot{\vec{r_i}}= & \displaystyle -GM_J\frac{\vec{r_J}-\vec{r_i}}{r_{iJ}^3}-\sum_{l=1,l\neq i}^\mathcal{N} Gm_l\frac{\vec{r_l}-\vec{r_i}}{r_{il}^3}\\
-&\displaystyle -\sum_{j=1}^{10}GM_j \left(\frac{\vec{r_j}-\vec{r_i}}{r_{ij}^3} - \frac{\vec{r_j}-\vec{r_J}}{r_{Jj}^3} \right)\\
+&\displaystyle -\sum_{j=1}^{14}GM_j \left(\frac{\vec{r_j}-\vec{r_i}}{r_{ij}^3} - \frac{\vec{r_j}-\vec{r_J}}{r_{Jj}^3} \right)\\
  & \displaystyle +GM_J \nabla U_{\bar{i}\hat{J}} -\sum_{l=1}^\mathcal{N} Gm_l\nabla U_{\bar{l}\hat{J}}
 \end{array}
 \end{equation}
-
 where the last term in brackets and the last term in Eq. \ref{Eq:eq1} represent undirect perturbations. The oblateness potential seen by \textbf{a satellite $i$ because of Jupiter is (with a similar expression for the oblateness seen by a satellite $l$)}:
 \begin{equation}\begin{array}{ll}
 
@@ -211,7 +210,7 @@ Ananke & 250 & 1996-2010 &  21683800  $\pm$ 7200  &     0.380 $\pm$ 0.002      &
 \end{flushleft}
 \end{table*}
 
-All the orbits determined for the satellites show satisfying residuals. The residuals are smaller than those obtained with JPL ephemeris, which was expected because the accuracy of an ephemeris decreases when we get further from the time of observations. The main risk of divergence over time comes from the possible absence of long-term effects when fitting to a short timespan of observations. If that was the case, our ephemeris would diverge too quickly to be of any use. JPL ephemerides are fitted over all the available observations. As a result, they will diverge less quickly than our own. Though they are not as much precise as required for the use, they remain a precious reference to identify whether our own model presents a quick divergence.
+\textbf{Some methods to derive the errors of the ephemeris of irregular satellites can be found in \cite{Emelyanov2010}. In the Natural Satellites Ephemeride Server MULTI-SAT \citep{Emelyanov2008} the precisions can be obtained for the satellites at any given time from the \cite{Emelyanov2005} ephemeris updated to February 19, 2012. For our case, instead of calculate the error, we chose to compare the residuals of the \citetalias{GomesJunior2015} positions with 3 different ephemeris.}
 
 We compared the STE ephemeris to the JPL for all the Jupiter satellites we fitted, until 2021. For instance, the divergence between 2015 and 2021 is at most 98 mas in $\Delta \alpha \cos \delta$ and 58 mas in $\Delta \delta$ for Himalia and 181 mas in $\Delta \alpha \cos \delta$ and 152 mas in $\Delta \delta$ for Carme.
 
@@ -247,6 +246,9 @@ Ananke & $-10\pm90$ & $3\pm73$ & $60\pm127$ & $-108\pm99$ & $101\pm180$ & $-107\
 \par \end{centering}
 \end{table*}
 
+\textbf{The residuals obtained with STE are smaller than those obtained with JPL ephemeris, which was expected because the accuracy of an ephemeris decreases when we get further from the time of observations. If the ephemeris is fitted over too-short a timespan of observations, the initial conditions (positions, velocities, masses) used in the model will not be good enough and the model will differ greatly from the observed position of the satellite when we will accumulate new observations. The ephemeris is then said to be diverging.
+%The main risk of divergence over time comes from the possible absence of long-term effects when fitting to a short timespan of observations. If that was the case, our ephemeris would diverge too quickly to be of any use.
+JPL ephemerides are fitted over all the available observations. As a result, they will diverge less quickly than our own. Though they are not as much precise as required for the use, they remain a precious reference to identify whether our own model presents a quick divergence.}
 
 
 \subsection{Phoebe's ephemeris}
@@ -344,7 +346,7 @@ Table \ref{Tab: sample-cds} shows a sample of the catalogue of predicted occulta
 \begin{tabular}{cccrcccrcrr}
 \hline
 \hline
-d m Year~~~~h~~m~~~s & RA~~~(ICRS)~~~Dec & C/A & P/A & $\nu$ & {\it D} & $R^*$ & $\lambda$ & LST & $\mu_{\alpha*}$ & $\mu_{\delta}$ \tabularnewline
+d m Year~~~~h~~m~~~s & RA~~~(ICRS)~~~Dec & C/A & P/A & $\nu$ &{\it D} & $R^*$ & $\lambda$ & LST & $\mu_{\alpha*}$ & $\mu_{\delta}$ \tabularnewline
 \hline
 % & \multicolumn{2}{c}{Mean errors} & Nr & Nr &  UCAC4       \tabularnewline
 09 04 2016 03:58:19. & 11 14 36.7707 +07 39 20.7610 & 1.003 &  17.9 & -12.88 &  4.54 & 14.9 & 271. & 22:03 &  12. & -33. \tabularnewline 
@@ -358,7 +360,7 @@ d m Year~~~~h~~m~~~s & RA~~~(ICRS)~~~Dec & C/A & P/A & $\nu$ & {\it D} & $R^*$ &
 \end{tabular}
 \end{center}
 \begin{flushleft}
-\textbf{Notes}. Entries included: day of the year and UTC time of the prediction; right ascension and declination of the occulted star - at the central instant of occultation (corrected by proper motions); C/A: the geocentric closest approach, in arcseconds; P/A: the satellite position angle with respect to the occulted star at C/A, in degrees (zero at north of the star, increasing clockwise); $\nu$: velocity in the plane of sky, in km s$^{-1}$: positive = prograde, negative = retrograde; {\it D}: planet range to Earth, in AU; $R^*$: normalized magnitude to a common shadow velocity of 20 km s$^{-1}$ by the relationship $\textrm{R}^* = \textrm{R}_{\textrm{actual}} + 2.5 \times \log 10 \left(\frac{\textrm{velocity}} {20 \textrm{km}\, \textrm{s}^{-1}} \right)$; $\lambda$: east longitude of subplanet point in degrees, positive towards east; LST: UT + $\lambda$: local solar time at subplanet point, hh:mm; $\mu_{\alpha *}$ and $\mu_{\delta}$: proper motions in right ascension and declination, respectively (mas/year).
+\textbf{Notes}. Entries included: day of the year and UTC time of the prediction; right ascension and declination of the occulted star - \textbf{at the instant of the occultation} (corrected by proper motions); C/A: textbf{apparent geocentric distance between the satellite and the star (a.k.a. the distance between the shadow and the center of the Earth) at the moment of the geocentric closest approach}, in arcseconds; P/A: the satellite position angle with respect to the occulted star at C/A, in degrees (zero at north of the star, increasing clockwise); $\nu$: \textbf{relative velocity of event in km s$^{-1}$}: positive = prograde, negative = retrograde; {\it D}: \textbf{Geocentric distance to the occulting object in AU}; $R^*$: normalized \textbf{UCAC4 magnitude in the R-band} to a common shadow velocity of 20 km s$^{-1}$ by the relationship $\textrm{R}^* = \textrm{R}_{\textrm{actual}} + 2.5 \times \log 10 \left(\frac{\textrm{velocity}} {20 \textrm{km}\, \textrm{s}^{-1}} \right)$, \textbf{the value 20 km s$^{-1}$ is typical of events around the opposition}; $\lambda$: east longitude of subplanet point in degrees, positive towards east, \textbf{at the instant of the geocentric closest approach}; LST: UT + $\lambda$: local solar time at subplanet point, hh:mm; $\mu_{\alpha *}$ and $\mu_{\delta}$: proper motions in right ascension and declination, respectively (mas/year).
 \end{flushleft}
 \end{table*}
 
@@ -367,7 +369,7 @@ d m Year~~~~h~~m~~~s & RA~~~(ICRS)~~~Dec & C/A & P/A & $\nu$ & {\it D} & $R^*$ &
 \includegraphics[width = 8.8cm]{figures/Elara_2017-02-21T15:28:40.png}   
 \caption{Occultation map for Elara. % regarding to the first event sampled in Table \ref{Tab: occ-list}.
 The central red dot shows the geocentric closest approach of the shadow. The small ones show the center of the shadow separated by 60s. The lines show the path of the shadow over the Earth. The shadow moves from right to left.
-\textbf{Labels:} Diam: Diameter of the object; Tmax: Maximum duration of the event for\textbf{ a observation in the center of the shadow}; C/A: \textbf{apparent geocentric distance between the satellite and the star (a.k.a. the distance between the shadow and the center of the Earth) at the moment of the geocentric closest approach}, in arcseconds; P/A: the satellite position angle with respect to the occulted star at C/A, in degrees; vel: \textbf{relative} velocity of event in km/s; Delta: Geocentric distance to the occulting object in AU; $R^*$: normalized \textbf{UCAC4 magnitude in the R-band} to a common shadow velocity of 20 km s$^{-1}$; long: east longitude of subplanet point in degrees, positive towards east, \textbf{at the instant of the geocentric closest approach}.}
+\textbf{Labels:} Diam: Diameter of the object; Tmax: Maximum duration of the event for\textbf{ a observation in the center of the shadow}; C/A: \textbf{apparent geocentric distance between the satellite and the star (a.k.a. the distance between the shadow and the center of the Earth) at the moment of the geocentric closest approach}, in arcseconds; P/A: the satellite position angle with respect to the occulted star at C/A, in degrees; $\nu$: \textbf{relative} velocity of event in km/s; {\it D}: Geocentric distance to the occulting object in AU; $R^*$: normalized \textbf{UCAC4 magnitude in the R-band} to a common shadow velocity of 20 km s$^{-1}$; $\lambda$: east longitude of subplanet point in degrees, positive towards east, \textbf{at the instant of the geocentric closest approach}.}
 \label{Fig: ocultacao}
 \end{centering}
 \end{figure}
@@ -393,7 +395,7 @@ We tested the occultation by Himalia predicted to occur on March 3, 2015. The sh
 
 Table \ref{Tab: comparison-Himalia} shows the differences between the predictions in the four situations. For situation \ref{item3} we observed the objects on February 22 with the Zeiss telescope (diameter = 0.6m; FOV = $12\farcm6$; pixel scale = $0\farcs37 / pixel$) at the Observatório do Pico dos Dias, Brazil (OPD, IAU code 874, 45\degr 34\arcmin 57\arcsec W, 22\degr 32\arcmin 04\arcsec S, 1864m). On that day, Himalia and the star were observed in separate FOVs as they were still far apart. On the night of the event, March 3, the objects were observed with Perkin-Elmer telescope (diameter = 1.6m; FOV = $5\farcm8$; pixel scale = $0\farcs17 / pixel$) at OPD just over an hour after the time scheduled for the event. Satellite and star were separated by about 16 arcsec, so very close to each other (situation \ref{item4}). From the calculated offsets, the center of the shadow was obtained. Notice that the shadow path was not predicted to cross the OPD (which was located at almost 2000 km south from the shadow path). This was not necessary for testing the prediction.
 
-The critical parameter in the comparisons is the C/A, which here is related to latitudes. The apparent radius of Himalia is about 20 mas (see Table 1). In the context of the test, for a 0 mas offset in C/A we would have 100\% probability of observing the occultation, and 0\% in the case of a C/A offset equal to or larger than 20 mas, the radius of Himalia. From Table 5, we have nearly 0\% probability of success in situation \ref{item3}, for which the offset in C/A was -20 mas, but when the relative astrometry was poor, 10 days prior to the event. Once at the day of the event in situation \ref{item4}, the C/A offset dropped to -9 mas only, corresponding to a 55\% probability of success. Comparison with the prediction using the JPL ephemeris (situation \ref{item2}) gives a +11 mas C/A offset, or a compatibility of 45\% between the ephemerides. All this suggests that there was a good probability of observing the event. The largest differences between the shadows of the four situations were 36s in time along the shadow path and 101km (31 mas) in the direction perpendicular to the shadows, suggesting that observers should be spread in narrow latitude ranges 100 km wide.
+The critical parameter in the comparisons is the C/A, which here is related to latitudes. The apparent radius of Himalia is about 20 mas (see Table 1). In the context of the test, for a 0 mas offset in C/A we would have 100\% probability of observing the occultation, and 0\% in the case of a C/A offset equal to or larger than 20 mas, the radius of Himalia. From Table \ref{Tab: comparison-Himalia}, we have nearly 0\% probability of success in situation \ref{item3}, for which the offset in C/A was -20 mas, but when the relative astrometry was poor, 10 days prior to the event. Once at the day of the event in situation \ref{item4}, the C/A offset dropped to -9 mas only, corresponding to a 55\% probability of success. Comparison with the prediction using the JPL ephemeris (situation \ref{item2}) gives a +11 mas C/A offset, or a compatibility of 45\% between the ephemerides. All this suggests that there was a good probability of observing the event. The largest differences between the shadows of the four situations were 36s in time along the shadow path and 101km (31 mas) in the direction perpendicular to the shadows, suggesting that observers should be spread in narrow latitude ranges 100 km wide.
 
 \begin{table}
 \caption{\label{Tab: comparison-Himalia} Comparison between the predictions of the Himalia occultation at March 03, 2015.}
@@ -417,7 +419,7 @@ C/A: geocentric closest approach; Sit: Situation test considered.
 
 We performed new numerical integration for improving the orbits of some of the larger irregular satellites. Consequently, with \textbf{our} ephemeris, we predicted stellar occultations aiming to access fundamental parameters like size, shape, albedo, ultimately aiming to track the formation origin of these bodies.
 
-For the irregular satellites of Jupiter (Ananke, Carme, Elara, Himalia, Leda, Lysithea, Pasiphae and Sinope), we produced ephemeris using only the observations of \citetalias{GomesJunior2015}. \textcolor{red}{The systematic errors found in the JPL ephemeris \citep{Jacobson2012} and \cite{Emelyanov2005} were improved.} These new ephemerides are denominated Special-Tailored Ephemeris.
+For the irregular satellites of Jupiter (Ananke, Carme, Elara, Himalia, Leda, Lysithea, Pasiphae and Sinope), we produced ephemeris using only the observations of \citetalias{GomesJunior2015}. These new ephemerides are denominated Special-Tailored Ephemeris.
 
 We also updated the ephemeris of Phoebe \citep{Desmars2013} using the observations of \citetalias{GomesJunior2015}, \cite{Peng2015}, observations from  MPC and from Flagstaff. A total of 5886 observations between 1989 and 2014 were used in the process. This represents and increase of about 75\% in the number used to generate the ephemeris of Phoebe in \cite{Desmars2013}.
 
@@ -444,7 +446,7 @@ RV-M thanks grants: CNPq-306885/2013, Capes/Cofecub-2506/2015, Faperj/PAPDRJ-45/
 JIBC acknowledges CNPq for a PQ2 fellowship (process number 308489/2013-6).
 BEM thanks the financial support of CAPES.
 FB-R acknowledges PAPDRJ-FAPERJ/CAPES E-43/2013 number 144997, E-26/101.375/2014.
-The numerical model of the satellites of Jupiter was developped during a post-doctoral contract funded by the Chinese Academy of Sciences (CAS) and supported by the National Scientific Fund of China (NSFC).
+The numerical model of the satellites of Jupiter was developped during a post-doctoral contract funded by the Chinese Academy of Sciences (CAS) and supported by the National Scientific Fund of China (NSFC). \textbf{The authors thank Dr. Nikolay Emelyanov for his comments to improve the paper.}
 
 
 \bibliographystyle{mn2e}

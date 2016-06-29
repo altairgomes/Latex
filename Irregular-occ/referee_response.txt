@@ -20,7 +20,7 @@ But recent observations show differences from current ephemeris that are large e
 With this in mind, we decided to create new ephemeris based only in recent observations for the near future.
 The use of only the GJ15 positions was due to the trust we have on this observations for a fast numerical integration.
 The creation of a complete orbit using all the observations available was not the scope of this work.
-But we plan to do these work soon and then update our predictions.
+But we plan to do these work and then update our predictions.
 We see that the title of the paper may confuse the reader.
 So we decided to change the title to show that the ephemeris has a specific purpose.
 
@@ -37,7 +37,9 @@ The ephemerides based on an extended set of observations are more precise as obs
 "The procedures allow for the improvement of orbits as recent observations are added"
 is not correct and must be excluded.
 
-AUTHORS:
+AUTHORS: I don't understand why it is not correct.
+Even if we have worse ephemeris, once new observations are added to the database the number of observations and time-span would increase.
+This, accordingly to your own statements, should improved the orbits.
 
 
 REVIEWER:     The authors write in the manuscript that
@@ -75,8 +77,7 @@ REVIEWER:    In Arstract the phrase
 "Based on this set of positions, we performed numerical integrations ..."
 is not correct. Not the numerical integrations is based on this set of positions but the fit of the initial conditions (obital parameters). Please fix it.
 
-    
-AUTHORS:
+AUTHORS: A modification to this statement was made.
 
 
 REVIEWER:    In Abstract the phrase
@@ -91,13 +92,14 @@ Long-term perturbations are usually neglected when an analytical theory is appli
 use any analytical theory but the numerical integration of the equations of motion where all necessary terms are included. Only a tidal dissipation can generate long-term effects. And being mentionned these effects must be evaluated.
 Please explain what do you mean.
 
-AUTHORS: LAURENE
+AUTHORS: The text was modified and the sentence was removed.
 
 
 REVIEWER: It is not clear what kind of divergence is in question in the lines 40-46 (page 3 left column).
 Please explain.
 
-AUTHORS: LAURENE
+AUTHORS: The text was modified and the divergence was explained.
+This is a divergence between the ephemeris and the real position of the satellite, which would mean an increase in the residuals, especially an increase in their mean value.
 
 
 REVIEWER: The statement
@@ -107,7 +109,7 @@ Furthermore, JPL ephemeris being based on the more large time interval may provi
 
 AUTHORS: Although JPL ephemeris are based on more large time interval observations, this does not mean a more accurate ephemeris.
 They may have a smaller internal error due to these large number of observations within a large time-span
-But as can be seen in GJ15, recent observations observed in different sites show large offsets from the JPL ephemeris for some satellites, in some cases bigger than 200 mas
+However, as can be seen in GJ15, recent observations observed in different sites show large offsets from the JPL ephemeris for some satellites, in some cases bigger than 200 mas
 This is not enough precise for our use since we need precisions in the order of the satellites' sizes.
 
 
@@ -129,12 +131,12 @@ Last update is on 19.02.2012.
     The authors should mention these circonstances in the article and note that they set aside this method and limited to see the observation residual deviations and comparisons of their ephemeris with the results of other authors.
 No conclusion that the STE are more precise can be made from these deviations and comparisons with other ephemeris.
 
-AUTHORS:
+AUTHORS: We did not exclude the paragraph cited but we update the Section 2.1 based on the comments above.
 
 
 REVIEWER: Please exclude anywhere in the article conclusions about the precision of your ephemeris of the irregular satellites of Jupiter. You do not evaluate the precision correctly.
 
-AUTHORS: 
+AUTHORS: The texts about precision were removed.
 
 
 REVIEWER: Citation Emel’yanov & Arlot (2008) for the ephemerides in question is not correct. In reality these ephemerides were described in the paper
@@ -156,7 +158,7 @@ REVIEWER:   Concerning the Table 3 it is clear (and it must be noted in the pape
 ephemeride (STE, Jacobson et al. (2012) and Emelyanov (2005).
 For correct comparison it must be the same planetary motion model.
 
-AUTHORS: The information about the planetary ephemeris was added to the text.
+AUTHORS: The information about the planetary ephemeris was added to the text. (See comment at the bottom of this report)
 
 
 REVIEWER:    After the conclusion in the lines 58-60 (page 3 left column)
@@ -174,7 +176,7 @@ REVIEWER:    Note that all these comments relate only to the STE and not to the 
 
 REVIEWER:   See line 36 on the page 2 right column. You point to the jovicentric reference frame. In contrast, in the following notations (line 48 on the page 2 right column) the positions are with respect to the barycentre of Jupiter System. Please exclude this contradiction.
 
-AUTHORS: The contradiction was corrected.
+AUTHORS: The contradiction was corrected. (See comment at the bottom of this report)
 
 
 REVIEWER:See line 40 on the page 2 right column. The statement
@@ -190,7 +192,7 @@ AUTHORS: The statement was corrected.
 REVIEWER:    See line 42 on the page 2 right column and following lines.
 THe indices i, l and j denote the numbers of bodies and not the bodies themselves. Please fix it and explane correctly.
 
-AUTHORS: The explanation was added to the text
+AUTHORS: The explanation was added to the text. (See comment at the bottom of this report)
 
 
 REVIEWER: See line 55 on the page 2 right column. Phi_i is not the inclination of satellite (satellite can not have an inclination, it may be inclination of an orbit). In this case Phi_i is the latitude of the
@@ -206,7 +208,7 @@ What is the number of other bodies?
 What is the number of the Sun?
 Please fix it.
 
-AUTHORS: The  number N was explained.
+AUTHORS: The  number N was explained. (See comment at the bottom of this report)
 
 
 REVIEWER:The expression "the rest of the Solar System" is not convenient in this case. The rest of the Solar System includes many asteroids and satellites of other planets.
@@ -217,7 +219,7 @@ AUTHORS: The correct objects were described.
 
 REVIEWER:   Please specify what planets were taken into account. Do Mercure and Pluto be included?
 
-AUTHORS: The planets involved were specified.
+AUTHORS: The planets involved were specified. (See comment at the bottom of this report)
 
 
 REVIEWER: The equations (1) are not correctly written. In the third line what means the index "l" (also in the expression (2))?
@@ -225,25 +227,25 @@ Where is the index "i" in the third line of the equation (1)?
 In the expression (2) what is a link between the indexes "l" and "i"?
 Please revise the equations (1) and (2) and exclude all confusions.
 
-AUTHORS: The equations were revised and corrected.
+AUTHORS: The equations were revised and corrected. (See comment at the bottom of this report)
 
 
 REVIEWER: Please verify the caption in the Table 2
 "... with respect to the center of Jupiter".
 Is it not the barycenter of the jovian system?
 
-AUTHORS: LAURENE
+AUTHORS: with respect to the center of Jupiter (See comment at the bottom of this report)
 
 
 REVIEWER:    Please specify planetary theory was used to calculete the coordinates of the Sun and planets (DE431, INPOP10, ???).
 Reference?
 
-AUTHORS: The planetary theory was specified.
+AUTHORS: The planetary theory was specified. (See comment at the bottom of this report)
 
 
-REVIEWER:    Please specify how the coordinates of the Galilean satellites were calculated. With what model? theory? Reference?
+REVIEWER: Please specify how the coordinates of the Galilean satellites were calculated. With what model? theory? Reference?
 
-AUTHORS: The ephemeris used for the Galilean satellies and the respective reference was added to the text.
+AUTHORS: The ephemeris used for the Galilean satellies and the respective reference was added to the text. (See comment at the bottom of this report)
 
 
 REVIEWER: See line 28 on the page 3 left column. Please specify the order in the RADAU integrator used and specify the constant or automatic step.
@@ -295,7 +297,8 @@ is not clear at all. Please explain in the text what it is.
 In the expression "east longitude of subplanet point in degrees"
 please explain to what instant it relates.
 
-AUTHORS: 
+AUTHORS: These notations are standard and used in previous works such as Assafin et al. (2010,2012) and Camargo et al. (2013).
+So they'll be kepp as they are. But to avoid confusion, more explanations were added to the label of Table 5 and Fig. 4.
 
 
 REVIEWER: Section 4. Discussion. First paragraphe. Plase replace
@@ -340,6 +343,30 @@ ephemeris service MULTI-SAT (Emel’yanov & Arlot, 2008)
 to include their ephemeris to the server. This will really evaluate the ephemeris and enable colleagues to profit advantage of new achievement. To do this, of course, the satellite positions must be developed in
 expansions in Chebyshev polynomials.
 
-AUTHORS: The managers of the MULTI-SAT system are being contacted to include our ephemeris to the server.
+AUTHORS: Concerning the possibility to make STE available to the public, the authors of this article are a bit reserved on the matter, and I (LB) do not think it would be a good idea.
+Our ephemeris has been built to predict occultations on a rather short-term basis, with observations whose quality and astrometric reduction are best known by the people from Rio.
+It is more a tool to predict observations than a solidly built ephemeris.
+As you said, not using all the available observations lessens considerably the scientific interest of this product, and it is certainly useful for the rest of the community.
+A complete integration and fitting of the irregular satellites is still in progress with my model, but it is a rather long process, and we needed a quick, easily adaptable ephemeris for stellar occultation.
+As you probably know, occultation prediction uses many observations just before said occultations, and so we need to be able to update our ephemeris rather quickly. With only our observations, it is a matter of a few hours.
+With all the available observations, it is rather a matter of days, and that is true only when we know exactly what really needs to be in the model or not (like, including all the satellites at the same time, integrating by dynamical family...).
+These are the motivations for creating STE, which, as its name suggest, is specialy tailored to our use of it.
+The extensive presentation of this ephemeris is more to convince the reader that our occultations predictions are sound rather than to insist on it's value for general scientific purpose.
+
+Concerning the PH15 ephemeris, the managers of the MULTI-SAT system are being contacted to include this ephemeris to the server.
+
+
+AUTHORS: I (Laurène Beauvalet) thank the referee for his attention in the reviewing and for pointing the errors that appeared while writing the tex equations.
+I did most of the corrections he suggested since they were indeed errors on my part, or may have lead to confusion for the reader.
+Contradictions between jovicentric or barycentric have been removed, everything is expressed with respect to the center of Jupiter
+(which is why undirect interactions appear in the equation of motion since we are not in a galilean reference frame).
+I also added the references to the theories used for the planets and the galileans satellites. 
+
+Concerning the use of indices, I used a rather common way of writing equations of motions, and "i" or "l" are indices for satellites of Jupiter.
+This is the way I have seen most descriptions of dynamical models describe the equations of motion they use, see Lainey 2004 or Peters 1981 for example.
+To try to make it clearer for the reader, I have put more details in the description of the model and suppressed the N number, which was just the number of bodies of big objects in the Solar System+galilean satellites taken into account.
+Now N designates the number of irregular satellites in a dynamical family, and "l" designates one of those satellite, different form i. 
+I hope that the corrections make the model clearer. If not, please do not hesitate to contact me, the author responsible for this part, Laurene Beauvalet (laurene.beauvalet@obspm.fr),
+I would gladly discuss how to improve this part of the article. 
 
 
