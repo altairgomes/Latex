@@ -264,7 +264,7 @@ AUTHORS: The footnote was replaced by the citation
 REVIEWER: See line 47 on the page 3 right column. Please explain what means "in angular separation of Saturn"
 or use other term. From what Saturn is separated?
 
-AUTHORS: The term "in angular separation of Saturn" was replaced by "on-sky Phoebe-Saturn angular separation "
+AUTHORS: An explanation was added to the text.
 
 
 REVIEWER: See footnote 3 on the page 3 right column, also caption in Figure 3.
@@ -273,7 +273,7 @@ The expressions "precision in angular separation",
 not clear. How defined this "precision" is?
 Really it may not be precision but deviation. Please explain or replace this term.
 
-AUTHORS: JOSSELIN
+AUTHORS: An explanation was added to the text
 
 
 REVIEWER: See line 54 on the page 4 right column. Please explain what is "magR" or express the idea otherwise.

@@ -265,7 +265,11 @@ In Fig. \ref{Fig:eph-Phoebe} we compare our ephemeris (PH15) with the sat375 JPL
 \end{centering}
 \end{figure}
 
-We computed the precision of the PH15 ephemeris considering three sets of observations: all the positions available; only the positions of \citetalias{GomesJunior2015}; and all the positions without \citetalias{GomesJunior2015}. In Fig. \ref{Fig:err-Phoebe} we show the comparison between them for the time span 2016-2021 in on-sky Phoebe-Saturn angular separation\footnote{\label{ft-angsep}The precision in angular separation is computed  by $\sigma_s = \sqrt{\sigma^2_{\alpha} \cos^2 \delta + \sigma^2_{\delta}}$ where $\sigma_{\alpha}$ and $\sigma_{\delta}$ are the precision in right ascension and declination.}. It is possible to see that even considering only the positions of \citetalias{GomesJunior2015}, the estimated error of the ephemeris is smaller than 12 mas. The computed precision does not take into account the precision in the position of Saturn.
+We computed the precision of the PH15 ephemeris considering three sets of observations: all the positions available; only the positions of \citetalias{GomesJunior2015}; and all the positions without \citetalias{GomesJunior2015}.
+\textbf{The precision is computed by propagation of the covariance matrix of the orbit determination process and by linear transformations giving the covariance matrix in spherical coordinates (right ascension and declination) at a specific date \citep[for more details, see][]{Desmars2013a}. This last matrix then provides the standard deviation in right ascension $\sigma_\alpha$ and declination  $\sigma_\delta$ at the required date and finally, $\sigma_s=\sqrt{\sigma^2_\alpha\cos^2\delta+\sigma^2_\delta}$ is considered as an estimation of the precision in angular separation on the celestial sphere (or the sky plane uncertainty).}
+
+
+In Fig. \ref{Fig:err-Phoebe} we show the comparison between them for the time span 2016-2021 in \textbf{on-sky Phoebe-Saturn angular separation}. It is possible to see that even considering only the positions of \citetalias{GomesJunior2015}, the estimated error of the ephemeris is smaller than 12 mas. The computed precision does not take into account the precision in the position of Saturn.
 
 \begin{figure}
 \begin{centering}
