@@ -17,14 +17,14 @@
 \usepackage[brazilian,english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{times}  %%% neede to embed font 1 text
+\usepackage{times}  %%% needed to embed font 1 text
 \usepackage{prettyref}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{epstopdf}
 \usepackage{color}
-\usepackage[breaklinks=true]{hyperref}  
+\usepackage[breaklinks=true, draft]{hyperref}  % draft because there is an error = 'pdfTeX error (ext4): \pdfendlink ended up in different nesting level than \pdfstartlink'.
 \usepackage{arydshln} % creates horizontal dashed lines in tables
 
 
@@ -32,7 +32,7 @@
 
 %%%%% AUTHORS - PLACE YOUR OWN MACROS HERE %%%%%
 
-\title[Orbits and predictions for occultations up to 2020]{New short-term orbits of irregular satellites in order to predict stellar occultations up to 2020}
+\title[Orbits and predictions for occultations up to 2020]{New orbits of irregular satellites designed for the predictions of stellar occultations up to 2020, based on thousands of new observations}
 %\title[Orbits and predictions for occultations up to 2020]{New orbits of irregular satellites based on thousands of new observations and predictions for stellar occultations up to 2020}
 \author[A. R. Gomes-J\'unior, M. Assafin, L. Beauvalet et al.]{A. R. Gomes-J\'unior$^{1}$\thanks{E-mail: altair08@astro.ufrj.br},
 M. Assafin$^{1,\dag}$,
@@ -49,7 +49,8 @@ $^{2}$Observat\'orio Nacional/MCTI, R. General Jos\'e Cristino 77, CEP 20921-400
 $^{3}$Observatoire de Paris/SYRTE, 77 Avenue Denfert Rochereau 75014 Paris, France\\
 $^{4}$Institut de m\'ecanique c\'eleste et de calcul des \'eph\'em\'erides - Observatoire de Paris, UMR 8028 du CNRS, 77 Av. Denfert-Rochereau,\\ 75014 Paris, France\\
 $^{5}$Laborat\'orio Interinstitucional de e-Astronomia - LIneA, Rua Gal. Jos\'e Cristino 77, Rio de Janeiro, RJ 20921-400, Brazil\\
-$^{6}$Federal University of Technology - Paran\'a (UTFPR / DAFIS), Rua Sete de Setembro, 3165, CEP 80230-901, Curitiba, PR, Brazil
+$^{6}$Federal University of Technology - Paran\'a (UTFPR / DAFIS), Rua Sete de Setembro, 3165, CEP 80230-901, Curitiba, PR, Brazil\\
+$^\dag$Affiliated researcher at Observatoire de Paris/IMCCE, 77 Avenue Denfert Rochereau 75014 Paris, France
 }
 \begin{document}
 \newcommand{\noccs}{5442 } % total number of occultations
@@ -137,18 +138,18 @@ In section \ref{Sec: integration}, we present the new determination of the orbit
 
 Here we compute new orbits based on the observations published in \citetalias{GomesJunior2015}. First, because the reduction was made with a consistent and precise stellar catalogue and with a robust astrometry \citep[PRAIA,][]{Assafin2011}. Second, besides recent observations, this consistent set of numerous and precise positions covers many orbital periods at many distinct orbital plane sights, allowing to fully constrain the orbit for the short time span explored in this work. For these reasons, only this set of positions was used for the satellites of Jupiter.
 
-Due to the context of this work regarding to stellar occultations, the orbit fitting procedures used aimed primarily to derive precise ephemerides for the near future. The procedures allow for the improvement of orbits as recent observations are added.
+Due to the context of this work regarding to stellar occultations, the orbit fitting procedures used aimed primarily to derive precise ephemerides for the near future. Technically, the procedures easily allow for the continuous addition of more observations (old, new) aiming at refining the orbit fits.
 
 \subsection{Special-Tailored Ephemerides (STE) for Jupiter irregular satellites}
 
 The last observations used to develop current JPL ephemeris of the irregular satellites of Jupiter were obtained in 2012 \citep{Jacobson2012}. As a result, the errors in the JPL ephemeris for the current epoch may be probably too large to prevent accurate predictions of stellar occultations without any corrections.
 
-Our numerical model describes the dynamical evolution of the irregular satellites of Jupiter in a jovicentric reference frame. The satellites are submitted to the influence of the Sun and the \textbf{main bodies of the solar system (from Mercury to Pluto, plus the Moon)}, as well as those of the Galilean satellites and the first harmonics of Jupiter's gravity field. The axis of the reference frame are \textbf{expected to be those of the equatorial reference frame J2000}.
+Our numerical model describes the dynamical evolution of the irregular satellites of Jupiter in a jovicentric reference frame. The satellites are submitted to the influence of the Sun and the \textbf{main bodies of the solar system (from Mercury to Pluto, plus the Moon)}, as well as those of the Galilean satellites and the first harmonics of Jupiter's gravity field. The axes of the reference frame are \textbf{expected to be those of the ICRS}.
 
 We use the following notations: \begin{itemize}
-\item \textbf{in one dynamical family consisting of $\mathcal{N}$ irregular satellites, $i$ will stand for the one whose equation of motion we are considering, $l$ will stand for another irregular satellite in gravitationnal interaction belonging to the same family}
+\item \textbf{in one dynamical family consisting of $\mathcal{N}$ irregular satellites, $i$ will stand for the one whose equation of motion we are considering, $l$ will stand for another irregular satellite in gravitational interaction belonging to the same family}
 \item $J$ Jupiter
-\item \textbf{$j$ another body of the Solar System, among the galilean satellites, the Sun, the planets, Pluto and the Moon (14 bodies)}
+\item \textbf{$j$ another body of the Solar System, among the Galilean satellites, the Sun, the planets, Pluto and the Moon (14 bodies)}
 \item $M_j$ the mass of the $j$-th body, not an irregular satellite
 \item $m_i$ the mass of the irregular satellite $i$
 \item $\vec{r_i}$ the position of the $i$-th body with respect \textbf{to the center of Jupiter}
@@ -183,7 +184,7 @@ U_{\bar{i}\hat{J}}=&\displaystyle -\frac{R_J^2 J_2}{r_{iJ}^3}\left(\frac{3}{2}\s
 \textbf{The expressions of $\nabla U$ have been developed in \cite{Lainey2004}}. \textbf{The equations of motion are integrated with the 15th order numerical integrator RADAU \citep{Everhart1985} using a constant step of one day}. \textbf{The positions of the objects of the solar system are provided by the DE423 ephemeris \citep{Folkner2010}, while those of the galilean satellites are provided by NOE2010 \citep{Lainey2004}}.
 Our model was fitted to the observations through a least-squares procedure. The satellites were integrated one dynamical family at a time, to gain computing time, while losing minimum precision. Indeed, the interactions between satellites not belonging to the same dynamical family are negligible considering the short timespan of our integration. 
 
-The obtained ephemeris is hereafter refered as STE, for Special-Tailored Ephemeris. The initial osculating elements at the origin of integration, \textbf{the number of observations used and the time-span where these observations are distributed} are presented in Table \ref{Tab: sat_ell}.
+The obtained ephemeris is hereafter referred to as STE, for Special-Tailored Ephemeris. The initial osculating elements at the origin of integration, \textbf{the number and time span of the observations of each satellite} are presented in Table \ref{Tab: sat_ell}.
 
 \begin{table*}
 \caption{Initial osculating elements for Jupiter irregular satellites at JD 2451545.0 with respect to the center of Jupiter.
@@ -210,19 +211,18 @@ Ananke & 250 & 1996-2010 &  21683800  $\pm$ 7200  &     0.380 $\pm$ 0.002      &
 \end{flushleft}
 \end{table*}
 
-\textbf{Some methods to derive the errors of the ephemeris of irregular satellites can be found in \cite{Emelyanov2010}. In the Natural Satellites Ephemeride Server MULTI-SAT \citep{Emelyanov2008} the precisions can be obtained for the satellites at any given time from the \cite{Emelyanov2005} ephemeris updated to February 19, 2012. For our case, instead of calculate the error, we chose to compare the residuals of the \citetalias{GomesJunior2015} positions with 3 different ephemeris.}
+\textbf{Some methods to derive the errors of the ephemeris of irregular satellites can be found in \cite{Emelyanov2010}. In the Natural Satellites Ephemeride Server MULTI-SAT \citep{Emelyanov2008} the precisions can be obtained for the satellites at any given time from the \cite{Emelyanov2005} ephemeris updated to February 19, 2012. However, since the practical realization of the STE ephemeris is for help improving the prediction of stellar occultations by the irregular satellites in the immediate future, it is interesting to compare the STE with the other relevant ephemerides for the next few years.}
 
-We compared the STE ephemeris to the JPL for all the Jupiter satellites we fitted, until 2021. For instance, the divergence between 2015 and 2021 is at most 98 mas in $\Delta \alpha \cos \delta$ and 58 mas in $\Delta \delta$ for Himalia and 181 mas in $\Delta \alpha \cos \delta$ and 152 mas in $\Delta \delta$ for Carme.
+We compared the STE ephemeris to the JPL for all the Jupiter satellites we fitted, until 2021. For instance, the \textbf{maximum difference} between 2015 and 2021 is at most 98 mas in $\Delta \alpha \cos \delta$ and 58 mas in $\Delta \delta$ for Himalia and 181 mas in $\Delta \alpha \cos \delta$ and 152 mas in $\Delta \delta$ for Carme.
 
 Fig. \ref{Fig: JPL-STE} displays the offsets of the positions published by \citetalias{GomesJunior2015} for the satellite Carme in declination relative to the STE ephemeris, to \cite{Jacobson2012} jup300 JPL ephemeris and \cite{Emelyanov2005}\footnote{\textbf{Last update: February 19, 2012}} ephemeris. \textbf{The DE431 planetary ephemeris \citep{Folkner2014} was used to calculate the positions of Jupiter for the 3 models}. We see that the systematic JPL ephemeris offsets pointed out by \citetalias{GomesJunior2015} are reduced with our ephemeris, as expected.
 
 \begin{figure}
 \includegraphics[width=8.8cm]{figures/Carme_ephemeris.eps}
-\caption{Offsets in declination of the positions published by \protect\citetalias{GomesJunior2015} for Carme. The red "x" relative to the special-tailored ephemeris \textbf{(rms = 51)}, the blue "+" relative to the jup300 JPL ephemeris \textbf{(rms = 130)} and the green dot relative to \protect\cite{Emelyanov2005} \textbf{(rms = 92)}. As expected, the ephemeris systematic errors pointed out by \protect\citetalias{GomesJunior2015} are reduced with the STE ephemeris. \label{Fig: JPL-STE}}
+\caption{Offsets in declination of the positions published by \protect\citetalias{GomesJunior2015} for Carme. The red "x" relate to the special-tailored ephemeris \textbf{(rms = 51)}, the blue "+" to the jup300 JPL ephemeris \textbf{(rms = 130)} and the green dot to \protect\cite{Emelyanov2005} \textbf{(rms = 92)}. As expected, the ephemeris \textbf{offsets} pointed out by \protect\citetalias{GomesJunior2015} are reduced with the STE ephemeris. \label{Fig: JPL-STE}}
 \end{figure}
 
-In Table \ref{Tab:STE-error} it is presented the mean offsets and the respective standard deviation of the \citetalias{GomesJunior2015} positions relative to the same 3 ephemeris as above. We can see that the mean offsets as well as most of their standard deviations are greatly reduced with the STE ephemeris. \textbf{It is obvious because the STE were based on the same observations with which they are compared. In contrast, two other ephemeris
-were based on different sets of observations.}
+In Table \ref{Tab:STE-error} we present the mean offsets and the respective standard deviation of the \citetalias{GomesJunior2015} positions relative to the same 3 ephemeris as above. We can see that the mean offsets as well as most of their standard deviations are greatly reduced with the STE ephemeris. \textbf{Of course, by construction, we should expect smaller offsets in the comparison of \citetalias{GomesJunior2015} positions with STE. However, it is not obvious that these offsets should be that smaller in comparison with the other ephemeris offsets. Notice that the \citetalias{GomesJunior2015} positions come from observations made with very distinct instruments at distant sites located at both Earth hemispheres (good parallax angle coverage), making this set of positions not remarkably distinct than any set of positions that were used in the construction of the other two ephemeris. Thus, these ephemeris offsets comparisons suggest that the accuracy of the STE ephemeris is at least slightly better than that of the other ephemeris, at least for the time span of our satellites' observations. This supports the utility of the STE ephemeris for the next few years, making it one of the best choices to use in stellar occultation predictions in the short future for these satellites.}
 
 \begin{table*}
 \caption{\label{Tab:STE-error} Mean offsets and standard deviation of the \protect\citetalias{GomesJunior2015} positions relative to the STE, \protect\cite{Jacobson2012} and \protect\cite{Emelyanov2005} ephemeris .}
@@ -246,9 +246,9 @@ Ananke & $-10\pm90$ & $3\pm73$ & $60\pm127$ & $-108\pm99$ & $101\pm180$ & $-107\
 \par \end{centering}
 \end{table*}
 
-\textbf{The residuals obtained with STE are smaller than those obtained with JPL ephemeris, which was expected because the accuracy of an ephemeris decreases when we get further from the time of observations. If the ephemeris is fitted over too-short a timespan of observations, the initial conditions (positions, velocities, masses) used in the model will not be good enough and the model will differ greatly from the observed position of the satellite when we will accumulate new observations. The ephemeris is then said to be diverging.
+%\textbf{The residuals obtained with STE are smaller than those obtained with JPL ephemeris, which was expected because the accuracy of an ephemeris decreases when we get further from the time of observations. If the ephemeris is fitted over too-short a timespan of observations, the initial conditions (positions, velocities, masses) used in the model will not be good enough and the model will differ greatly from the observed position of the satellite when we will accumulate new observations. The ephemeris is then said to be diverging.
 %The main risk of divergence over time comes from the possible absence of long-term effects when fitting to a short timespan of observations. If that was the case, our ephemeris would diverge too quickly to be of any use.
-JPL ephemerides are fitted over all the available observations. As a result, they will diverge less quickly than our own. Though they are not as much precise as required for the use, they remain a precious reference to identify whether our own model presents a quick divergence.}
+%JPL ephemerides are fitted over all the available observations. As a result, they will diverge less quickly than our own. Though they are not as much precise as required for the use, they remain a precious reference to identify whether our own model presents a quick divergence.}
 
 
 \subsection{Phoebe's ephemeris}
@@ -266,7 +266,7 @@ In Fig. \ref{Fig:eph-Phoebe} we compare our ephemeris (PH15) with the sat375 JPL
 \end{figure}
 
 We computed the precision of the PH15 ephemeris considering three sets of observations: all the positions available; only the positions of \citetalias{GomesJunior2015}; and all the positions without \citetalias{GomesJunior2015}.
-\textbf{The precision is computed by propagation of the covariance matrix of the orbit determination process and by linear transformations giving the covariance matrix in spherical coordinates (right ascension and declination) at a specific date \citep[for more details, see][]{Desmars2013a}. This last matrix then provides the standard deviation in right ascension $\sigma_\alpha$ and declination  $\sigma_\delta$ at the required date and finally, $\sigma_s=\sqrt{\sigma^2_\alpha\cos^2\delta+\sigma^2_\delta}$ is considered as an estimation of the precision in angular separation on the celestial sphere (or the sky plane uncertainty).}
+\textbf{The precision is computed by propagation of the covariance matrix of the orbit determination process and by linear transformations giving the covariance matrix in spherical coordinates (right ascension and declination) at a specific date \citep[for more details, see][]{Desmars2013a}. This last matrix then provides the standard deviation in right ascension $\sigma_\alpha$ and declination  $\sigma_\delta$ at the required date, with $\sigma_s=\sqrt{\sigma^2_\alpha\cos^2\delta+\sigma^2_\delta}$ being the total error in the celestial sphere.}
 
 
 In Fig. \ref{Fig:err-Phoebe} we show the comparison between them for the time span 2016-2021 in \textbf{on-sky Phoebe-Saturn angular separation}. It is possible to see that even considering only the positions of \citetalias{GomesJunior2015}, the estimated error of the ephemeris is smaller than 12 mas. The computed precision does not take into account the precision in the position of Saturn.
@@ -274,7 +274,7 @@ In Fig. \ref{Fig:err-Phoebe} we show the comparison between them for the time sp
 \begin{figure}
 \begin{centering}
 \includegraphics[width=8.8cm]{figures/PH15_err_angsep.eps}  
-\caption{Comparison of the precision in on-sky Phoebe-Saturn angular separation\textsuperscript{\ref{ft-angsep}} for the PH15 ephemeris where three different sets of positions were used to compute the ephemeris: all observations; only positions of \citetalias{GomesJunior2015}; and all the positions without \citetalias{GomesJunior2015}.}
+\caption{Comparison of the precision in on-sky Phoebe-Saturn angular separation for the PH15 ephemeris where three different sets of positions were used to compute the ephemeris: all observations; only positions of \citetalias{GomesJunior2015}; and all the positions without \citetalias{GomesJunior2015}.}
 \label{Fig:err-Phoebe}
 \end{centering}
 \end{figure}
@@ -314,7 +314,7 @@ The prediction of the occultations was made by crossing the stellar coordinates 
 
 We predicted occultations for the 8 major irregular satellites of Jupiter,  Ananke, Carme, Elara, Himalia, Leda, Lysithea, Pasiphae and Sinope, and for Phoebe of Saturn.
 
-A total of \noccs events were identified between January 2016 and December 2020. In Table \ref{Tab: satellite-occultation} we present the number of stellar occultations predicted by year for each satellite. It is possible to see an increase in the number of events found for Phoebe in 2018 and for the satellites of Jupiter in 2019-2020. This is because at that periods these satellites will cross the apparent galactic plane. We call attention that about 10\% of the events will involve stars brighter than magR=14  (and almost 25\% brighter than magR=15), \textbf{where magR stands for the UCAC4 magnitude in the R-band}, which helps the attempt of amateur observers.
+A total of \noccs events were identified between January 2016 and December 2020. In Table \ref{Tab: satellite-occultation} we present the number of stellar occultations predicted by year for each satellite. It is possible to see an increase in the number of events found for Phoebe in 2018 and for the satellites of Jupiter in 2019-2020. This is because at that periods these satellites will cross the apparent galactic plane. We call attention that about 10\% of the events will involve stars brighter than \textbf{magnitude R=14}  (and almost 25\% brighter than R=15), which helps the attempt of amateur observers.
 
 \begin{table}
 \caption{\label{Tab: satellite-occultation} Number of stellar occultations for each satellite from January, 2016 up to December, 2020.}
@@ -342,7 +342,7 @@ Phoebe & 32 & 98 & 238 & 79 & 13 & 460 \tabularnewline
 \par \end{centering}
 \end{table}
 
-Table \ref{Tab: sample-cds} shows a sample of the catalogue of predicted occultations and their parameters, which are necessary to produce occultation maps. Since these objects are very small, the duration of each event is a few seconds. All the occultation tables and maps will be publicly available at the CDS \textbf{(Centre de Données astronomiques de Strasbourg)}. In Fig. \ref{Fig: ocultacao} we show an example of an occultation map. This is an occultation by Elara that will happen in February 21, 2017. This event can be observed from Australia and it is one of the best opportunities for this object due to the slow velocity of the event and it involves a bright star (MagR*=12.4).
+Table \ref{Tab: sample-cds} shows a sample of the catalogue of predicted occultations and their parameters, which are necessary to produce occultation maps. Since these objects are very small, the duration of each event is a few seconds. All the occultation tables and maps will be publicly available at the CDS \textbf{(Centre de Données astronomiques de Strasbourg)}. In Fig. \ref{Fig: ocultacao} we show an example of an occultation map. This is an occultation by Elara that will happen in February 21, 2017. This event can be observed from Australia and it is one of the best opportunities for this object due to the slow velocity of the event and it involves a bright star (R*=12.4).
 
 \begin{table*}
 \caption{\label{Tab: sample-cds} A sample of stellar occultation predictions for Pasiphae}
@@ -364,7 +364,7 @@ d m Year~~~~h~~m~~~s & RA~~~(ICRS)~~~Dec & C/A & P/A & $\nu$ &{\it D} & $R^*$ & 
 \end{tabular}
 \end{center}
 \begin{flushleft}
-\textbf{Notes}. Entries included: day of the year and UTC time of the prediction; right ascension and declination of the occulted star - \textbf{at the instant of the occultation} (corrected by proper motions); C/A: textbf{apparent geocentric distance between the satellite and the star (a.k.a. the distance between the shadow and the center of the Earth) at the moment of the geocentric closest approach}, in arcseconds; P/A: the satellite position angle with respect to the occulted star at C/A, in degrees (zero at north of the star, increasing clockwise); $\nu$: \textbf{relative velocity of event in km s$^{-1}$}: positive = prograde, negative = retrograde; {\it D}: \textbf{Geocentric distance to the occulting object in AU}; $R^*$: normalized \textbf{UCAC4 magnitude in the R-band} to a common shadow velocity of 20 km s$^{-1}$ by the relationship $\textrm{R}^* = \textrm{R}_{\textrm{actual}} + 2.5 \times \log 10 \left(\frac{\textrm{velocity}} {20 \textrm{km}\, \textrm{s}^{-1}} \right)$, \textbf{the value 20 km s$^{-1}$ is typical of events around the opposition}; $\lambda$: east longitude of subplanet point in degrees, positive towards east, \textbf{at the instant of the geocentric closest approach}; LST: UT + $\lambda$: local solar time at subplanet point, hh:mm; $\mu_{\alpha *}$ and $\mu_{\delta}$: proper motions in right ascension and declination, respectively (mas/year).
+\textbf{Notes}. Entries included: day of the year and UTC \textbf{central instant} of the prediction; right ascension and declination of the occulted star - \textbf{at the central instant of the occultation} (corrected by proper motions); C/A: \textbf{apparent geocentric distance between the satellite and the star (a.k.a. the distance between the shadow and the center of the Earth) at the moment of the geocentric closest approach}, in arcseconds; P/A: the satellite position angle with respect to the occulted star at C/A, in degrees (zero at north of the star, increasing clockwise); $\nu$: \textbf{relative velocity of event in km s$^{-1}$}: positive = prograde, negative = retrograde; {\it D}: \textbf{Geocentric distance to the occulting object in AU}; $R^*$: normalized \textbf{UCAC4 magnitude in the R-band} to a common shadow velocity of 20 km s$^{-1}$ by the relationship $\textrm{R}^* = \textrm{R}_{\textrm{UCAC4}} + 2.5 \times \log 10 \left(\frac{\textrm{velocity}} {20 \textrm{km}\, \textrm{s}^{-1}} \right)$, \textbf{the value 20 km s$^{-1}$ is typical of events around the opposition}; $\lambda$: east longitude of subplanet point in degrees, positive towards east, \textbf{at the instant of the geocentric closest approach}; LST: UT + $\lambda$: local solar time at subplanet point, hh:mm; $\mu_{\alpha *}$ and $\mu_{\delta}$: proper motions in right ascension and declination, respectively (mas/year). \textbf{For more detailed information about the definition and use of these stellar occultation geometric elements see \cite{Assafin2010}}.
 \end{flushleft}
 \end{table*}
 
@@ -373,7 +373,7 @@ d m Year~~~~h~~m~~~s & RA~~~(ICRS)~~~Dec & C/A & P/A & $\nu$ &{\it D} & $R^*$ & 
 \includegraphics[width = 8.8cm]{figures/Elara_2017-02-21T15:28:40.png}   
 \caption{Occultation map for Elara. % regarding to the first event sampled in Table \ref{Tab: occ-list}.
 The central red dot shows the geocentric closest approach of the shadow. The small ones show the center of the shadow separated by 60s. The lines show the path of the shadow over the Earth. The shadow moves from right to left.
-\textbf{Labels:} Diam: Diameter of the object; Tmax: Maximum duration of the event for\textbf{ a observation in the center of the shadow}; C/A: \textbf{apparent geocentric distance between the satellite and the star (a.k.a. the distance between the shadow and the center of the Earth) at the moment of the geocentric closest approach}, in arcseconds; P/A: the satellite position angle with respect to the occulted star at C/A, in degrees; $\nu$: \textbf{relative} velocity of event in km/s; {\it D}: Geocentric distance to the occulting object in AU; $R^*$: normalized \textbf{UCAC4 magnitude in the R-band} to a common shadow velocity of 20 km s$^{-1}$; $\lambda$: east longitude of subplanet point in degrees, positive towards east, \textbf{at the instant of the geocentric closest approach}.}
+\textbf{Labels:} Diam: Diameter of the object; Tmax: Maximum duration of the event for\textbf{ an observation in the center of the shadow}; C/A: \textbf{apparent geocentric distance between the satellite and the star (a.k.a. the apparent distance in the plane of the sky between the shadow and the center of the Earth) at the moment of the geocentric closest approach}, in arcseconds; P/A: the satellite position angle with respect to the occulted star at C/A, in degrees; $\nu$: \textbf{relative} velocity of event in km/s; {\it D}: Geocentric distance to the occulting object in AU; $R^*$: normalized \textbf{UCAC4 magnitude in the R-band} to a common shadow velocity of 20 km s$^{-1}$; $\lambda$: east longitude of subplanet point in degrees, positive towards east, \textbf{at the central instant of the geocentric closest approach (see the notes of Table 5)}.}
 \label{Fig: ocultacao}
 \end{centering}
 \end{figure}
@@ -421,7 +421,7 @@ C/A: geocentric closest approach; Sit: Situation test considered.
 
 \section{Discussion} \label{Sec: discussion}
 
-We performed new numerical integration for improving the orbits of some of the larger irregular satellites. Consequently, with \textbf{our} ephemeris, we predicted stellar occultations aiming to access fundamental parameters like size, shape, albedo, ultimately aiming to track the formation origin of these bodies.
+We performed new numerical integrations for improving the orbits of some of the larger irregular satellites. Consequently, with \textbf{our} ephemeris, we predicted stellar occultations aiming to access fundamental parameters like size, shape, albedo, ultimately aiming to track the formation origin of these bodies.
 
 For the irregular satellites of Jupiter (Ananke, Carme, Elara, Himalia, Leda, Lysithea, Pasiphae and Sinope), we produced ephemeris using only the observations of \citetalias{GomesJunior2015}. These new ephemerides are denominated Special-Tailored Ephemeris.
 
