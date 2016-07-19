@@ -1,0 +1,54 @@
+ Notes:
+ C/A: geocentric closest approach, in arcsec
+ P/A: Planet position angle wrt to star at C/A, in deg
+ vel: velocity in plane of sky, in km/sec, positive= prograde, negative= retrograde
+ R: instrumental magnitude in UCAC4 system
+ R* is normalized magnitude to a common
+ shadown velocity of 20 km/sec by the relationship:
+ Mag* = Mag_actual + 2.5*log10[velocity/20 (km/sec)]
+ Delta: Planet range to Earth, AU
+ long: East longitude of sub-planet point, deg, positive towards East
+ loc. t.= UT + long: local solar time at sub-planet point, hh:mm
+ --------------------------------------------------------------------------------------------------------------------
+ Selection criteria:
+ Maximum geocentrique closest approach considered:   1.9603200000000001       arcsec
+ Day light exclusion (range loc. t.): 12.0hs to 12.0 hs (t1 = t2 -> no exclusions)
+ List below has:           14  entries
+ Reference ephemeris: DE430/LAU                                         
+ Offset applied to ephemeris off_ra(mas) = A * (t-t0) + B 
+ Offset applied to ephemeris off_de(mas) = C * (t-t0) + D 
+ t0 =    2005.0000000000000       yrs
+ A =    0.0000000000000000       (mas/yr)
+ B =    0.0000000000000000       (mas)
+ C =    0.0000000000000000       (mas/yr)
+ D =    0.0000000000000000       (mas)
+ pm = proper motion applied? (ok, no)
+ ct = uc (UCAC2); 2m (2MASS); fs (field star)
+ f = multiplicity flag
+ 0 - no multiple entries per star in astrometry
+ 1 - single position from 2 or more uc/2m entries
+ 2 - single position from 1 uc/2m entry only
+ 3 - fs position from entry with more N contributions
+ 4 - fs position from entry with best (x,y) error
+ 5 - fs position from entry with brightest R mag.
+ 6 - fs position from average over all entries
+ (see details in Assafin et al. 2009)
+ E_ra, E_de: error of star position (mas); (9999 = no estimation)
+ pmra, pmde: star proper motion (mas); (9999 = no proper motion)
+ ---------------------------------------------------------------------------------------------------------------
+  d  m year  h:m:s UT     ra___dec___J2000_candidate     C/A    P/A     vel  Delta  R*   long  loc. t. pmra pmde
+ ---------------------------------------------------------------------------------------------------------------
+ 17 03 2016  14 12 39.   11 12 58.9800 +07 04  40.685   0.898   25.85 -14.26  4.52 15.8   139. 23:30      3  -22
+ 26 03 2016  18 35 36.   11 09 40.9338 +07 27  46.795   0.299   24.42 -12.66  4.56 15.9    64. 22:51     -5    2
+ 11 04 2016  02 31 51.   11 05 16.7829 +07 55  18.874   1.853   20.46  -8.58  4.67 14.0   289. 21:46     -5   -3
+ 02 06 2016  02 26 24.   11 05 20.0484 +07 22  52.648   0.353  215.02  10.80  5.31 13.4   239. 18:21    -26    6
+ 19 06 2016  23 23 18.   11 10 28.7365 +06 34   9.432   0.382   30.53  16.95  5.55 11.7   268. 17:16    -40  -53
+ 27 06 2016  08 23 56.   11 13 14.5985 +06 10  35.201   0.392   29.05  19.40  5.65 15.1   126. 16:49      5    3
+ 01 07 2016  07 29 53.   11 14 52.6082 +05 57  15.268   0.581   28.32  20.72  5.71 15.8   136. 16:35    -13  -15
+ 03 07 2016  10 58 38.   11 15 48.2618 +05 49  52.159   0.018   27.76  21.44  5.74 13.3    82. 16:28     -1  -11
+ 10 07 2016  00 13 55.   11 18 49.2400 +05 26  34.166   0.037  206.86  23.61  5.82 14.9   238. 16:05      8    6
+ 31 07 2016  23 49 53.   11 30 50.2216 +04 01  39.989   1.132  204.11  30.58  6.08 16.3   225. 14:50     -9   -2
+ 04 08 2016  08 53  5.   11 32 55.3618 +03 47  47.735   1.242  203.82  31.58  6.12 16.3    87. 14:39     -4  -10
+ 07 12 2016  21 08  1.   13 05 31.3637 -05 18  37.420   0.132   20.13  30.14  5.96 16.9   162. 07:57     11   -6
+ 25 12 2016  18 00 15.   13 15 48.1804 -06 14  45.198   0.121  200.16  23.42  5.71 14.9   194. 06:57    -27   -1
+ 29 12 2016  10 26 21.   13 17 38.2797 -06 24  51.294   1.745   20.26  21.86  5.65 14.8   305. 06:44     -2  -15
