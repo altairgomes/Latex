@@ -1,2 +1,0 @@
-f.write(' {:02d} {:02d} {:4d} {:02d} {:02d} {:02.0f} {:02d} {:02d} {:07.4f} {:+03d} {:02d} {:07.4f} {:5.3f} {:6.2f} {:-6.2f} {:5.2f} {:4.1f} {:3.0f} {:5s} {:-3d} {:-3d}\n'
-.format(k['d'][j], k['m'][j], k['y'][j], k['hor'][j], k['min'][j], k['sec'][j], k['rah'][j], k['ram'][j], k['ras'][j], k['ded'][j], k['dem'][j], k['des'][j], k['ca'][j], k['pa'][j], k['vel'][j], k['del'][j], k['R'][j], k['long'][j], k['loc'][j], k['pmra'][j], k['pmde'][j]))
