@@ -163,127 +163,169 @@ We applied the digital coronagraphy technique to test if the scattered light of 
 
 From the offsets in the sense "position minus ephemeris" identified I made statistics night by night to eliminate discrepant positions with a sigma-clip procedure where offsets (modulus) larger than 80 mas or 2-sigma discrepant from the mean offset were removed. This procedure was applied for each set of observations (short exposures and long exposures) separately.
 
-\section*{Reduction Tests}
-
-The idea behind the short and long exposures was to obtain Neptune not saturated (measurable with more precision) and Triton better exposed with higher S/N ratio, so as to get the best for determining the relative orbit of Triton around Neptune, and the orbit of Neptune itself around the Sun.
-
-To put both short-exposed Neptune and long-exposed Triton separate images in the same consistent reference frame, we can follow some astrometric procedures that we already use (uniform reduction, global reduction). We explain them here in this section, and test them with respect to standard procedures. We are also interested in the performance of short-exposed Triton, since it is imaged together with short-exposed Neptune in the same CCD frames, so the so called "precision premium" (Pascu, 1994; Peng et al., 2008, 2012) is present and may compensate the smaller S/N ratio of Triton.
-
-We also used two other processes of reduction in 9 test nights with two different exposure sets. The first one is the uniform reduction where only stars presented in all fields were used to represent the reference system. The second one is the global reduction where all the stars presented in all fields are used within a unique least-square procedure to obtain the reference system. With this, four situations were considered.
-
-\begin{enumerate}
-\item The standard procedure of astrometric reduction.
-\item The uniform reduction of the fields.
-\item The global reduction over the identified stars in the procedure 1.
-\item The global reduction over the identified stars in the procedure 2.
-\end{enumerate}
-
-For each situation we tested two sets of positions. The first one only with the positions of Neptune and Triton in the same image (precision premium). The second one with the positions of Neptune in the smallest exposure set and the positions of Triton in the longest exposure set (where Neptune was saturated).
-
-For each of the 9 nights tested, we obtained the mean difference in the offsets of Triton-Neptune for the 4 situations and the 2 sets of positions. The dispersion of the 4 situations for the set where Neptune and Triton have the same exposure is in generally smaller than the set where they have different exposures.
-
-Fig \ref{Fig:test-match} shows the mean position of the difference of Triton's and Neptune's offsets using only positions where the two objects are in the same image. The four situations are shown with different colors. Fig \ref{Fig:test-sat} is the same but using the positions of Neptune in the frames with short exposure time and the positions of Triton in the frames with long exposure time (where Neptune image was saturated).
-
-In Table 3 we present the mean differences and standard deviations used in Figs. \ref{Fig:test-match} and \ref{Fig:test-sat}
-
-It is possible to see that the difference in offsets using only the positions in the same image presents smaller dispersion compared to those with Triton and Neptune in different frames. We can also see that the mean differences in the offsets are not very different between the 4 situations explored, although the mean offsets using Global Reduction (GR1 and GR2) show a better agreement.
-
-These preliminary tests show that the precision premium (short exposed Neptune and Triton in the same CCD frames) gives better results than using long-exposed Triton. But they also show that the UCAC4 catalogue is quite consistent and rigid in this sky region, because the improvement of the reference frame with the global reduction procedure only marginally improve the results.
- 
-
-This allows us to take a look at the current provisional results of all the years of observations (see next section), for which we already have positions based on the simple standard astrometric procedure (regarded to set 1 here), but only considering the precision premium ones, that is, using only short-exposed images where Neptune and Triton are measured in the same CCD frame.
-
-
-\begin{figure}
-\includegraphics[width=16.0cm]{Triton-Netuno_nsat_match.png} 
-\caption{Difference between Triton's and Neptune's offsets using only positions where the two objects are in the same image. 'usual' stands for the situation 1 with the standard procedure of reduction. 'uni' stands for situation 2 with the uniform reduction. 'gr1' stands for situation 3 with global reduction over the identified stars in the procedure 1. 'gr2' stands for situation 4 with global reduction over the identified stars in the procedure 2.}
-\label{Fig:test-match}
-\end{figure}
-
-\begin{figure}
-\includegraphics[width=16.0cm]{Triton-Netuno_sat.png} 
-\caption{Difference between Triton's and Neptune's offsets using the positions of Neptune in the frames with short exposure time and the positions of Triton in the frames with long exposure time (where Neptune image were saturated). Labels is the same as in Fig. \ref{Fig:test-match}}
-\label{Fig:test-sat}
-\end{figure}
-
-
-
-\begin{landscape}
-
-\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\caption{Table with the data used in the Figs. \ref{Fig:test-match} and \ref{Fig:test-sat}. Situation 1 is for the positions of Triton and Neptune in the same frame. Situation 2 is for the position of Neptune in frames with short exposure time and the positions of Triton in the frames with long exposure time (where Neptune image were saturated). 'Usual' stands for the situation 1 with the standard procedure of reduction. 'Uni' stands for situation 2 with the uniform reduction. 'GR1' stands for situation 3 with global reduction over the identified stars in the procedure 1. 'GR2' stands for situation 4 with global reduction over the identified stars in the procedure 2. N is the number of positions used. For the situation 2 N is not presented because there may have different numbers of positions for Triton and Neptune used. For some nights, the uniform or global reduction procedure had issues, so they are not presented.}\\
-\hline
-Night & Sit & \multicolumn{3}{|c|}{Usual} & \multicolumn{3}{|c|}{Uni} & \multicolumn{3}{|c|}{GR1} & \multicolumn{3}{|c|}{GR2} \\
+%\section*{Reduction Tests}
+%
+%The idea behind the short and long exposures was to obtain Neptune not saturated (measurable with more precision) and Triton better exposed with higher S/N ratio, so as to get the best for determining the relative orbit of Triton around Neptune, and the orbit of Neptune itself around the Sun.
+%
+%To put both short-exposed Neptune and long-exposed Triton separate images in the same consistent reference frame, we can follow some astrometric procedures that we already use (uniform reduction, global reduction). We explain them here in this section, and test them with respect to standard procedures. We are also interested in the performance of short-exposed Triton, since it is imaged together with short-exposed Neptune in the same CCD frames, so the so called "precision premium" (Pascu, 1994; Peng et al., 2008, 2012) is present and may compensate the smaller S/N ratio of Triton.
+%
+%We also used two other processes of reduction in 9 test nights with two different exposure sets. The first one is the uniform reduction where only stars presented in all fields were used to represent the reference system. The second one is the global reduction where all the stars presented in all fields are used within a unique least-square procedure to obtain the reference system. With this, four situations were considered.
+%
+%\begin{enumerate}
+%\item The standard procedure of astrometric reduction.
+%\item The uniform reduction of the fields.
+%\item The global reduction over the identified stars in the procedure 1.
+%\item The global reduction over the identified stars in the procedure 2.
+%\end{enumerate}
+%
+%For each situation we tested two sets of positions. The first one only with the positions of Neptune and Triton in the same image (precision premium). The second one with the positions of Neptune in the smallest exposure set and the positions of Triton in the longest exposure set (where Neptune was saturated).
+%
+%For each of the 9 nights tested, we obtained the mean difference in the offsets of Triton-Neptune for the 4 situations and the 2 sets of positions. The dispersion of the 4 situations for the set where Neptune and Triton have the same exposure is in generally smaller than the set where they have different exposures.
+%
+%Fig \ref{Fig:test-match} shows the mean position of the difference of Triton's and Neptune's offsets using only positions where the two objects are in the same image. The four situations are shown with different colors. Fig \ref{Fig:test-sat} is the same but using the positions of Neptune in the frames with short exposure time and the positions of Triton in the frames with long exposure time (where Neptune image was saturated).
+%
+%In Table 3 we present the mean differences and standard deviations used in Figs. \ref{Fig:test-match} and \ref{Fig:test-sat}
+%
+%It is possible to see that the difference in offsets using only the positions in the same image presents smaller dispersion compared to those with Triton and Neptune in different frames. We can also see that the mean differences in the offsets are not very different between the 4 situations explored, although the mean offsets using Global Reduction (GR1 and GR2) show a better agreement.
+%
+%These preliminary tests show that the precision premium (short exposed Neptune and Triton in the same CCD frames) gives better results than using long-exposed Triton. But they also show that the UCAC4 catalogue is quite consistent and rigid in this sky region, because the improvement of the reference frame with the global reduction procedure only marginally improve the results.
+% 
+%
+%This allows us to take a look at the current provisional results of all the years of observations (see next section), for which we already have positions based on the simple standard astrometric procedure (regarded to set 1 here), but only considering the precision premium ones, that is, using only short-exposed images where Neptune and Triton are measured in the same CCD frame.
+%
+%
+%\begin{figure}
+%\includegraphics[width=16.0cm]{Triton-Netuno_nsat_match.png} 
+%\caption{Difference between Triton's and Neptune's offsets using only positions where the two objects are in the same image. 'usual' stands for the situation 1 with the standard procedure of reduction. 'uni' stands for situation 2 with the uniform reduction. 'gr1' stands for situation 3 with global reduction over the identified stars in the procedure 1. 'gr2' stands for situation 4 with global reduction over the identified stars in the procedure 2.}
+%\label{Fig:test-match}
+%\end{figure}
+%
+%\begin{figure}
+%\includegraphics[width=16.0cm]{Triton-Netuno_sat.png} 
+%\caption{Difference between Triton's and Neptune's offsets using the positions of Neptune in the frames with short exposure time and the positions of Triton in the frames with long exposure time (where Neptune image were saturated). Labels is the same as in Fig. \ref{Fig:test-match}}
+%\label{Fig:test-sat}
+%\end{figure}
+%
+%
+%
+%\begin{landscape}
+%
+%\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+%\caption{Table with the data used in the Figs. \ref{Fig:test-match} and \ref{Fig:test-sat}. Situation 1 is for the positions of Triton and Neptune in the same frame. Situation 2 is for the position of Neptune in frames with short exposure time and the positions of Triton in the frames with long exposure time (where Neptune image were saturated). 'Usual' stands for the situation 1 with the standard procedure of reduction. 'Uni' stands for situation 2 with the uniform reduction. 'GR1' stands for situation 3 with global reduction over the identified stars in the procedure 1. 'GR2' stands for situation 4 with global reduction over the identified stars in the procedure 2. N is the number of positions used. For the situation 2 N is not presented because there may have different numbers of positions for Triton and Neptune used. For some nights, the uniform or global reduction procedure had issues, so they are not presented.}\\
 %\hline
- & &  RA & DEC & N & RA & DEC & N & RA & DEC & N & RA & DEC & N \\
-\hline
-\endfirsthead
-\multicolumn{13}{c}%
-{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
-\hline
-Night & Sit & \multicolumn{3}{|c|}{Usual} & \multicolumn{3}{|c|}{Uni} & \multicolumn{3}{|c|}{GR1} & \multicolumn{3}{|c|}{GR2} \\
+%Night & Sit & \multicolumn{3}{|c|}{Usual} & \multicolumn{3}{|c|}{Uni} & \multicolumn{3}{|c|}{GR1} & \multicolumn{3}{|c|}{GR2} \\
+%%\hline
+% & &  RA & DEC & N & RA & DEC & N & RA & DEC & N & RA & DEC & N \\
 %\hline
- & &  RA & DEC & N & RA & DEC & N & RA & DEC & N & RA & DEC & N \\
-\hline
-\endhead
-\hline \multicolumn{13}{r}{\textit{Continued on next page}} \\
-\endfoot
-\hline
-\endlastfoot
-1993-06-23 & 1 & 17 $\pm$ 38 & 5 $\pm$ 42 & 9 & 45 $\pm$ 18 & 15 $\pm$ 30 & 5 & 49 $\pm$ 20 & 15 $\pm$ 36 & 7 & 47 $\pm$ 23 & 14 $\pm$ 36 & 7\\
- & 2 & 30 $\pm$ 22 & 129 $\pm$ 32 & - & 64 $\pm$ 23 & 142 $\pm$ 41 & - & 71 $\pm$ 16 & 149 $\pm$ 39 & - & 76 $\pm$ 26 & 132 $\pm$ 32 & - \\
-\hline
-
-1994-09-22 & 1 & 18 $\pm$ 20 & -79 $\pm$ 31 & 10 & 23 $\pm$ 24 & -12 $\pm$ 24 & 6 & 20 $\pm$ 22 & -100 $\pm$ 29 & 10 & 20 $\pm$ 22 & -99 $\pm$ 28 & 10\\
- & 2 &  17 $\pm$ 19 & 83 $\pm$ 28 & - & 10 $\pm$ 24 & 85 $\pm$ 48 & - & 31 $\pm$ 20 & 62 $\pm$ 28 & - & 48 $\pm$ 20 & -38 $\pm$ 28 & -\\
-\hline
-
-1994-09-23 & 1 & 7 $\pm$ 13 & -57 $\pm$ 13 & 10 & 9 $\pm$ 9 & -76 $\pm$ 14 & 9 & 8 $\pm$ 9 & -75 $\pm$ 14 & 9 & 7 $\pm$ 9 & -75 $\pm$ 14 & 9\\
- & 2 & 13 $\pm$ 16 & 47 $\pm$ 20 & - & 9 $\pm$ 20 & -129 $\pm$ 27 & - & 17 $\pm$ 14 & 49 $\pm$ 17 & - & 15 $\pm$ 14 & 34 $\pm$ 16 & -\\
-\hline
-
-1994-09-24 & 1 & -28 $\pm$ 4 & 17 $\pm$ 8 & 5 & 3 $\pm$ 10 & 20 $\pm$ 14 & 9 & 1 $\pm$ 9 & 17 $\pm$ 6 & 6 & 1 $\pm$ 8 & 17 $\pm$ 7 & 6\\
- & 2 & -19 $\pm$ 11 &  123 $\pm$ 18 & - & 4 $\pm$ 15 &  99 $\pm$ 31 & - & -11 $\pm$ 14 &  123 $\pm$ 20 & - & 7 $\pm$ 14 & 110 $\pm$ 20 & -\\
-\hline
-
-1996-06-22 & 1 & -16 $\pm$ 10 & 21 $\pm$ 13 & 9 & -12 $\pm$ 8 & 21 $\pm$ 9 & 8 & -15 $\pm$ 8 & 24 $\pm$ 10 & 8 & -16 $\pm$ 9 & 25 $\pm$ 10 & 8\\
- & 2 & -26 $\pm$ 12 & 19 $\pm$ 18 & - & -22 $\pm$ 36 & 22 $\pm$ 49 & - & -23 $\pm$ 16 & 17 $\pm$ 16 & - & -25 $\pm$ 17 & 15 $\pm$ 10 & -\\
-\hline
-
-1996-08-21 & 1 & -184 $\pm$ 27 & 72 $\pm$ 29 & 13 & -181 $\pm$ 24 & 76 $\pm$ 31 & 13 & - & - & - & - & - & - \\
- & 2 & -188 $\pm$ 35 &  81 $\pm$ 45 & - & -159 $\pm$ 44 & -8 $\pm$ 60 & - & - & - & - & - & - & -\\
-\hline
-
-1997-06-01 & 1 & -50 $\pm$ 21 & 34 $\pm$ 16 & 26 & - & - & - & -52 $\pm$ 21 & 34 $\pm$ 15 & 26 & - & - & -\\
- & 2 & 191 $\pm$ 39 &  70 $\pm$ 9 & - & - & - & - & 254 $\pm$ 43 &  77 $\pm$ 9 & - & - & - & -\\
-\hline
-
-1997-06-02 & 1 & 6 $\pm$ 35 & 33 $\pm$ 21 & 22 & - & - & - & 75 $\pm$ 30 & 30 $\pm$ 22 & 19 & - & - & -\\
- & 2 & 101 $\pm$ 77 &  20 $\pm$ 14 & - & - & - & - & 76 $\pm$ 78 & 52 $\pm$ 16 & - & - & - & -\\
-\hline
-
-2011-09-19 & 1 & -88 $\pm$ 15 & 75 $\pm$ 12 & 35 & - & - & - & -88 $\pm$ 15 & 74 $\pm$ 11 & 35 & - & - & -\\
- & 2 & -55 $\pm$ 13 & 50 $\pm$ 11 & - & - & - & - & -80 $\pm$ 21 & 71 $\pm$ 10 & - & - & - & -\\
-\hline
-
-\hline
-\end{longtable}
-
-\end{landscape}
+%\endfirsthead
+%\multicolumn{13}{c}%
+%{\tablename\ \thetable\ -- \textit{Continued from previous page}} \\
+%\hline
+%Night & Sit & \multicolumn{3}{|c|}{Usual} & \multicolumn{3}{|c|}{Uni} & \multicolumn{3}{|c|}{GR1} & \multicolumn{3}{|c|}{GR2} \\
+%%\hline
+% & &  RA & DEC & N & RA & DEC & N & RA & DEC & N & RA & DEC & N \\
+%\hline
+%\endhead
+%\hline \multicolumn{13}{r}{\textit{Continued on next page}} \\
+%\endfoot
+%\hline
+%\endlastfoot
+%1993-06-23 & 1 & 17 $\pm$ 38 & 5 $\pm$ 42 & 9 & 45 $\pm$ 18 & 15 $\pm$ 30 & 5 & 49 $\pm$ 20 & 15 $\pm$ 36 & 7 & 47 $\pm$ 23 & 14 $\pm$ 36 & 7\\
+% & 2 & 30 $\pm$ 22 & 129 $\pm$ 32 & - & 64 $\pm$ 23 & 142 $\pm$ 41 & - & 71 $\pm$ 16 & 149 $\pm$ 39 & - & 76 $\pm$ 26 & 132 $\pm$ 32 & - \\
+%\hline
+%
+%1994-09-22 & 1 & 18 $\pm$ 20 & -79 $\pm$ 31 & 10 & 23 $\pm$ 24 & -12 $\pm$ 24 & 6 & 20 $\pm$ 22 & -100 $\pm$ 29 & 10 & 20 $\pm$ 22 & -99 $\pm$ 28 & 10\\
+% & 2 &  17 $\pm$ 19 & 83 $\pm$ 28 & - & 10 $\pm$ 24 & 85 $\pm$ 48 & - & 31 $\pm$ 20 & 62 $\pm$ 28 & - & 48 $\pm$ 20 & -38 $\pm$ 28 & -\\
+%\hline
+%
+%1994-09-23 & 1 & 7 $\pm$ 13 & -57 $\pm$ 13 & 10 & 9 $\pm$ 9 & -76 $\pm$ 14 & 9 & 8 $\pm$ 9 & -75 $\pm$ 14 & 9 & 7 $\pm$ 9 & -75 $\pm$ 14 & 9\\
+% & 2 & 13 $\pm$ 16 & 47 $\pm$ 20 & - & 9 $\pm$ 20 & -129 $\pm$ 27 & - & 17 $\pm$ 14 & 49 $\pm$ 17 & - & 15 $\pm$ 14 & 34 $\pm$ 16 & -\\
+%\hline
+%
+%1994-09-24 & 1 & -28 $\pm$ 4 & 17 $\pm$ 8 & 5 & 3 $\pm$ 10 & 20 $\pm$ 14 & 9 & 1 $\pm$ 9 & 17 $\pm$ 6 & 6 & 1 $\pm$ 8 & 17 $\pm$ 7 & 6\\
+% & 2 & -19 $\pm$ 11 &  123 $\pm$ 18 & - & 4 $\pm$ 15 &  99 $\pm$ 31 & - & -11 $\pm$ 14 &  123 $\pm$ 20 & - & 7 $\pm$ 14 & 110 $\pm$ 20 & -\\
+%\hline
+%
+%1996-06-22 & 1 & -16 $\pm$ 10 & 21 $\pm$ 13 & 9 & -12 $\pm$ 8 & 21 $\pm$ 9 & 8 & -15 $\pm$ 8 & 24 $\pm$ 10 & 8 & -16 $\pm$ 9 & 25 $\pm$ 10 & 8\\
+% & 2 & -26 $\pm$ 12 & 19 $\pm$ 18 & - & -22 $\pm$ 36 & 22 $\pm$ 49 & - & -23 $\pm$ 16 & 17 $\pm$ 16 & - & -25 $\pm$ 17 & 15 $\pm$ 10 & -\\
+%\hline
+%
+%1996-08-21 & 1 & -184 $\pm$ 27 & 72 $\pm$ 29 & 13 & -181 $\pm$ 24 & 76 $\pm$ 31 & 13 & - & - & - & - & - & - \\
+% & 2 & -188 $\pm$ 35 &  81 $\pm$ 45 & - & -159 $\pm$ 44 & -8 $\pm$ 60 & - & - & - & - & - & - & -\\
+%\hline
+%
+%1997-06-01 & 1 & -50 $\pm$ 21 & 34 $\pm$ 16 & 26 & - & - & - & -52 $\pm$ 21 & 34 $\pm$ 15 & 26 & - & - & -\\
+% & 2 & 191 $\pm$ 39 &  70 $\pm$ 9 & - & - & - & - & 254 $\pm$ 43 &  77 $\pm$ 9 & - & - & - & -\\
+%\hline
+%
+%1997-06-02 & 1 & 6 $\pm$ 35 & 33 $\pm$ 21 & 22 & - & - & - & 75 $\pm$ 30 & 30 $\pm$ 22 & 19 & - & - & -\\
+% & 2 & 101 $\pm$ 77 &  20 $\pm$ 14 & - & - & - & - & 76 $\pm$ 78 & 52 $\pm$ 16 & - & - & - & -\\
+%\hline
+%
+%2011-09-19 & 1 & -88 $\pm$ 15 & 75 $\pm$ 12 & 35 & - & - & - & -88 $\pm$ 15 & 74 $\pm$ 11 & 35 & - & - & -\\
+% & 2 & -55 $\pm$ 13 & 50 $\pm$ 11 & - & - & - & - & -80 $\pm$ 21 & 71 $\pm$ 10 & - & - & - & -\\
+%\hline
+%
+%\hline
+%\end{longtable}
+%
+%\end{landscape}
 
 \section*{Chromatic Refraction Test}
 
-Since the colors of Neptune and Triton are different, it is expected that their positions have influence of chromatic refraction with different intensities. The apparent position of Neptune, which is more blue than Triton, would be more shifted towards the zenith than the Triton's position.
+Table \ref{Tab:colors} shows the colors for Triton \citep{Pascu2006} and Neptune \cite{Schmude2016}. Their colors are very different in the blue region. So it is expected that their positions have influence of chromatic refraction with different intensities. The apparent position of Neptune, which is more blue than Triton, would be more shifted towards the zenith than the Triton's position. There may also be noted that in 1992 Neptune had just exited the galactic plane, so the reference stars were redder due to dust.
 
-To test the effects of chromatic refraction I looked for nights with many observations distributed over the night. I selected five of them (\PE: 1997-05-31 and 1997-06-01; \BC: 2003-07-27, 2004-08-22 and 2011-09-25) with more than 4 hours between the first and last observations. In the nights of \PE and in the 2003 night of \BC it was used no filter (clear). In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter.% In both nights there was only one exposure time used.
+\begin{table*}[h]
+\centering
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+Object & U-B & B-V & V-R & R-I & V-I\\
+\hline
+Triton (leading side) & & +0.696$\pm$0.009 & & & +0.766$\pm$0.006 \\
+Triton (trailing side) & & +0.699$\pm$0.006 & & & +0.776$\pm$0.007 \\
+Neptune & +0.14 & +0.39 & -0.29 & -1.05 & +0.76*\\
+\hline
+\end{tabular}
+\caption{Colors of Triton and Neptune. Leading side is the hemisphere of Triton that is in the direction of its movement. Trailing side is the opposite hemisphere. *calculated from V-R and R-I colors.}
+\label{Tab:colors}
+\end{table*}
 
-In Fig \ref{Fig:refraction} it is plotted the difference in the positions of Triton and Neptune compared to the difference of their ephemeris in RA and DEC for the 5 nights.
+To test the effects of chromatic refraction I used the method of \cite{Benedetti-Rossi2014} on all nights with observations distributed over more than 1.5h of hour angle.% looked for nights with many observations distributed over the night. I selected five of them (\PE: 1997-05-31 and 1997-06-01; \BC: 2003-07-27, 2004-08-22 and 2011-09-25) with more than 4 hours between the first and last observations. In the nights of \PE and in the 2003 night of \BC it was used no filter (clear). In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter.% In both nights there was only one exposure time used.
+
+%In Fig \ref{Fig:refraction} it is plotted the difference in the positions of Triton and Neptune compared to the difference of their ephemeris in RA and DEC for the 5 nights.
 
 \begin{figure}[h]
-\includegraphics[width=16.0cm]{plot_hour.png} 
-\caption{Distribution of the difference of offsets in the sense Triton - Neptune for the nights August 22, 2004 and September 25, 2011.}
-\label{Fig:refraction}
+\includegraphics[width=16.0cm]{dist_Netuno_160.png} 
+\caption{Distribution of the offsets of Neptune for the nights August 22, 2004 and September 25, 2011.}
+\label{Fig:refraction-160}
 \end{figure}
+
+\begin{landscape}
+
+\begin{table*}
+\centering
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Date & Filter & $\Delta H$ & B & Nimg & Nstars & RA no corr & DEC no corr & RA corr & DEC corr \\
+\hline
+1992-06-09 & Clear & 1.57 & +0.295 &  13 &  11 &  190$\pm$ 54 &   25$\pm$ 76 &  -43$\pm$ 15 &   65$\pm$ 68\\
+1992-07-19 & Clear & 1.63 & +0.203 &  17 &  24 &   50$\pm$ 46 &  117$\pm$ 37 &    1$\pm$ 26 &  125$\pm$ 36\\
+1993-06-24 & Clear & 1.61 & -0.073 &  10 &  17 &  -17$\pm$ 26 &  -38$\pm$ 48 &  -21$\pm$ 22 &  -40$\pm$ 48\\
+1993-06-25 & Clear & 2.63 & +0.034 &  12 &   8 &  -37$\pm$ 26 &   70$\pm$ 75 &  -40$\pm$ 24 &   72$\pm$ 74\\
+1993-08-20 & Clear & 3.35 & +0.204 &  31 &  29 &   15$\pm$ 76 &  -83$\pm$ 43 &   -7$\pm$ 34 &  -75$\pm$ 44\\
+1993-08-22 & Clear & 2.87 & +0.177 &  35 &   9 &  -47$\pm$ 63 &  -74$\pm$ 44 &  -15$\pm$ 38 &  -67$\pm$ 46\\
+1996-06-22 & Clear & 1.68 & +0.244 &  19 &  16 &  -25$\pm$ 51 &  -32$\pm$ 35 &  -48$\pm$ 18 &  -20$\pm$ 35\\
+1996-10-02 & Clear & 1.97 & +0.312 &  16 &   6 &  252$\pm$192 &  -60$\pm$ 73 &  -59$\pm$126 &   10$\pm$ 79\\
+1997-06-01 & Clear & 4.89 & +0.348 &  91 &  11 & -155$\pm$189 & -112$\pm$ 36 & -120$\pm$107 &  -81$\pm$ 40\\
+1997-06-02 & Clear & 5.24 & +0.219 &  60 &  10 & -113$\pm$125 &  -84$\pm$ 36 &  -73$\pm$ 48 &  -61$\pm$ 33\\
+1998-06-06 & Clear & 2.51 & +0.384 &  35 &  11 & -140$\pm$101 &  -66$\pm$ 42 &  -13$\pm$ 56 &  -33$\pm$ 41\\
+1998-09-03 & Clear & 1.52 & +0.302 &  20 &  10 &  -86$\pm$ 63 &  -75$\pm$ 49 &   20$\pm$ 26 &  -51$\pm$ 47\\
+\hline
+\end{tabular}
+\caption{Obtained parameters and offsets from adjustments of 160 images for Neptune.}
+\end{table*}
+
+\end{landscape}
 
 Teoretically, the difference in the positions of the objects in the sense Triton - Neptune compared to the difference in the ephemeris over a night would cause the following effects.
 
@@ -868,8 +910,8 @@ It seems that there are long term systematic errors in the orbit of Neptune, and
 
 
 
-%\bibliography{Referencias}
-%\bibliographystyle{apalike}
+\bibliography{references}
+\bibliographystyle{apalike}
 
 
 \end{document}
