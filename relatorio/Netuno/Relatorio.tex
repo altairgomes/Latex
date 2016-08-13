@@ -69,7 +69,7 @@ In this report I present the preliminary results of the astrometric reductions o
 
 The observations were carried out since 1992 when a CCD big enough was installed in the OPD. The planet and satellite have been constantly observed, and still are, by our group. There were many CCDs (IKON, IXON, CCD101, CCD106, ...) and many filters (V, R, I, No Filter, ...) utilized.
 
-There was a total of 9942 images from June 1992 to September 2015. Many of the oldest images had no coordinates in header or they were wrong. Sometimes the filter was missing. Many nights had two exposure sets. The first one with low exposure times so Neptune was not saturated, but there were few reference stars in the field. The second one with higher exposure time so Triton was brighter and had more reference stars than with the the previous exposure, but the image of Neptune were saturated.
+There was more than 5000 images from June 1992 to September 2015. Many of the oldest images had no coordinates in header or they were wrong. Sometimes the filter was missing. Many nights had two exposure sets. The first one with low exposure times so Neptune was not saturated, but there were few reference stars in the field. The second one with higher exposure time so Triton was brighter and had more reference stars than with the the previous exposure, but the image of Neptune were saturated.
 
 In Table \ref{Tab:dados} it is summarized the final number of images for Neptune (short-exposure observations) and Triton (all observations) for the 3 telescopes. It is also shown the number of positions where Neptune and Triton were identified automatically in the same image (short-exposure observations for precision premium; see Section Tests).
 
@@ -81,13 +81,13 @@ In Table \ref{Tab:dados} it is summarized the final number of images for Neptune
 \hline 
 Telescope & Neptune & Triton & Matches \\ 
 \hline
-160 & 610 & 1154 & 547 \\ 
+160 & 782 & 1341 & 768 \\ 
 \hline 
-IAG & 2381 & 2659 & 1888 \\ 
+IAG & 3162 & 3645 & 2909 \\ 
 \hline 
-Zeiss & 258 & 345 & 222 \\ 
+Zeiss & 354 & 479 & 341 \\ 
 \hline 
-Total & 3249 & 4158 & 2657 \\ 
+Total & 4298 & 5465 & 4018 \\ 
 \hline 
 \end{tabular}
 \\Number of positions identified of Neptune and Triton by telescope. Matches: Number of positions where Neptune and Triton were identified automatically in the same image.
@@ -95,7 +95,7 @@ Total & 3249 & 4158 & 2657 \\
 
 
 
-Fig. \ref{Fig:pos-dist} shows the distribution of positions where Neptune and Triton are identified in the same image (short-exposure observations) over the years. Figs \ref{Fig:filtro-160}-\ref{Fig:filtro-ZEI} summarizes the distribution of positions with Neptune and Triton in the same image by filter obtained in the \PE , the \BC and the Zeiss telescopes, respectively.
+Fig. \ref{Fig:pos-dist} shows the distribution of positions where Neptune and Triton are identified in the same image (short-exposure observations) over the years. Figs \ref{Fig:filtro-160}-\ref{Fig:filtro-IAG} summarizes the distribution of positions with Neptune and Triton in the same image by filter obtained in the \PE , and \BC telescopes, respectively. Zeiss only has images observed in Clear and I filters.
 
 \begin{figure}
 \includegraphics[width=16.0cm]{pos-distribution.png} 
@@ -117,13 +117,6 @@ Fig. \ref{Fig:pos-dist} shows the distribution of positions where Neptune and Tr
 \label{Fig:filtro-IAG}
 \end{figure}
 
-\begin{figure}[H]
-\includegraphics[width=16.0cm]{filtro_ZEI.png} 
-\caption{Same as in Fig \ref{Fig:filtro-160} for the Zeiss telescope.}
-\label{Fig:filtro-ZEI}
-\end{figure}
-
-It is possible to see that the 
 
 
 \section*{Reduction}
@@ -161,7 +154,7 @@ Zeiss/Triton & 27 & 27 & 28 & 35 \\
 
 We applied the digital coronagraphy technique to test if the scattered light of Neptune would influence in the Triton's photocenter. No influence was identified in the 1 mas range.
 
-From the offsets in the sense "position minus ephemeris" identified I made statistics night by night to eliminate discrepant positions with a sigma-clip procedure where offsets (modulus) larger than 80 mas or 2-sigma discrepant from the mean offset were removed. This procedure was applied for each set of observations (short exposures and long exposures) separately.
+%From the offsets in the sense "position minus ephemeris" identified I made statistics night by night to eliminate discrepant positions with a sigma-clip procedure where offsets (modulus) larger than 80 mas or 2-sigma discrepant from the mean offset were removed. This procedure was applied for each set of observations (short exposures and long exposures) separately.
 
 %\section*{Reduction Tests}
 %
@@ -534,6 +527,8 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 %\hline
 %\end{tabular}
 %\end{table}
+
+\section*{PSF for extended object test}
 
 \section*{Final Remarks}
 
