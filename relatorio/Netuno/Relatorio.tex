@@ -121,12 +121,12 @@ Fig. \ref{Fig:pos-dist} shows the distribution of positions where Neptune and Tr
 
 \section*{Reduction}
 
-The images were reduced using PRAIA, developed by Marcelo Assafin. To avoid the missing or wrong coordinates I used the coordinates of the ephemeris as input. This way PRAIA could identify reference stars in the images. The reference catalogue used was UCAC4. The ephemeris used to identify Neptune and Triton in the images was DE430+NEP081. The positions where the image of Neptune were saturated was removed of the results.
+The images were reduced using PRAIA, developed by Marcelo Assafin. To avoid the missing or wrong coordinates I used the coordinates of the ephemeris as input. This way PRAIA could identify reference stars in the images. The reference catalogue used was UCAC4. The ephemeris used to identify Neptune and Triton in the images was DE430+NEP081. The positions where the image of Neptune were saturated and where there were less than 5 reference stars were removed of the results.
 
-In Table 2 it is presented the mean errors in X and Y of the bidimensional Gaussian used to fit the PSF of the objects using only short-exposure observations.
+In Table 2 it is presented the mean errors in X and Y of the bidimensional Gaussian used to fit the PSF of the objects and the mean value of the dispersion of the offsets by night.
 
 \begin{longtable}{|l|c|c|c|c|}
-\caption{Table of erros of the reduction. Gaussian error stands for the error in X and Y of the bidimensional Gaussian used to fit the PSF. Mean offset errors is the average dispersion of the positions of each night  using only short-exposure observations.}\\
+\caption{Table of erros of the reduction. Gaussian error stands for the error in X and Y of the bidimensional Gaussian used to fit the PSF. Mean offset errors is the average dispersion of the positions of each night.}\\
 \hline
 Telescope/Satellite &  \multicolumn{2}{|c|}{Gaussian error} &   \multicolumn{2}{|c|}{Mean offet errors} \\
 %\hline
@@ -143,12 +143,12 @@ Telescope/Satellite &  X & Y & RA & DEC \\
 \endfoot
 \hline
 \endlastfoot
-160/Neptune & 8 & 8 & 42 & 37 \\
-160/Triton & 14 & 14 & 28 & 29 \\
-IAG/Neptune & 9 & 9 & 36 & 38 \\
-IAG/Triton & 20 & 20 & 34 & 37 \\
-Zeiss/Neptune & 9 & 9 & 28 & 32 \\
-Zeiss/Triton & 27 & 27 & 28 & 35 \\
+160/Neptune & 8$\pm$4 & 8$\pm$4 & 51 & 39 \\
+160/Triton & 14$\pm$8 & 14$\pm$8 & 35 & 38 \\
+IAG/Neptune & 9$\pm$7 & 9$\pm$7 & 63 & 58 \\
+IAG/Triton & 20$\pm$14 & 20$\pm$14 & 52 & 53 \\
+Zeiss/Neptune & 9$\pm$6 & 9$\pm$6 & 49 & 57 \\
+Zeiss/Triton & 25$\pm$13 & 25$\pm$13 & 40 & 51 \\
 \hline
 \end{longtable}
 
@@ -528,7 +528,7 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 %\end{tabular}
 %\end{table}
 
-\section*{PSF for extended object test}
+\section*{PSF for extended object Test}
 
 \section*{Final Remarks}
 
