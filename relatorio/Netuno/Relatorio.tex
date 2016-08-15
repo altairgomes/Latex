@@ -71,7 +71,7 @@ The observations were carried out since 1992 when a CCD big enough was installed
 
 There was more than 5000 images from June 1992 to September 2015. Many of the oldest images had no coordinates in header or they were wrong. Sometimes the filter was missing. Many nights had two exposure sets. The first one with low exposure times so Neptune was not saturated, but there were few reference stars in the field. The second one with higher exposure time so Triton was brighter and had more reference stars than with the the previous exposure, but the image of Neptune were saturated.
 
-In Table \ref{Tab:dados} it is summarized the final number of images for Neptune (short-exposure observations) and Triton (all observations) for the 3 telescopes. It is also shown the number of positions where Neptune and Triton were identified automatically in the same image (short-exposure observations for precision premium; see Section Tests).
+In Table \ref{Tab:dados} it is summarized the final number of images for Neptune (short-exposure observations) and Triton (all observations) for the 3 telescopes. It is also shown the number of positions where Neptune and Triton were identified automatically in the same image (short-exposure observations for precision premium).
 
 \begin{table*}[h]
 \centering
@@ -279,9 +279,11 @@ Triton (trailing side) & & +0.699$\pm$0.006 & & & +0.776$\pm$0.007 \\
 Neptune & +0.14 & +0.39 & -0.29 & -1.05 & +0.76*\\
 \hline
 \end{tabular}
-\caption{Colors of Triton and Neptune. Leading side is the hemisphere of Triton that is in the direction of its movement. Trailing side is the opposite hemisphere. *calculated from V-R and R-I colors.}
+\caption{Colors of Triton and Neptune. Leading side is the hemisphere of Triton that is in the direction of its movement. Trailing side is the opposite hemisphere. \\ *calculated from V-R and R-I colors.}
 \label{Tab:colors}
 \end{table*}
+
+\citep{Pascu2006} data also support a secular "blueing" on Triton observed since 1954. They also evidence a reddening episode that happened in 1997 where the B-V color of Triton was bigger than 0.9. A similar reddening was also identified in 1979. The authors state that a possible cause of this event is an increase in the activity of geysers.
 
 To test the effects of chromatic refraction I used the method of \cite{Benedetti-Rossi2014} on all nights with observations distributed over more than 1.5h of hour angle. I used the equation \:
 \begin{equation}
@@ -530,11 +532,32 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 
 \section*{PSF for extended object Test}
 
+PRAIA uses a bidimensional circular gaussian fit for the PSF of the objects in the images to obtain their photocenters. But in the case of Neptune, its size is bigger than 2 arcsec, which is comparable to the observational seeing. In this case a gaussian fit may not represent well the PSF of Neptune.
+
+In order to obtain a PSF for extended objects (objects with sizes in the order of the seeing), Vieira-Martins (priv. comm.) obtained the following equation.
+
+\begin{equation}
+F_{c}(x,y) = A\sqrt{\frac{\pi}{2}}\sigma \int_{-R}^{+R} e^{-\frac{(x-x_{0}-\mu)^2}{2\sigma^2}} \left[ erf \left( \frac{y-y_{0}+\sqrt{R^2 - \mu^2}}{\sqrt{2}\sigma} \right) - erf \left( \frac{y-y_{0}-\sqrt{R^2 - \mu^2}}{\sqrt{2}\sigma} \right) \right] d\mu
+\end{equation}
+
+where
+
+\begin{equation}
+erf(x) = \frac{2}{\sqrt{\pi}} \int_{0}^{x} e^{-t^2} dt
+\end{equation}
+
+This equation is obtained integrating an homogeneous disk where every bit of the disk can be represented by a bidimensional circular gaussian fit. The parameters to be determined are the amplitude A, the dispersion $\sigma$, the center of the disk ($x_0$, $y_0$) and the radius of the disk R.
+
+Fig. \ref{Fig:ajuste-psf} shows the first test with this PSF for the image of Neptune. The image test was taken at OPD in June 08, 2013. The image has a pixel scale of 0.177"/px, an exposure time of 5s and was observed with a B filter.
+
+\begin{figure}
+\includegraphics[width=16cm]{Ajuste.png} 
+\caption{Fit of an image of Neptune with a gaussian fit (red) and with the PSF for extended objects (green).\label{Fig:ajuste-psf}}
+\end{figure}
+
 \section*{Final Remarks}
 
-Fig \ref{Fig:netuno-all} shows the offsets of Neptune, respectively, in RA e DEC for all the positions not eliminated in the sigma-clip procedure. Fig \ref{Fig:netuno-media} shows the mean offsets of each night and respective discrepancy (error bars).
-
-Fig \ref{Fig:triton-netuno-all} shows the difference between the relative observed positions and the relative ephemeris positions of Triton and Neptune in the sense Triton - Neptune where they were identified in the same frame and not eliminated by the sigma-clip procedure.
+Fig \ref{Fig:netuno-media} shows the mean offsets of each night and respective discrepancy (error bars) for Neptune in RA and DEC, respectively.
 
 Fig \ref{Fig:triton-netuno-mean} shows the difference in the mean offsets night by night for all matched nights and not eliminated by the sigma-clip procedure in the sense Triton - Neptune. The dispersions (error bars) is the mean value of the dispersion in the night for each satellite.
 
@@ -544,8 +567,8 @@ Fig \ref{Fig:triton-netuno-mean} shows the difference in the mean offsets night 
 It seems that there are long term systematic errors in the orbit of Neptune, and in the orbit of Triton around Neptune, but it is too soon to state that with confidence. We must still further refine the positions. We plan to do the following:
 
 \begin{itemize}
-\item Separate images by filter.
-\item It may be required the use of a specific PSF for Neptune due to its large size.
+\item Test the PSF for Neptune to identify the best way to reduce all images.
+\item Utilize an astrometry which uses the same stars in all fields of a night to have a cleaner reduction to eliminate chromatic refraction.
 \item Further refinements in the data may be needed as we further investigate these position sets.
 \end{itemize}
 
@@ -554,11 +577,11 @@ It seems that there are long term systematic errors in the orbit of Neptune, and
  %The average dispersion of the offsets in Tables 2-7 is also presented in the table.
 
 
-\begin{figure}[h]
-\includegraphics[width=16.0cm]{Netuno_all.png} 
-\caption{Neptune - All Offsets}
-\label{Fig:netuno-all}
-\end{figure}
+%\begin{figure}[h]
+%\includegraphics[width=16.0cm]{Netuno_all.png} 
+%\caption{Neptune - All Offsets}
+%\label{Fig:netuno-all}
+%\end{figure}
 \begin{figure}
 \includegraphics[width=16.0cm]{Netuno_media.png} 
 \caption{Neptune - Mean offsets by day}
@@ -574,11 +597,11 @@ It seems that there are long term systematic errors in the orbit of Neptune, and
 %\caption{Triton - Mean offsets by day}
 %\label{Fig:trito-media}
 %\end{figure}
-\begin{figure}
-\includegraphics[width=16.0cm]{Triton-Netuno_all.png} 
-\caption{Difference between the offsets of Triton and Neptune - All data}
-\label{Fig:triton-netuno-all}
-\end{figure}
+%\begin{figure}
+%\includegraphics[width=16.0cm]{Triton-Netuno_all.png} 
+%\caption{Difference between the offsets of Triton and Neptune - All %data}
+%\label{Fig:triton-netuno-all}
+%\end{figure}
 \begin{figure}
 \includegraphics[width=16.0cm]{Triton-Netuno_media.png} 
 \caption{Difference between the offsets of Triton and Neptune - Mean offset by day}
