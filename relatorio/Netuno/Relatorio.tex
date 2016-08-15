@@ -540,7 +540,7 @@ In order to obtain a PSF for extended objects (objects with sizes in the order o
 F_{c}(x,y) = A\sqrt{\frac{\pi}{2}}\sigma \int_{-R}^{+R} e^{-\frac{(x-x_{0}-\mu)^2}{2\sigma^2}} \left[ erf \left( \frac{y-y_{0}+\sqrt{R^2 - \mu^2}}{\sqrt{2}\sigma} \right) - erf \left( \frac{y-y_{0}-\sqrt{R^2 - \mu^2}}{\sqrt{2}\sigma} \right) \right] d\mu
 \end{equation}
 
-where
+where erf(x) is the Error Function defined as:
 
 \begin{equation}
 erf(x) = \frac{2}{\sqrt{\pi}} \int_{0}^{x} e^{-t^2} dt
@@ -554,6 +554,8 @@ Fig. \ref{Fig:ajuste-psf} shows the first test with this PSF for the image of Ne
 \includegraphics[width=16cm]{Ajuste.png} 
 \caption{Fit of an image of Neptune with a gaussian fit (red) and with the PSF for extended objects (green).\label{Fig:ajuste-psf}}
 \end{figure}
+
+This test was made using the Scipy packages: Odrpack (for non-linear least square fit), Intergrate (for integration) and Special (for the error function)
 
 \section*{Final Remarks}
 
