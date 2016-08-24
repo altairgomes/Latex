@@ -283,7 +283,29 @@ Neptune & +0.14 & +0.39 & -0.29 & -1.05 & +0.76*\\
 \label{Tab:colors}
 \end{table*}
 
-\citep{Pascu2006} data also support a secular "blueing" on Triton observed since 1954. They also evidence a reddening episode that happened in 1997 where the B-V color of Triton was bigger than 0.9. A similar reddening was also identified in 1979. The authors state that a possible cause of this event is an increase in the activity of geysers.
+\citep{Pascu2006} data also support a secular "blueing" on Triton observed since 1954. They also evidence a reddening episode that happened in 1997 where the B-V color of Triton was bigger than 0.9. A similar reddening was also identified in 1979 (Fig. \ref{Fig:Pascu}). The authors state that a possible cause of this event is an increase in the activity of geysers.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{Pascu.png}
+\caption{Figure extracted from \cite{Pascu2006}. \label{Fig:Pascu}}
+\end{figure}
+
+For Neptune, \cite{Schmude2016} showed a secular brightening in the B-, V-, R- and I-bands (Fig. \ref{Fig:netuno-secular}) from observations since 1954. They also identified, from Hubble observations, that Neptune has a variation of about 1 magnitude in the I-band over some hours caused by the presence of bright clouds on its atmosphere (Fig. \ref{Fig:netuno-nuvem}). All these circumstances can difficult the estimative of chromatic refraction parameters for Neptune and Triton.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{Neptune_secular.png}
+\caption{Secular brightening of Neptune in B-, V-, R- and I-bands \citep{Schmude2016}. \label{Fig:netuno-secular}}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1]{netuno-day.png}
+\caption{HST images of Neptune at $\lambda=8450 \mbox{\normalfont\AA}$ which show a variation of the I-magnitude caused by bright clouds on the atmosphere \citep{Schmude2016}.\label{Fig:netuno-nuvem}}
+\end{figure}
+
+
 
 To test the effects of chromatic refraction I used the method of \cite{Benedetti-Rossi2014} on all nights with observations distributed over more than 1.5h of hour angle. I used the equation \:
 \begin{equation}
@@ -292,27 +314,33 @@ To test the effects of chromatic refraction I used the method of \cite{Benedetti
 \end{equation}
 to model the chromatic refraction of the nights. $\Delta [\alpha, \delta]$ is the position offset for each coordinate ($\alpha, \delta$), $V_{\alpha,\delta} (\phi,\delta, H)$ is the first part of refraction which is due to the position of the observed objects and is a function of the latitude of the site ($\phi$), of the object’s declination ($\delta$), and of the hour angle ($H$) and $\Delta B$ is the the second part: the differential chromatic refraction which is due to the atmospheric conditions and the wavelength ($\lambda$) of the object and of the stars in the field. This equation is available in \cite{Benedetti-Rossi2014} where it was applied for observations of Pluto.
 
-Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distributions of the offsets in RA and DEC before and after the elimination of chromatic refraction (Neptune-160, Triton-160, Neptune-IAG, Triton-IAG, respectively). Only nights with $\Delta H > 1.5h$. The histograms clearly show an improvement in the distribution of the offsets, mainly for Neptune. So chromatic refraction is very important and must be removed. % looked for nights with many observations distributed over the night. I selected five of them (\PE: 1997-05-31 and 1997-06-01; \BC: 2003-07-27, 2004-08-22 and 2011-09-25) with more than 4 hours between the first and last observations. In the nights of \PE and in the 2003 night of \BC it was used no filter (clear). In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter.% In both nights there was only one exposure time used.
+The model is applied to the offsets in $\alpha$ and the chromatic parameter $\Delta B$ is obtained. This parameter is then used to correct the offsets in $\delta$.
+
+Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distributions of the offsets in RA and DEC before and after the elimination of chromatic refraction (Neptune-160, Triton-160, Neptune-IAG, Triton-IAG, respectively). Only nights with $\Delta H > 1.5h$ were used. The histograms clearly show an improvement in the distribution of the offsets, mainly for Neptune. So chromatic refraction is very important and must be removed. % looked for nights with many observations distributed over the night. I selected five of them (\PE: 1997-05-31 and 1997-06-01; \BC: 2003-07-27, 2004-08-22 and 2011-09-25) with more than 4 hours between the first and last observations. In the nights of \PE and in the 2003 night of \BC it was used no filter (clear). In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter.% In both nights there was only one exposure time used.
 
 %In Fig \ref{Fig:refraction} it is plotted the difference in the positions of Triton and Neptune compared to the difference of their ephemeris in RA and DEC for the 5 nights.
 
 \begin{figure}[h]
-\includegraphics[width=17.0cm]{dist_Netuno_160.png} 
+\centering
+\includegraphics[height=11.0cm]{dist_Netuno_160.png} 
 \caption{Distribution of the offsets of Neptune observed in 160.}
 \label{Fig:refraction-net-160}
 \end{figure}
 \begin{figure}[h]
-\includegraphics[width=17.0cm]{dist_Triton_160.png} 
+\centering
+\includegraphics[height=11.0cm]{dist_Triton_160.png} 
 \caption{Distribution of the offsets of Triton observed in 160.}
 \label{Fig:refraction-tri-160}
 \end{figure}
 \begin{figure}[h]
-\includegraphics[width=17.0cm]{dist_Netuno_IAG.png} 
+\centering
+\includegraphics[height=11.0cm]{dist_Netuno_IAG.png} 
 \caption{Distribution of the offsets of Neptune observed in IAG.}
 \label{Fig:refraction-net-iag}
 \end{figure}
 \begin{figure}[h]
-\includegraphics[width=17.0cm]{dist_Triton_IAG.png} 
+\centering
+\includegraphics[height=11.0cm]{dist_Triton_IAG.png} 
 \caption{Distribution of the offsets of Triton observed in IAG.}
 \label{Fig:refraction-tri-iag}
 \end{figure}
@@ -532,9 +560,9 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 
 \section*{PSF for extended object Test}
 
-PRAIA uses a bidimensional circular gaussian fit for the PSF of the objects in the images to obtain their photocenters. But in the case of Neptune, its size is bigger than 2 arcsec, which is comparable to the observational seeing. In this case a gaussian fit may not represent well the PSF of Neptune.
+PRAIA uses a bidimensional circular gaussian fit for the PSF of the objects in the images to obtain their photocenters. But in the case of Neptune, its size is bigger than 2 arcsec, which is comparable to the observational seeing. In this case a gaussian fit may not represent with enough accuracy the PSF of Neptune.
 
-In order to obtain a PSF for extended objects (objects with sizes in the order of the seeing), Vieira-Martins (priv. comm.) obtained the following equation.
+In order to obtain a PSF for extended objects (objects with sizes in the order of the seeing), Vieira-Martins (priv. comm.) obtained the following equation:
 
 \begin{equation}
 F_{c}(x,y) = A\sqrt{\frac{\pi}{2}}\sigma \int_{-R}^{+R} e^{-\frac{(x-x_{0}-\mu)^2}{2\sigma^2}} \left[ erf \left( \frac{y-y_{0}+\sqrt{R^2 - \mu^2}}{\sqrt{2}\sigma} \right) - erf \left( \frac{y-y_{0}-\sqrt{R^2 - \mu^2}}{\sqrt{2}\sigma} \right) \right] d\mu
@@ -546,22 +574,24 @@ where erf(x) is the Error Function defined as:
 erf(x) = \frac{2}{\sqrt{\pi}} \int_{0}^{x} e^{-t^2} dt
 \end{equation}
 
-This equation is obtained integrating an homogeneous disk where every bit of the disk can be represented by a bidimensional circular gaussian fit. The parameters to be determined are the amplitude A, the dispersion $\sigma$, the center of the disk ($x_0$, $y_0$) and the radius of the disk R.
+The flux $F_c$ obtained for a given position $(x,y)$ is obtained by integrating an homogeneous disk where every bit of the disk can be represented by a bidimensional circular Gaussian fit. The parameters to be determined are the amplitude A and the dispersion $\sigma$ of the original Gaussian, the center of the disk ($x_0$, $y_0$) and the radius of the disk R.
 
-Fig. \ref{Fig:ajuste-psf} shows the first test with this PSF for the image of Neptune. The image test was taken at OPD in June 08, 2013. The image has a pixel scale of 0.177"/px, an exposure time of 5s and was observed with a B filter.
+Fig. \ref{Fig:ajuste-psf} shows the first test with this PSF for a image of Neptune. The image test was taken at OPD in June 08, 2013. The image has a pixel scale of 0.177"/px, an exposure time of 5s and was observed with a B filter.
 
 \begin{figure}
 \includegraphics[width=16cm]{Ajuste.png} 
 \caption{Fit of an image of Neptune with a gaussian fit (red) and with the PSF for extended objects (green).\label{Fig:ajuste-psf}}
 \end{figure}
 
-This test was made using the Scipy packages: Odrpack (for non-linear least square fit), Intergrate (for integration) and Special (for the error function)
+In this example, the photocenter calculated was different from PRAIA's by 0.01px or 1.77mas. We must still estimate the best region of the image to fit the PSF. We must also test it for other nights.
+
+This test was made using the Scipy packages: Odrpack (for non-linear least square fit) and Special (for the error function). It is possible to see that the function for extended objects (green) fits better the profile of Neptune.
 
 \section*{Final Remarks}
 
 Fig \ref{Fig:netuno-media} shows the mean offsets of each night and respective discrepancy (error bars) for Neptune in RA and DEC, respectively.
 
-Fig \ref{Fig:triton-netuno-mean} shows the difference in the mean offsets night by night for all matched nights and not eliminated by the sigma-clip procedure in the sense Triton - Neptune. The dispersions (error bars) is the mean value of the dispersion in the night for each satellite.
+Fig \ref{Fig:triton-netuno-mean} shows the difference in the mean offsets night by night for all matched nights and not eliminated by the sigma-clip procedure in the sense Triton - Neptune. The error bars are the mean value of the dispersions in the night for each satellite.
 
 %The large offsets found in 2002-2003 must be checked. It may be caused by few reference stars in the field or saturation.\\
 
