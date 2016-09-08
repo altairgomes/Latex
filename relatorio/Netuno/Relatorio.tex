@@ -266,7 +266,7 @@ We applied the digital coronagraphy technique to test if the scattered light of 
 
 \section*{Chromatic Refraction Test}
 
-Table \ref{Tab:colors} shows the colors for Triton \citep{Pascu2006} and Neptune \cite{Schmude2016}. Their colors are very different in the blue region. So it is expected that their positions have influence of chromatic refraction with different intensities. The apparent position of Neptune, which is more blue than Triton, would be more shifted towards the zenith than the Triton's position. There may also be noted that in 1992 Neptune had just exited the galactic plane, so the reference stars were redder due to dust.
+Table \ref{Tab:colors} shows the colors for Triton \citep{Pascu2006} and Neptune \cite{Schmude2016}. Their colors are very different in the blue region. So it is expected that their positions have influence of chromatic refraction (CR) with different intensities. The apparent position of Neptune, which is more blue than Triton, would be more shifted towards the zenith than the Triton's position. There may also be noted that in 1992 Neptune had just exited the galactic plane, so the reference stars were redder due to dust.
 
 \begin{table*}[h]
 \centering
@@ -316,9 +316,18 @@ to model the chromatic refraction of the nights. $\Delta [\alpha, \delta]$ is th
 
 The model is applied to the offsets in $\alpha$ and the chromatic parameter $\Delta B$ is obtained. This parameter is then used to correct the offsets in $\delta$.
 
-Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distributions of the offsets in RA and DEC before and after the elimination of chromatic refraction (Neptune-160, Triton-160, Neptune-IAG, Triton-IAG, respectively). Only nights with $\Delta H > 1.5h$ were used. The histograms clearly show an improvement in the distribution of the offsets, mainly for Neptune. So chromatic refraction is very important and must be removed. % looked for nights with many observations distributed over the night. I selected five of them (\PE: 1997-05-31 and 1997-06-01; \BC: 2003-07-27, 2004-08-22 and 2011-09-25) with more than 4 hours between the first and last observations. In the nights of \PE and in the 2003 night of \BC it was used no filter (clear). In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter.% In both nights there was only one exposure time used.
+Fig. \ref{Fig:refraction-sample-neptune} shows the offsets for a sample night observed with the Perkin-Elmer telescope. In blue are the offsets before the correction and in green after correction. It is possible to see the increase in the offsets before the correction over time (blue).
+
+Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distributions of the offsets in RA and DEC before and after the elimination of chromatic refraction (Neptune-160, Triton-160, Neptune-IAG, Triton-IAG, respectively) for all the nights. The histograms clearly show an improvement in the distribution of the offsets, mainly for Neptune. So chromatic refraction is very important and must be removed. % looked for nights with many observations distributed over the night. I selected five of them (\PE: 1997-05-31 and 1997-06-01; \BC: 2003-07-27, 2004-08-22 and 2011-09-25) with more than 4 hours between the first and last observations. In the nights of \PE and in the 2003 night of \BC it was used no filter (clear). In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter.% In both nights there was only one exposure time used.
 
 %In Fig \ref{Fig:refraction} it is plotted the difference in the positions of Triton and Neptune compared to the difference of their ephemeris in RA and DEC for the 5 nights.
+
+\begin{figure}
+\centering
+\includegraphics[height=11.0cm]{Netuno_160_1993-08-20.png} 
+\caption{Offsets before and after CR correction for the night of August 20, 1993 observed with the Perkin-Elmer telescope.}
+\label{Fig:refraction-sample-neptune}
+\end{figure}
 
 \begin{figure}[h]
 \centering
@@ -349,7 +358,15 @@ Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distrib
 
 Table \ref{Tab:parameters} show respective nights used in the Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag}, the filter, the variation in hour angle ($\Delta H$), the parameters obtained ($\Delta B$), number of images (Nimg), mean number of reference stars (Nstars) and mean offsets before and after correction. It is possible to see that the $\Delta B$ calculated has high values for Neptune, while for Triton they are smaller.
 
-For the nights with observations distributed in a smaller time interval, it must be used $\Delta B$ of close nights observed with the same filter for the correction.
+For the nights with observations distributed in a smaller time interval, the correction was made following the conditions:
+
+\begin{itemize}
+\item If the night only has observations between -1h and 1h of hourangle, no correction is made.
+\item If there is another night with $\Delta B$ calculated observed with the same filter in the same telescope within at most 3 days apart, the $\Delta B$ from this night was used in the CR correction.
+\item If there is no close night with $\Delta B$ calculated, it was used the mean $\Delta B$ calculated for nights observed with the same filter and same telescope for the correction of CR.
+\item Other situations, no CR correction was made.
+\end{itemize}
+
 
 \begin{longtable}{|l|c|c|c|c|c|c|c|c|c|c|}
 \caption{Obtained parameters and offsets from adjustments. Only nights with $\Delta H > 1.5h$.\label{Tab:parameters}}\\
@@ -558,34 +575,34 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 %\end{tabular}
 %\end{table}
 
-\section*{PSF for extended object Test}
-
-PRAIA uses a bidimensional circular gaussian fit for the PSF of the objects in the images to obtain their photocenters. But in the case of Neptune, its size is bigger than 2 arcsec, which is comparable to the observational seeing. In this case a gaussian fit may not represent with enough accuracy the PSF of Neptune.
-
-In order to obtain a PSF for extended objects (objects with sizes in the order of the seeing), Vieira-Martins (priv. comm.) obtained the following equation:
-
-\begin{equation}
-F_{c}(x,y) = A\sqrt{\frac{\pi}{2}}\sigma \int_{-R}^{+R} e^{-\frac{(x-x_{0}-\mu)^2}{2\sigma^2}} \left[ erf \left( \frac{y-y_{0}+\sqrt{R^2 - \mu^2}}{\sqrt{2}\sigma} \right) - erf \left( \frac{y-y_{0}-\sqrt{R^2 - \mu^2}}{\sqrt{2}\sigma} \right) \right] d\mu
-\end{equation}
-
-where erf(x) is the Error Function defined as:
-
-\begin{equation}
-erf(x) = \frac{2}{\sqrt{\pi}} \int_{0}^{x} e^{-t^2} dt
-\end{equation}
-
-The flux $F_c$ obtained for a given position $(x,y)$ is obtained by integrating an homogeneous disk where every bit of the disk can be represented by a bidimensional circular Gaussian fit. The parameters to be determined are the amplitude A and the dispersion $\sigma$ of the original Gaussian, the center of the disk ($x_0$, $y_0$) and the radius of the disk R.
-
-Fig. \ref{Fig:ajuste-psf} shows the first test with this PSF for a image of Neptune. The image test was taken at OPD in June 08, 2013. The image has a pixel scale of 0.177"/px, an exposure time of 5s and was observed with a B filter.
-
-\begin{figure}
-\includegraphics[width=16cm]{Ajuste.png} 
-\caption{Fit of an image of Neptune with a gaussian fit (red) and with the PSF for extended objects (green).\label{Fig:ajuste-psf}}
-\end{figure}
-
-In this example, the photocenter calculated was different from PRAIA's by 0.01px or 1.77mas. We must still estimate the best region of the image to fit the PSF. We must also test it for other nights.
-
-This test was made using the Scipy packages: Odrpack (for non-linear least square fit) and Special (for the error function). It is possible to see that the function for extended objects (green) fits better the profile of Neptune.
+%\section*{PSF for extended object Test}
+%
+%PRAIA uses a bidimensional circular gaussian fit for the PSF of the objects in the images to obtain their photocenters. But in the case of Neptune, its size is bigger than 2 arcsec, which is comparable to the observational seeing. In this case a gaussian fit may not represent with enough accuracy the PSF of Neptune.
+%
+%In order to obtain a PSF for extended objects (objects with sizes in the order of the seeing), Vieira-Martins (priv. comm.) obtained the following equation:
+%
+%\begin{equation}
+%F_{c}(x,y) = A\sqrt{\frac{\pi}{2}}\sigma \int_{-R}^{+R} e^{-\frac{(x-x_{0}-\mu)^2}{2\sigma^2}} \left[ erf \left( \frac{y-y_{0}+\sqrt{R^2 - \mu^2}}{\sqrt{2}\sigma} \right) - erf \left( \frac{y-y_{0}-\sqrt{R^2 - \mu^2}}{\sqrt{2}\sigma} \right) \right] d\mu
+%\end{equation}
+%
+%where erf(x) is the Error Function defined as:
+%
+%\begin{equation}
+%erf(x) = \frac{2}{\sqrt{\pi}} \int_{0}^{x} e^{-t^2} dt
+%\end{equation}
+%
+%The flux $F_c$ obtained for a given position $(x,y)$ is obtained by integrating an homogeneous disk where every bit of the disk can be represented by a bidimensional circular Gaussian fit. The parameters to be determined are the amplitude A and the dispersion $\sigma$ of the original Gaussian, the center of the disk ($x_0$, $y_0$) and the radius of the disk R.
+%
+%Fig. \ref{Fig:ajuste-psf} shows the first test with this PSF for a image of Neptune. The image test was taken at OPD in June 08, 2013. The image has a pixel scale of 0.177"/px, an exposure time of 5s and was observed with a B filter.
+%
+%\begin{figure}
+%\includegraphics[width=16cm]{Ajuste.png} 
+%\caption{Fit of an image of Neptune with a gaussian fit (red) and with the PSF for extended objects (green).\label{Fig:ajuste-psf}}
+%\end{figure}
+%
+%In this example, the photocenter calculated was different from PRAIA's by 0.01px or 1.77mas. We must still estimate the best region of the image to fit the PSF. We must also test it for other nights.
+%
+%This test was made using the Scipy packages: Odrpack (for non-linear least square fit) and Special (for the error function). It is possible to see that the function for extended objects (green) fits better the profile of Neptune.
 
 \section*{Final Remarks}
 
