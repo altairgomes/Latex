@@ -81,16 +81,20 @@ In Table \ref{Tab:dados} it is summarized the final number of images for Neptune
 \hline 
 Telescope & Neptune & Triton & Matches \\ 
 \hline
-160 & 782 & 1341 & 768 \\ 
+%160 & 782 & 1341 & 768 \\ 
+160 & 735 & 1275 & 705 \\
+\hline
+%IAG & 3162 & 3645 & 2909 \\
+IAG & 2894 & 3341 & 2538 \\ 
 \hline 
-IAG & 3162 & 3645 & 2909 \\ 
+%Zeiss & 354 & 479 & 341 \\
+Zeiss & 325 & 463 & 312 \\ 
 \hline 
-Zeiss & 354 & 479 & 341 \\ 
-\hline 
-Total & 4298 & 5465 & 4018 \\ 
+%Total & 4298 & 5465 & 4018 \\
+Total & 3954 & 5079 & 3555 \\ 
 \hline 
 \end{tabular}
-\\Number of positions identified of Neptune and Triton by telescope. Matches: Number of positions where Neptune and Triton were identified automatically in the same image.
+\\Number of positions identified of Neptune and Triton by telescope. Matches: Number of positions where Neptune and Triton were identified automatically in the same image. This is the final number after all the process described in this report.
 \end{table*}
 
 
@@ -318,6 +322,15 @@ The model is applied to the offsets in $\alpha$ and the chromatic parameter $\De
 
 Fig. \ref{Fig:refraction-sample-neptune} shows the offsets for a sample night observed with the Perkin-Elmer telescope. In blue are the offsets before the correction and in green after correction. It is possible to see the increase in the offsets before the correction over time (blue).
 
+For the nights with observations distributed in a smaller time interval, the correction was made following the conditions:
+
+\begin{itemize}
+\item If the night only has observations between -1h and 1h of hourangle, no correction is made.
+\item If there is another night with $\Delta B$ calculated observed with the same filter and same telescope within at most 3 days apart, the $\Delta B$ from that night is used in the CR correction.
+\item If there is no close night with $\Delta B$ calculated, it is used the mean $\Delta B$ calculated for nights observed with the same filter and same telescope for the correction of CR.
+\item Other situations, no CR correction is made.
+\end{itemize}
+
 Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distributions of the offsets in RA and DEC before and after the elimination of chromatic refraction (Neptune-160, Triton-160, Neptune-IAG, Triton-IAG, respectively) for all the nights. The histograms clearly show an improvement in the distribution of the offsets, mainly for Neptune. So chromatic refraction is very important and must be removed. % looked for nights with many observations distributed over the night. I selected five of them (\PE: 1997-05-31 and 1997-06-01; \BC: 2003-07-27, 2004-08-22 and 2011-09-25) with more than 4 hours between the first and last observations. In the nights of \PE and in the 2003 night of \BC it was used no filter (clear). In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter.% In both nights there was only one exposure time used.
 
 %In Fig \ref{Fig:refraction} it is plotted the difference in the positions of Triton and Neptune compared to the difference of their ephemeris in RA and DEC for the 5 nights.
@@ -325,7 +338,7 @@ Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distrib
 \begin{figure}
 \centering
 \includegraphics[height=11.0cm]{Netuno_160_1993-08-20.png} 
-\caption{Offsets before and after CR correction for the night of August 20, 1993 observed with the Perkin-Elmer telescope.}
+\caption{Offsets before (blue) and after (green) CR correction for the night of August 20, 1993 observed with the Perkin-Elmer telescope.}
 \label{Fig:refraction-sample-neptune}
 \end{figure}
 
@@ -356,17 +369,7 @@ Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distrib
 
 \begin{landscape}
 
-Table \ref{Tab:parameters} show respective nights used in the Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag}, the filter, the variation in hour angle ($\Delta H$), the parameters obtained ($\Delta B$), number of images (Nimg), mean number of reference stars (Nstars) and mean offsets before and after correction. It is possible to see that the $\Delta B$ calculated has high values for Neptune, while for Triton they are smaller.
-
-For the nights with observations distributed in a smaller time interval, the correction was made following the conditions:
-
-\begin{itemize}
-\item If the night only has observations between -1h and 1h of hourangle, no correction is made.
-\item If there is another night with $\Delta B$ calculated observed with the same filter in the same telescope within at most 3 days apart, the $\Delta B$ from this night was used in the CR correction.
-\item If there is no close night with $\Delta B$ calculated, it was used the mean $\Delta B$ calculated for nights observed with the same filter and same telescope for the correction of CR.
-\item Other situations, no CR correction was made.
-\end{itemize}
-
+Table \ref{Tab:parameters} show the nights used to calculate CR parameter (nights with $\Delta H$ > 1.5), the filter, the variation in hour angle ($\Delta H$), the parameter obtained ($\Delta B$), number of images (Nimg), mean number of reference stars (Nstars) and mean offsets before and after correction. It is possible to see that the $\Delta B$ calculated has high values for Neptune, while for Triton they are smaller.
 
 \begin{longtable}{|l|c|c|c|c|c|c|c|c|c|c|}
 \caption{Obtained parameters and offsets from adjustments. Only nights with $\Delta H > 1.5h$.\label{Tab:parameters}}\\
@@ -606,6 +609,8 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 
 \section*{Final Remarks}
 
+Finally, from the offsets in the sense "position minus ephemeris" identified it was made statistics night by night to eliminate discrepant positions with a sigma-clip procedure where offsets (modulus) larger than 80 mas or 2.5-sigma discrepant from the mean offset were removed.% This procedure was applied for each set of observations (short exposures and long exposures) separately.
+
 Fig \ref{Fig:netuno-media} shows the mean offsets of each night and respective discrepancy (error bars) for Neptune in RA and DEC, respectively.
 
 Fig \ref{Fig:triton-netuno-mean} shows the difference in the mean offsets night by night for all matched nights and not eliminated by the sigma-clip procedure in the sense Triton - Neptune. The error bars are the mean value of the dispersions in the night for each satellite.
@@ -632,7 +637,7 @@ It seems that there are long term systematic errors in the orbit of Neptune, and
 %\label{Fig:netuno-all}
 %\end{figure}
 \begin{figure}
-\includegraphics[width=16.0cm]{Netuno_media.png} 
+\includegraphics[width=15.0cm]{Neptune_offsets.png} 
 \caption{Neptune - Mean offsets by day}
 \label{Fig:netuno-media}
 \end{figure}
@@ -652,9 +657,58 @@ It seems that there are long term systematic errors in the orbit of Neptune, and
 %\label{Fig:triton-netuno-all}
 %\end{figure}
 \begin{figure}
-\includegraphics[width=16.0cm]{Triton-Netuno_media.png} 
+\includegraphics[width=15.0cm]{Triton-Neptune.png} 
 \caption{Difference between the offsets of Triton and Neptune - Mean offset by day}
 \label{Fig:triton-netuno-mean}
+\end{figure}
+
+Fig. \ref{Fig:triton-netuno-anom} shows the difference between the offsets of Triton and Neptune over True Anomaly. Figs. \ref{Fig:triton-netuno-1992}- \ref{Fig:triton-netuno-2013} shows the same divided by an interval of 3 years.
+
+\begin{figure}
+\includegraphics[width=14.0cm]{Anom_TN.png} 
+\caption{Difference between the offsets of Triton and Neptune by True Anomaly}
+\label{Fig:triton-netuno-anom}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=14.0cm]{Anom_TN_1992-1995.png} 
+\caption{Difference between the offsets of Triton and Neptune by True Anomaly - 1992.0 -> 1995.0}
+\label{Fig:triton-netuno-1992}
+\end{figure}
+\begin{figure}
+\includegraphics[width=14.0cm]{Anom_TN_1995-1998.png} 
+\caption{Difference between the offsets of Triton and Neptune by True Anomaly - 1995.0 -> 1998.0}
+\label{Fig:triton-netuno-1995}
+\end{figure}
+\begin{figure}
+\includegraphics[width=14.0cm]{Anom_TN_1998-2001.png} 
+\caption{Difference between the offsets of Triton and Neptune by True Anomaly - 1998.0 -> 2001.0}
+\label{Fig:triton-netuno-1998}
+\end{figure}
+\begin{figure}
+\includegraphics[width=14.0cm]{Anom_TN_2001-2004.png} 
+\caption{Difference between the offsets of Triton and Neptune by True Anomaly - 2001.0 -> 2004.0}
+\label{Fig:triton-netuno-2001}
+\end{figure}
+\begin{figure}
+\includegraphics[width=14.0cm]{Anom_TN_2004-2007.png} 
+\caption{Difference between the offsets of Triton and Neptune by True Anomaly - 2004.0 -> 2007.0}
+\label{Fig:triton-netuno-2004}
+\end{figure}
+\begin{figure}
+\includegraphics[width=14.0cm]{Anom_TN_2007-2010.png} 
+\caption{Difference between the offsets of Triton and Neptune by True Anomaly - 2007.0 -> 2010.0}
+\label{Fig:triton-netuno-2007}
+\end{figure}
+\begin{figure}
+\includegraphics[width=14.0cm]{Anom_TN_2010-2013.png} 
+\caption{Difference between the offsets of Triton and Neptune by True Anomaly - 2010.0 -> 2013.0}
+\label{Fig:triton-netuno-2010}
+\end{figure}
+\begin{figure}
+\includegraphics[width=14.0cm]{Anom_TN_2013-2016.png} 
+\caption{Difference between the offsets of Triton and Neptune by True Anomaly - 2013.0 -> 2016.0}
+\label{Fig:triton-netuno-2013}
 \end{figure}
 
 
