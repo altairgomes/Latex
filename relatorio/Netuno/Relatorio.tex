@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{report}
+	\documentclass[12pt,a4paper]{report}
 \usepackage[brazilian, english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -71,7 +71,7 @@ The observations were carried out since 1992 when a CCD big enough was installed
 
 There was more than 5000 images from June 1992 to September 2015. Many of the oldest images had no coordinates in header or they were wrong. Many nights had two exposure sets. The first one with low exposure times so Neptune was not saturated, but there were few reference stars in the field. The second one with higher exposure time so Triton was brighter and had more reference stars than with the the previous exposure, but the image of Neptune were saturated.
 
-In Table \ref{Tab:dados} it is summarized the final number of images for Neptune (short-exposure observations) and Triton (all observations) for the 3 telescopes. It is also shown the number of positions where Neptune and Triton are in the same image (short-exposure observations for precision premium).
+In Table \ref{Tab:dados} it is summarized the final number of (only non-saturated) images for Neptune (short-exposure observations) and Triton (all observations) for the 3 telescopes. It is also shown the number of positions where non-saturated-Neptune and Triton are in the same image (short-exposure observations for precision premium).
 
 \begin{table*}[h]
 \centering
@@ -94,7 +94,7 @@ Zeiss & 292 & 463 & 280 \\
 Total & 3822 & 5055 & 3421 \\ 
 \hline 
 \end{tabular}
-\\Number of positions identified of Neptune and Triton by telescope. Matches: Number of positions where Neptune and Triton were identified automatically in the same image. This is the final number after all the process described in this report.
+\\Number of positions identified of non-saturated-Neptune and Triton by telescope. Matches: Number of positions where non-saturaded-Neptune and Triton were identified automatically in the same image. This is the final number after all the process described in this report.
 \end{table*}
 
 Fig. \ref{Fig:pos-dist} shows the distribution of positions where Neptune and Triton are identified in the same image (short-exposure observations) over the years. Table \ref{Tab:filters} summarizes the distribution of positions with Neptune and Triton in the same image by filter for each telescope.
@@ -123,7 +123,7 @@ Zeiss & 218 & - & - & - & 62 & - \\
 
 \section*{Reduction}
 
-The images were reduced using PRAIA, developed by Marcelo Assafin. To avoid the missing or wrong field-center coordinates I used the coordinates of the ephemeris as input. This way PRAIA could identify reference stars in the images. The reference catalogue used was UCAC4. The ephemeris used to identify Neptune and Triton in the images was DE430+NEP081. The positions where the image of Neptune were saturated and where there were less than 5 reference stars were removed of the results.
+The images were reduced using PRAIA, developed by Marcelo Assafin. To avoid the missing or wrong field-center coordinates I used the coordinates of the ephemeris as input. This way PRAIA could identify reference stars in the images. The reference catalogue used was UCAC4. The ephemeris used to identify Neptune and Triton in the images was DE430+NEP081. The positions where the image of Neptune was saturated and where there were less than 5 reference stars were removed of the results.
 
 In Table \ref{Tab:erros} it is presented the mean errors in X and Y of the bidimensional circular Gaussian used to fit the PSF of the objects and the mean value of the dispersion of the offsets by night.
 
@@ -186,13 +186,13 @@ Neptune & +0.14 & +0.39 & -0.29 & -1.05 & -1.34*\\
 
 For Neptune, \cite{Schmude2016} showed a secular brightening in the B-, V-, R- and I-bands (Fig. \ref{Fig:netuno-secular}) from observations since 1954. They also identified, from Hubble observations, that Neptune has a variation of about 1 magnitude in the I-band over some hours caused by the presence of bright clouds on its atmosphere (Fig. \ref{Fig:netuno-nuvem}). All these circumstances can difficult the estimative of chromatic refraction parameters for Neptune and Triton.
 
-\begin{figure}[hbtp]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=1]{Neptune_secular.png}
 \caption{Secular brightening of Neptune in B-, V-, R- and I-bands \citep{Schmude2016}. \label{Fig:netuno-secular}}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=1]{netuno-day.png}
 \caption{HST images of Neptune at $\lambda=8450 \mbox{\normalfont\AA}$ which show a variation of the I-magnitude caused by bright clouds on the atmosphere \citep{Schmude2016}.\label{Fig:netuno-nuvem}}
@@ -210,7 +210,7 @@ where
 V_\alpha (\phi, \delta, H) = \frac{\sec^2 \delta . \sin H}{\tan \delta . \tan \phi + \cos H} \qquad and \qquad V_\delta (\phi, \delta, H) = \frac{\tan \phi - \tan \delta . \cos H}{\tan \delta . \tan \phi + \cos H}
 \label{Eq:refraction}
 \end{equation}
-to model the chromatic refraction of the nights. $\Delta [\alpha, \delta]$ is the position offset for each coordinate ($\alpha, \delta$), $V_{\alpha,\delta} (\phi,\delta, H)$ is the first part of refraction which is due to the position of the observed objects and is a function of the latitude of the site ($\phi$), of the object’s declination ($\delta$), and of the hour angle ($H$) and $\Delta B$ is the the second part: the differential chromatic refraction which is due to the atmospheric conditions and the wavelength ($\lambda$) of the object and of the stars in the field. This equation is available in \cite{Benedetti-Rossi2014} where it was applied for observations of Pluto.
+to model the chromatic refraction of the nights. $\Delta [\alpha, \delta]$ is the position offset for each coordinate ($\alpha, \delta$), $V_{\alpha,\delta} (\phi,\delta, H)$ is the first part of refraction which is due to the position of the observed objects and is a function of the latitude of the site ($\phi$), of the object’s declination ($\delta$), and of the hour angle ($H$) and $\Delta B$ is the the second part: the differential chromatic refraction which is due to the atmospheric conditions and the wavelength ($\lambda$) of the object and of the stars in the field. This equation is available in \cite{Benedetti-Rossi2014} where it was applied for observations of Pluto. Notice that positive values for $\Delta B$ indicates that the body's color is bluer than the average color of the reference stars used in the (RA, DEC) reductions.
 
 The model is applied to the offsets in $\alpha$ and the chromatic parameter $\Delta B$ is obtained. It allows to obtain the zero point of the CR in right ascension since the CR in the meridian must be null. This parameter is then used to correct the offsets in $\delta$, where the effect of CR is much smaller because the declination of Neptune is close to the latitude of the observation site ($\delta = -21$\degr in 1992 up to $\delta = -9$\degr in 2015, OPD: $\phi = -22.5$\degr).
 
@@ -225,39 +225,39 @@ For the nights with observations distributed in a smaller hour angle, the correc
 \item Other situations, no CR correction is made.
 \end{itemize}
 
-Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distributions of the offsets in RA and DEC before and after the elimination of chromatic refraction (Neptune-160, Triton-160, Neptune-IAG, Triton-IAG, respectively) for all the nights. Significant improvements were achieved in right ascension as expected, while in declination they are much smaller. %. That was expected, since between 1992-2016 Neptune/Triton were always observed with declinations very close to the OPD's zenith.% ($\delta = -21$\degr in 1992 up to $\delta = -9$\degr in 2015, OPD: $\phi = -22.5$\degr).
-We see that the Neptune's offsets are much more improved than for Triton's, as expected since Neptune is bluer than the satellite. And we see a significant improvement for Neptune positions, also expected because of its much bluer color. % looked for nights with many observations distributed over the night. I selected five of them (\PE: 1997-05-31 and 1997-06-01; \BC: 2003-07-27, 2004-08-22 and 2011-09-25) with more than 4 hours between the first and last observations. In the nights of \PE and in the 2003 night of \BC it was used no filter (clear). In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter.% In both nights there was only one exposure time used.
+Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distributions of the offsets in RA and DEC before and after the elimination of chromatic refraction (Neptune-160, Triton-160, Neptune-IAG, Triton-IAG, respectively) for all the nights. Significant improvements were achieved in right ascension as expected, while in declination they are much smaller. As expected, more significant improvements were achieved in right ascension than in declination, because the declination of Neptune is close to the latitude of the OPD site ($\delta = -21$\degr in 1992 up to $\delta = -9$\degr in 2015, OPD: $\phi = -22.5$\degr).
+We see that the Neptune's offsets are much more improved than for Triton's, as expected since Neptune is much bluer than the satellite. %And we see a significant improvement for Neptune positions, also expected because of its much bluer color. % looked for nights with many observations distributed over the night. I selected five of them (\PE: 1997-05-31 and 1997-06-01; \BC: 2003-07-27, 2004-08-22 and 2011-09-25) with more than 4 hours between the first and last observations. In the nights of \PE and in the 2003 night of \BC it was used no filter (clear). In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter.% In both nights there was only one exposure time used.
 
 %\textcolor{red}{colocar que era esperado que pra Netuno a correção é maior do que para Tritão porque ele é mais azulado}
 
 %In Fig \ref{Fig:refraction} it is plotted the difference in the positions of Triton and Neptune compared to the difference of their ephemeris in RA and DEC for the 5 nights.
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[height=11.0cm]{Netuno_160_1993-08-20.png} 
 \caption{Offsets in right ascension before (red) and after (blue) CR correction for the night of August 20, 1993 observed with the Perkin-Elmer telescope.}
 \label{Fig:refraction-sample-neptune}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[height=11.0cm]{dist_Netuno_160.png} 
 \caption{Distribution of the offsets of Neptune observed in 160.}
 \label{Fig:refraction-net-160}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[height=11.0cm]{dist_Triton_160.png} 
 \caption{Distribution of the offsets of Triton observed in 160.}
 \label{Fig:refraction-tri-160}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[height=11.0cm]{dist_Netuno_IAG.png} 
 \caption{Distribution of the offsets of Neptune observed in IAG.}
 \label{Fig:refraction-net-iag}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[height=11.0cm]{dist_Triton_IAG.png} 
 \caption{Distribution of the offsets of Triton observed in IAG.}
@@ -266,7 +266,7 @@ We see that the Neptune's offsets are much more improved than for Triton's, as e
 
 \begin{landscape}
 
-Table \ref{Tab:parameters} show the nights used to calculate CR parameter (nights with $\Delta H$ > 1.5). It is possible to see that the $\Delta B$ calculated has high values for Neptune, while for Triton they are smaller. Due to the low number of reference stars, the mean color of the stars may vary significantly among the nights. This causes the high variation in the $\Delta B$ parameter seen in column 4 of the table. 
+Table \ref{Tab:parameters} shows the nights used to calculate the CR parameter (nights with $\Delta H$ > 1.5). It is possible to see that $\Delta B$ has higher values for Neptune than for Triton, as expected from the much bluer color of the planet with regard to the satellite's color. Due to the low number of reference stars, the mean color of the stars may vary significantly among the nights. This causes the high variation in the $\Delta B$ parameter seen in column 4 of the table, both for Neptune and Triton. 
 
 \begin{longtable}{|l|c|c|c|c|c|c|c|c|c|c|c|c|}
 \caption{Obtained parameters and offsets from adjustments. Only nights with $\Delta H > 1.5h$. Also shown the filter, the variation in hour angle ($\Delta H$), the parameter obtained ($\Delta B$), number of images (Nimg), mean number of reference stars (Nstars), mean offsets before and after correction and mean difference between the non corrected and corrected offsets.\label{Tab:parameters}}\\
@@ -505,7 +505,7 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 
 \section*{Results}
 
-Finally, from the offsets in the sense "position minus ephemeris" identified it was made statistics night by night to eliminate discrepant positions with a sigma-clip procedure where offsets (modulus) larger than 80 mas or 2.5-sigma discrepant from the mean offset were removed.% This procedure was applied for each set of observations (short exposures and long exposures) separately.
+Finally, from the offsets in the sense "position minus ephemeris" it was made statistics night by night to eliminate discrepant positions with a sigma-clip procedure where offsets (modulus) larger than 80 mas or 2.5-sigma discrepant from the mean offset were removed.% This procedure was applied for each set of observations (short exposures and long exposures) separately.
 
 Fig \ref{Fig:netuno-media} shows the mean ephemeris offsets of each night and respective discrepancy (error bars) for Neptune in RA and DEC, respectively.
 
@@ -535,7 +535,7 @@ Fig \ref{Fig:netuno-media} shows the mean ephemeris offsets of each night and re
 %\label{Fig:netuno-all}
 %\end{figure}
 \begin{figure}[H]
-\includegraphics[width=15.0cm]{Neptune_offsets.png} 
+\includegraphics[width=16.0cm]{Neptune_offsets.png} 
 \caption{Neptune - Mean offsets by night. The plot shows the variation in the position of Neptune over time. }
 \label{Fig:netuno-media}
 \end{figure}
@@ -560,11 +560,11 @@ Fig \ref{Fig:netuno-media} shows the mean ephemeris offsets of each night and re
 %\label{Fig:triton-netuno-mean}
 %\end{figure}
 
-Fig. \ref{Fig:triton-netuno-anom} shows the difference between the ephemeris offsets of Triton and Neptune over True Anomaly, so that in fact we get the "observed minus ephemeris" offsets of the relative positions of Triton with respect to Neptune.
+Fig. \ref{Fig:triton-netuno-anom} shows the difference between the ephemeris offsets of Triton and Neptune over the Argument of Latitude, so that in fact we get the "observed minus ephemeris" offsets of the relative positions of Triton with respect to Neptune. As shown by \cite{Emelyanov2015}, the movement of Triton around Neptune has a peculiarity where the True Anomaly, or Mean Anomaly, since Triton has an almost circular orbit, oscillates around zero with an amplitude of about 17\degr. \cite{Emelyanov2015} also shows that the Argument of Pericenter ($\omega$) of Triton's orbit rotates with an angular velocity approximately equal to the rotation of the satellite around the planet. These characteristics make the Argument of Latitude, sum of Mean Anomaly and Argument of Pericenter, more suitable to study the movement of Triton around Neptune.
 
 \begin{figure}[H]
-\includegraphics[width=14.0cm]{Anom_TN.png} 
-\caption{Difference between the offsets of Triton and Neptune by True Anomaly. It shows the variation in the position of Triton around Neptune.}
+\includegraphics[width=16.0cm]{Anom_TN.png} 
+\caption{Difference between the offsets of Triton and Neptune by Argument of Latitude. It shows the variation in the position of Triton around Neptune.}
 \label{Fig:triton-netuno-anom}
 \end{figure}
 
@@ -616,9 +616,9 @@ In order to consolidate the position data sets of Neptune and Triton prior to pu
 
 a) Numerical PSF for Neptune:
 
-Roberto Vieira Martins developed a numerical PSF for a circular extended object, based on the spread of a Gaussian PSF kernel over the apparent planet's disk. I've already implemented this numerical PSF. I am testing it in a group of observations with negligible solar phase angle. The idea is to compare the results using this numerical PSF and the 2D Gaussian PSF, which was used in all observations.
+Roberto Vieira Martins developed a numerical PSF for a circular extended object, based on the spread of a Gaussian PSF kernel over the apparent planet's disk. The effects of solar phase angle were not considered yet in this first numerical PSF model. I've already implemented this numerical PSF. I am testing it in a group of observations with negligible solar phase angle. The idea is to compare the results using this numerical PSF and the 2D Gaussian PSF, which was used in all observations.
 
-If no significant improvements are achieved, we will stand with the 2D Gaussian PSF. This may be the case, as we are dealing with high S/N ratio images (Neptune) and PRAIA discards wing pixels in the (x,y) fits, so that in the end both PSFs may perform equally well. If the offsets of the observations tested are improved, the next step is to update the PSF for observations with higher phase angle.
+If no significant improvements are achieved, we will stand with the 2D Gaussian PSF. This may be the case, as we are dealing with high S/N ratio images (Neptune) and PRAIA discards wing pixels in the (x,y) fits, so that in the end both PSFs may perform equally well. If the offsets of the observations tested are improved, the next step is to upgrade the PSF for observations with higher phase angle, and then apply the model in all Neptune measurements.
 
 
 b) Uniform reduction and global reduction:
