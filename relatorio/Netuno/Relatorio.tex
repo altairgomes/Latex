@@ -1,4 +1,4 @@
-	\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper]{report}
 \usepackage[brazilian, english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -216,6 +216,13 @@ The model is applied to the offsets in $\alpha$ and the chromatic parameter $\De
 
 Fig. \ref{Fig:refraction-sample-neptune} shows the offsets for a sample night observed with the Perkin-Elmer telescope. In blue are the offsets before the correction and in green after correction. It is possible to see the increase in the offsets before the correction over time (blue).
 
+\begin{figure}[H]
+\centering
+\includegraphics[height=11.0cm]{Netuno_160_1993-08-20.png} 
+\caption{Offsets in right ascension before (red) and after (blue) CR correction for the night of August 20, 1993 observed with the Perkin-Elmer telescope.}
+\label{Fig:refraction-sample-neptune}
+\end{figure}
+
 For the nights with observations distributed in a smaller hour angle, the correction was made following the conditions:
 
 \begin{itemize}
@@ -225,43 +232,63 @@ For the nights with observations distributed in a smaller hour angle, the correc
 \item Other situations, no CR correction is made.
 \end{itemize}
 
-Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distributions of the offsets in RA and DEC before and after the elimination of chromatic refraction (Neptune-160, Triton-160, Neptune-IAG, Triton-IAG, respectively) for all the nights. Significant improvements were achieved in right ascension as expected, while in declination they are much smaller. As expected, more significant improvements were achieved in right ascension than in declination, because the declination of Neptune is close to the latitude of the OPD site ($\delta = -21$\degr in 1992 up to $\delta = -9$\degr in 2015, OPD: $\phi = -22.5$\degr).
+Figs. \ref{Fig:refraction-net-160}-\ref{Fig:refraction-tri-iag} show the distributions of the offsets in RA and DEC before and after the elimination of chromatic refraction (Neptune-160, Triton-160, Neptune-IAG, Triton-IAG, respectively) for all the nights. Figs. \ref{Fig:refraction-net-160-mean}-\ref{Fig:refraction-tri-iag-mean} shows the same, but using the mean values of the offsets of each night. Significant improvements were achieved in right ascension as expected, while in declination they are much smaller. As expected, more significant improvements were achieved in right ascension than in declination, because the declination of Neptune is close to the latitude of the OPD site ($\delta = -21$\degr in 1992 up to $\delta = -9$\degr in 2015, OPD: $\phi = -22.5$\degr).
 We see that the Neptune's offsets are much more improved than for Triton's, as expected since Neptune is much bluer than the satellite. %And we see a significant improvement for Neptune positions, also expected because of its much bluer color. % looked for nights with many observations distributed over the night. I selected five of them (\PE: 1997-05-31 and 1997-06-01; \BC: 2003-07-27, 2004-08-22 and 2011-09-25) with more than 4 hours between the first and last observations. In the nights of \PE and in the 2003 night of \BC it was used no filter (clear). In the night of 2004 it was used a filter called "Dark" which we suppose it means no filter, however we are no sure so I classified it as unknown. In the night of 2011 it was used a I filter.% In both nights there was only one exposure time used.
 
 %\textcolor{red}{colocar que era esperado que pra Netuno a correção é maior do que para Tritão porque ele é mais azulado}
 
 %In Fig \ref{Fig:refraction} it is plotted the difference in the positions of Triton and Neptune compared to the difference of their ephemeris in RA and DEC for the 5 nights.
 
-\begin{figure}[H]
-\centering
-\includegraphics[height=11.0cm]{Netuno_160_1993-08-20.png} 
-\caption{Offsets in right ascension before (red) and after (blue) CR correction for the night of August 20, 1993 observed with the Perkin-Elmer telescope.}
-\label{Fig:refraction-sample-neptune}
-\end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[height=11.0cm]{dist_Netuno_160.png} 
+\includegraphics[height=10.5cm]{dist_Netuno_160.png} 
 \caption{Distribution of the offsets of Neptune observed in 160.}
 \label{Fig:refraction-net-160}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[height=11.0cm]{dist_Triton_160.png} 
+\includegraphics[height=10.5cm]{dist_Triton_160.png} 
 \caption{Distribution of the offsets of Triton observed in 160.}
 \label{Fig:refraction-tri-160}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[height=11.0cm]{dist_Netuno_IAG.png} 
+\includegraphics[height=10.5cm]{dist_Netuno_IAG.png} 
 \caption{Distribution of the offsets of Neptune observed in IAG.}
 \label{Fig:refraction-net-iag}
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[height=11.0cm]{dist_Triton_IAG.png} 
+\includegraphics[height=10.5cm]{dist_Triton_IAG.png} 
 \caption{Distribution of the offsets of Triton observed in IAG.}
 \label{Fig:refraction-tri-iag}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=10.5cm]{dist_Netuno_160_mean.png} 
+\caption{Distribution of the mean values night by night of the offsets of Neptune observed in 160.}
+\label{Fig:refraction-net-160-mean}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[height=10.5cm]{dist_Triton_160_mean.png} 
+\caption{Distribution of the mean values night by night of the offsets of Triton observed in 160.}
+\label{Fig:refraction-tri-160-mean}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[height=10.5cm]{dist_Netuno_IAG_mean.png} 
+\caption{Distribution of the mean values night by night of the offsets of Neptune observed in IAG.}
+\label{Fig:refraction-net-iag-mean}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[height=10.5cm]{dist_Triton_IAG_mean.png} 
+\caption{Distribution of the mean values night by night of the offsets of Triton observed in IAG.}
+\label{Fig:refraction-tri-iag-mean}
 \end{figure}
 
 \begin{landscape}
@@ -297,12 +324,14 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 1993-06-25 & Clear & 2.63 & +0.03$\pm$0.02 &  12 &   8 &  -37$\pm$ 26 &   70$\pm$ 75 &  -40$\pm$ 24 &   72$\pm$ 74 &    2$\pm$ 11 &   -1$\pm$  1 \\ 
 1993-08-20 & Clear & 3.35 & +0.20$\pm$0.02 &  31 &  29 &   15$\pm$ 76 &  -83$\pm$ 43 &   -7$\pm$ 34 &  -75$\pm$ 44 &   21$\pm$ 68 &   -9$\pm$  4 \\ 
 1993-08-22 & Clear & 2.87 & +0.18$\pm$0.02 &  35 &   9 &  -47$\pm$ 63 &  -74$\pm$ 44 &  -15$\pm$ 38 &  -67$\pm$ 46 &  -32$\pm$ 50 &   -7$\pm$  4 \\ 
-1996-06-22 & CLEAR & 1.68 & +0.24$\pm$0.02 &  19 &  16 &  -25$\pm$ 51 &  -32$\pm$ 35 &  -48$\pm$ 18 &  -20$\pm$ 35 &   23$\pm$ 47 &  -12$\pm$  2 \\ 
+1996-06-22 & Clear & 1.68 & +0.24$\pm$0.02 &  19 &  16 &  -25$\pm$ 51 &  -32$\pm$ 35 &  -48$\pm$ 18 &  -20$\pm$ 35 &   23$\pm$ 47 &  -12$\pm$  2 \\ 
 1996-10-02 & Clear & 1.97 & +0.31$\pm$0.07 &  16 &   6 &  252$\pm$192 &  -60$\pm$ 73 &  -59$\pm$126 &   10$\pm$ 79 &  311$\pm$145 &  -70$\pm$ 46 \\ 
 1997-06-01 & Clear & 4.89 & +0.35$\pm$0.03 &  91 &  11 & -155$\pm$189 & -112$\pm$ 36 & -120$\pm$107 &  -81$\pm$ 40 &  -35$\pm$156 &  -31$\pm$ 11 \\ 
 1997-06-02 & Clear & 5.24 & +0.22$\pm$0.01 &  60 &  10 & -113$\pm$125 &  -84$\pm$ 36 &  -73$\pm$ 48 &  -61$\pm$ 33 &  -40$\pm$115 &  -23$\pm$ 12 \\ 
 1998-06-06 & Clear & 2.51 & +0.38$\pm$0.04 &  35 &  11 & -140$\pm$101 &  -66$\pm$ 42 &  -13$\pm$ 56 &  -33$\pm$ 41 & -127$\pm$ 83 &  -33$\pm$ 11 \\ 
-1998-09-03 & Clear & 1.52 & +0.30$\pm$0.03 &  20 &  10 &  -86$\pm$ 63 &  -75$\pm$ 49 &   20$\pm$ 26 &  -51$\pm$ 47 & -106$\pm$ 57 &  -24$\pm$  8 \\ 
+1998-09-03 & Clear & 1.52 & +0.30$\pm$0.03 &  20 &  10 &  -86$\pm$ 63 &  -75$\pm$ 49 &   20$\pm$ 26 &  -51$\pm$ 47 & -106$\pm$ 57 &  -24$\pm$  8 \\
+\hline
+\multicolumn{6}{|l|}{All nights above} & -63$\pm$164 &  -64$\pm$ 72 &  -54$\pm$ 83 &  -41$\pm$ 71 &   -9$\pm$143 &  -23$\pm$ 20 \\
 \hline
 \multicolumn{12}{|c|}{Triton-160}\\
 Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no corr & RA corr & DEC corr & $\Delta$RA & $\Delta$DEC \\
@@ -316,7 +345,7 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 1994-09-22 & Clear & 1.94 & -0.12$\pm$0.08 &  13 &  12 &  -33$\pm$ 53 &   30$\pm$ 75 &   48$\pm$ 49 &   16$\pm$ 71 &  -81$\pm$ 22 &   14$\pm$  6 \\ 
 1994-09-22 & Clear & 1.55 & +0.00$\pm$0.04 &  15 &  17 &  -53$\pm$ 21 &   24$\pm$ 82 &  -54$\pm$ 21 &   24$\pm$ 82 &    0$\pm$  1 &   -0$\pm$  0 \\ 
 1995-08-07 & Clear & 3.02 & +0.02$\pm$0.02 &  11 &  21 &  -10$\pm$ 14 &  -40$\pm$ 30 &  -10$\pm$ 13 &  -39$\pm$ 30 &    0$\pm$  5 &   -1$\pm$  0 \\ 
-1996-06-22 & CLEAR & 2.28 & -0.08$\pm$0.02 &  32 &  15 &  -87$\pm$ 24 &   -9$\pm$ 29 &  -77$\pm$ 19 &  -13$\pm$ 28 &  -10$\pm$ 15 &    4$\pm$  1 \\ 
+1996-06-22 & Clear & 2.28 & -0.08$\pm$0.02 &  32 &  15 &  -87$\pm$ 24 &   -9$\pm$ 29 &  -77$\pm$ 19 &  -13$\pm$ 28 &  -10$\pm$ 15 &    4$\pm$  1 \\ 
 1996-08-22 & Clear & 1.56 & +0.01$\pm$0.02 &  29 &  13 &   43$\pm$ 30 &  -41$\pm$ 44 &   37$\pm$ 30 &  -40$\pm$ 44 &    5$\pm$  2 &   -1$\pm$  0 \\ 
 1996-08-24 & Clear & 1.99 & -0.03$\pm$0.04 &  10 &  11 &   46$\pm$ 15 &  -66$\pm$ 23 &   52$\pm$ 15 &  -67$\pm$ 23 &   -5$\pm$  4 &    1$\pm$  0 \\ 
 1996-10-02 & Clear & 1.97 & +0.04$\pm$0.07 &  16 &   6 &   73$\pm$121 &    1$\pm$ 76 &   38$\pm$120 &    9$\pm$ 77 &   35$\pm$ 16 &   -8$\pm$  5 \\ 
@@ -329,19 +358,21 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 1999-06-06 & Clear & 1.58 & +0.23$\pm$0.04 &  27 &  14 &   19$\pm$ 47 &  -63$\pm$ 43 &   91$\pm$ 32 &  -43$\pm$ 40 &  -71$\pm$ 34 &  -20$\pm$  4 \\ 
 1999-08-22 & Clear & 3.06 & +0.03$\pm$0.02 &  30 &  15 &  -32$\pm$ 37 &   -7$\pm$ 25 &  -45$\pm$ 35 &   -3$\pm$ 26 &   13$\pm$ 11 &   -3$\pm$  2 \\ 
 \hline
+\multicolumn{6}{|l|}{All nights above} & -22$\pm$ 69 &  -36$\pm$ 64 &  -12$\pm$ 66 &  -32$\pm$ 61 &  -10$\pm$ 35 &   -4$\pm$  7 \\
+\hline
 \multicolumn{12}{|c|}{Neptune-IAG}\\
 Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no corr & RA corr & DEC corr & $\Delta$RA & $\Delta$DEC \\
 \hline
 2001-08-26 & B     & 2.11 & +0.15$\pm$0.03 &  44 &  15 &   89$\pm$ 55 &  -41$\pm$ 57 &   14$\pm$ 41 &  -22$\pm$ 57 &   75$\pm$ 36 &  -19$\pm$  6 \\ 
 2002-07-15 & Clear & 6.11 & +0.18$\pm$0.00 &  57 &  17 &   51$\pm$163 &   85$\pm$ 90 &  -36$\pm$ 31 &  131$\pm$ 76 &   87$\pm$160 &  -46$\pm$ 20 \\ 
-2002-07-18 & CLEAR & 3.86 & +0.21$\pm$0.02 &  30 &  13 & -100$\pm$115 & -140$\pm$ 61 &  -50$\pm$ 61 & -111$\pm$ 61 &  -50$\pm$ 98 &  -29$\pm$  3 \\ 
+2002-07-18 & Clear & 3.86 & +0.21$\pm$0.02 &  30 &  13 & -100$\pm$115 & -140$\pm$ 61 &  -50$\pm$ 61 & -111$\pm$ 61 &  -50$\pm$ 98 &  -29$\pm$  3 \\ 
 2003-07-22 & Clear & 2.38 & +0.33$\pm$0.04 &  20 &  15 &  174$\pm$137 &  -75$\pm$ 80 &  -32$\pm$ 57 &  -13$\pm$ 74 &  206$\pm$125 &  -62$\pm$ 27 \\ 
 2003-07-23 & Clear & 4.08 & +0.02$\pm$0.01 &  39 &  16 &  -81$\pm$ 36 &   13$\pm$ 55 &  -78$\pm$ 34 &   17$\pm$ 55 &   -4$\pm$ 12 &   -3$\pm$  1 \\ 
 2003-07-25 & Clear & 6.19 & -0.01$\pm$0.02 &  21 &   9 & -107$\pm$ 74 &    9$\pm$ 62 & -106$\pm$ 74 &    7$\pm$ 62 &   -1$\pm$  8 &    2$\pm$  1 \\ 
 2003-07-26 & Clear & 6.97 & -0.01$\pm$0.08 &  17 &  10 & -132$\pm$211 &    8$\pm$123 & -129$\pm$211 &    7$\pm$124 &   -3$\pm$  4 &    1$\pm$  1 \\ 
 2003-07-27 & Clear & 1.54 & +0.06$\pm$0.06 &  26 &  14 &  -21$\pm$104 &    4$\pm$ 84 &  -90$\pm$102 &   24$\pm$ 84 &   70$\pm$ 20 &  -20$\pm$  6 \\ 
 2003-07-28 & Clear & 7.98 & +0.01$\pm$0.03 &  43 &  12 &  -37$\pm$144 &   21$\pm$162 &  -44$\pm$144 &   24$\pm$162 &    7$\pm$  4 &   -2$\pm$  1 \\ 
-2003-08-20 & CLEAR & 4.03 & +0.26$\pm$0.04 &  30 &  17 &   95$\pm$154 &  -72$\pm$ 66 &   18$\pm$ 98 &  -35$\pm$ 60 &   76$\pm$118 &  -37$\pm$ 16 \\ 
+2003-08-20 & Clear & 4.03 & +0.26$\pm$0.04 &  30 &  17 &   95$\pm$154 &  -72$\pm$ 66 &   18$\pm$ 98 &  -35$\pm$ 60 &   76$\pm$118 &  -37$\pm$ 16 \\ 
 2003-10-14 & V     & 2.33 & +0.02$\pm$0.03 &   8 &  30 &   20$\pm$ 25 &   16$\pm$ 31 &   16$\pm$ 25 &   18$\pm$ 31 &    5$\pm$  5 &   -2$\pm$  1 \\ 
 2004-08-05 & V     & 2.21 & -0.03$\pm$0.12 &   5 &   6 &  -53$\pm$ 67 &  -61$\pm$ 25 &  -35$\pm$ 67 &  -66$\pm$ 26 &  -18$\pm$  9 &    5$\pm$  2 \\ 
 2004-08-07 & V     & 4.31 & +0.21$\pm$0.33 &   6 &  11 &  128$\pm$333 &  -40$\pm$210 &  110$\pm$317 &   -9$\pm$212 &   18$\pm$102 &  -31$\pm$  8 \\ 
@@ -356,19 +387,21 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 2011-09-26 & I     & 4.02 & +0.05$\pm$0.00 & 250 &  18 &   76$\pm$ 44 &  -67$\pm$ 48 &   38$\pm$ 36 &  -52$\pm$ 45 &   38$\pm$ 25 &  -15$\pm$  7 \\ 
 2012-10-19 & R     & 1.99 & +0.13$\pm$0.03 & 119 &   8 &   41$\pm$100 & -167$\pm$137 &  -50$\pm$ 92 & -130$\pm$138 &   90$\pm$ 38 &  -37$\pm$  8 \\ 
 \hline
+\multicolumn{6}{|l|}{All nights above} & 25$\pm$130 &  -62$\pm$105 &  -16$\pm$ 91 &  -37$\pm$105 &   41$\pm$ 93 &  -24$\pm$ 21 \\
+\hline
 \multicolumn{12}{|c|}{Triton-IAG}\\
 Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no corr & RA corr & DEC corr & $\Delta$RA & $\Delta$DEC \\
 \hline
 2001-08-26 & B     & 2.11 & +0.03$\pm$0.03 &  24 &  15 &    1$\pm$ 40 &  -53$\pm$ 46 &  -13$\pm$ 39 &  -50$\pm$ 46 &   14$\pm$  7 &   -4$\pm$  1 \\ 
 2002-07-15 & Clear & 6.11 & +0.01$\pm$0.00 &  55 &  17 &   14$\pm$ 27 &  -29$\pm$ 45 &    7$\pm$ 24 &  -26$\pm$ 45 &    7$\pm$ 12 &   -3$\pm$  2 \\ 
-2002-07-18 & CLEAR & 3.86 & -0.01$\pm$0.03 &  31 &  13 &   25$\pm$ 74 &  -68$\pm$111 &   23$\pm$ 74 &  -69$\pm$111 &    2$\pm$  4 &    1$\pm$  0 \\ 
+2002-07-18 & Clear & 3.86 & -0.01$\pm$0.03 &  31 &  13 &   25$\pm$ 74 &  -68$\pm$111 &   23$\pm$ 74 &  -69$\pm$111 &    2$\pm$  4 &    1$\pm$  0 \\ 
 2003-07-22 & Clear & 2.55 & +0.08$\pm$0.02 &  31 &  17 &   -8$\pm$ 57 &   -7$\pm$ 53 &  -58$\pm$ 49 &    8$\pm$ 54 &   50$\pm$ 29 &  -15$\pm$  7 \\ 
 2003-07-23 & Clear & 4.08 & +0.04$\pm$0.02 &  38 &  16 &  -44$\pm$ 54 &  -12$\pm$ 45 &  -37$\pm$ 50 &   -6$\pm$ 45 &   -7$\pm$ 21 &   -6$\pm$  1 \\ 
 2003-07-25 & Clear & 6.39 & -0.04$\pm$0.03 &  44 &  16 &  -60$\pm$138 &    9$\pm$ 50 &  -64$\pm$136 &    2$\pm$ 51 &    5$\pm$ 27 &    7$\pm$  2 \\ 
 2003-07-26 & Clear & 6.97 & -0.04$\pm$0.04 &  33 &  14 & -133$\pm$167 &   21$\pm$ 90 & -121$\pm$165 &   13$\pm$ 91 &  -12$\pm$ 30 &    8$\pm$  5 \\ 
 2003-07-27 & Clear & 1.54 & +0.01$\pm$0.05 &  26 &  14 &  -31$\pm$ 76 &   31$\pm$ 74 &  -40$\pm$ 76 &   34$\pm$ 74 &    9$\pm$  3 &   -3$\pm$  1 \\ 
 2003-07-28 & Clear & 7.98 & -0.01$\pm$0.02 &  60 &  14 &  -51$\pm$130 &   46$\pm$133 &  -44$\pm$130 &   43$\pm$133 &   -6$\pm$ 10 &    3$\pm$  2 \\ 
-2003-08-20 & CLEAR & 4.20 & +0.02$\pm$0.02 &  49 &  21 &   53$\pm$ 69 &   -8$\pm$ 45 &   46$\pm$ 68 &   -5$\pm$ 45 &    8$\pm$  9 &   -3$\pm$  1 \\ 
+2003-08-20 & Clear & 4.20 & +0.02$\pm$0.02 &  49 &  21 &   53$\pm$ 69 &   -8$\pm$ 45 &   46$\pm$ 68 &   -5$\pm$ 45 &    8$\pm$  9 &   -3$\pm$  1 \\ 
 2003-10-14 & V     & 3.63 & -0.04$\pm$0.03 &  20 &  33 &   -4$\pm$ 54 &  -34$\pm$ 72 &   13$\pm$ 53 &  -40$\pm$ 74 &  -17$\pm$ 14 &    5$\pm$  2 \\ 
 2003-10-15 & V     & 2.27 & +0.01$\pm$0.05 &  18 &  33 &  -22$\pm$ 38 &   -3$\pm$ 78 &  -23$\pm$ 38 &   -2$\pm$ 77 &    1$\pm$  1 &   -1$\pm$  0 \\ 
 2003-10-16 & V     & 1.94 & -0.10$\pm$0.10 &   8 &  25 &  -18$\pm$ 64 &  -15$\pm$ 36 &   46$\pm$ 58 &  -32$\pm$ 32 &  -64$\pm$ 25 &   17$\pm$  6 \\ 
@@ -390,6 +423,8 @@ Date & Filter & $\Delta H$ & $\Delta B$ & Nimg & Nstars & RA no corr & DEC no co
 2011-09-05 & I     & 1.82 & +0.19$\pm$0.03 & 100 &  18 &   91$\pm$ 47 &   -1$\pm$ 34 &   36$\pm$ 38 &   38$\pm$ 36 &   55$\pm$ 28 &  -39$\pm$  3 \\ 
 2011-09-26 & I     & 4.02 & -0.00$\pm$0.00 & 250 &  18 &   43$\pm$ 28 &    4$\pm$ 41 &   43$\pm$ 28 &    3$\pm$ 41 &   -1$\pm$  0 &    0$\pm$  0 \\ 
 2012-10-19 & R     & 1.99 & +0.13$\pm$0.03 & 118 &   8 &   14$\pm$108 &  -76$\pm$134 &  -78$\pm$100 &  -38$\pm$136 &   93$\pm$ 39 &  -38$\pm$  9 \\ 
+\hline
+\multicolumn{6}{|l|}{All nights above} & 7$\pm$ 88 &  -25$\pm$ 87 &   -4$\pm$ 85 &  -17$\pm$ 87 &   11$\pm$ 36 &   -8$\pm$ 14 \\
 \hline
 \end{longtable}
 
