@@ -1,0 +1,41 @@
+ Notes:
+ C/A: geocentric closest approach, in arcsec
+ P/A: Planet position angle wrt to star at C/A, in deg
+ vel: velocity in plane of sky, in km/sec, positive= prograde, negative= retrograde
+ R: instrumental magnitude in UCAC2 system
+ J, H, K: 2MASS magnitudes (50.0 = not in 2MASS)
+ R*, J*, H*, K* are normalized magnitudes to a common
+ shadown velocity of 20 km/sec by the relationship:
+ Mag* = Mag_actual + 2.5*log10[velocity/20 (km/sec)]
+ Delta: Planet range to Earth, AU
+ long: East longitude of sub-planet point, deg, positive towards East
+ loc. t.= UT + long: local solar time at sub-planet point, hh:mm
+ --------------------------------------------------------------------------------------------------------------------
+ Selection criteria:
+ Maximum geocentrique closest approach considered:   1.9603200000000001       arcsec
+ Day light exclusion (range loc. t.): 12.0hs to 12.0 hs (t1 = t2 -> no exclusions)
+ List below has:            0  entries
+ Reference ephemeris: DE430/LAU                                         
+ Offset applied to ephemeris off_ra(mas) = A * (t-t0) + B 
+ Offset applied to ephemeris off_de(mas) = C * (t-t0) + D 
+ t0 =    2005.0000000000000       yrs
+ A =    0.0000000000000000       (mas/yr)
+ B =    0.0000000000000000       (mas)
+ C =    0.0000000000000000       (mas/yr)
+ D =    0.0000000000000000       (mas)
+ pm = proper motion applied? (ok, no)
+ ct = uc (UCAC2); 2m (2MASS); fs (field star)
+ f = multiplicity flag
+ 0 - no multiple entries per star in astrometry
+ 1 - single position from 2 or more uc/2m entries
+ 2 - single position from 1 uc/2m entry only
+ 3 - fs position from entry with more N contributions
+ 4 - fs position from entry with best (x,y) error
+ 5 - fs position from entry with brightest R mag.
+ 6 - fs position from average over all entries
+ (see details in Assafin et al. 2009)
+ E_ra, E_de: error of star position (mas); (9999 = no estimation)
+ pmra, pmde: star proper motion (mas); (9999 = no proper motion)
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  d  m year  h:m:s UT     ra___dec___J2000_candidate     ra_dec_J2000_target_geocen     C/A    P/A     vel  Delta  R*   J*   H*   K*   long  loc. t.  off_ra   off_de pm ct f E_ra E_de pmra pmde
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
