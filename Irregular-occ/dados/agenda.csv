@@ -1537,7 +1537,7 @@ C/A: 1.44 arcsec
 P/A 178.22 deg
 Velocity: -16.44 km/s
 Distance: 4.46 AU
-MagR: 19.8
+MagR: 16.3
 ",False
 Ocultation by Ananke,05/20/2019,23:31,05/20/2019,23:31,False,"Coord Star: 17 26 25.4002 -22 20 58.5220
 C/A: 0.911 arcsec
@@ -1698,7 +1698,7 @@ C/A: 0.513 arcsec
 P/A 359.26 deg
 Velocity: -18.93 km/s
 Distance: 4.4 AU
-MagR: 19.9
+MagR: 16.4
 ",False
 Ocultation by Ananke,06/09/2019,20:36,06/09/2019,20:36,False,"Coord Star: 17 14 46.3110 -22 24 13.2930
 C/A: 0.642 arcsec
@@ -2503,7 +2503,7 @@ C/A: 1.747 arcsec
 P/A 5.18 deg
 Velocity: 31.36 km/s
 Distance: 5.87 AU
-MagR: 20.5
+MagR: 16.9
 ",False
 Ocultation by Ananke,10/25/2019,08:09,10/25/2019,08:09,False,"Coord Star: 17 18 39.1773 -23 39 04.0900
 C/A: 0.236 arcsec
@@ -2650,7 +2650,7 @@ C/A: 1.293 arcsec
 P/A 4.57 deg
 Velocity: 33.45 km/s
 Distance: 5.93 AU
-MagR: 20.6
+MagR: 17.1
 ",False
 Ocultation by Ananke,10/30/2019,14:47,10/30/2019,14:47,False,"Coord Star: 17 22 50.8227 -23 43 56.3920
 C/A: 0.033 arcsec
@@ -2846,7 +2846,7 @@ C/A: 1.711 arcsec
 P/A 3.37 deg
 Velocity: 36.95 km/s
 Distance: 6.03 AU
-MagR: 20.7
+MagR: 15.9
 ",False
 Ocultation by Ananke,11/11/2019,09:52,11/11/2019,09:52,False,"Coord Star: 17 32 53.2633 -23 53 29.8640
 C/A: 1.466 arcsec
@@ -2944,7 +2944,7 @@ C/A: 0.078 arcsec
 P/A 182.82 deg
 Velocity: 38.28 km/s
 Distance: 6.06 AU
-MagR: 20.7
+MagR: 17.2
 ",False
 Ocultation by Ananke,11/16/2019,14:27,11/16/2019,14:27,False,"Coord Star: 17 37 33.6935 -23 56 55.9030
 C/A: 0.426 arcsec
@@ -3378,7 +3378,7 @@ C/A: 0.12 arcsec
 P/A 352.09 deg
 Velocity: 33.96 km/s
 Distance: 5.65 AU
-MagR: 20.6
+MagR: 16.8
 ",False
 Ocultation by Ananke,02/28/2020,21:07,02/28/2020,21:07,False,"Coord Star: 19 19 56.1240 -22 52 30.7700
 C/A: 1.487 arcsec
@@ -3805,7 +3805,7 @@ C/A: 1.43 arcsec
 P/A 354.24 deg
 Velocity: -14.34 km/s
 Distance: 4.03 AU
-MagR: 19.6
+MagR: 16.0
 ",False
 Ocultation by Ananke,07/25/2020,09:44,07/25/2020,09:44,False,"Coord Star: 19 34 29.1400 -21 47 13.0010
 C/A: 0.964 arcsec
@@ -4764,7 +4764,7 @@ C/A: 1.258 arcsec
 P/A 196.79 deg
 Velocity: 33.03 km/s
 Distance: 5.87 AU
-MagR: 20.5
+MagR: 17.0
 ",False
 Ocultation by Carme,10/05/2018,18:57,10/05/2018,18:57,False,"Coord Star: 15 19 26.1813 -17 15 10.5030
 C/A: 0.377 arcsec
@@ -5128,7 +5128,7 @@ C/A: 1.203 arcsec
 P/A 5.36 deg
 Velocity: 27.9 km/s
 Distance: 5.67 AU
-MagR: 20.4
+MagR: 16.8
 ",False
 Ocultation by Carme,02/12/2019,16:21,02/12/2019,16:21,False,"Coord Star: 17 20 19.7423 -22 35 39.8990
 C/A: 0.605 arcsec
@@ -5338,7 +5338,7 @@ C/A: 0.72 arcsec
 P/A 4.8 deg
 Velocity: 20.27 km/s
 Distance: 5.43 AU
-MagR: 20.0
+MagR: 16.5
 ",False
 Ocultation by Carme,03/02/2019,03:14,03/02/2019,03:14,False,"Coord Star: 17 31 05.2809 -22 48 45.8100
 C/A: 0.089 arcsec
@@ -5975,7 +5975,7 @@ C/A: 0.375 arcsec
 P/A 182.14 deg
 Velocity: -17.6 km/s
 Distance: 4.39 AU
-MagR: 19.9
+MagR: 16.2
 ",False
 Ocultation by Carme,06/11/2019,19:35,06/11/2019,19:35,False,"Coord Star: 17 20 04.9089 -23 06 24.4650
 C/A: 0.029 arcsec
@@ -6248,7 +6248,7 @@ C/A: 0.195 arcsec
 P/A 183.57 deg
 Velocity: -14.97 km/s
 Distance: 4.49 AU
-MagR: 19.7
+MagR: 16.0
 ",False
 Ocultation by Carme,07/06/2019,01:55,07/06/2019,01:55,False,"Coord Star: 17 06 52.6433 -22 57 06.0080
 C/A: 1.808 arcsec
@@ -6745,7 +6745,7 @@ C/A: 0.261 arcsec
 P/A 184.39 deg
 Velocity: 25.44 km/s
 Distance: 5.84 AU
-MagR: 20.3
+MagR: 16.8
 ",False
 Ocultation by Carme,10/12/2019,12:40,10/12/2019,12:40,False,"Coord Star: 17 15 43.8927 -23 15 15.0890
 C/A: 1.541 arcsec
@@ -7151,7 +7151,7 @@ C/A: 1.466 arcsec
 P/A 182.36 deg
 Velocity: 34.54 km/s
 Distance: 6.16 AU
-MagR: 20.6
+MagR: 17.0
 ",False
 Ocultation by Carme,11/08/2019,13:58,11/08/2019,13:58,False,"Coord Star: 17 35 19.7930 -23 31 04.4480
 C/A: 0.816 arcsec
@@ -7165,7 +7165,7 @@ C/A: 0.875 arcsec
 P/A 182.33 deg
 Velocity: 34.63 km/s
 Distance: 6.16 AU
-MagR: 20.6
+MagR: 16.9
 ",False
 Ocultation by Carme,11/09/2019,21:25,11/09/2019,21:25,False,"Coord Star: 17 36 23.6580 -23 31 38.5580
 C/A: 0.323 arcsec
@@ -7193,7 +7193,7 @@ C/A: 1.4 arcsec
 P/A 181.91 deg
 Velocity: 35.91 km/s
 Distance: 6.21 AU
-MagR: 20.6
+MagR: 17.0
 ",False
 Ocultation by Carme,11/13/2019,21:07,11/13/2019,21:07,False,"Coord Star: 17 39 41.1578 -23 33 17.2140
 C/A: 0.112 arcsec
@@ -7277,7 +7277,7 @@ C/A: 0.528 arcsec
 P/A 1.73 deg
 Velocity: 36.45 km/s
 Distance: 6.23 AU
-MagR: 20.7
+MagR: 16.9
 ",False
 Ocultation by Carme,11/16/2019,04:24,11/16/2019,04:24,False,"Coord Star: 17 41 37.3417 -23 34 09.4800
 C/A: 1.672 arcsec
@@ -8250,7 +8250,7 @@ C/A: 0.995 arcsec
 P/A 351.88 deg
 Velocity: -13.94 km/s
 Distance: 4.05 AU
-MagR: 19.6
+MagR: 15.6
 ",False
 Ocultation by Carme,07/21/2020,08:04,07/21/2020,08:04,False,"Coord Star: 19 24 47.7389 -21 56 18.4440
 C/A: 0.61 arcsec
@@ -8726,7 +8726,7 @@ C/A: 1.589 arcsec
 P/A 171.75 deg
 Velocity: 29.52 km/s
 Distance: 5.41 AU
-MagR: 20.4
+MagR: 13.6
 ",False
 Ocultation by Carme,11/12/2020,23:48,11/12/2020,23:48,False,"Coord Star: 19 40 48.4276 -21 37 38.0560
 C/A: 1.634 arcsec
@@ -9769,7 +9769,7 @@ C/A: 1.227 arcsec
 P/A 184.75 deg
 Velocity: 22.69 km/s
 Distance: 5.55 AU
-MagR: 20.1
+MagR: 16.4
 ",False
 Ocultation by Elara,02/23/2019,12:14,02/23/2019,12:14,False,"Coord Star: 17 17 56.3284 -22 03 15.6720
 C/A: 1.686 arcsec
@@ -9923,7 +9923,7 @@ C/A: 0.057 arcsec
 P/A 198.75 deg
 Velocity: 6.67 km/s
 Distance: 4.96 AU
-MagR: 18.8
+MagR: 15.0
 ",False
 Ocultation by Elara,04/04/2019,03:58,04/04/2019,03:58,False,"Coord Star: 17 33 30.0072 -22 32 28.4270
 C/A: 1.863 arcsec
@@ -9958,7 +9958,7 @@ C/A: 0.953 arcsec
 P/A 201.24 deg
 Velocity: 5.93 km/s
 Distance: 4.94 AU
-MagR: 18.7
+MagR: 14.7
 ",False
 Ocultation by Elara,04/06/2019,03:44,04/06/2019,03:44,False,"Coord Star: 17 33 50.0531 -22 34 12.4470
 C/A: 0.695 arcsec
@@ -10042,7 +10042,7 @@ C/A: 1.211 arcsec
 P/A 174.78 deg
 Velocity: -10.19 km/s
 Distance: 4.46 AU
-MagR: 19.3
+MagR: 15.7
 ",False
 Ocultation by Elara,05/12/2019,02:04,05/12/2019,02:04,False,"Coord Star: 17 30 46.8943 -23 00 44.4520
 C/A: 0.344 arcsec
@@ -10091,7 +10091,7 @@ C/A: 1.202 arcsec
 P/A 177.49 deg
 Velocity: -12.18 km/s
 Distance: 4.4 AU
-MagR: 19.5
+MagR: 15.8
 ",False
 Ocultation by Elara,05/17/2019,19:59,05/17/2019,19:59,False,"Coord Star: 17 28 39.8852 -23 02 34.0010
 C/A: 1.14 arcsec
@@ -11183,7 +11183,7 @@ C/A: 0.218 arcsec
 P/A 4.45 deg
 Velocity: 32.14 km/s
 Distance: 5.8 AU
-MagR: 20.5
+MagR: 17.0
 ",False
 Ocultation by Elara,10/24/2019,09:52,10/24/2019,09:52,False,"Coord Star: 17 20 46.6445 -22 30 49.1310
 C/A: 1.154 arcsec
@@ -11232,7 +11232,7 @@ C/A: 1.063 arcsec
 P/A 4.29 deg
 Velocity: 33.74 km/s
 Distance: 5.86 AU
-MagR: 20.6
+MagR: 16.9
 ",False
 Ocultation by Elara,10/30/2019,16:47,10/30/2019,16:47,False,"Coord Star: 17 25 54.5183 -22 36 09.7420
 C/A: 0.849 arcsec
@@ -11393,7 +11393,7 @@ C/A: 0.356 arcsec
 P/A 3.65 deg
 Velocity: 38.71 km/s
 Distance: 6.03 AU
-MagR: 20.7
+MagR: 17.1
 ",False
 Ocultation by Elara,11/12/2019,15:54,11/12/2019,15:54,False,"Coord Star: 17 37 19.8703 -22 47 03.9730
 C/A: 1.66 arcsec
@@ -12219,7 +12219,7 @@ C/A: 0.414 arcsec
 P/A 350.99 deg
 Velocity: -17.26 km/s
 Distance: 4.1 AU
-MagR: 19.8
+MagR: 15.9
 ",False
 Ocultation by Elara,07/04/2020,13:34,07/04/2020,13:34,False,"Coord Star: 19 37 24.7995 -21 17 09.2550
 C/A: 0.555 arcsec
@@ -12471,7 +12471,7 @@ C/A: 0.117 arcsec
 P/A 149.12 deg
 Velocity: -4.62 km/s
 Distance: 4.44 AU
-MagR: 18.4
+MagR: 14.9
 ",False
 Ocultation by Elara,09/10/2020,00:19,09/10/2020,00:19,False,"Coord Star: 19 12 41.1338 -22 40 58.5360
 C/A: 1.488 arcsec
@@ -12597,7 +12597,7 @@ C/A: 0.297 arcsec
 P/A 176.28 deg
 Velocity: 17.15 km/s
 Distance: 5.1 AU
-MagR: 19.8
+MagR: 16.2
 ",False
 Ocultation by Elara,10/15/2020,10:41,10/15/2020,10:41,False,"Coord Star: 19 23 23.2601 -22 48 12.3340
 C/A: 0.841 arcsec
@@ -12863,7 +12863,7 @@ C/A: 0.453 arcsec
 P/A 27.2 deg
 Velocity: -13.22 km/s
 Distance: 4.58 AU
-MagR: 19.6
+MagR: 16.1
 ",False
 Ocultation by Himalia,04/16/2016,17:43,04/16/2016,17:43,False,"Coord Star: 11 00 59.8683 +07 32 46.8800
 C/A: 1.613 arcsec
@@ -13087,7 +13087,7 @@ C/A: 0.102 arcsec
 P/A 198.14 deg
 Velocity: 27.46 km/s
 Distance: 5.85 AU
-MagR: 20.3
+MagR: 16.8
 ",False
 Ocultation by Himalia,01/19/2018,14:34,01/19/2018,14:34,False,"Coord Star: 15 09 06.6270 -16 32 05.2460
 C/A: 0.278 arcsec
@@ -13465,7 +13465,7 @@ C/A: 0.218 arcsec
 P/A 4.87 deg
 Velocity: 36.31 km/s
 Distance: 6.08 AU
-MagR: 20.6
+MagR: 17.0
 ",False
 Ocultation by Himalia,01/12/2019,00:40,01/12/2019,00:40,False,"Coord Star: 16 52 23.8864 -22 10 07.4770
 C/A: 1.339 arcsec
@@ -14746,7 +14746,7 @@ C/A: 0.481 arcsec
 P/A 0.59 deg
 Velocity: 27.26 km/s
 Distance: 5.71 AU
-MagR: 20.3
+MagR: 16.2
 ",False
 Ocultation by Himalia,10/20/2019,00:52,10/20/2019,00:52,False,"Coord Star: 17 22 05.3623 -22 55 29.8360
 C/A: 0.832 arcsec
@@ -14837,7 +14837,7 @@ C/A: 1.633 arcsec
 P/A 0.5 deg
 Velocity: 28.46 km/s
 Distance: 5.75 AU
-MagR: 20.4
+MagR: 16.9
 ",False
 Ocultation by Himalia,10/24/2019,19:32,10/24/2019,19:32,False,"Coord Star: 17 25 26.6340 -22 55 54.5220
 C/A: 0.029 arcsec
@@ -15173,7 +15173,7 @@ C/A: 1.052 arcsec
 P/A 180.41 deg
 Velocity: 35.13 km/s
 Distance: 6.0 AU
-MagR: 20.6
+MagR: 15.1
 ",False
 Ocultation by Himalia,11/17/2019,19:26,11/17/2019,19:26,False,"Coord Star: 17 44 12.0304 -22 57 46.9970
 C/A: 0.955 arcsec
@@ -15362,7 +15362,7 @@ C/A: 0.671 arcsec
 P/A 176.23 deg
 Velocity: 38.56 km/s
 Distance: 6.02 AU
-MagR: 20.7
+MagR: 17.1
 ",False
 Ocultation by Himalia,02/11/2020,19:16,02/11/2020,19:16,False,"Coord Star: 19 05 04.4699 -22 35 22.6080
 C/A: 0.675 arcsec
@@ -15418,7 +15418,7 @@ C/A: 1.222 arcsec
 P/A 176.03 deg
 Velocity: 37.99 km/s
 Distance: 6.0 AU
-MagR: 20.7
+MagR: 17.2
 ",False
 Ocultation by Himalia,02/14/2020,01:40,02/14/2020,01:40,False,"Coord Star: 19 07 08.1870 -22 33 28.0510
 C/A: 1.641 arcsec
@@ -15495,7 +15495,7 @@ C/A: 1.028 arcsec
 P/A 355.69 deg
 Velocity: 36.96 km/s
 Distance: 5.95 AU
-MagR: 20.7
+MagR: 17.0
 ",False
 Ocultation by Himalia,02/19/2020,17:58,02/19/2020,17:58,False,"Coord Star: 19 12 12.7152 -22 28 17.4860
 C/A: 0.083 arcsec
@@ -15943,7 +15943,7 @@ C/A: 1.9 arcsec
 P/A 171.23 deg
 Velocity: 10.9 km/s
 Distance: 4.97 AU
-MagR: 19.3
+MagR: 15.5
 ",False
 Ocultation by Himalia,04/27/2020,13:54,04/27/2020,13:54,False,"Coord Star: 19 55 30.8687 -21 22 31.2090
 C/A: 0.875 arcsec
@@ -16216,7 +16216,7 @@ C/A: 0.509 arcsec
 P/A 353.1 deg
 Velocity: -18.25 km/s
 Distance: 4.12 AU
-MagR: 19.9
+MagR: 16.1
 ",False
 Ocultation by Himalia,08/02/2020,10:55,08/02/2020,10:55,False,"Coord Star: 19 24 57.1809 -21 56 35.8700
 C/A: 0.32 arcsec
@@ -16468,7 +16468,7 @@ C/A: 1.807 arcsec
 P/A 359.31 deg
 Velocity: 13.02 km/s
 Distance: 5.01 AU
-MagR: 19.5
+MagR: 15.9
 ",False
 Ocultation by Himalia,10/11/2020,21:55,10/11/2020,21:55,False,"Coord Star: 19 16 16.0909 -22 41 00.5440
 C/A: 1.842 arcsec
@@ -17231,7 +17231,7 @@ C/A: 0.287 arcsec
 P/A 244.89 deg
 Velocity: 2.74 km/s
 Distance: 4.97 AU
-MagR: 17.8
+MagR: 14.3
 ",False
 Ocultation by Leda,07/31/2018,22:35,07/31/2018,22:35,False,"Coord Star: 14 46 22.0985 -15 13 22.2970
 C/A: 0.745 arcsec
@@ -17301,7 +17301,7 @@ C/A: 0.96 arcsec
 P/A 13.81 deg
 Velocity: 34.03 km/s
 Distance: 6.04 AU
-MagR: 20.6
+MagR: 16.9
 ",False
 Ocultation by Leda,10/10/2018,09:59,10/10/2018,09:59,False,"Coord Star: 15 23 35.7964 -17 56 30.2220
 C/A: 0.231 arcsec
@@ -18106,7 +18106,7 @@ C/A: 1.284 arcsec
 P/A 15.17 deg
 Velocity: 6.1 km/s
 Distance: 5.02 AU
-MagR: 18.7
+MagR: 15.0
 ",False
 Ocultation by Leda,03/27/2019,15:29,03/27/2019,15:29,False,"Coord Star: 17 35 38.4907 -22 51 25.0550
 C/A: 0.277 arcsec
@@ -18141,7 +18141,7 @@ C/A: 1.483 arcsec
 P/A 31.99 deg
 Velocity: 2.54 km/s
 Distance: 4.9 AU
-MagR: 17.8
+MagR: 14.2
 ",False
 Ocultation by Leda,04/01/2019,13:48,04/01/2019,13:48,False,"Coord Star: 17 36 03.1439 -22 54 12.8060
 C/A: 1.12 arcsec
@@ -18162,7 +18162,7 @@ C/A: 0.745 arcsec
 P/A 175.46 deg
 Velocity: -6.57 km/s
 Distance: 4.64 AU
-MagR: 18.8
+MagR: 15.3
 ",False
 Ocultation by Leda,04/17/2019,22:38,04/17/2019,22:38,False,"Coord Star: 17 34 41.0351 -23 00 29.0660
 C/A: 0.017 arcsec
@@ -18344,7 +18344,7 @@ C/A: 0.597 arcsec
 P/A 186.45 deg
 Velocity: -16.59 km/s
 Distance: 4.33 AU
-MagR: 19.8
+MagR: 16.3
 ",False
 Ocultation by Leda,05/20/2019,14:34,05/20/2019,14:34,False,"Coord Star: 17 21 18.0228 -22 50 32.1000
 C/A: 0.98 arcsec
@@ -18568,7 +18568,7 @@ C/A: 1.24 arcsec
 P/A 11.07 deg
 Velocity: -13.92 km/s
 Distance: 4.35 AU
-MagR: 19.6
+MagR: 15.7
 ",False
 Ocultation by Leda,06/24/2019,09:09,06/24/2019,09:09,False,"Coord Star: 17 02 44.5398 -22 09 21.2560
 C/A: 1.579 arcsec
@@ -18883,7 +18883,7 @@ C/A: 1.283 arcsec
 P/A 187.77 deg
 Velocity: 26.9 km/s
 Distance: 5.65 AU
-MagR: 20.3
+MagR: 16.7
 ",False
 Ocultation by Leda,10/11/2019,07:26,10/11/2019,07:26,False,"Coord Star: 17 17 50.4692 -22 39 19.6490
 C/A: 1.339 arcsec
@@ -18925,7 +18925,7 @@ C/A: 1.374 arcsec
 P/A 187.61 deg
 Velocity: 27.47 km/s
 Distance: 5.67 AU
-MagR: 20.3
+MagR: 16.8
 ",False
 Ocultation by Leda,10/12/2019,21:08,10/12/2019,21:08,False,"Coord Star: 17 18 54.8447 -22 41 22.7910
 C/A: 1.656 arcsec
@@ -18967,7 +18967,7 @@ C/A: 0.31 arcsec
 P/A 187.34 deg
 Velocity: 28.4 km/s
 Distance: 5.71 AU
-MagR: 20.4
+MagR: 16.8
 ",False
 Ocultation by Leda,10/16/2019,17:42,10/16/2019,17:42,False,"Coord Star: 17 21 37.2227 -22 46 15.6390
 C/A: 1.522 arcsec
@@ -19450,7 +19450,7 @@ C/A: 1.058 arcsec
 P/A 4.67 deg
 Velocity: 35.14 km/s
 Distance: 5.97 AU
-MagR: 20.6
+MagR: 16.9
 ",False
 Ocultation by Leda,11/10/2019,23:56,11/10/2019,23:56,False,"Coord Star: 17 41 28.6111 -23 14 51.4720
 C/A: 0.353 arcsec
@@ -19464,7 +19464,7 @@ C/A: 0.929 arcsec
 P/A 184.54 deg
 Velocity: 35.36 km/s
 Distance: 5.98 AU
-MagR: 20.6
+MagR: 17.0
 ",False
 Ocultation by Leda,11/12/2019,05:53,11/12/2019,05:53,False,"Coord Star: 17 42 32.1331 -23 16 01.2540
 C/A: 0.713 arcsec
@@ -19639,7 +19639,7 @@ C/A: 0.822 arcsec
 P/A 4.06 deg
 Velocity: 36.12 km/s
 Distance: 6.01 AU
-MagR: 20.6
+MagR: 16.9
 ",False
 Ocultation by Leda,11/16/2019,05:54,11/16/2019,05:54,False,"Coord Star: 17 45 58.0185 -23 19 35.5630
 C/A: 1.504 arcsec
@@ -19723,7 +19723,7 @@ C/A: 0.55 arcsec
 P/A 183.82 deg
 Velocity: 36.44 km/s
 Distance: 6.02 AU
-MagR: 20.7
+MagR: 17.1
 ",False
 Ocultation by Leda,11/18/2019,01:50,11/18/2019,01:50,False,"Coord Star: 17 47 33.3477 -23 21 05.1480
 C/A: 0.854 arcsec
@@ -19849,7 +19849,7 @@ C/A: 0.5 arcsec
 P/A 3.42 deg
 Velocity: 36.97 km/s
 Distance: 6.04 AU
-MagR: 20.7
+MagR: 17.1
 ",False
 Ocultation by Leda,11/21/2019,09:37,11/21/2019,09:37,False,"Coord Star: 17 50 28.0238 -23 23 35.1100
 C/A: 1.283 arcsec
@@ -19870,7 +19870,7 @@ C/A: 0.625 arcsec
 P/A 352.26 deg
 Velocity: 37.73 km/s
 Distance: 6.03 AU
-MagR: 20.7
+MagR: 17.2
 ",False
 Ocultation by Leda,02/03/2020,08:36,02/03/2020,08:36,False,"Coord Star: 18 57 56.9207 -22 49 00.4720
 C/A: 1.601 arcsec
@@ -20297,7 +20297,7 @@ C/A: 0.776 arcsec
 P/A 349.85 deg
 Velocity: 32.57 km/s
 Distance: 5.78 AU
-MagR: 20.5
+MagR: 16.9
 ",False
 Ocultation by Leda,03/03/2020,23:13,03/03/2020,23:13,False,"Coord Star: 19 22 56.7724 -21 53 13.5660
 C/A: 0.127 arcsec
@@ -20514,7 +20514,7 @@ C/A: 1.012 arcsec
 P/A 169.18 deg
 Velocity: 20.24 km/s
 Distance: 5.31 AU
-MagR: 20.0
+MagR: 16.5
 ",False
 Ocultation by Leda,04/10/2020,12:01,04/10/2020,12:01,False,"Coord Star: 19 47 19.9398 -20 48 39.6950
 C/A: 1.474 arcsec
@@ -20647,7 +20647,7 @@ C/A: 0.388 arcsec
 P/A 343.07 deg
 Velocity: -15.16 km/s
 Distance: 4.18 AU
-MagR: 19.7
+MagR: 16.1
 ",False
 Ocultation by Leda,07/03/2020,13:37,07/03/2020,13:37,False,"Coord Star: 19 45 56.8011 -21 32 24.3640
 C/A: 0.288 arcsec
@@ -22264,7 +22264,7 @@ C/A: 1.067 arcsec
 P/A 178.85 deg
 Velocity: 18.52 km/s
 Distance: 5.44 AU
-MagR: 19.9
+MagR: 16.4
 ",False
 Ocultation by Lysithea,02/28/2019,19:52,02/28/2019,19:52,False,"Coord Star: 17 26 41.8262 -22 25 58.1130
 C/A: 1.379 arcsec
@@ -22530,7 +22530,7 @@ C/A: 0.172 arcsec
 P/A 357.68 deg
 Velocity: -14.53 km/s
 Distance: 4.39 AU
-MagR: 19.7
+MagR: 16.1
 ",False
 Ocultation by Lysithea,05/12/2019,12:42,05/12/2019,12:42,False,"Coord Star: 17 24 17.6165 -22 23 46.3830
 C/A: 0.539 arcsec
@@ -22929,7 +22929,7 @@ C/A: 0.072 arcsec
 P/A 4.18 deg
 Velocity: 15.05 km/s
 Distance: 5.24 AU
-MagR: 19.7
+MagR: 16.0
 ",False
 Ocultation by Lysithea,09/08/2019,18:04,09/08/2019,18:04,False,"Coord Star: 16 58 49.8623 -22 44 02.8920
 C/A: 1.591 arcsec
@@ -22978,7 +22978,7 @@ C/A: 1.01 arcsec
 P/A 183.44 deg
 Velocity: 19.71 km/s
 Distance: 5.4 AU
-MagR: 20.0
+MagR: 16.4
 ",False
 Ocultation by Lysithea,09/20/2019,16:17,09/20/2019,16:17,False,"Coord Star: 17 04 30.6984 -22 49 10.5250
 C/A: 1.467 arcsec
@@ -23083,7 +23083,7 @@ C/A: 0.047 arcsec
 P/A 2.62 deg
 Velocity: 25.05 km/s
 Distance: 5.59 AU
-MagR: 20.2
+MagR: 16.5
 ",False
 Ocultation by Lysithea,10/03/2019,15:20,10/03/2019,15:20,False,"Coord Star: 17 12 10.7291 -22 54 38.9380
 C/A: 0.131 arcsec
@@ -23489,7 +23489,7 @@ C/A: 1.662 arcsec
 P/A 181.0 deg
 Velocity: 33.13 km/s
 Distance: 5.89 AU
-MagR: 20.5
+MagR: 17.0
 ",False
 Ocultation by Lysithea,10/30/2019,09:50,10/30/2019,09:50,False,"Coord Star: 17 31 52.9338 -23 02 53.7030
 C/A: 0.086 arcsec
@@ -23685,7 +23685,7 @@ C/A: 0.548 arcsec
 P/A 180.17 deg
 Velocity: 36.18 km/s
 Distance: 6.01 AU
-MagR: 20.6
+MagR: 16.6
 ",False
 Ocultation by Lysithea,11/13/2019,09:05,11/13/2019,09:05,False,"Coord Star: 17 43 38.2632 -23 04 25.2290
 C/A: 1.52 arcsec
@@ -23699,7 +23699,7 @@ C/A: 0.937 arcsec
 P/A 0.1 deg
 Velocity: 36.41 km/s
 Distance: 6.02 AU
-MagR: 20.7
+MagR: 17.0
 ",False
 Ocultation by Lysithea,11/15/2019,03:34,11/15/2019,03:34,False,"Coord Star: 17 45 10.5914 -23 04 29.4400
 C/A: 0.004 arcsec
@@ -23979,7 +23979,7 @@ C/A: 1.29 arcsec
 P/A 359.87 deg
 Velocity: 37.15 km/s
 Distance: 6.05 AU
-MagR: 20.7
+MagR: 17.1
 ",False
 Ocultation by Lysithea,11/19/2019,15:36,11/19/2019,15:36,False,"Coord Star: 17 49 07.8199 -23 04 28.7710
 C/A: 1.356 arcsec
@@ -24217,7 +24217,7 @@ C/A: 1.5 arcsec
 P/A 356.58 deg
 Velocity: 35.61 km/s
 Distance: 5.94 AU
-MagR: 20.6
+MagR: 17.0
 ",False
 Ocultation by Lysithea,02/11/2020,09:40,02/11/2020,09:40,False,"Coord Star: 19 05 04.4699 -22 35 22.6080
 C/A: 1.406 arcsec
@@ -25505,7 +25505,7 @@ C/A: 0.223 arcsec
 P/A 349.57 deg
 Velocity: 38.48 km/s
 Distance: 5.88 AU
-MagR: 20.7
+MagR: 17.2
 ",False
 Ocultation by Lysithea,12/13/2020,17:03,12/13/2020,17:03,False,"Coord Star: 19 59 54.9840 -21 24 47.9370
 C/A: 1.801 arcsec
@@ -25541,97 +25541,6 @@ P/A 348.87 deg
 Velocity: 40.13 km/s
 Distance: 5.94 AU
 MagR: 14.9
-",False
-Ocultation by Nereida,01/14/2016,11:07,01/14/2016,11:07,False,"Coord Star: 22 38 48.9251 -09 24 12.5070
-C/A: 0.186 arcsec
-P/A 337.97 deg
-Velocity: 26.01 km/s
-Distance: 30.63 AU
-MagR: 21.0
-",False
-Ocultation by Nereida,01/21/2016,19:09,01/21/2016,19:09,False,"Coord Star: 22 39 37.4845 -09 19 22.3290
-C/A: 0.283 arcsec
-P/A 338.04 deg
-Velocity: 28.34 km/s
-Distance: 30.71 AU
-MagR: 20.2
-",False
-Ocultation by Nereida,01/31/2016,11:29,01/31/2016,11:29,False,"Coord Star: 22 40 47.1236 -09 12 26.7140
-C/A: 0.237 arcsec
-P/A 158.1 deg
-Velocity: 30.84 km/s
-Distance: 30.8 AU
-MagR: 18.9
-",False
-Ocultation by Nereida,02/06/2016,10:42,02/06/2016,10:42,False,"Coord Star: 22 41 32.5908 -09 07 56.5580
-C/A: 0.062 arcsec
-P/A 158.14 deg
-Velocity: 32.03 km/s
-Distance: 30.85 AU
-MagR: 21.1
-",False
-Ocultation by Nereida,02/11/2016,09:08,02/11/2016,09:08,False,"Coord Star: 22 42 11.3001 -09 04 07.0620
-C/A: 0.265 arcsec
-P/A 338.17 deg
-Velocity: 32.79 km/s
-Distance: 30.88 AU
-MagR: 20.0
-",False
-Ocultation by Nereida,02/17/2016,15:55,02/17/2016,15:55,False,"Coord Star: 22 43 01.6306 -08 59 08.0400
-C/A: 0.097 arcsec
-P/A 158.18 deg
-Velocity: 33.49 km/s
-Distance: 30.91 AU
-MagR: 18.2
-",False
-Ocultation by Nereida,03/04/2016,04:20,03/04/2016,04:20,False,"Coord Star: 22 45 10.4473 -08 46 19.5790
-C/A: 0.087 arcsec
-P/A 157.87 deg
-Velocity: 35.97 km/s
-Distance: 30.95 AU
-MagR: 19.1
-",False
-Ocultation by Nereida,03/04/2016,09:09,03/04/2016,09:09,False,"Coord Star: 22 45 12.1903 -08 46 09.4670
-C/A: 0.28 arcsec
-P/A 337.87 deg
-Velocity: 36.03 km/s
-Distance: 30.95 AU
-MagR: 18.2
-",False
-Ocultation by Nereida,10/12/2016,00:06,10/12/2016,00:06,False,"Coord Star: 22 45 41.9093 -08 48 04.7680
-C/A: 0.246 arcsec
-P/A 158.18 deg
-Velocity: -17.63 km/s
-Distance: 29.16 AU
-MagR: 20.5
-",False
-Ocultation by Nereida,10/16/2016,19:39,10/16/2016,19:39,False,"Coord Star: 22 45 21.2059 -08 50 07.6590
-C/A: 0.106 arcsec
-P/A 338.33 deg
-Velocity: -15.99 km/s
-Distance: 29.21 AU
-MagR: 20.7
-",False
-Ocultation by Nereida,12/27/2016,03:11,12/27/2016,03:11,False,"Coord Star: 22 45 24.0927 -08 48 46.3820
-C/A: 0.073 arcsec
-P/A 337.3 deg
-Velocity: 17.89 km/s
-Distance: 30.34 AU
-MagR: 18.8
-",False
-Ocultation by Nereida,09/29/2017,13:17,09/29/2017,13:17,False,"Coord Star: 22 55 19.3589 -07 53 30.8590
-C/A: 0.221 arcsec
-P/A 157.59 deg
-Velocity: -21.7 km/s
-Distance: 29.02 AU
-MagR: 16.2
-",False
-Ocultation by Nereida,10/30/2018,18:03,10/30/2018,18:03,False,"Coord Star: 23 01 30.7486 -07 18 55.3170
-C/A: 0.163 arcsec
-P/A 158.37 deg
-Velocity: -12.61 km/s
-Distance: 29.32 AU
-MagR: 13.7
 ",False
 Ocultation by Pasiphae,02/08/2016,23:50,02/08/2016,23:50,False,"Coord Star: 11 40 58.1105 +04 58 55.7400
 C/A: 0.854 arcsec
@@ -26030,7 +25939,7 @@ C/A: 1.144 arcsec
 P/A 193.38 deg
 Velocity: -18.16 km/s
 Distance: 4.52 AU
-MagR: 19.9
+MagR: 16.3
 ",False
 Ocultation by Pasiphae,05/14/2018,12:53,05/14/2018,12:53,False,"Coord Star: 15 08 42.2784 -15 17 47.5540
 C/A: 1.709 arcsec
@@ -26723,7 +26632,7 @@ C/A: 0.018 arcsec
 P/A 179.4 deg
 Velocity: 18.32 km/s
 Distance: 5.28 AU
-MagR: 19.9
+MagR: 16.4
 ",False
 Ocultation by Pasiphae,03/08/2019,01:08,03/08/2019,01:08,False,"Coord Star: 17 34 49.1071 -22 29 37.4180
 C/A: 0.348 arcsec
@@ -26793,7 +26702,7 @@ C/A: 0.354 arcsec
 P/A 179.32 deg
 Velocity: 18.02 km/s
 Distance: 5.27 AU
-MagR: 19.9
+MagR: 16.2
 ",False
 Ocultation by Pasiphae,03/08/2019,21:23,03/08/2019,21:23,False,"Coord Star: 17 35 14.0022 -22 29 34.5810
 C/A: 1.506 arcsec
@@ -26807,7 +26716,7 @@ C/A: 0.645 arcsec
 P/A 179.25 deg
 Velocity: 17.81 km/s
 Distance: 5.26 AU
-MagR: 19.9
+MagR: 16.3
 ",False
 Ocultation by Pasiphae,03/10/2019,00:37,03/10/2019,00:37,False,"Coord Star: 17 35 46.7056 -22 29 25.2810
 C/A: 1.453 arcsec
@@ -26898,7 +26807,7 @@ C/A: 0.683 arcsec
 P/A 178.43 deg
 Velocity: 15.19 km/s
 Distance: 5.18 AU
-MagR: 19.7
+MagR: 15.9
 ",False
 Ocultation by Pasiphae,03/14/2019,17:34,03/14/2019,17:34,False,"Coord Star: 17 37 52.5744 -22 28 49.2950
 C/A: 0.008 arcsec
@@ -26961,7 +26870,7 @@ C/A: 1.174 arcsec
 P/A 177.67 deg
 Velocity: 13.18 km/s
 Distance: 5.12 AU
-MagR: 19.5
+MagR: 16.0
 ",False
 Ocultation by Pasiphae,03/20/2019,12:59,03/20/2019,12:59,False,"Coord Star: 17 40 05.6072 -22 27 42.7170
 C/A: 1.79 arcsec
@@ -27213,7 +27122,7 @@ C/A: 0.957 arcsec
 P/A 5.14 deg
 Velocity: -13.87 km/s
 Distance: 4.33 AU
-MagR: 19.6
+MagR: 16.0
 ",False
 Ocultation by Pasiphae,05/24/2019,11:16,05/24/2019,11:16,False,"Coord Star: 17 34 39.4013 -21 59 58.7720
 C/A: 1.082 arcsec
@@ -27332,7 +27241,7 @@ C/A: 0.578 arcsec
 P/A 184.8 deg
 Velocity: -15.82 km/s
 Distance: 4.29 AU
-MagR: 19.7
+MagR: 16.2
 ",False
 Ocultation by Pasiphae,06/06/2019,03:49,06/06/2019,03:49,False,"Coord Star: 17 28 20.9102 -21 52 25.5190
 C/A: 1.249 arcsec
@@ -27605,7 +27514,7 @@ C/A: 0.772 arcsec
 P/A 180.7 deg
 Velocity: -4.11 km/s
 Distance: 4.68 AU
-MagR: 18.3
+MagR: 14.8
 ",False
 Ocultation by Pasiphae,08/08/2019,23:11,08/08/2019,23:11,False,"Coord Star: 17 03 50.5207 -21 26 21.7590
 C/A: 0.735 arcsec
@@ -27626,7 +27535,7 @@ C/A: 1.209 arcsec
 P/A 189.95 deg
 Velocity: 6.26 km/s
 Distance: 5.03 AU
-MagR: 18.7
+MagR: 15.2
 ",False
 Ocultation by Pasiphae,08/30/2019,14:10,08/30/2019,14:10,False,"Coord Star: 17 05 17.9490 -21 32 13.5880
 C/A: 0.924 arcsec
@@ -28207,7 +28116,7 @@ C/A: 0.022 arcsec
 P/A 3.5 deg
 Velocity: 31.79 km/s
 Distance: 5.97 AU
-MagR: 20.5
+MagR: 16.7
 ",False
 Ocultation by Pasiphae,10/29/2019,23:12,10/29/2019,23:12,False,"Coord Star: 17 36 27.8333 -22 13 10.4720
 C/A: 0.589 arcsec
@@ -28599,7 +28508,7 @@ C/A: 1.74 arcsec
 P/A 1.64 deg
 Velocity: 36.87 km/s
 Distance: 6.17 AU
-MagR: 20.7
+MagR: 16.9
 ",False
 Ocultation by Pasiphae,11/16/2019,14:20,11/16/2019,14:20,False,"Coord Star: 17 50 48.2014 -22 21 36.4890
 C/A: 1.143 arcsec
@@ -29320,7 +29229,7 @@ C/A: 1.131 arcsec
 P/A 341.68 deg
 Velocity: -7.89 km/s
 Distance: 4.57 AU
-MagR: 19.0
+MagR: 15.4
 ",False
 Ocultation by Pasiphae,06/09/2020,01:48,06/09/2020,01:48,False,"Coord Star: 19 46 47.7772 -20 44 56.8330
 C/A: 0.502 arcsec
@@ -29411,7 +29320,7 @@ C/A: 0.538 arcsec
 P/A 165.5 deg
 Velocity: -16.5 km/s
 Distance: 4.26 AU
-MagR: 19.8
+MagR: 16.2
 ",False
 Ocultation by Pasiphae,07/02/2020,08:37,07/02/2020,08:37,False,"Coord Star: 19 36 06.4275 -21 25 27.4600
 C/A: 0.429 arcsec
@@ -29635,7 +29544,7 @@ C/A: 1.615 arcsec
 P/A 345.17 deg
 Velocity: -13.0 km/s
 Distance: 4.27 AU
-MagR: 19.5
+MagR: 16.0
 ",False
 Ocultation by Pasiphae,08/09/2020,09:57,08/09/2020,09:57,False,"Coord Star: 19 16 19.9008 -22 35 09.8600
 C/A: 0.254 arcsec
@@ -29670,7 +29579,7 @@ C/A: 0.985 arcsec
 P/A 344.69 deg
 Velocity: -11.92 km/s
 Distance: 4.29 AU
-MagR: 19.4
+MagR: 15.7
 ",False
 Ocultation by Pasiphae,08/12/2020,03:23,08/12/2020,03:23,False,"Coord Star: 19 15 15.0569 -22 39 14.2560
 C/A: 1.167 arcsec
@@ -29705,7 +29614,7 @@ C/A: 1.093 arcsec
 P/A 334.84 deg
 Velocity: -4.78 km/s
 Distance: 4.44 AU
-MagR: 18.4
+MagR: 14.5
 ",False
 Ocultation by Pasiphae,09/04/2020,03:08,09/04/2020,03:08,False,"Coord Star: 19 09 50.6372 -23 04 54.8900
 C/A: 1.495 arcsec
@@ -30741,14 +30650,14 @@ C/A: 0.048 arcsec
 P/A 181.0 deg
 Velocity: -12.19 km/s
 Distance: 9.2 AU
-MagR: 19.5
+MagR: 15.7
 ",False
 Ocultation by Phoebe,05/09/2017,03:43,05/09/2017,03:43,False,"Coord Star: 17 47 41.4548 -22 05 00.9160
 C/A: 0.769 arcsec
 P/A 0.99 deg
 Velocity: -12.8 km/s
 Distance: 9.18 AU
-MagR: 19.5
+MagR: 15.9
 ",False
 Ocultation by Phoebe,05/13/2017,21:02,05/13/2017,21:02,False,"Coord Star: 17 46 41.5169 -22 04 47.0680
 C/A: 0.866 arcsec
@@ -30839,7 +30748,7 @@ C/A: 0.182 arcsec
 P/A 181.01 deg
 Velocity: -19.43 km/s
 Distance: 9.01 AU
-MagR: 20.0
+MagR: 14.9
 ",False
 Ocultation by Phoebe,06/08/2017,17:41,06/08/2017,17:41,False,"Coord Star: 17 39 36.4506 -22 03 07.2990
 C/A: 0.44 arcsec
@@ -30993,7 +30902,7 @@ C/A: 0.294 arcsec
 P/A 5.49 deg
 Velocity: 16.95 km/s
 Distance: 10.38 AU
-MagR: 19.8
+MagR: 16.0
 ",False
 Ocultation by Phoebe,10/22/2017,19:49,10/22/2017,19:49,False,"Coord Star: 17 32 40.7669 -22 17 39.7930
 C/A: 0.827 arcsec
@@ -31539,7 +31448,7 @@ C/A: 0.106 arcsec
 P/A 356.7 deg
 Velocity: 20.59 km/s
 Distance: 10.36 AU
-MagR: 20.0
+MagR: 16.3
 ",False
 Ocultation by Phoebe,03/07/2018,18:40,03/07/2018,18:40,False,"Coord Star: 18 30 40.3540 -22 18 50.0550
 C/A: 0.451 arcsec
@@ -31567,7 +31476,7 @@ C/A: 0.473 arcsec
 P/A 356.59 deg
 Velocity: 19.12 km/s
 Distance: 10.31 AU
-MagR: 20.0
+MagR: 16.4
 ",False
 Ocultation by Phoebe,03/10/2018,05:25,03/10/2018,05:25,False,"Coord Star: 18 31 20.2244 -22 18 18.7230
 C/A: 0.839 arcsec
@@ -31945,7 +31854,7 @@ C/A: 0.1 arcsec
 P/A 355.94 deg
 Velocity: -18.45 km/s
 Distance: 8.96 AU
-MagR: 19.9
+MagR: 16.2
 ",False
 Ocultation by Phoebe,06/21/2018,16:58,06/21/2018,16:58,False,"Coord Star: 18 25 31.9415 -22 24 44.1830
 C/A: 0.014 arcsec
@@ -32141,7 +32050,7 @@ C/A: 0.801 arcsec
 P/A 355.8 deg
 Velocity: -16.67 km/s
 Distance: 9.01 AU
-MagR: 19.8
+MagR: 15.9
 ",False
 Ocultation by Phoebe,07/18/2018,15:41,07/18/2018,15:41,False,"Coord Star: 18 17 44.6716 -22 32 23.4030
 C/A: 0.182 arcsec
@@ -32526,7 +32435,7 @@ C/A: 0.732 arcsec
 P/A 179.13 deg
 Velocity: 28.1 km/s
 Distance: 10.57 AU
-MagR: 20.4
+MagR: 16.5
 ",False
 Ocultation by Phoebe,11/05/2018,23:43,11/05/2018,23:43,False,"Coord Star: 18 24 00.1828 -22 47 51.7110
 C/A: 0.32 arcsec
@@ -32806,7 +32715,7 @@ C/A: 0.425 arcsec
 P/A 354.61 deg
 Velocity: 37.64 km/s
 Distance: 11.03 AU
-MagR: 20.7
+MagR: 17.1
 ",False
 Ocultation by Phoebe,01/22/2019,00:51,01/22/2019,00:51,False,"Coord Star: 19 00 39.8638 -22 17 49.5050
 C/A: 0.526 arcsec
@@ -33345,7 +33254,7 @@ C/A: 0.332 arcsec
 P/A 169.4 deg
 Velocity: 15.86 km/s
 Distance: 10.12 AU
-MagR: 19.7
+MagR: 16.3
 ",False
 Ocultation by Phoebe,04/10/2020,23:48,04/10/2020,23:48,False,"Coord Star: 20 14 55.0593 -19 56 34.4520
 C/A: 0.266 arcsec
@@ -35130,7 +35039,7 @@ C/A: 0.354 arcsec
 P/A 6.13 deg
 Velocity: -14.2 km/s
 Distance: 4.17 AU
-MagR: 19.6
+MagR: 16.1
 ",False
 Ocultation by Sinope,06/03/2019,00:44,06/03/2019,00:44,False,"Coord Star: 17 20 45.6681 -23 02 37.0810
 C/A: 1.25 arcsec
@@ -35452,7 +35361,7 @@ C/A: 0.1 arcsec
 P/A 8.78 deg
 Velocity: -11.68 km/s
 Distance: 4.27 AU
-MagR: 19.4
+MagR: 15.9
 ",False
 Ocultation by Sinope,07/23/2019,19:04,07/23/2019,19:04,False,"Coord Star: 16 59 27.4554 -22 21 48.2180
 C/A: 1.638 arcsec
@@ -35851,7 +35760,7 @@ C/A: 1.892 arcsec
 P/A 183.08 deg
 Velocity: 30.15 km/s
 Distance: 5.91 AU
-MagR: 20.4
+MagR: 16.8
 ",False
 Ocultation by Sinope,10/26/2019,20:25,10/26/2019,20:25,False,"Coord Star: 17 29 15.7698 -22 38 58.5520
 C/A: 0.925 arcsec
@@ -36348,7 +36257,7 @@ C/A: 0.867 arcsec
 P/A 1.59 deg
 Velocity: 36.24 km/s
 Distance: 6.17 AU
-MagR: 20.6
+MagR: 16.5
 ",False
 Ocultation by Sinope,11/19/2019,03:04,11/19/2019,03:04,False,"Coord Star: 17 47 42.7825 -22 49 24.4730
 C/A: 0.902 arcsec
@@ -36376,14 +36285,14 @@ C/A: 0.1 arcsec
 P/A 1.55 deg
 Velocity: 36.35 km/s
 Distance: 6.18 AU
-MagR: 20.6
+MagR: 17.0
 ",False
 Ocultation by Sinope,11/19/2019,17:05,11/19/2019,17:05,False,"Coord Star: 17 48 12.3602 -22 49 35.5980
 C/A: 0.877 arcsec
 P/A 1.54 deg
 Velocity: 36.37 km/s
 Distance: 6.18 AU
-MagR: 20.6
+MagR: 16.9
 ",False
 Ocultation by Sinope,11/20/2019,01:28,11/20/2019,01:28,False,"Coord Star: 17 48 30.0985 -22 49 41.8460
 C/A: 0.58 arcsec
@@ -37314,7 +37223,7 @@ C/A: 1.88 arcsec
 P/A 349.07 deg
 Velocity: -13.36 km/s
 Distance: 4.09 AU
-MagR: 19.6
+MagR: 15.9
 ",False
 Ocultation by Sinope,08/01/2020,12:14,08/01/2020,12:14,False,"Coord Star: 19 16 13.5147 -23 11 47.6760
 C/A: 0.682 arcsec
@@ -37384,7 +37293,7 @@ C/A: 1.393 arcsec
 P/A 169.26 deg
 Velocity: -11.43 km/s
 Distance: 4.14 AU
-MagR: 19.4
+MagR: 15.8
 ",False
 Ocultation by Sinope,08/10/2020,11:02,08/10/2020,11:02,False,"Coord Star: 19 12 26.4775 -23 21 43.5910
 C/A: 0.697 arcsec
@@ -37769,7 +37678,7 @@ C/A: 1.669 arcsec
 P/A 171.86 deg
 Velocity: 24.51 km/s
 Distance: 5.17 AU
-MagR: 20.2
+MagR: 16.6
 ",False
 Ocultation by Sinope,10/31/2020,15:00,10/31/2020,15:00,False,"Coord Star: 19 25 44.2006 -23 09 11.8350
 C/A: 0.688 arcsec
@@ -38183,18 +38092,4 @@ P/A 347.78 deg
 Velocity: 41.14 km/s
 Distance: 5.74 AU
 MagR: 12.6
-",False
-Ocultation by Triton,10/05/2017,23:51,10/05/2017,23:51,False,"Coord Star: 22 54 18.4370 -08 00 08.3390
-C/A: 0.23 arcsec
-P/A 347.51 deg
-Velocity: -16.79 km/s
-Distance: 29.08 AU
-MagR: 12.3
-",False
-Ocultation by Triton,05/13/2018,18:02,05/13/2018,18:02,False,"Coord Star: 23 09 31.1849 -06 25 32.0660
-C/A: 0.235 arcsec
-P/A 350.83 deg
-Velocity: 16.57 km/s
-Distance: 30.33 AU
-MagR: 15.0
 ",False
